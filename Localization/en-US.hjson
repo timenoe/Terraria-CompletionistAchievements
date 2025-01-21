@@ -1,4 +1,138 @@
 Achievements: {
-	EXPERT_KING_SLIME_BAG_Name: Royal Gel
-	EXPERT_KING_SLIME_BAG_Description: Defeat King Slime in Expert Mode and grab the Treasure Bag.
+	COLLECTOR_BANNERS_SLIME_Name: Slime Slayer
+	COLLECTOR_BANNERS_SLIME_Description: Obtain all 24 Slime banners.
+	COLLECTOR_BANNERS_CAVERN_Name: Cavern Slayer
+	COLLECTOR_BANNERS_CAVERN_Description: Obtain all 20 Cavern enemy banners.
+	COLLECTOR_BANNERS_CORRUPTION_Name: Corruption Slayer
+	COLLECTOR_BANNERS_CORRUPTION_Description: Obtain all 8 Corruption enemy banners.
+	COLLECTOR_BANNERS_CRIMSON_Name: Crimson Slayer
+	COLLECTOR_BANNERS_CRIMSON_Description: Obtain all 11 Crimson enemy banners.
+	COLLECTOR_BANNERS_DESERT_Name: Desert Slayer
+	COLLECTOR_BANNERS_DESERT_Description: Obtain all 13 Desert enemy banners.
+	COLLECTOR_BANNERS_DUNGEON_Name: Dungeon Slayer
+	COLLECTOR_BANNERS_DUNGEON_Description: Obtain all 16 Dungeon enemy banners.
+	COLLECTOR_BANNERS_GLOWING_MUSHROOM_Name: Glowing Mushroom Slayer
+	COLLECTOR_BANNERS_GLOWING_MUSHROOM_Description: Obtain all 7 Glowing Mushroom enemy banners.
+	COLLECTOR_BANNERS_GRANITE_CAVE_Name: Granite Cave Slayer
+	COLLECTOR_BANNERS_GRANITE_CAVE_Description: Obtain both Granite Cave enemy banners.
+	COLLECTOR_BANNERS_HALLOW_Name: The Hallow Slayer
+	COLLECTOR_BANNERS_HALLOW_Description: Obtain all 7 The Hallow enemy banners.
+	COLLECTOR_BANNERS_JUNGLE_Name: Jungle Slayer
+	COLLECTOR_BANNERS_JUNGLE_Description: Obtain all 17 Jungle enemy banners.
+	COLLECTOR_BANNERS_MARBLE_CAVE_Name: Marble Cave Slayer
+	COLLECTOR_BANNERS_MARBLE_CAVE_Description: Obtain both Marble Cave enemy banners.
+	COLLECTOR_BANNERS_METEORITE_Name: Meteorite Slayer
+	COLLECTOR_BANNERS_METEORITE_Description: Obtain the Meteorite enemy banner.
+	COLLECTOR_BANNERS_SNOW_Name: Snow Slayer
+	COLLECTOR_BANNERS_SNOW_Description: Obtain all 12 Snow enemy banners.
+	COLLECTOR_BANNERS_SPIDER_CAVE_Name: Spider Cave Slayer
+	COLLECTOR_BANNERS_SPIDER_CAVE_Description: Obtain both Spider Cave enemy banners.
+	COLLECTOR_BANNERS_SURFACE_Name: Surface Slayer
+	COLLECTOR_BANNERS_SURFACE_Description: Obtain all 17 Surface enemy banners.
+	COLLECTOR_BANNERS_UNDERWORLD_Name: Underworld Slayer
+	COLLECTOR_BANNERS_UNDERWORLD_Description: Obtain all 6 Underworld enemy banners.
+	COLLECTOR_BANNERS_BLOOD_MOON_Name: Blood Moon Slayer
+	COLLECTOR_BANNERS_BLOOD_MOON_Description: Obtain all 17 Blood Moon enemy banners.
+	COLLECTOR_BANNERS_FROST_LEGION_Name: Frost Legion Slayer
+	COLLECTOR_BANNERS_FROST_LEGION_Description: Obtain all 3 Frost Legion enemy banners.
+	COLLECTOR_BANNERS_FROST_MOON_Name: Frost Moon Slayer
+	COLLECTOR_BANNERS_FROST_MOON_Description: Obtain all 9 Frost Moon enemy banners.
+	COLLECTOR_BANNERS_GOBLIN_ARMY_Name: Goblin Army Slayer
+	COLLECTOR_BANNERS_GOBLIN_ARMY_Description: Obtain all 6 Goblin Army enemy banners.
+	COLLECTOR_BANNERS_HALLOWEEN_Name: Halloween Slayer
+	COLLECTOR_BANNERS_HALLOWEEN_Description: Obtain all 3 Halloween enemy banners.
+	COLLECTOR_BANNERS_LUNAR_EVENTS_Name: Lunar Events Slayer
+	COLLECTOR_BANNERS_LUNAR_EVENTS_Description: Obtain all 23 Lunar Events enemy banners.
+	COLLECTOR_BANNERS_MARTIAN_MADNESS_Name: Martian Madness Slayer
+	COLLECTOR_BANNERS_MARTIAN_MADNESS_Description: Obtain all 11 Martian Madness enemy banners.
+	COLLECTOR_BANNERS_OLD_ONES_ARMY_Name: Old One's Army Slayer
+	COLLECTOR_BANNERS_OLD_ONES_ARMY_Description: Obtain all 10 Old One's Army enemy banners.
+	COLLECTOR_BANNERS_PIRATE_INVASION_Name: Pirate Invasion Slayer
+	COLLECTOR_BANNERS_PIRATE_INVASION_Description: Obtain all 6 Pirate Invasion enemy banners.
+	COLLECTOR_BANNERS_PUMPKIN_MOON_Name: Pumpkin Moon Slayer
+	COLLECTOR_BANNERS_PUMPKIN_MOON_Description: Obtain all 5 Pumpkin Moon enemy banners.
+	COLLECTOR_BANNERS_RAIN_BLIZZARD_Name: Rain & Blizzard Slayer
+	COLLECTOR_BANNERS_RAIN_BLIZZARD_Description: Obtain all 4 Rain/Blizzard enemy banners.
+	COLLECTOR_BANNERS_SANDSTORM_Name: Sandstorm Slayer
+	COLLECTOR_BANNERS_SANDSTORM_Description: Obtain all 6 Sandstorm enemy banners.
+	COLLECTOR_BANNERS_SOLAR_ECLIPSE_Name: Solar Eclipse Slayer
+	COLLECTOR_BANNERS_SOLAR_ECLIPSE_Description: Obtain all 14 Solar Eclipse enemy banners.
+	COLLECTOR_BANNERS_WINDY_DAY_Name: Windy Day Slayer
+	COLLECTOR_BANNERS_WINDY_DAY_Description: Obtain the Windy Day enemy banner.
+	COLLECTOR_MOUNT_TURTLE_Name: Slow and Steady
+	COLLECTOR_MOUNT_TURTLE_Description: Obtain a Hardy Saddle from a Golden/Titanium Crate.
+	COLLECTOR_MOUNT_GOLF_Name: Retirement Ready
+	COLLECTOR_MOUNT_GOLF_Description: Buy a set of Golf Cart Keys from the Golfer.
+	COLLECTOR_MOUNT_SHARK_Name: Bloody Hell!
+	COLLECTOR_MOUNT_SHARK_Description: Obtain a vial of Superheated Blood from an Obsidian/Hellstone Crate.
+	COLLECTOR_MOUNT_BASILISK_Name: Chaos Charge
+	COLLECTOR_MOUNT_BASILISK_Description: Obtain an Ancient Horn from a Basilisk.
+	COLLECTOR_MOUNT_UNICORN_Name: Rainbow Rider
+	COLLECTOR_MOUNT_UNICORN_Description: Obtain a Blessed Apple from The Hallow enemies.
+	COLLECTOR_MOUNT_PIGRON_Name: Now You See Me...
+	COLLECTOR_MOUNT_PIGRON_Description: Catch a Scaly Truffle while fishing.
+	COLLECTOR_MOUNT_SCUTLIX_Name: Scutlix Tamer
+	COLLECTOR_MOUNT_SCUTLIX_Description: Obtain a Brain Scrambler from a Scutlix Gunner.
+	COLLECTOR_MOUNT_DCU_Name: Terraforming
+	COLLECTOR_MOUNT_DCU_Description: Craft a Drill Containment Unit.
+	COLLECTOR_MOUNTS_Name: Trusty Steeds
+	COLLECTOR_MOUNTS_Description: Obtain all 19 Mounts.
+	COLLECTOR_PET_DINO_Name: De-extinction
+	COLLECTOR_PET_DINO_Description: Extract an Amber Mosquito from Desert Fossil.
+	COLLECTOR_PET_SKELETRON_Name: You SHALL Pass!
+	COLLECTOR_PET_SKELETRON_Description: Obtain a Bone Key from the Dungeon Guardian.
+	COLLECTOR_PET_SNOWMAN_Name: Sleigh Ride Together With You
+	COLLECTOR_PET_SNOWMAN_Description: Obtain a Toy Sled from an Ice Mimic.
+	COLLECTOR_PET_CAT_Name: Tim's Pet Cat
+	COLLECTOR_PET_CAT_Description: Obtain a ball of Unlucky Yarn from a Goodie Bag.
+	COLLECTOR_PET_CAVELING_Name: Keeper of the Core
+	COLLECTOR_PET_CAVELING_Description: Obtain a Glow Tulip in the Underground or Cavern layers.
+	COLLECTOR_PET_GLOMMER_Name: Fuzzy and Slimy
+	COLLECTOR_PET_GLOMMER_Description: Obtain a Glommer's Flower from a Derpling.
+	COLLECTOR_PET_JUNIMO_Name: Keeper of the Forest
+	COLLECTOR_PET_JUNIMO_Description: Obtain a Stardrop from a purified Joja Cola.
+	COLLECTOR_PET_LIZARD_Name: Chillin’ Like a Reptilian
+	COLLECTOR_PET_LIZARD_Description: Obtain a Lizard Egg from a Lihzahrd or a Flying Snake.
+	COLLECTOR_PET_PIG_Name: Walking Back Bacon!
+	COLLECTOR_PET_PIG_Description: Obtain some Monster Meat from a Corruption/Crimson enemy.
+	COLLECTOR_PET_PUPPY_Name: Puppy Love
+	COLLECTOR_PET_PUPPY_Description: Obtain a Dog Whistle from a Present.
+	COLLECTOR_PET_SPIFFO_Name: Plushie PAWS
+	COLLECTOR_PET_SPIFFO_Description: Obtain a Spiffo Plush from a Zombie.
+	COLLECTOR_PET_SQUASHLING_Name: Plentiful Harvest
+	COLLECTOR_PET_SQUASHLING_Description: Obtain a Magical Pumpkin Seed from a fully-grown Pumpkin during Halloween.
+	COLLECTOR_PET_GLIDER_Name: Sugar Rush
+	COLLECTOR_PET_GLIDER_Description: Obtain some Eucalyptus Sap after shaking a Tree.
+	COLLECTOR_PET_DIRT_Name: Dirt is Dirty
+	COLLECTOR_PET_DIRT_Description: Obtain The Dirtiest Block while digging.
+	COLLECTOR_PET_ZEPHYR_Name: The Gentle West Wind
+	COLLECTOR_PET_ZEPHYR_Description: Catch a Zephyr Fish while fishing.
+	COLLECTOR_PET_WISP_Name: Will-O’-The-Wisp
+	COLLECTOR_PET_WISP_Description: Obtain a Wisp in a Bottle from Armored Bones enemies.
+	COLLECTOR_PETS_NORMAL_Name: Animal Whisperer
+	COLLECTOR_PETS_NORMAL_Description: Obtain all 47 Pets.
+	COLLECTOR_PETS_LIGHT_Name: Bright Buddies
+	COLLECTOR_PETS_LIGHT_Description: Obtain all 6 Light Pets.
+	COLLECTOR_WINGS_Name: Free Bird
+	COLLECTOR_WINGS_Description: Obtain all 29 Wings.
+	COLLECTOR_EXTRACT_SILT_SLUSH_Name: Panning for Gold
+	COLLECTOR_EXTRACT_SILT_SLUSH_Description: Extract all 26 items from Silt/Slush Blocks.
+	COLLECTOR_EXTRACT_FOSSIL_Name: Fossil Fuel
+	COLLECTOR_EXTRACT_FOSSIL_Description: Extract all 27 items from Desert Fossil.
+	COLLECTOR_EXTRACT_MOSS_Name: Horticulture
+	COLLECTOR_EXTRACT_MOSS_Description: Extract all 10 items from glowing Moss.
+	COLLECTOR_EXTRACT_JUNK_Name: ...Another Man's Treasure
+	COLLECTOR_EXTRACT_JUNK_Description: Extract all 4 items from pieces of junk.
+	COLLECTOR_FISH_CATCH_FISH_Name: Level 99 Fishing
+	COLLECTOR_FISH_CATCH_FISH_Description: Catch all 30 fish while fishing.
+	COLLECTOR_FISH_CATCH_FISH_QUEST_Name: Motley Crew
+	COLLECTOR_FISH_CATCH_FISH_QUEST_Description: Catch all 41 quest fish while fishing.
+	COLLECTOR_FISH_CATCH_CRATE_Name: Sunken Treasure
+	COLLECTOR_FISH_CATCH_CRATE_Description: Catch all 26 Crates while fishing.
+	COLLECTOR_FISH_CATCH_ITEM_Name: Aquatic Artifacts
+	COLLECTOR_FISH_CATCH_ITEM_Description: Catch all 22 usable items while fishing.
+	COLLECTOR_FISH_CATCH_JUNK_Name: One Man's Trash...
+	COLLECTOR_FISH_CATCH_JUNK_Description: Catch all 4 pieces of junk while fishing.
+	COLLECTOR_FISH_REWARDS_Name: Angler Allowance
+	COLLECTOR_FISH_REWARDS_Description: Obtain all x quest rewards from the Angler.
 }
