@@ -29,21 +29,6 @@ namespace CollectorAchievements.Systems
             { "Decorative", [ItemID.AngelStatue, ItemID.AnvilStatue, ItemID.ArmorStatue, ItemID.AxeStatue, ItemID.BoomerangStatue, ItemID.BootStatue, ItemID.BowStatue, ItemID.CrossStatue, ItemID.GargoyleStatue, ItemID.GloomStatue, ItemID.HammerStatue, ItemID.PickaxeStatue, ItemID.PillarStatue, ItemID.PotStatue, ItemID.PotionStatue, ItemID.ReaperStatue, ItemID.ShieldStatue, ItemID.SpearStatue, ItemID.SunflowerStatue, ItemID.SwordStatue, ItemID.TreeStatue, ItemID.WomanStatue, ItemID.LihzahrdStatue, ItemID.LihzahrdGuardianStatue, ItemID.LihzahrdWatcherStatue] },
             // TODO: Text statues?
         };
-        
-        private static readonly Dictionary<string, int[]> Accessories = new()
-        {
-            { "Movement", [ItemID.Aglet, ItemID.BalloonHorseshoeHoney, ItemID.AmphibianBoots, ItemID.AnkletoftheWind, ItemID.ArcticDivingGear, ItemID.BalloonPufferfish, ItemID.BlizzardinaBalloon, ItemID.BlizzardinaBottle, ItemID.BlueHorseshoeBalloon, ItemID.BundleofBalloons, ItemID.ClimbingClaws, ItemID.CloudinaBalloon, ItemID.CloudinaBottle, ItemID.DivingGear, ItemID.SandBoots, ItemID.FairyBoots, ItemID.FartInABalloon, ItemID.FartinaJar, ItemID.Flipper, ItemID.FlurryBoots, ItemID.FlyingCarpet, ItemID.FrogFlipper, ItemID.FrogGear, ItemID.FrogLeg, ItemID.FrogWebbing, ItemID.FrostsparkBoots, ItemID.BalloonHorseshoeFart, ItemID.HellfireTreads, ItemID.HermesBoots, ItemID.HoneyBalloon, ItemID.IceSkates, ItemID.FloatingTube, ItemID.JellyfishDivingGear, ItemID.LavaCharm, ItemID.LavaWaders, ItemID.LightningBoots, ItemID.LuckyHorseshoe, ItemID.Magiluminescence, ItemID.MasterNinjaGear, ItemID.MoltenCharm, ItemID.NeptunesShell, ItemID.ObsidianHorseshoe, ItemID.ObsidianWaterWalkingBoots, ItemID.BalloonHorseshoeSharkron, ItemID.RocketBoots, ItemID.SailfishBoots, ItemID.SandstorminaBalloon, ItemID.SandstorminaBottle, ItemID.SharkronBalloon, ItemID.ShinyRedBalloon, ItemID.ShoeSpikes, ItemID.SpectreBoots, ItemID.PortableStool, ItemID.Tabi, ItemID.TerrasparkBoots, ItemID.TigerClimbingGear, ItemID.TsunamiInABottle, ItemID.WaterWalkingBoots, ItemID.WhiteHorseshoeBalloon, ItemID.YellowHorseshoeBalloon] },
-            { "Information", [ItemID.CopperWatch, ItemID.TinWatch, ItemID.SilverWatch, ItemID.TungstenWatch, ItemID.GoldWatch, ItemID.PlatinumWatch, ItemID.DepthMeter, ItemID.CellPhone, ItemID.Compass, ItemID.Radar, ItemID.LifeformAnalyzer, ItemID.TallyCounter, ItemID.MetalDetector, ItemID.Stopwatch, ItemID.DPSMeter, ItemID.FishermansGuide, ItemID.WeatherRadio, ItemID.Sextant, ItemID.Shellphone, ItemID.GPS, ItemID.REK, ItemID.GoblinTech, ItemID.FishFinder, ItemID.PDA, ItemID.MechanicalLens, ItemID.Ruler, ItemID.LaserRuler] },
-            { "Health/Mana", [ItemID.ArcaneFlower, ItemID.BandofRegeneration, ItemID.BandofStarpower, ItemID.CelestialCuffs, ItemID.CelestialMagnet, ItemID.CelestialEmblem, ItemID.CharmofMyths, ItemID.MagicCuffs, ItemID.MagnetFlower, ItemID.ManaCloak, ItemID.ManaFlower, ItemID.ManaRegenerationBand, ItemID.NaturesGift, ItemID.PhilosophersStone] },
-            { "Combat", [ItemID.AdhesiveBandage, ItemID.AnkhCharm, ItemID.AnkhShield, ItemID.ArmorBracing, ItemID.ArmorPolish, ItemID.AvengerEmblem, ItemID.BeeCloak, ItemID.BerserkerGlove, ItemID.Bezoar, ItemID.BlackBelt, ItemID.Blindfold, ItemID.CelestialEmblem, ItemID.MoonCharm, ItemID.MoonShell, ItemID.CelestialStone, ItemID.CelestialShell, ItemID.CobaltShield, ItemID.CountercurseMantra, ItemID.CrossNecklace, ItemID.DestroyerEmblem, ItemID.EyeoftheGolem, ItemID.FastClock, ItemID.FeralClaws, ItemID.FireGauntlet, ItemID.FleshKnuckles, ItemID.FrozenTurtleShell, ItemID.FrozenShield, ItemID.HandWarmer, ItemID.HeroShield, ItemID.HoneyComb, ItemID.MagicQuiver, ItemID.LavaSkull, ItemID.MagmaStone, ItemID.MechanicalGlove, ItemID.MedicatedBandage, ItemID.Megaphone, ItemID.MoonStone, ItemID.MoltenQuiver, ItemID.MoltenSkullRose, ItemID.Nazar, ItemID.ObsidianRose, ItemID.ObsidianShield, ItemID.ObsidianSkull, ItemID.ObsidianSkullRose, ItemID.PaladinsShield, ItemID.PanicNecklace, ItemID.PocketMirror, ItemID.PowerGlove, ItemID.PutridScent, ItemID.RangerEmblem, ItemID.ReconScope, ItemID.RifleScope, ItemID.Shackle, ItemID.SharkToothNecklace, ItemID.SniperScope, ItemID.SorcererEmblem, ItemID.StalkersQuiver, ItemID.StarCloak, ItemID.StarVeil, ItemID.StingerNecklace, ItemID.SummonerEmblem, ItemID.SunStone, ItemID.SweetheartNecklace, ItemID.ThePlan, ItemID.TitanGlove, ItemID.TrifoldMap, ItemID.Vitamins, ItemID.WarriorEmblem, ItemID.ApprenticeScarf, ItemID.SquireShield, ItemID.HuntressBuckler, ItemID.MonkBelt, ItemID.HerculesBeetle, ItemID.NecromanticScroll, ItemID.PapyrusScarab, ItemID.PygmyNecklace] },
-            { "Construction", [ItemID.Toolbelt, ItemID.Toolbox, ItemID.PaintSprayer, ItemID.ExtendoGrip, ItemID.PortableCementMixer, ItemID.BrickLayer, ItemID.ArchitectGizmoPack, ItemID.ActuationAccessory, ItemID.AncientChisel, ItemID.HandOfCreation] },
-            { "Fishing", [ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.FishingBobber, ItemID.FishingBobberGlowingArgon, ItemID.FishingBobberGlowingKrypton, ItemID.FishingBobberGlowingLava, ItemID.FishingBobberGlowingRainbow, ItemID.FishingBobberGlowingStar, ItemID.FishingBobberGlowingViolet, ItemID.FishingBobberGlowingXenon, ItemID.AnglerTackleBag, ItemID.LavaFishingHook, ItemID.LavaproofTackleBag] },
-            { "Yoyo", [ItemID.WhiteString, ItemID.RedString, ItemID.OrangeString, ItemID.YellowString, ItemID.LimeString, ItemID.GreenString, ItemID.TealString, ItemID.CyanString, ItemID.SkyBlueString, ItemID.BlueString, ItemID.PurpleString, ItemID.VioletString, ItemID.PinkString, ItemID.BlackString, ItemID.BrownString, ItemID.RainbowString, ItemID.BlackCounterweight, ItemID.YellowCounterweight, ItemID.BlueCounterweight, ItemID.RedCounterweight, ItemID.PurpleCounterweight, ItemID.GreenCounterweight, ItemID.YoYoGlove, ItemID.YoyoBag] },
-            { "Misc.", [ItemID.ClothierVoodooDoll, ItemID.CoinRing, ItemID.DiscountCard, ItemID.FlowerBoots, ItemID.GoldRing, ItemID.GreedyRing, ItemID.CordageGuide, ItemID.GuideVoodooDoll, ItemID.JellyfishNecklace, ItemID.LuckyCoin, ItemID.DontStarveShaderItem, ItemID.SpectreGoggles, ItemID.TreasureMagnet] },
-            { "Music Boxes", [ItemID.MusicBox, ItemID.MusicBoxOverworldDay, ItemID.MusicBoxAltOverworldDay, ItemID.MusicBoxNight, ItemID.MusicBoxRain, ItemID.MusicBoxSnow, ItemID.MusicBoxIce, ItemID.MusicBoxDesert, ItemID.MusicBoxOcean, ItemID.MusicBoxOceanAlt, ItemID.MusicBoxSpace, ItemID.MusicBoxSpaceAlt, ItemID.MusicBoxUnderground, ItemID.MusicBoxAltUnderground, ItemID.MusicBoxMushrooms, ItemID.MusicBoxJungle, ItemID.MusicBoxCorruption, ItemID.MusicBoxUndergroundCorruption, ItemID.MusicBoxCrimson, ItemID.MusicBoxOWUndergroundCrimson, ItemID.MusicBoxTheHallow, ItemID.MusicBoxUndergroundHallow, ItemID.MusicBoxHell, ItemID.MusicBoxDungeon, ItemID.MusicBoxTemple, ItemID.MusicBoxBoss1, ItemID.MusicBoxBoss2, ItemID.MusicBoxBoss3, ItemID.MusicBoxBoss4, ItemID.MusicBoxBoss5, ItemID.MusicBoxDeerclops, ItemID.MusicBoxQueenSlime, ItemID.MusicBoxPlantera, ItemID.MusicBoxEmpressOfLight, ItemID.MusicBoxDukeFishron, ItemID.MusicBoxEerie, ItemID.MusicBoxEclipse, ItemID.MusicBoxGoblins, ItemID.MusicBoxPirates, ItemID.MusicBoxMartians, ItemID.MusicBoxPumpkinMoon, ItemID.MusicBoxFrostMoon, ItemID.MusicBoxTowers, ItemID.MusicBoxLunarBoss, ItemID.MusicBoxSandstorm, ItemID.MusicBoxDD2, ItemID.MusicBoxSlimeRain, ItemID.MusicBoxTownDay, ItemID.MusicBoxTownNight, ItemID.MusicBoxWindyDay, ItemID.MusicBoxDayRemix, ItemID.MusicBoxTitleAlt, ItemID.MusicBoxStorm, ItemID.MusicBoxGraveyard, ItemID.MusicBoxUndergroundJungle, ItemID.MusicBoxJungleNight, ItemID.MusicBoxMorningRain, ItemID.MusicBoxConsoleTitle, ItemID.MusicBoxUndergroundDesert, ItemID.MusicBoxOWRain, ItemID.MusicBoxOWDay, ItemID.MusicBoxOWNight, ItemID.MusicBoxOWUnderground, ItemID.MusicBoxOWDesert, ItemID.MusicBoxOWOcean, ItemID.MusicBoxOWMushroom, ItemID.MusicBoxOWDungeon, ItemID.MusicBoxOWSpace, ItemID.MusicBoxOWUnderworld, ItemID.MusicBoxOWSnow, ItemID.MusicBoxOWCorruption, ItemID.MusicBoxOWUndergroundCorruption, ItemID.MusicBoxOWCrimson, ItemID.MusicBoxOWUndergroundCrimson, ItemID.MusicBoxOWUndergroundSnow, ItemID.MusicBoxOWUndergroundHallow, ItemID.MusicBoxOWBloodMoon, ItemID.MusicBoxOWBoss2, ItemID.MusicBoxOWBoss1, ItemID.MusicBoxOWInvasion, ItemID.MusicBoxOWTowers, ItemID.MusicBoxOWMoonLord, ItemID.MusicBoxOWPlantera, ItemID.MusicBoxOWJungle, ItemID.MusicBoxOWWallOfFlesh, ItemID.MusicBoxOWHallow, ItemID.MusicBoxCredits, ItemID.MusicBoxShimmer, ItemID.MusicBoxTitle] },
-            { "Golf Balls", [ItemID.GolfBallDyedBlack, ItemID.GolfBallDyedBlue, ItemID.GolfBallDyedBrown, ItemID.GolfBallDyedCyan, ItemID.GolfBallDyedGreen, ItemID.GolfBallDyedLimeGreen, ItemID.GolfBallDyedOrange, ItemID.GolfBallDyedPink, ItemID.GolfBallDyedPurple, ItemID.GolfBallDyedRed, ItemID.GolfBallDyedSkyBlue, ItemID.GolfBallDyedTeal, ItemID.GolfBallDyedViolet, ItemID.GolfBallDyedYellow] },
-            { "Vanity", [ItemID.JungleRose, ItemID.WinterCape, ItemID.MysteriousCape, ItemID.RedCape, ItemID.PrinceCape, ItemID.CrimsonCloak, ItemID.DiamondRing, ItemID.AngelHalo, ItemID.GingerBeard, ItemID.PartyBalloonAnimal, ItemID.BundleofBalloons, ItemID.FlameWakerBoots, ItemID.CritterShampoo, ItemID.BunnyTail, ItemID.FoxTail, ItemID.DogTail, ItemID.LizardTail, ItemID.UnicornHornHat, ItemID.HunterCloak, ItemID.RoyalScepter, ItemID.GlassSlipper, ItemID.RainbowCursor, ItemID.ShimmerMonolith, ItemID.BloodMoonMonolith, ItemID.VortexMonolith, ItemID.NebulaMonolith, ItemID.StardustMonolith, ItemID.SolarMonolith, ItemID.VoidMonolith]}
-        };
 
         private static readonly Dictionary<string, int[]> Critters = new()
         {
@@ -83,18 +68,17 @@ namespace CollectorAchievements.Systems
             RegisterArmorAchievements(reqs);
             RegisterWeaponAchievements(reqs);
             RegisterToolAchievements(reqs);
-            RegisterWingsAchievements(reqs);
+            RegisterAccessoryAchievements(reqs);
             RegisterMountAchievements(reqs);
             RegisterVanityAchievements(reqs);
             RegisterPetAchievements(reqs);
+            RegisterNoveltyAchievements(reqs);
 
             RegisterPaintingAchievements(reqs);
             RegisterBannerAchievements(reqs);
             
             RegisterExtractAchievements(reqs);
             RegisterFishAchievements(reqs);
-
-            //RegisterAchievement("VANITY_ROSE", TileDropCondition.Drop(reqs, ItemID.JungleRose), AchievementCategory.Collector);
         }
 
         private void RegisterArmorAchievements(ConditionReqs reqs)
@@ -180,7 +164,7 @@ namespace CollectorAchievements.Systems
             Dictionary<string, int[]> ArmorPieces = new()
             {
                 { "ARMOR_WIZARD", [ItemID.MagicHat, ItemID.WizardHat, ItemID.AmethystRobe, ItemID.TopazRobe, ItemID.SapphireRobe, ItemID.EmeraldRobe, ItemID.RubyRobe, ItemID.AmberRobe, ItemID.DiamondRobe, ItemID.GypsyRobe] },
-                { "ARMOR_OTHER", [ItemID.EmptyBucket, ItemID.Goggles, ItemID.GreenCap, ItemID.DivingHelmet, ItemID.NightVisionHelmet, ItemID.VikingHelmet, ItemID.FlinxFurCoat, ItemID.Gi, ItemID.DjinnsCurse] }
+                { "ARMOR_OTHER", [ItemID.EmptyBucket, ItemID.Goggles, ItemID.GreenCap, ItemID.DivingHelmet, ItemID.NightVisionHelmet, ItemID.VikingHelmet, ItemID.FlinxFurCoat, ItemID.Gi, ItemID.DjinnsCurse, ItemID.MoonLordLegs] }
             };
 
             // Rare Sets
@@ -427,18 +411,62 @@ namespace CollectorAchievements.Systems
                 RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
 
-        private void RegisterWingsAchievements(ConditionReqs reqs)
+        private void RegisterAccessoryAchievements(ConditionReqs reqs)
         {
-            // Verified w/ https://terraria.wiki.gg/wiki/Wings
-            int[] Wings = [ItemID.CreativeWings, ItemID.AngelWings, ItemID.DemonWings, ItemID.FairyWings, ItemID.FinWings, ItemID.FrozenWings, ItemID.HarpyWings, ItemID.Jetpack, ItemID.LeafWings, ItemID.BatWings, ItemID.BeeWings, ItemID.ButterflyWings, ItemID.FlameWings, ItemID.Hoverboard, ItemID.BoneWings, ItemID.MothronWings, ItemID.GhostWings, ItemID.BeetleWings, ItemID.FestiveWings, ItemID.SpookyWings, ItemID.TatteredFairyWings, ItemID.SteampunkWings, ItemID.BetsyWings, ItemID.RainbowWings, ItemID.FishronWings, ItemID.WingsNebula, ItemID.WingsVortex, ItemID.WingsSolar, ItemID.WingsStardust];
+            // Verified w/ https://terraria.wiki.gg/wiki/Accessories
+            // Added https://terraria.wiki.gg/wiki/FPV_Goggles to Other
+            Dictionary<string, int[]> Accessories = new()
+            {
+                { "ACCESSORIES_MOVE", [ItemID.Aglet, ItemID.BalloonHorseshoeHoney, ItemID.AmphibianBoots, ItemID.AnkletoftheWind, ItemID.ArcticDivingGear, ItemID.BalloonPufferfish, ItemID.BlizzardinaBalloon, ItemID.BlizzardinaBottle, ItemID.BlueHorseshoeBalloon, ItemID.BundleofBalloons, ItemID.HorseshoeBundle, ItemID.CelestialShell, ItemID.ClimbingClaws, ItemID.CloudinaBalloon, ItemID.CloudinaBottle, ItemID.DivingGear, ItemID.SandBoots, ItemID.FairyBoots, ItemID.FartInABalloon, ItemID.FartinaJar, ItemID.Flipper, ItemID.FlurryBoots, ItemID.FlyingCarpet, ItemID.FrogFlipper, ItemID.FrogGear, ItemID.FrogLeg, ItemID.FrogWebbing, ItemID.FrostsparkBoots, ItemID.BalloonHorseshoeFart, ItemID.HellfireTreads, ItemID.HermesBoots, ItemID.HoneyBalloon, ItemID.IceSkates, ItemID.FloatingTube, ItemID.JellyfishDivingGear, ItemID.LavaCharm, ItemID.LavaWaders, ItemID.LightningBoots, ItemID.LuckyHorseshoe, ItemID.Magiluminescence, ItemID.LavaSkull, ItemID.MasterNinjaGear, ItemID.MoltenCharm, ItemID.MoonCharm, ItemID.MoonShell, ItemID.NeptunesShell, ItemID.ObsidianHorseshoe, ItemID.ObsidianWaterWalkingBoots, ItemID.BalloonHorseshoeSharkron, ItemID.RocketBoots, ItemID.SailfishBoots, ItemID.SandstorminaBalloon, ItemID.SandstorminaBottle, ItemID.SharkronBalloon, ItemID.ShinyRedBalloon, ItemID.ShoeSpikes, ItemID.SpectreBoots, ItemID.PortableStool, ItemID.Tabi, ItemID.TerrasparkBoots, ItemID.TigerClimbingGear, ItemID.TsunamiInABottle, ItemID.WaterWalkingBoots, ItemID.WhiteHorseshoeBalloon, ItemID.YellowHorseshoeBalloon] },
+                { "ACCESSORIES_WINGS", [ItemID.CreativeWings, ItemID.AngelWings, ItemID.DemonWings, ItemID.FairyWings, ItemID.FinWings, ItemID.FrozenWings, ItemID.HarpyWings, ItemID.Jetpack, ItemID.LeafWings, ItemID.BatWings, ItemID.BeeWings, ItemID.ButterflyWings, ItemID.FlameWings, ItemID.Hoverboard, ItemID.BoneWings, ItemID.MothronWings, ItemID.GhostWings, ItemID.BeetleWings, ItemID.FestiveWings, ItemID.SpookyWings, ItemID.TatteredFairyWings, ItemID.SteampunkWings, ItemID.BetsyWings, ItemID.RainbowWings, ItemID.FishronWings, ItemID.WingsNebula, ItemID.WingsVortex, ItemID.WingsSolar, ItemID.WingsStardust] },
+                { "ACCESSORIES_INFO", [ItemID.CopperWatch, ItemID.TinWatch, ItemID.SilverWatch, ItemID.TungstenWatch, ItemID.GoldWatch, ItemID.PlatinumWatch, ItemID.DepthMeter, ItemID.Compass, ItemID.Radar, ItemID.LifeformAnalyzer, ItemID.TallyCounter, ItemID.MetalDetector, ItemID.Stopwatch, ItemID.DPSMeter, ItemID.FishermansGuide, ItemID.WeatherRadio, ItemID.Sextant, ItemID.GPS, ItemID.REK, ItemID.GoblinTech, ItemID.FishFinder, ItemID.PDA, ItemID.MechanicalLens, ItemID.Ruler, ItemID.LaserRuler] },
+                { "ACCESSORIES_HEALTH_MANA", [ItemID.ArcaneFlower, ItemID.BandofRegeneration, ItemID.BandofStarpower, ItemID.CelestialCuffs, ItemID.CelestialMagnet, ItemID.CelestialEmblem, ItemID.CharmofMyths, ItemID.MagicCuffs, ItemID.MagnetFlower, ItemID.ManaCloak, ItemID.ManaFlower, ItemID.ManaRegenerationBand, ItemID.NaturesGift, ItemID.PhilosophersStone] },
+                { "ACCESSORIES_COMBAT", [ItemID.AdhesiveBandage, ItemID.AnkhCharm, ItemID.AnkhShield, ItemID.ArmorBracing, ItemID.ArmorPolish, ItemID.AvengerEmblem, ItemID.BeeCloak, ItemID.BerserkerGlove, ItemID.Bezoar, ItemID.BlackBelt, ItemID.Blindfold, ItemID.CelestialEmblem, ItemID.MoonCharm, ItemID.MoonShell, ItemID.CelestialStone, ItemID.CelestialShell, ItemID.CobaltShield, ItemID.CountercurseMantra, ItemID.CrossNecklace, ItemID.DestroyerEmblem, ItemID.EyeoftheGolem, ItemID.FastClock, ItemID.FeralClaws, ItemID.FireGauntlet, ItemID.FleshKnuckles, ItemID.FrozenTurtleShell, ItemID.FrozenShield, ItemID.HandWarmer, ItemID.HeroShield, ItemID.HoneyComb, ItemID.MagicQuiver, ItemID.MagmaStone, ItemID.MechanicalGlove, ItemID.MedicatedBandage, ItemID.Megaphone, ItemID.MoonStone, ItemID.MoltenQuiver, ItemID.MoltenSkullRose, ItemID.Nazar, ItemID.ObsidianRose, ItemID.ObsidianShield, ItemID.ObsidianSkull, ItemID.ObsidianSkullRose, ItemID.PaladinsShield, ItemID.PanicNecklace, ItemID.PocketMirror, ItemID.PowerGlove, ItemID.PutridScent, ItemID.RangerEmblem, ItemID.ReconScope, ItemID.RifleScope, ItemID.Shackle, ItemID.SharkToothNecklace, ItemID.SniperScope, ItemID.SorcererEmblem, ItemID.StalkersQuiver, ItemID.StarCloak, ItemID.StarVeil, ItemID.StingerNecklace, ItemID.SummonerEmblem, ItemID.SunStone, ItemID.SweetheartNecklace, ItemID.ThePlan, ItemID.TitanGlove, ItemID.TrifoldMap, ItemID.Vitamins, ItemID.WarriorEmblem, ItemID.ApprenticeScarf, ItemID.SquireShield, ItemID.HuntressBuckler, ItemID.MonkBelt, ItemID.HerculesBeetle, ItemID.NecromanticScroll, ItemID.PapyrusScarab, ItemID.PygmyNecklace] },
+                { "ACCESSORIES_CONSTRUCTION", [ItemID.Toolbelt, ItemID.Toolbox, ItemID.PaintSprayer, ItemID.ExtendoGrip, ItemID.PortableCementMixer, ItemID.BrickLayer, ItemID.ArchitectGizmoPack, ItemID.ActuationAccessory, ItemID.AncientChisel, ItemID.HandOfCreation] },
+                { "ACCESSORIES_FISH", [ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.AnglerTackleBag, ItemID.LavaFishingHook, ItemID.LavaproofTackleBag, ItemID.FishingBobber, ItemID.FishingBobberGlowingStar, ItemID.FishingBobberGlowingArgon, ItemID.FishingBobberGlowingKrypton, ItemID.FishingBobberGlowingLava, ItemID.FishingBobberGlowingViolet, ItemID.FishingBobberGlowingXenon, ItemID.FishingBobberGlowingRainbow] },
+                { "ACCESSORIES_YOYO", [ItemID.WhiteString, ItemID.RedString, ItemID.OrangeString, ItemID.YellowString, ItemID.LimeString, ItemID.GreenString, ItemID.TealString, ItemID.CyanString, ItemID.SkyBlueString, ItemID.BlueString, ItemID.PurpleString, ItemID.VioletString, ItemID.PinkString, ItemID.BlackString, ItemID.BrownString, ItemID.RainbowString, ItemID.BlackCounterweight, ItemID.YellowCounterweight, ItemID.BlueCounterweight, ItemID.RedCounterweight, ItemID.PurpleCounterweight, ItemID.GreenCounterweight, ItemID.YoYoGlove, ItemID.YoyoBag] },
+                { "ACCESSORIES_OTHER", [ItemID.ClothierVoodooDoll, ItemID.CoinRing, ItemID.DiscountCard, ItemID.FlowerBoots, ItemID.GoldRing, ItemID.GreedyRing, ItemID.CordageGuide, ItemID.GuideVoodooDoll, ItemID.JellyfishNecklace, ItemID.LuckyCoin, ItemID.DontStarveShaderItem, ItemID.SpectreGoggles, ItemID.TreasureMagnet, ItemID.ShimmerCloak, ItemID.JimsDroneVisor] },
+                { "ACCESSORIES_VANITY", [ItemID.JungleRose, ItemID.WinterCape, ItemID.MysteriousCape, ItemID.RedCape, ItemID.PrinceCape, ItemID.CrimsonCloak, ItemID.DiamondRing, ItemID.AngelHalo, ItemID.GingerBeard, ItemID.PartyBalloonAnimal, ItemID.BundleofBalloons, ItemID.FlameWakerBoots, ItemID.CritterShampoo, ItemID.BunnyTail, ItemID.FoxTail, ItemID.DogTail, ItemID.LizardTail, ItemID.UnicornHornHat, ItemID.HunterCloak, ItemID.RoyalScepter, ItemID.GlassSlipper, ItemID.RainbowCursor, ItemID.ShimmerMonolith, ItemID.BloodMoonMonolith, ItemID.VortexMonolith, ItemID.NebulaMonolith, ItemID.StardustMonolith, ItemID.SolarMonolith, ItemID.VoidMonolith] },
+                { "ACCESSORIES_MUSIC_BOX", [ItemID.MusicBox, ItemID.MusicBoxOverworldDay, ItemID.MusicBoxAltOverworldDay, ItemID.MusicBoxNight, ItemID.MusicBoxRain, ItemID.MusicBoxSnow, ItemID.MusicBoxIce, ItemID.MusicBoxDesert, ItemID.MusicBoxOcean, ItemID.MusicBoxOceanAlt, ItemID.MusicBoxSpace, ItemID.MusicBoxSpaceAlt, ItemID.MusicBoxUnderground, ItemID.MusicBoxAltUnderground, ItemID.MusicBoxMushrooms, ItemID.MusicBoxJungle, ItemID.MusicBoxCorruption, ItemID.MusicBoxUndergroundCorruption, ItemID.MusicBoxCrimson, ItemID.MusicBoxOWUndergroundCrimson, ItemID.MusicBoxTheHallow, ItemID.MusicBoxUndergroundHallow, ItemID.MusicBoxHell, ItemID.MusicBoxDungeon, ItemID.MusicBoxTemple, ItemID.MusicBoxBoss1, ItemID.MusicBoxBoss2, ItemID.MusicBoxBoss3, ItemID.MusicBoxBoss4, ItemID.MusicBoxBoss5, ItemID.MusicBoxDeerclops, ItemID.MusicBoxQueenSlime, ItemID.MusicBoxPlantera, ItemID.MusicBoxEmpressOfLight, ItemID.MusicBoxDukeFishron, ItemID.MusicBoxEerie, ItemID.MusicBoxEclipse, ItemID.MusicBoxGoblins, ItemID.MusicBoxPirates, ItemID.MusicBoxMartians, ItemID.MusicBoxPumpkinMoon, ItemID.MusicBoxFrostMoon, ItemID.MusicBoxTowers, ItemID.MusicBoxLunarBoss, ItemID.MusicBoxSandstorm, ItemID.MusicBoxDD2, ItemID.MusicBoxSlimeRain, ItemID.MusicBoxTownDay, ItemID.MusicBoxTownNight, ItemID.MusicBoxWindyDay, ItemID.MusicBoxStorm, ItemID.MusicBoxGraveyard, ItemID.MusicBoxUndergroundJungle, ItemID.MusicBoxJungleNight, ItemID.MusicBoxMorningRain, ItemID.MusicBoxUndergroundDesert, ItemID.MusicBoxShimmer, ItemID.MusicBoxOWRain, ItemID.MusicBoxOWDay, ItemID.MusicBoxOWNight, ItemID.MusicBoxOWUnderground, ItemID.MusicBoxOWDesert, ItemID.MusicBoxOWOcean, ItemID.MusicBoxOWMushroom, ItemID.MusicBoxOWDungeon, ItemID.MusicBoxOWSpace, ItemID.MusicBoxOWUnderworld, ItemID.MusicBoxOWSnow, ItemID.MusicBoxOWCorruption, ItemID.MusicBoxOWUndergroundCorruption, ItemID.MusicBoxOWCrimson, ItemID.MusicBoxOWUndergroundCrimson, ItemID.MusicBoxOWUndergroundSnow, ItemID.MusicBoxOWUndergroundHallow, ItemID.MusicBoxOWBloodMoon, ItemID.MusicBoxOWBoss2, ItemID.MusicBoxOWBoss1, ItemID.MusicBoxOWInvasion, ItemID.MusicBoxOWTowers, ItemID.MusicBoxOWMoonLord, ItemID.MusicBoxOWPlantera, ItemID.MusicBoxOWJungle, ItemID.MusicBoxOWWallOfFlesh, ItemID.MusicBoxOWHallow, ItemID.MusicBoxDayRemix, ItemID.MusicBoxCredits, ItemID.MusicBoxTitle, ItemID.MusicBoxTitleAlt] },
+                { "ACCESSORIES_GOLF_BALL", [ItemID.GolfBallDyedBlack, ItemID.GolfBallDyedBlue, ItemID.GolfBallDyedBrown, ItemID.GolfBallDyedCyan, ItemID.GolfBallDyedGreen, ItemID.GolfBallDyedLimeGreen, ItemID.GolfBallDyedOrange, ItemID.GolfBallDyedPink, ItemID.GolfBallDyedPurple, ItemID.GolfBallDyedRed, ItemID.GolfBallDyedSkyBlue, ItemID.GolfBallDyedTeal, ItemID.GolfBallDyedViolet, ItemID.GolfBallDyedYellow] },
+            };
 
-            RegisterAchievement("WINGS", ItemGrabCondition.GrabAll(reqs, Wings), true, AchievementCategory.Collector);
+            // Rare Movement
+            RegisterAchievement("ACCESSORY_BALLOON_PUFFERFISH", FishCatchCondition.Catch(reqs, ItemID.BalloonPufferfish), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_FROG_LEG", FishCatchCondition.Catch(reqs, ItemID.FrogLeg), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_MOON_CHARM", NpcDropCondition.Drop(reqs, NPCID.Werewolf, ItemID.MoonCharm), AchievementCategory.Collector);
+            
+            // Rare Wings
+            RegisterAchievement("ACCESSORY_FIN_WINGS", ItemGiftCondition.Gift(reqs, NPCID.Angler, ItemID.FinWings), AchievementCategory.Collector);
+            
+            // Rare Informational
+            RegisterAchievement("ACCESSORY_DEPTH_METER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.DepthMeter), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_COMPASS", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Compass), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_TALLY_COUNTER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.TallyCounter), AchievementCategory.Collector);
+            
+            // Rare Health/Mana
+            RegisterAchievement("ACCESSORY_NATURES_GIFT", TileDropCondition.Drop(reqs, ItemID.NaturesGift), AchievementCategory.Collector);
+            
+            // Rare Combat
+            RegisterAchievement("ACCESSORY_FROZEN_TURTLE_SHELL", NpcDropCondition.Drop(reqs, NPCID.IceTortoise, ItemID.FrozenTurtleShell), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_MAGIC_QUIVER", NpcDropCondition.Drop(reqs, NPCID.SkeletonArcher, ItemID.MagicQuiver), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_SHARK_TOOTH_NECKLACE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.SharkToothNecklace), AchievementCategory.Collector);
+            
+            // Rare Other
+            RegisterAchievement("ACCESSORY_CLOTHIER_VOODOO_DOLL", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.ClothierVoodooDoll), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_JELLYFISH_NECKLACE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.JellyfishNecklace), AchievementCategory.Collector);
+            
+            // Rare Vanity
+            RegisterAchievement("ACCESSORY_JUNGLE_ROSE", TileDropCondition.Drop(reqs, ItemID.JungleRose), AchievementCategory.Collector);
         }
 
         private void RegisterMountAchievements(ConditionReqs reqs)
         {
             // Verified w/ https://terraria.wiki.gg/wiki/Mounts
             int[] Mounts = [ItemID.SlimySaddle, ItemID.HoneyedGoggles, ItemID.HardySaddle, ItemID.FuzzyCarrot, ItemID.PogoStick, ItemID.GolfCart, ItemID.MolluskWhistle, ItemID.PaintedHorseSaddle, ItemID.MajesticHorseSaddle, ItemID.DarkHorseSaddle, ItemID.SuperheatedBlood, ItemID.AncientHorn, ItemID.WolfMountItem, ItemID.BlessedApple, ItemID.ScalyTruffle, ItemID.QueenSlimeMountSaddle, ItemID.ReindeerBells, ItemID.BrainScrambler, ItemID.CosmicCarKey, ItemID.DrillContainmentUnit];
+
+            // Verified w/ https://terraria.wiki.gg/wiki/Minecarts
+            int[] Minecarts = [ItemID.Minecart, ItemID.DesertMinecart, ItemID.FishMinecart, ItemID.BeeMinecart, ItemID.LadybugMinecart, ItemID.PigronMinecart, ItemID.SunflowerMinecart, ItemID.HellMinecart, ItemID.ShroomMinecart, ItemID.AmethystMinecart, ItemID.TopazMinecart, ItemID.SapphireMinecart, ItemID.EmeraldMinecart, ItemID.RubyMinecart, ItemID.DiamondMinecart, ItemID.AmberMinecart, ItemID.BeetleMinecart, ItemID.MeowmereMinecart, ItemID.PartyMinecart, ItemID.PirateMinecart, ItemID.SteampunkMinecart, ItemID.CoffinMinecart, ItemID.DiggingMoleMinecart, ItemID.FartMinecart, ItemID.TerraFartMinecart]
 
             RegisterAchievement("MOUNT_BEE", NpcDropCondition.Drop(reqs, NPCID.QueenBee, ItemID.HoneyedGoggles), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_TURTLE", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.HardySaddle), AchievementCategory.Collector);
@@ -449,8 +477,11 @@ namespace CollectorAchievements.Systems
             RegisterAchievement("MOUNT_PIGRON", FishCatchCondition.Catch(reqs, ItemID.ScalyTruffle), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_RUDOLPH", NpcDropCondition.Drop(reqs, NPCID.IceQueen, ItemID.ReindeerBells), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_DCU", ItemCraftCondition.Craft(reqs, ItemID.DrillContainmentUnit), AchievementCategory.Collector);
-
             RegisterAchievement("MOUNTS", ItemGrabCondition.GrabAll(reqs, Mounts), true, AchievementCategory.Collector);
+
+            RegisterAchievement("MINECART_FISH", ItemGiftCondition.Gift(reqs, NPCID.Angler, ItemID.FishMinecart), AchievementCategory.Collector);
+            RegisterAchievement("MINECART_PIGRON", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.PigronMinecart), AchievementCategory.Collector);
+            RegisterAchievement("MINECARTS", ItemGrabCondition.GrabAll(reqs, Minecarts), true, AchievementCategory.Collector);
         }
 
         private void RegisterVanityAchievements(ConditionReqs reqs)
@@ -637,14 +668,28 @@ namespace CollectorAchievements.Systems
                 RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
 
+        private void RegisterNoveltyAchievements(ConditionReqs reqs)
+        {
+            // Verified w/ https://terraria.wiki.gg/wiki/Template:Novelty_items
+            int[] Novelties = [ItemID.BeachBall, ItemID.BubbleMachine, ItemID.BubbleWand, ItemID.ConfettiCannon, ItemID.ConfettiGun, ItemID.FireworkFountain, ItemID.FireworksBox, ItemID.FogMachine, ItemID.Football, ItemID.PartyMonolith, ItemID.ReleaseDoves, ItemID.ReleaseLantern, ItemID.SillyBalloonMachine, ItemID.SmokeBomb, ItemID.DrumSet, ItemID.DrumStick, ItemID.IvyGuitar, ItemID.KiteBlue, ItemID.KiteBlueAndYellow, ItemID.KiteRed, ItemID.KiteRedAndYellow, ItemID.KiteYellow, ItemID.KiteGoldfish, ItemID.KiteBunny, ItemID.KiteBunnyCorrupt, ItemID.KiteBunnyCrimson, ItemID.KiteManEater, ItemID.KiteJellyfishBlue, ItemID.KiteJellyfishPink, ItemID.KiteShark, ItemID.KiteBoneSerpent, ItemID.KiteWanderingEye, ItemID.KiteUnicorn, ItemID.KiteWorldFeeder, ItemID.KiteSandShark, ItemID.KiteWyvern, ItemID.KitePigron, ItemID.KiteAngryTrapper, ItemID.KiteKoi, ItemID.KiteCrawltipede, ItemID.KiteSpectrum, ItemID.JimsDrone, ItemID.LovePotion, ItemID.PinWheel, ItemID.CarbonGuitar, ItemID.SandcastleBucket, ItemID.SlimeGun, ItemID.GelBalloon, ItemID.StinkPotion, ItemID.UnicornonaStick, ItemID.WaterGun, ItemID.WhoopieCushion];
+
+            RegisterAchievement("NOVELTY_IVY", NpcDropCondition.Drop(reqs, NPCID.Steampunker, ItemID.IvyGuitar), AchievementCategory.Collector);
+            RegisterAchievement("NOVELTY_WYVERN_KITE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.KiteWyvern), AchievementCategory.Collector);
+            RegisterAchievement("NOVELTY_RAIN_SONG", NpcDropCondition.Drop(reqs, NPCID.FlyingFish, ItemID.CarbonGuitar), AchievementCategory.Collector);
+            RegisterAchievement("NOVELTY_UNICORN_ON_A_STICK", NpcDropCondition.Drop(reqs, NPCID.Unicorn, ItemID.UnicornonaStick), AchievementCategory.Collector);
+
+            RegisterAchievement("NOVELTIES", ItemGrabCondition.GrabAll(reqs, Novelties), true, AchievementCategory.Collector);
+        }
+
         private void RegisterBannerAchievements(ConditionReqs reqs)
         {
+            // Verified w/ https://terraria.wiki.gg/wiki/Banners_(enemy)
             Dictionary<string, int[]> Banners = new()
             {
                 { "BANNERS_SLIME", [ItemID.SlimeBanner, ItemID.GreenSlimeBanner, ItemID.PurpleSlimeBanner, ItemID.UmbrellaSlimeBanner, ItemID.RedSlimeBanner, ItemID.YellowSlimeBanner, ItemID.BlackSlimeBanner, ItemID.MotherSlimeBanner, ItemID.DungeonSlimeBanner, ItemID.PinkyBanner, ItemID.JungleSlimeBanner, ItemID.SpikedJungleSlimeBanner, ItemID.IceSlimeBanner, ItemID.SpikedIceSlimeBanner, ItemID.SandSlimeBanner, ItemID.LavaSlimeBanner, ItemID.ShimmerSlimeBanner, ItemID.ToxicSludgeBanner, ItemID.CorruptSlimeBanner, ItemID.SlimerBanner, ItemID.CrimslimeBanner, ItemID.GastropodBanner, ItemID.IlluminantSlimeBanner, ItemID.RainbowSlimeBanner] },
             
                 // Environments
-                { "BANNERS_CAVERN", [ItemID.BatBanner, ItemID.CochinealBeetleBanner, ItemID.CrawdadBanner, ItemID.GiantShellyBanner, ItemID.WormBanner, ItemID.GnomeBanner, ItemID.NypmhBanner, ItemID.SalamanderBanner, ItemID.SkeletonBanner, ItemID.TimBanner, ItemID.UndeadMinerBanner, ItemID.JellyfishBanner, ItemID.ArmoredSkeletonBanner, ItemID.GiantBatBanner, ItemID.MimicBanner, ItemID.RockGolemBanner, ItemID.RuneWizardBanner, ItemID.SkeletonArcherBanner, ItemID.AnglerFishBanner, ItemID.GreenJellyfishBanner] },
+                { "BANNERS_CAVERN", [ItemID.BatBanner, ItemID.CochinealBeetleBanner, ItemID.CrawdadBanner, ItemID.GiantShellyBanner, ItemID.WormBanner, ItemID.NypmhBanner, ItemID.SalamanderBanner, ItemID.SkeletonBanner, ItemID.TimBanner, ItemID.UndeadMinerBanner, ItemID.JellyfishBanner, ItemID.ArmoredSkeletonBanner, ItemID.GiantBatBanner, ItemID.MimicBanner, ItemID.RockGolemBanner, ItemID.RuneWizardBanner, ItemID.SkeletonArcherBanner, ItemID.AnglerFishBanner, ItemID.GreenJellyfishBanner] },
                 { "BANNERS_CORRUPTION", [ItemID.DevourerBanner, ItemID.EaterofSoulsBanner, ItemID.ClingerBanner, ItemID.BigMimicCorruptionBanner, ItemID.CorruptorBanner, ItemID.CursedHammerBanner, ItemID.DarkMummyBanner, ItemID.WorldFeederBanner] },
                 { "BANNERS_CRIMSON", [ItemID.BloodCrawlerBanner, ItemID.CrimeraBanner, ItemID.FaceMonsterBanner, ItemID.BloodFeederBanner, ItemID.BloodJellyBanner, ItemID.BloodMummyBanner, ItemID.CrimsonAxeBanner, ItemID.BigMimicCrimsonBanner, ItemID.FloatyGrossBanner, ItemID.HerplingBanner, ItemID.IchorStickerBanner] },
                 { "BANNERS_DESERT", [ItemID.AntlionBanner, ItemID.WalkingAntlionBanner, ItemID.LarvaeAntlionBanner, ItemID.FlyingAntlionBanner, ItemID.TombCrawlerBanner, ItemID.VultureBanner, ItemID.DesertBasiliskBanner, ItemID.DesertDjinnBanner, ItemID.DuneSplicerBanner, ItemID.DesertGhoulBanner, ItemID.DesertLamiaBanner, ItemID.MummyBanner, ItemID.RavagerScorpionBanner] },
@@ -657,7 +702,7 @@ namespace CollectorAchievements.Systems
                 { "BANNERS_METEORITE", [ItemID.MeteorHeadBanner] },
                 { "BANNERS_SNOW", [ItemID.CyanBeetleBanner, ItemID.IceBatBanner, ItemID.PenguinBanner, ItemID.SnowFlinxBanner, ItemID.UndeadVikingBanner, ItemID.ZombieEskimoBanner, ItemID.ArmoredVikingBanner, ItemID.IceElementalBanner, ItemID.IceTortoiseBanner, ItemID.IcyMermanBanner, ItemID.PigronBanner, ItemID.WolfBanner] },
                 { "BANNERS_SPIDER_CAVE", [ItemID.SpiderBanner, ItemID.BlackRecluseBanner] },
-                { "BANNERS_SURFACE", [ItemID.BirdBanner, ItemID.BunnyBanner, ItemID.GoldfishBanner, ItemID.ZombieBanner, ItemID.DemonEyeBanner, ItemID.GoblinScoutBanner, ItemID.HarpyBanner, ItemID.CrabBanner, ItemID.PinkJellyfishBanner, ItemID.SeaSnailBanner, ItemID.SharkBanner, ItemID.SquidBanner, ItemID.PossessedArmorBanner, ItemID.WanderingEyeBanner, ItemID.WraithBanner, ItemID.WerewolfBanner, ItemID.WyvernBanner] },
+                { "BANNERS_SURFACE", [ItemID.BirdBanner, ItemID.BunnyBanner, ItemID.GoldfishBanner, ItemID.ZombieBanner, ItemID.DemonEyeBanner, ItemID.GoblinScoutBanner, ItemID.GnomeBanner, ItemID.HarpyBanner, ItemID.CrabBanner, ItemID.PinkJellyfishBanner, ItemID.SeaSnailBanner, ItemID.SharkBanner, ItemID.SquidBanner, ItemID.PossessedArmorBanner, ItemID.WanderingEyeBanner, ItemID.WraithBanner, ItemID.WerewolfBanner, ItemID.WyvernBanner] },
                 { "BANNERS_UNDERWORLD", [ItemID.BoneSerpentBanner, ItemID.DemonBanner, ItemID.FireImpBanner, ItemID.HellbatBanner, ItemID.LavaBatBanner, ItemID.RedDevilBanner] },
 
                 // Events
@@ -683,6 +728,7 @@ namespace CollectorAchievements.Systems
 
         private void RegisterPaintingAchievements(ConditionReqs reqs)
         {
+            // Verified w/ https://terraria.wiki.gg/wiki/Paintings
             Dictionary<string, int[]> PaintingsBuy = new()
             {
                 { "PAINTINGS_CLOTHIER", [ItemID.PlacePainting] },
@@ -694,6 +740,8 @@ namespace CollectorAchievements.Systems
                 { "PAINTINGS_TRUFFLE", [ItemID.MySon] },
                 { "PAINTINGS_ZOOLOGIST", [ItemID.TheWerewolf] }
             };
+
+            // Verified w/ https://terraria.wiki.gg/wiki/Paintings
             Dictionary<string, int[]> PaintingsArea = new()
             {
                 { "PAINTINGS_DUNGEON", [ItemID.BloodMoonRising, ItemID.BoneWarp, ItemID.TheCreationoftheGuide, ItemID.TheCursedMan, ItemID.TheDestroyer, ItemID.Dryadisque, ItemID.TheEyeSeestheEnd, ItemID.FacingtheCerebralMastermind, ItemID.GloryoftheFire, ItemID.GoblinsPlayingPoker, ItemID.GreatWave, ItemID.TheGuardiansGaze, ItemID.TheHangedMan, ItemID.Impact, ItemID.ThePersistencyofEyes, ItemID.PoweredbyBirds, ItemID.TheScreamer, ItemID.SkellingtonJSkellingsworth, ItemID.SparkyPainting, ItemID.SomethingEvilisWatchingYou, ItemID.StarryNight, ItemID.TrioSuperHeroes, ItemID.TheTwinsHaveAwoken, ItemID.UnicornCrossingtheHallows, ItemID.RemnantsofDevotion] },
@@ -703,6 +751,8 @@ namespace CollectorAchievements.Systems
                 { "PAINTINGS_UNDERGROUND_CABINS_DESERT", [ItemID.AndrewSphinx, ItemID.WatchfulAntlion, ItemID.BurningSpirit, ItemID.JawsOfDeath, ItemID.TheSandsOfSlime, ItemID.SnakesIHateSnakes, ItemID.LifeAboveTheSand, ItemID.Oasis, ItemID.PrehistoryPreserved, ItemID.AncientTablet, ItemID.Uluru, ItemID.VisitingThePyramids, ItemID.BandageBoy, ItemID.DivineEye] },
                 { "PAINTINGS_UNDERWORLD", [ItemID.DarkSoulReaper, ItemID.Darkness, ItemID.DemonsEye, ItemID.FlowingMagma, ItemID.HandEarth, ItemID.ImpFace, ItemID.LakeofFire, ItemID.LivingGore, ItemID.OminousPresence, ItemID.ShiningMoon, ItemID.Skelehead, ItemID.TrappedGhost] }
             };
+
+            // Verified w/ https://terraria.wiki.gg/wiki/Paintings
             int[] PaintingsFishing = [ItemID.DreadoftheRedSea, ItemID.LadyOfTheLake];
             int[] PaintingsAnglerRewards = [ItemID.PillaginMePixels, ItemID.CouchGag, ItemID.Crustography, ItemID.Fangs, ItemID.NotSoLostInParadise, ItemID.SilentFish, ItemID.TheDuke, ItemID.WhatLurksBelow];
             int[] PaintingsGoodieBags = [ItemID.BitterHarvest, ItemID.BloodMoonCountess, ItemID.HallowsEve, ItemID.JackingSkeletron, ItemID.MorbidCuriosity];
