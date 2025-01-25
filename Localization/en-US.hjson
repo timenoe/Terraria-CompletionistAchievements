@@ -1,138 +1,552 @@
 Achievements: {
-	COLLECTOR_BANNERS_SLIME_Name: Slime Slayer
-	COLLECTOR_BANNERS_SLIME_Description: Obtain all 24 Slime banners.
-	COLLECTOR_BANNERS_CAVERN_Name: Cavern Slayer
-	COLLECTOR_BANNERS_CAVERN_Description: Obtain all 20 Cavern enemy banners.
-	COLLECTOR_BANNERS_CORRUPTION_Name: Corruption Slayer
-	COLLECTOR_BANNERS_CORRUPTION_Description: Obtain all 8 Corruption enemy banners.
-	COLLECTOR_BANNERS_CRIMSON_Name: Crimson Slayer
-	COLLECTOR_BANNERS_CRIMSON_Description: Obtain all 11 Crimson enemy banners.
-	COLLECTOR_BANNERS_DESERT_Name: Desert Slayer
-	COLLECTOR_BANNERS_DESERT_Description: Obtain all 13 Desert enemy banners.
-	COLLECTOR_BANNERS_DUNGEON_Name: Dungeon Slayer
-	COLLECTOR_BANNERS_DUNGEON_Description: Obtain all 16 Dungeon enemy banners.
-	COLLECTOR_BANNERS_GLOWING_MUSHROOM_Name: Glowing Mushroom Slayer
-	COLLECTOR_BANNERS_GLOWING_MUSHROOM_Description: Obtain all 7 Glowing Mushroom enemy banners.
-	COLLECTOR_BANNERS_GRANITE_CAVE_Name: Granite Cave Slayer
-	COLLECTOR_BANNERS_GRANITE_CAVE_Description: Obtain both Granite Cave enemy banners.
-	COLLECTOR_BANNERS_HALLOW_Name: The Hallow Slayer
-	COLLECTOR_BANNERS_HALLOW_Description: Obtain all 7 The Hallow enemy banners.
-	COLLECTOR_BANNERS_JUNGLE_Name: Jungle Slayer
-	COLLECTOR_BANNERS_JUNGLE_Description: Obtain all 17 Jungle enemy banners.
-	COLLECTOR_BANNERS_MARBLE_CAVE_Name: Marble Cave Slayer
-	COLLECTOR_BANNERS_MARBLE_CAVE_Description: Obtain both Marble Cave enemy banners.
-	COLLECTOR_BANNERS_METEORITE_Name: Meteorite Slayer
-	COLLECTOR_BANNERS_METEORITE_Description: Obtain the Meteorite enemy banner.
-	COLLECTOR_BANNERS_SNOW_Name: Snow Slayer
-	COLLECTOR_BANNERS_SNOW_Description: Obtain all 12 Snow enemy banners.
-	COLLECTOR_BANNERS_SPIDER_CAVE_Name: Spider Cave Slayer
-	COLLECTOR_BANNERS_SPIDER_CAVE_Description: Obtain both Spider Cave enemy banners.
-	COLLECTOR_BANNERS_SURFACE_Name: Surface Slayer
-	COLLECTOR_BANNERS_SURFACE_Description: Obtain all 17 Surface enemy banners.
-	COLLECTOR_BANNERS_UNDERWORLD_Name: Underworld Slayer
-	COLLECTOR_BANNERS_UNDERWORLD_Description: Obtain all 6 Underworld enemy banners.
-	COLLECTOR_BANNERS_BLOOD_MOON_Name: Blood Moon Slayer
-	COLLECTOR_BANNERS_BLOOD_MOON_Description: Obtain all 17 Blood Moon enemy banners.
-	COLLECTOR_BANNERS_FROST_LEGION_Name: Frost Legion Slayer
-	COLLECTOR_BANNERS_FROST_LEGION_Description: Obtain all 3 Frost Legion enemy banners.
-	COLLECTOR_BANNERS_FROST_MOON_Name: Frost Moon Slayer
-	COLLECTOR_BANNERS_FROST_MOON_Description: Obtain all 9 Frost Moon enemy banners.
-	COLLECTOR_BANNERS_GOBLIN_ARMY_Name: Goblin Army Slayer
-	COLLECTOR_BANNERS_GOBLIN_ARMY_Description: Obtain all 6 Goblin Army enemy banners.
-	COLLECTOR_BANNERS_HALLOWEEN_Name: Halloween Slayer
-	COLLECTOR_BANNERS_HALLOWEEN_Description: Obtain all 3 Halloween enemy banners.
-	COLLECTOR_BANNERS_LUNAR_EVENTS_Name: Lunar Events Slayer
-	COLLECTOR_BANNERS_LUNAR_EVENTS_Description: Obtain all 23 Lunar Events enemy banners.
-	COLLECTOR_BANNERS_MARTIAN_MADNESS_Name: Martian Madness Slayer
-	COLLECTOR_BANNERS_MARTIAN_MADNESS_Description: Obtain all 11 Martian Madness enemy banners.
-	COLLECTOR_BANNERS_OLD_ONES_ARMY_Name: Old One's Army Slayer
-	COLLECTOR_BANNERS_OLD_ONES_ARMY_Description: Obtain all 10 Old One's Army enemy banners.
-	COLLECTOR_BANNERS_PIRATE_INVASION_Name: Pirate Invasion Slayer
-	COLLECTOR_BANNERS_PIRATE_INVASION_Description: Obtain all 6 Pirate Invasion enemy banners.
-	COLLECTOR_BANNERS_PUMPKIN_MOON_Name: Pumpkin Moon Slayer
-	COLLECTOR_BANNERS_PUMPKIN_MOON_Description: Obtain all 5 Pumpkin Moon enemy banners.
-	COLLECTOR_BANNERS_RAIN_BLIZZARD_Name: Rain & Blizzard Slayer
-	COLLECTOR_BANNERS_RAIN_BLIZZARD_Description: Obtain all 4 Rain/Blizzard enemy banners.
-	COLLECTOR_BANNERS_SANDSTORM_Name: Sandstorm Slayer
-	COLLECTOR_BANNERS_SANDSTORM_Description: Obtain all 6 Sandstorm enemy banners.
-	COLLECTOR_BANNERS_SOLAR_ECLIPSE_Name: Solar Eclipse Slayer
-	COLLECTOR_BANNERS_SOLAR_ECLIPSE_Description: Obtain all 14 Solar Eclipse enemy banners.
-	COLLECTOR_BANNERS_WINDY_DAY_Name: Windy Day Slayer
-	COLLECTOR_BANNERS_WINDY_DAY_Description: Obtain the Windy Day enemy banner.
-	COLLECTOR_MOUNT_TURTLE_Name: Slow and Steady
-	COLLECTOR_MOUNT_TURTLE_Description: Obtain a Hardy Saddle from a Golden/Titanium Crate.
-	COLLECTOR_MOUNT_GOLF_Name: Retirement Ready
-	COLLECTOR_MOUNT_GOLF_Description: Buy a set of Golf Cart Keys from the Golfer.
-	COLLECTOR_MOUNT_SHARK_Name: Bloody Hell!
-	COLLECTOR_MOUNT_SHARK_Description: Obtain a vial of Superheated Blood from an Obsidian/Hellstone Crate.
-	COLLECTOR_MOUNT_BASILISK_Name: Chaos Charge
-	COLLECTOR_MOUNT_BASILISK_Description: Obtain an Ancient Horn from a Basilisk.
-	COLLECTOR_MOUNT_UNICORN_Name: Rainbow Rider
-	COLLECTOR_MOUNT_UNICORN_Description: Obtain a Blessed Apple from The Hallow enemies.
-	COLLECTOR_MOUNT_PIGRON_Name: Now You See Me...
-	COLLECTOR_MOUNT_PIGRON_Description: Catch a Scaly Truffle while fishing.
-	COLLECTOR_MOUNT_SCUTLIX_Name: Scutlix Tamer
-	COLLECTOR_MOUNT_SCUTLIX_Description: Obtain a Brain Scrambler from a Scutlix Gunner.
-	COLLECTOR_MOUNT_DCU_Name: Terraforming
-	COLLECTOR_MOUNT_DCU_Description: Craft a Drill Containment Unit.
-	COLLECTOR_MOUNTS_Name: Trusty Steeds
-	COLLECTOR_MOUNTS_Description: Obtain all 19 Mounts.
-	COLLECTOR_PET_DINO_Name: De-extinction
-	COLLECTOR_PET_DINO_Description: Extract an Amber Mosquito from Desert Fossil.
-	COLLECTOR_PET_SKELETRON_Name: You SHALL Pass!
-	COLLECTOR_PET_SKELETRON_Description: Obtain a Bone Key from the Dungeon Guardian.
-	COLLECTOR_PET_SNOWMAN_Name: Sleigh Ride Together With You
-	COLLECTOR_PET_SNOWMAN_Description: Obtain a Toy Sled from an Ice Mimic.
-	COLLECTOR_PET_CAT_Name: Tim's Pet Cat
-	COLLECTOR_PET_CAT_Description: Obtain a ball of Unlucky Yarn from a Goodie Bag.
-	COLLECTOR_PET_CAVELING_Name: Keeper of the Core
-	COLLECTOR_PET_CAVELING_Description: Obtain a Glow Tulip in the Underground or Cavern layers.
-	COLLECTOR_PET_GLOMMER_Name: Fuzzy and Slimy
-	COLLECTOR_PET_GLOMMER_Description: Obtain a Glommer's Flower from a Derpling.
-	COLLECTOR_PET_JUNIMO_Name: Keeper of the Forest
-	COLLECTOR_PET_JUNIMO_Description: Obtain a Stardrop from a purified Joja Cola.
-	COLLECTOR_PET_LIZARD_Name: Chillin’ Like a Reptilian
-	COLLECTOR_PET_LIZARD_Description: Obtain a Lizard Egg from a Lihzahrd or a Flying Snake.
-	COLLECTOR_PET_PIG_Name: Walking Back Bacon!
-	COLLECTOR_PET_PIG_Description: Obtain some Monster Meat from a Corruption/Crimson enemy.
-	COLLECTOR_PET_PUPPY_Name: Puppy Love
-	COLLECTOR_PET_PUPPY_Description: Obtain a Dog Whistle from a Present.
-	COLLECTOR_PET_SPIFFO_Name: Plushie PAWS
-	COLLECTOR_PET_SPIFFO_Description: Obtain a Spiffo Plush from a Zombie.
-	COLLECTOR_PET_SQUASHLING_Name: Plentiful Harvest
-	COLLECTOR_PET_SQUASHLING_Description: Obtain a Magical Pumpkin Seed from a fully-grown Pumpkin during Halloween.
-	COLLECTOR_PET_GLIDER_Name: Sugar Rush
-	COLLECTOR_PET_GLIDER_Description: Obtain some Eucalyptus Sap after shaking a Tree.
-	COLLECTOR_PET_DIRT_Name: Dirt is Dirty
-	COLLECTOR_PET_DIRT_Description: Obtain The Dirtiest Block while digging.
-	COLLECTOR_PET_ZEPHYR_Name: The Gentle West Wind
-	COLLECTOR_PET_ZEPHYR_Description: Catch a Zephyr Fish while fishing.
-	COLLECTOR_PET_WISP_Name: Will-O’-The-Wisp
-	COLLECTOR_PET_WISP_Description: Obtain a Wisp in a Bottle from Armored Bones enemies.
-	COLLECTOR_PETS_NORMAL_Name: Animal Whisperer
-	COLLECTOR_PETS_NORMAL_Description: Obtain all 47 Pets.
-	COLLECTOR_PETS_LIGHT_Name: Bright Buddies
-	COLLECTOR_PETS_LIGHT_Description: Obtain all 6 Light Pets.
-	COLLECTOR_WINGS_Name: Free Bird
-	COLLECTOR_WINGS_Description: Obtain all 29 Wings.
-	COLLECTOR_EXTRACT_SILT_SLUSH_Name: Panning for Gold
-	COLLECTOR_EXTRACT_SILT_SLUSH_Description: Extract all 26 items from Silt/Slush Blocks.
-	COLLECTOR_EXTRACT_FOSSIL_Name: Fossil Fuel
-	COLLECTOR_EXTRACT_FOSSIL_Description: Extract all 27 items from Desert Fossil.
-	COLLECTOR_EXTRACT_MOSS_Name: Horticulture
-	COLLECTOR_EXTRACT_MOSS_Description: Extract all 10 items from glowing Moss.
-	COLLECTOR_EXTRACT_JUNK_Name: ...Another Man's Treasure
-	COLLECTOR_EXTRACT_JUNK_Description: Extract all 4 items from pieces of junk.
-	COLLECTOR_FISH_CATCH_FISH_Name: Level 99 Fishing
-	COLLECTOR_FISH_CATCH_FISH_Description: Catch all 30 fish while fishing.
-	COLLECTOR_FISH_CATCH_FISH_QUEST_Name: Motley Crew
-	COLLECTOR_FISH_CATCH_FISH_QUEST_Description: Catch all 41 quest fish while fishing.
-	COLLECTOR_FISH_CATCH_CRATE_Name: Sunken Treasure
-	COLLECTOR_FISH_CATCH_CRATE_Description: Catch all 26 Crates while fishing.
-	COLLECTOR_FISH_CATCH_ITEM_Name: Aquatic Artifacts
-	COLLECTOR_FISH_CATCH_ITEM_Description: Catch all 22 usable items while fishing.
-	COLLECTOR_FISH_CATCH_JUNK_Name: One Man's Trash...
-	COLLECTOR_FISH_CATCH_JUNK_Description: Catch all 4 pieces of junk while fishing.
-	COLLECTOR_FISH_REWARDS_Name: Angler Allowance
-	COLLECTOR_FISH_REWARDS_Description: Obtain all x quest rewards from the Angler.
+	COMPLETIONIST_Name_Name: Title
+	COMPLETIONIST_Name_Description: Description
+	COMPLETIONIST_STAT_ITEMS_Name: Personal Development
+	COMPLETIONIST_STAT_ITEMS_Description: Use all 14 stat-boosting items.
+	COMPLETIONIST_WEAPON_BAT_BAT_Name: Bat Some Bats
+	COMPLETIONIST_WEAPON_BAT_BAT_Description: Obtain a Bat Bat from a bat enemy.
+	COMPLETIONIST_WEAPON_BEAM_SWORD_Name: Fully Energized
+	COMPLETIONIST_WEAPON_BEAM_SWORD_Description: Obtain a Beam Sword from an Armored Skeleton.
+	COMPLETIONIST_WEAPON_BLADED_GLOVE_Name: Get Shredded
+	COMPLETIONIST_WEAPON_BLADED_GLOVE_Description: Obtain a Bladed Glove from an enemy during Halloween.
+	COMPLETIONIST_WEAPON_BLADETONGUE_Name: Oculus Reaver
+	COMPLETIONIST_WEAPON_BLADETONGUE_Description: Obtain a Bladetongue while fishing in the Crimson.
+	COMPLETIONIST_WEAPON_BONE_SWORD_Name: Calcium Carver
+	COMPLETIONIST_WEAPON_BONE_SWORD_Description: Obtain a Bone Sword from a Skeleton enemy.
+	COMPLETIONIST_WEAPON_EXOTIC_SCIMITAR_Name: Persian Parry
+	COMPLETIONIST_WEAPON_EXOTIC_SCIMITAR_Description: Obtain an Exotic Scimitar from the Dye Trader.
+	COMPLETIONIST_WEAPON_GLADIUS_Name: Are You Not Entertained?
+	COMPLETIONIST_WEAPON_GLADIUS_Description: Obtain a Gladius from a Hoplite.
+	COMPLETIONIST_WEAPON_MANDIBLE_BLADE_Name: Big Meaty Jaws
+	COMPLETIONIST_WEAPON_MANDIBLE_BLADE_Description: Obtain a Mandible Blade from an antlion enemy.
+	COMPLETIONIST_WEAPON_STYLISH_SCISSORS_Name: Scissor Blades
+	COMPLETIONIST_WEAPON_STYLISH_SCISSORS_Description: Obtain some Stylish Scissors from the Stylist.
+	COMPLETIONIST_WEAPON_ZOMBIE_ARM_Name: Need a Hand?
+	COMPLETIONIST_WEAPON_ZOMBIE_ARM_Description: Obtain a Zombie Arm from a zombie enemy.
+	COMPLETIONIST_WEAPON_CLASSY_CANE_Name: Tax Enforcer
+	COMPLETIONIST_WEAPON_CLASSY_CANE_Description: Obtain a Classy Cane from the Tax Collector.
+	COMPLETIONIST_WEAPON_ICE_SICKLE_Name: Icy Kiss of Death
+	COMPLETIONIST_WEAPON_ICE_SICKLE_Description: Obtain an Ice Sickle from a Snow/Ice enemy.
+	COMPLETIONIST_WEAPON_KEYBRAND_Name: My Friends Are My Power!
+	COMPLETIONIST_WEAPON_KEYBRAND_Description: Obtain a Keybrand from a Dungeon enemy.
+	COMPLETIONIST_WEAPON_CASCADE_Name: One Lava Drop
+	COMPLETIONIST_WEAPON_CASCADE_Description: Obtain a Cascade from an Underworld enemy.
+	COMPLETIONIST_WEAPON_AMAROK_Name: One Snow Drop
+	COMPLETIONIST_WEAPON_AMAROK_Description: Obtain an Amarok from a Snow enemy.
+	COMPLETIONIST_WEAPON_HELFIRE_Name: One Fire Drop
+	COMPLETIONIST_WEAPON_HELFIRE_Description: Obtain a Hel-Fire from a Cavern/Underworld enemy.
+	COMPLETIONIST_WEAPON_KRAKEN_Name: One Dungeon Drop
+	COMPLETIONIST_WEAPON_KRAKEN_Description: Obtain a Kraken from a Dungeon enemy.
+	COMPLETIONIST_WEAPON_YELETS_Name: One Jungle Drop
+	COMPLETIONIST_WEAPON_YELETS_Description: Obtain a Yelets from a Jungle enemy.
+	COMPLETIONIST_WEAPON_OBSIDIAN_SWORDFISH_Name: Yeouch!!
+	COMPLETIONIST_WEAPON_OBSIDIAN_SWORDFISH_Description: Obtain an Obsidian Swordfish while fishing in the Underworld.
+	COMPLETIONIST_WEAPON_BLOODY_MACHETE_Name: Friday the 13th
+	COMPLETIONIST_WEAPON_BLOODY_MACHETE_Description: Obtain a Bloody Machete from an enemy during Halloween.
+	COMPLETIONIST_WEAPON_COMBAT_WRENCH_Name: Blue-Collar Buster
+	COMPLETIONIST_WEAPON_COMBAT_WRENCH_Description: Obtain a Combat Wrench from the Mechanic.
+	COMPLETIONIST_WEAPON_SHROOMERANG_Name: Spore Distribution
+	COMPLETIONIST_WEAPON_SHROOMERANG_Description: Obtain a Shroomerang from a Spore Bat.
+	COMPLETIONIST_WEAPON_BANANARANG_Name: Ring Ring
+	COMPLETIONIST_WEAPON_BANANARANG_Description: Obtain a Bananarang from a Clown.
+	COMPLETIONIST_WEAPON_PALADINS_HAMMER_Name: Paladin Pounder
+	COMPLETIONIST_WEAPON_PALADINS_HAMMER_Description: Obtain a Paladin's Hammer from a Paladin.
+	COMPLETIONIST_WEAPON_CHAIN_KNIFE_Name: Rope Dart
+	COMPLETIONIST_WEAPON_CHAIN_KNIFE_Description: Obtain a Chain Knife from a Cave Bat.
+	COMPLETIONIST_WEAPON_DRIPPER_CRIPPLER_Name: I Got My Eyes on You
+	COMPLETIONIST_WEAPON_DRIPPER_CRIPPLER_Description: Obtain a Dripper Crippler from a Blood Eel.
+	COMPLETIONIST_WEAPON_TERRAGRIM_Name: Blessed Wind
+	COMPLETIONIST_WEAPON_TERRAGRIM_Description: Obtain a Terragrim from an Enchanted Sword Shrine.
+	COMPLETIONIST_WEAPON_MELEE_SWORD_Name: Terra Blade Chronicles
+	COMPLETIONIST_WEAPON_MELEE_SWORD_Description: Obtain all 100 swords.
+	COMPLETIONIST_WEAPON_MELEE_YOYO_Name: Just One Drop
+	COMPLETIONIST_WEAPON_MELEE_YOYO_Description: Obtain all 19 yoyos.
+	COMPLETIONIST_WEAPON_MELEE_SPEAR_Name: Power of Odin
+	COMPLETIONIST_WEAPON_MELEE_SPEAR_Description: Obtain all 18 spears.
+	COMPLETIONIST_WEAPON_MELEE_BOOMERANG_Name: Round Trip
+	COMPLETIONIST_WEAPON_MELEE_BOOMERANG_Description: Obtain all 16 boomerangs.
+	COMPLETIONIST_WEAPON_MELEE_FLAIL_Name: Berserker
+	COMPLETIONIST_WEAPON_MELEE_FLAIL_Description: Obtain all 15 flails.
+	COMPLETIONIST_WEAPON_MELEE_OTHER_Name: Ultimate Weapon
+	COMPLETIONIST_WEAPON_MELEE_OTHER_Description: Obtain all 13 miscellaneous melee weapons.
+	COMPLETIONIST_WEAPON_BLOOD_RAIN_BOW_Name: Reign in Blood
+	COMPLETIONIST_WEAPON_BLOOD_RAIN_BOW_Description: Obtain a Blood Rain Bow from a Blood Moon enemy.
+	COMPLETIONIST_WEAPON_MARROW_Name: Bone Marrow
+	COMPLETIONIST_WEAPON_MARROW_Description: Obtain a Marrow from a Skeleton Archer.
+	COMPLETIONIST_WEAPON_RED_RYDER_Name: You'll Shoot Your Eye Out Kid
+	COMPLETIONIST_WEAPON_RED_RYDER_Description: Obtain a Red Ryder from a Present.
+	COMPLETIONIST_WEAPON_UZI_Name: Angrier Trapper
+	COMPLETIONIST_WEAPON_UZI_Description: Obtain an Uzi from an Angry Trapper.
+	COMPLETIONIST_WEAPON_ALE_TOSSER_Name: Bar Fight
+	COMPLETIONIST_WEAPON_ALE_TOSSER_Description: Obtain an Ale Tosser from the Tavernkeep.
+	COMPLETIONIST_WEAPON_PAINTBALL_GUN_Name: Weaponized Art
+	COMPLETIONIST_WEAPON_PAINTBALL_GUN_Description: Obtain a Paintball Gun from the Painter.
+	COMPLETIONIST_WEAPON_COIN_GUN_Name: Wasting Tax Dollars
+	COMPLETIONIST_WEAPON_COIN_GUN_Description: Obtain a Coin Gun from a Pirate Invasion enemy.
+	COMPLETIONIST_WEAPON_TOXIKARP_Name: Dirty Bubble
+	COMPLETIONIST_WEAPON_TOXIKARP_Description: Catch a Toxikarp while fishing in the Corruption.
+	COMPLETIONIST_WEAPON_RANGED_BOW_Name: Sharpshooter
+	COMPLETIONIST_WEAPON_RANGED_BOW_Description: Obtain all 32 bows.
+	COMPLETIONIST_WEAPON_RANGED_REPEATER_Name: Pew Pew
+	COMPLETIONIST_WEAPON_RANGED_REPEATER_Description: Obtain all 9 repeaters.
+	COMPLETIONIST_WEAPON_RANGED_GUN_Name: Say Hello to My Little Friend
+	COMPLETIONIST_WEAPON_RANGED_GUN_Description: Obtain all 25 guns.
+	COMPLETIONIST_WEAPON_RANGED_LAUNCHER_Name: The Big Bang
+	COMPLETIONIST_WEAPON_RANGED_LAUNCHER_Description: Obtain all 10 launchers.
+	COMPLETIONIST_WEAPON_RANGED_CONSUMABLE_Name: Breach and Clear
+	COMPLETIONIST_WEAPON_RANGED_CONSUMABLE_Description: Obtain all 20 types of consumable ranged weapons.
+	COMPLETIONIST_WEAPON_RANGED_OTHER_Name: Hobby Project
+	COMPLETIONIST_WEAPON_RANGED_OTHER_Description: Obtain all 16 miscellaneous ranged weapons.
+	COMPLETIONIST_WEAPON_CRYSTAL_SERPENT_Name: Crystal Crowd Control
+	COMPLETIONIST_WEAPON_CRYSTAL_SERPENT_Description: Catch a Crystal Serpent while fishing in the Hallow.
+	COMPLETIONIST_WEAPON_FROST_STAFF_Name: Frostbite Flurry
+	COMPLETIONIST_WEAPON_FROST_STAFF_Description: Obtain a Frost Staff from a Snow/Ice enemy.
+	COMPLETIONIST_WEAPON_POISON_STAFF_Name: Recluse Retribution
+	COMPLETIONIST_WEAPON_POISON_STAFF_Description: Obtain a Poison Staff from a Black Recluse.
+	COMPLETIONIST_WEAPON_RESONANCE_SCEPTER_Name: Claim the Throne
+	COMPLETIONIST_WEAPON_RESONANCE_SCEPTER_Description: Obtain a Resonance Scepter from the Princess.
+	COMPLETIONIST_WEAPON_UNHOLY_TRIDENT_Name: Fallen Angel Artifact
+	COMPLETIONIST_WEAPON_UNHOLY_TRIDENT_Description: Obtain an Unholy Trident from a Red Devil.
+	COMPLETIONIST_WEAPON_DEMON_SCYTHE_Name: Trade Offer
+	COMPLETIONIST_WEAPON_DEMON_SCYTHE_Description: Obtain a Demon Scythe from a Demon.
+	COMPLETIONIST_WEAPON_WATER_BOLT_Name: Book Worm
+	COMPLETIONIST_WEAPON_WATER_BOLT_Description: Obtain a Water Bolt from a Dungeon bookshelf.
+	COMPLETIONIST_WEAPON_BLOOD_THORN_Name: Forbidden Magic
+	COMPLETIONIST_WEAPON_BLOOD_THORN_Description: Obtain a Blood Thorn from a Hemogoblin Shark.
+	COMPLETIONIST_WEAPON_MEDUSA_HEAD_Name: Stony Gaze
+	COMPLETIONIST_WEAPON_MEDUSA_HEAD_Description: Obtain a Medusa Head from a Medusa.
+	COMPLETIONIST_WEAPON_NIMBUS_ROD_Name: Storm Chaser
+	COMPLETIONIST_WEAPON_NIMBUS_ROD_Description: Obtain a Nimbus Rod from an Angry Nimbus.
+	COMPLETIONIST_WEAPON_STELLAR_TUNE_Name: Pop Star
+	COMPLETIONIST_WEAPON_STELLAR_TUNE_Description: Obtain a Stellar Tune from the Empress of Light.
+	COMPLETIONIST_WEAPON_MAGIC_WAND_Name: Terry Potter
+	COMPLETIONIST_WEAPON_MAGIC_WAND_Description: Obtain all 38 wands.
+	COMPLETIONIST_WEAPON_MAGIC_GUN_Name: Laser Tag
+	COMPLETIONIST_WEAPON_MAGIC_GUN_Description: Obtain all 12 magic guns
+	COMPLETIONIST_WEAPON_MAGIC_BOOK_Name: Ancient Grimoires
+	COMPLETIONIST_WEAPON_MAGIC_BOOK_Description: Obtain all 9 spell books.
+	COMPLETIONIST_WEAPON_MAGIC_OTHER_Name: Magical Artifacts
+	COMPLETIONIST_WEAPON_MAGIC_OTHER_Description: Obtain all 16 miscellaneous magic weapons.
+	COMPLETIONIST_WEAPON_ABIGAILS_FLOWER_Name: Guardian Ghost
+	COMPLETIONIST_WEAPON_ABIGAILS_FLOWER_Description: Obtain an Abigail's Flower near a Tombstone.
+	COMPLETIONIST_WEAPON_SLIME_STAFF_Name: Bouncy Buddy
+	COMPLETIONIST_WEAPON_SLIME_STAFF_Description: Obtain a Slime Staff from a slime enemy.
+	COMPLETIONIST_WEAPON_VAMPIRE_FROG_STAFF_Name: Vampyrius Vampyrus
+	COMPLETIONIST_WEAPON_VAMPIRE_FROG_STAFF_Description: Obtain a Vampire Frog Staff from a Blood Moon enemy.
+	COMPLETIONIST_WEAPON_PIRATE_STAFF_Name: Pixel Piracy
+	COMPLETIONIST_WEAPON_PIRATE_STAFF_Description: Obtain a Pirate Staff from a Pirate Invasion enemy.
+	COMPLETIONIST_WEAPON_SANGUINE_STAFF_Name: Blood Red Bats
+	COMPLETIONIST_WEAPON_SANGUINE_STAFF_Description: Obtain a Sanguine Staff from a Dreadnautilus
+	COMPLETIONIST_WEAPON_TERRAPRISMA_Name: Warrior of Light
+	COMPLETIONIST_WEAPON_TERRAPRISMA_Description: Obtain a Terraprisma from the Empress of Light during the day.
+	COMPLETIONIST_WEAPON_MORNING_STAR_Name: Vampire Killer
+	COMPLETIONIST_WEAPON_MORNING_STAR_Description: Obtain a Morning Star from an Armored Bones enemy.
+	COMPLETIONIST_WEAPON_SUMMON_MINION_Name: Offensive Line
+	COMPLETIONIST_WEAPON_SUMMON_MINION_Description: Obtain all 21 minion-summoning weapons.
+	COMPLETIONIST_WEAPON_SUMMON_SENTRY_Name: Defensive Line
+	COMPLETIONIST_WEAPON_SUMMON_SENTRY_Description: Obtain all 17 sentry-summoning weapons.
+	COMPLETIONIST_WEAPON_SUMMON_WHIP_Name: Beastmaster
+	COMPLETIONIST_WEAPON_SUMMON_WHIP_Description: Obtain all 9 whips.
+	COMPLETIONIST_WEAPON_OTHER_PLACEABLE_Name: 3...2...1...Fire!
+	COMPLETIONIST_WEAPON_OTHER_PLACEABLE_Description: Obtain all 8 placeable weapons.
+	COMPLETIONIST_WEAPON_OTHER_EXPLOSIVES_Name: Fire in the Hole!
+	COMPLETIONIST_WEAPON_OTHER_EXPLOSIVES_Description: Obtain all 14 types of explosive weapons.
+	COMPLETIONIST_WEAPON_OTHER_THROWN_Name: Terravania
+	COMPLETIONIST_WEAPON_OTHER_THROWN_Description: Obtain all 3 types of thrown weapons.
+	COMPLETIONIST_AMMO_FLARE_Name: Flame On!
+	COMPLETIONIST_AMMO_FLARE_Description: Obtain all 6 types of flares.
+	COMPLETIONIST_AMMO_BULLET_Name: Spray n' Pray
+	COMPLETIONIST_AMMO_BULLET_Description: Obtain all 16 types of bullets.
+	COMPLETIONIST_AMMO_ARROW_Name: Rain of Arrows
+	COMPLETIONIST_AMMO_ARROW_Description: Obtain all 15 types of arrows.
+	COMPLETIONIST_AMMO_ROCKET_Name: Rocket Man
+	COMPLETIONIST_AMMO_ROCKET_Description: Obtain all 12 types of rockets.
+	COMPLETIONIST_AMMO_DART_Name: Silent but Deadly
+	COMPLETIONIST_AMMO_DART_Description: Obtain all 4 types of darts.
+	COMPLETIONIST_TOOL_BONE_PICKAXE_Name: Got a Bone to Pick
+	COMPLETIONIST_TOOL_BONE_PICKAXE_Description: Obtain a Bone Pickaxe from an Undead Miner.
+	COMPLETIONIST_TOOL_THE_AXE_Name: Flying V
+	COMPLETIONIST_TOOL_THE_AXE_Description: Obtain The Axe from Plantera.
+	COMPLETIONIST_TOOL_BAT_HOOK_Name: Echolocation
+	COMPLETIONIST_TOOL_BAT_HOOK_Description: Obtain a Bat Hook from a Goodie Bag.
+	COMPLETIONIST_TOOL_FISH_HOOK_Name: Fish On!
+	COMPLETIONIST_TOOL_FISH_HOOK_Description: Obtain a Fish Hook from the Angler.
+	COMPLETIONIST_TOOL_HOTLINE_FISHING_HOOK_Name: Fiery Fishin'
+	COMPLETIONIST_TOOL_HOTLINE_FISHING_HOOK_Description: Obtain a Hotline Fishing Hook from the Angler.
+	COMPLETIONIST_TOOL_DEMON_CONCH_Name: Listen for Screams
+	COMPLETIONIST_TOOL_DEMON_CONCH_Description: Catch a Demon Conch while fishing in lava.
+	COMPLETIONIST_TOOL_ROD_OF_DISCORD_Name: Discord Moderator
+	COMPLETIONIST_TOOL_ROD_OF_DISCORD_Description: Obtain a Rod of Discord from a Chaos Elemental.
+	COMPLETIONIST_TOOL_BONE_WAND_Name: Calcium Caster
+	COMPLETIONIST_TOOL_BONE_WAND_Description: Obtain a Bone Wand from a Dungeon enemy.
+	COMPLETIONIST_TOOL_BOTTOMLESS_LAVA_BUCKET_Name: Contained Eruption
+	COMPLETIONIST_TOOL_BOTTOMLESS_LAVA_BUCKET_Description: Catch a Bottomless Lava Bucket while fishing in lava.
+	COMPLETIONIST_TOOL_SUPER_ABSORBANT_SPONGE_Name: Water Void
+	COMPLETIONIST_TOOL_SUPER_ABSORBANT_SPONGE_Description: Obtain a Super Absorbant Sponge from the Angler.
+	COMPLETIONIST_TOOL_LAVA_ABSORBANT_SPONGE_Name: Lava Void
+	COMPLETIONIST_TOOL_LAVA_ABSORBANT_SPONGE_Description: Catch a Lava Absorbant Sponge while fishing in lava.
+	COMPLETIONIST_TOOL_GOLDEN_BUG_NET_Name: Cool Critter Catcher
+	COMPLETIONIST_TOOL_GOLDEN_BUG_NET_Description: Obtain a Golden Bug Net from the Angler.
+	COMPLETIONIST_TOOL_BINOCULARS_Name: Eye See You
+	COMPLETIONIST_TOOL_BINOCULARS_Description: Obtain some Binoculars from Eye of Cthulhu.
+	COMPLETIONIST_TOOL_JUNGLE_KEY_Name: Piranha Treasure
+	COMPLETIONIST_TOOL_JUNGLE_KEY_Description: Obtain a Jungle Key from a Jungle enemy.
+	COMPLETIONIST_TOOL_FROZEN_KEY_Name: Hydra Treasure
+	COMPLETIONIST_TOOL_FROZEN_KEY_Description: Obtain a Frozen Key from a Ice enemy.
+	COMPLETIONIST_TOOL_HALLOWED_KEY_Name: Rainbow Treasure
+	COMPLETIONIST_TOOL_HALLOWED_KEY_Description: Obtain a Hallowed Key from a Hallowed enemy.
+	COMPLETIONIST_TOOL_CORRUPTION_KEY_Name: Scourge Treasure
+	COMPLETIONIST_TOOL_CORRUPTION_KEY_Description: Obtain a Corruption Key from a Corruption enemy.
+	COMPLETIONIST_TOOL_CRIMSON_KEY_Name: Vampire Treasure
+	COMPLETIONIST_TOOL_CRIMSON_KEY_Description: Obtain a Crimson Key from a Crimson enemy.
+	COMPLETIONIST_TOOL_DESERT_KEY_Name: Tiger Treasure
+	COMPLETIONIST_TOOL_DESERT_KEY_Description: Obtain a Desert Key from a Desert enemy.
+	COMPLETIONIST_TOOL_MINE_Name: Also Try Minecraft!
+	COMPLETIONIST_TOOL_MINE_Description: Obtain all 44 pickaxes and drills.
+	COMPLETIONIST_TOOL_CHOP_Name: Chop Chop
+	COMPLETIONIST_TOOL_CHOP_Description: Obtain all 41 axes and chainsaws.
+	COMPLETIONIST_TOOL_HAMMER_Name: Talkin' 'Bout the Hammers
+	COMPLETIONIST_TOOL_HAMMER_Description: Obtain all 32 hammers.
+	COMPLETIONIST_TOOL_WIRE_Name: Master Electrician
+	COMPLETIONIST_TOOL_WIRE_Description: Obtain all 8 wiring tools.
+	COMPLETIONIST_TOOL_PAINT_Name: Home Renovation
+	COMPLETIONIST_TOOL_PAINT_Description: Obtain all 6 painting tools.
+	COMPLETIONIST_TOOL_HOOK_Name: Get Over Here!
+	COMPLETIONIST_TOOL_HOOK_Description: Obtain all 27 hooks.
+	COMPLETIONIST_TOOL_FISH_Name: I Just Wanna Fish
+	COMPLETIONIST_TOOL_FISH_Description: Obtain all 11 fishing poles.
+	COMPLETIONIST_TOOL_MOVEMENT_Name: Instant Transmission
+	COMPLETIONIST_TOOL_MOVEMENT_Description: Obtain all 13 movement tools.
+	COMPLETIONIST_TOOL_WAND_Name: Tree Hugger
+	COMPLETIONIST_TOOL_WAND_Description: Obtain all 6 block-placing wands.
+	COMPLETIONIST_TOOL_OTHER_Name: Tools of the Trade
+	COMPLETIONIST_TOOL_OTHER_Description: Obtain all 60 miscellaneous tools.
+	COMPLETIONIST_ARMOR_MINING_Name: Spelunker's Spirit
+	COMPLETIONIST_ARMOR_MINING_Description: Obtain a Mining Shirt & Pants from Undead Miners.
+	COMPLETIONIST_ARMOR_RAIN_Name: Rotten Rain
+	COMPLETIONIST_ARMOR_RAIN_Description: Obtain a Rain set from Raincoat Zombies.
+	COMPLETIONIST_ARMOR_SNOW_Name: Dead Cold
+	COMPLETIONIST_ARMOR_SNOW_Description: Obtain a Snow set from Frozen Zombies.
+	COMPLETIONIST_ARMOR_DIVING_HELMET_Name: Scuba Duba
+	COMPLETIONIST_ARMOR_DIVING_HELMET_Description: Obtain a Diving Helmet from a Shark.
+	COMPLETIONIST_ARMOR_DJINNS_CURSE_Name: Unfortunate Wish
+	COMPLETIONIST_ARMOR_DJINNS_CURSE_Description: Obtain a Djinn's Curse from a Desert Spirit.
+	COMPLETIONIST_ARMOR_GREEN_CAP_Name: L Is Real
+	COMPLETIONIST_ARMOR_GREEN_CAP_Description: Obtain a Green Cap from the Guide named Andrew.
+	COMPLETIONIST_ARMOR_VIKING_HELMET_Name: For Valhalla
+	COMPLETIONIST_ARMOR_VIKING_HELMET_Description: Obtain a Viking Helmet from an Undead Viking.
+	COMPLETIONIST_ARMOR_PRE-HARDMODE_Name: Descend to the Abyss
+	COMPLETIONIST_ARMOR_PRE-HARDMODE_Description: Obtain all 108 Pre-Hardmode armor set pieces.
+	COMPLETIONIST_ARMOR_HARDMODE_Name: Ascend to the Heavens
+	COMPLETIONIST_ARMOR_HARDMODE_Description: Obtain all 118 Hardmode armor set pieces.
+	COMPLETIONIST_ARMOR_WIZARD_Name: I... Am an Enchanter
+	COMPLETIONIST_ARMOR_WIZARD_Description: Obtain all 10 wizard armor pieces.
+	COMPLETIONIST_ARMOR_OTHER_Name: Hard-Headed Hero
+	COMPLETIONIST_ARMOR_OTHER_Description: Obtain all 10 miscellaneous armor pieces.
+	COMPLETIONIST_ACCESSORY_BALLOON_PUFFERFISH_Name: Do Not Eat
+	COMPLETIONIST_ACCESSORY_BALLOON_PUFFERFISH_Description: Catch a Balloon Pufferfish while fishing.
+	COMPLETIONIST_ACCESSORY_FROG_LEG_Name: Frogger Feet
+	COMPLETIONIST_ACCESSORY_FROG_LEG_Description: Catch a Frog Leg while Fishing.
+	COMPLETIONIST_ACCESSORY_MOON_CHARM_Name: Always a Full Moon
+	COMPLETIONIST_ACCESSORY_MOON_CHARM_Description: Obtain a Moon Charm from a Werewolf.
+	COMPLETIONIST_ACCESSORY_FIN_WINGS_Name: Fly Fishing
+	COMPLETIONIST_ACCESSORY_FIN_WINGS_Description: Obtain some Fin Wings from the Angler.
+	COMPLETIONIST_ACCESSORY_DEPTH_METER_Name: Layer by Layer
+	COMPLETIONIST_ACCESSORY_DEPTH_METER_Description: Obtain a Depth Meter from a Surface/Underground enemy.
+	COMPLETIONIST_ACCESSORY_COMPASS_Name: Coast to Coast
+	COMPLETIONIST_ACCESSORY_COMPASS_Description: Obtain a Compass from an enemy.
+	COMPLETIONIST_ACCESSORY_TALLY_COUNTER_Name: Keeping Track
+	COMPLETIONIST_ACCESSORY_TALLY_COUNTER_Description: Obtain a Tally Counter from a Dungeon enemy.
+	COMPLETIONIST_ACCESSORY_NATURES_GIFT_Name: Magical Affinity
+	COMPLETIONIST_ACCESSORY_NATURES_GIFT_Description: Obtain a Nature's Gift in the Underground Jungle.
+	COMPLETIONIST_ACCESSORY_FROZEN_TURTLE_SHELL_Name: Absolute Zero
+	COMPLETIONIST_ACCESSORY_FROZEN_TURTLE_SHELL_Description: Obtain a Frozen Turtle Shell from an Ice Tortoise.
+	COMPLETIONIST_ACCESSORY_MAGIC_QUIVER_Name: Target Practice
+	COMPLETIONIST_ACCESSORY_MAGIC_QUIVER_Description: Obtain a Magic Quiver from a Skeleton Archer.
+	COMPLETIONIST_ACCESSORY_SHARK_TOOTH_NECKLACE_Name: Piercing Penetration
+	COMPLETIONIST_ACCESSORY_SHARK_TOOTH_NECKLACE_Description: Obtain a Shark Tooth Necklace from a Blood Moon enemy.
+	COMPLETIONIST_ACCESSORY_CLOTHIER_VOODOO_DOLL_Name: Target Acquired
+	COMPLETIONIST_ACCESSORY_CLOTHIER_VOODOO_DOLL_Description: Obtain a Clothier Voodoo Doll from a Dungeon enemy.
+	COMPLETIONIST_ACCESSORY_JELLYFISH_NECKLACE_Name: Underwater Rave
+	COMPLETIONIST_ACCESSORY_JELLYFISH_NECKLACE_Description: Obtain a Jellyfish Necklace from a Jellyfish.
+	COMPLETIONIST_ACCESSORY_JUNGLE_ROSE_Name: Oh So Pretty
+	COMPLETIONIST_ACCESSORY_JUNGLE_ROSE_Description: Obtain a Jungle Rose from the Jungle.
+	COMPLETIONIST_ACCESSORY_MOVE_Name: Wanna See Me Do It Again
+	COMPLETIONIST_ACCESSORY_MOVE_Description: Obtain all 65 movement accessories.
+	COMPLETIONIST_ACCESSORY_WINGS_Name: Free Bird
+	COMPLETIONIST_ACCESSORY_WINGS_Description: Obtain all 29 wings.
+	COMPLETIONIST_ACCESSORY_INFO_Name: Modern Technology
+	COMPLETIONIST_ACCESSORY_INFO_Description: Obtain all 25 informational accessories.
+	COMPLETIONIST_ACCESSORY_HEALTH_MANA_Name: Divine Blessing
+	COMPLETIONIST_ACCESSORY_HEALTH_MANA_Description: Obtain all 14 health/mana accessories.
+	COMPLETIONIST_ACCESSORY_COMBAT_Name: Battle Ready
+	COMPLETIONIST_ACCESSORY_COMBAT_Description: Obtain all 75 combat accessories.
+	COMPLETIONIST_ACCESSORY_CONSTRUCTION_Name: 85 Hours a Day
+	COMPLETIONIST_ACCESSORY_CONSTRUCTION_Description: Obtain all 10 construction accessories.
+	COMPLETIONIST_ACCESSORY_FISH_Name: Fish Love Me
+	COMPLETIONIST_ACCESSORY_FISH_Description: Obtain all 14 fishing accessories.
+	COMPLETIONIST_ACCESSORY_YOYO_Name: Super Strands
+	COMPLETIONIST_ACCESSORY_YOYO_Description: Obtain all 24 yoyo accessories.
+	COMPLETIONIST_ACCESSORY_VANITY_Name: Luxury Goods
+	COMPLETIONIST_ACCESSORY_VANITY_Description: Obtain all 29 vanity accessories.
+	COMPLETIONIST_ACCESSORY_MUSIC_BOX_Name: Capture the Moment
+	COMPLETIONIST_ACCESSORY_MUSIC_BOX_Description: Obtain all 87 music boxes.
+	COMPLETIONIST_ACCESSORY_GOLF_BALL_Name: Hot Shots
+	COMPLETIONIST_ACCESSORY_GOLF_BALL_Description: Obtain all 14 golf balls.
+	COMPLETIONIST_ACCESSORY_OTHER_Name: Voodoo Magic
+	COMPLETIONIST_ACCESSORY_OTHER_Description: Obtain all 15 miscellaneous accessories.
+	COMPLETIONIST_MOUNT_BEE_Name: Rapid Pollination
+	COMPLETIONIST_MOUNT_BEE_Description: Obtain some Honeyed Goggles from Queen Bee.
+	COMPLETIONIST_MOUNT_TURTLE_Name: Slow and Steady
+	COMPLETIONIST_MOUNT_TURTLE_Description: Obtain a Hardy Saddle from a Golden/Titanium Crate.
+	COMPLETIONIST_MOUNT_GOLF_CART_Name: Retirement Ready
+	COMPLETIONIST_MOUNT_GOLF_CART_Description: Buy some Golf Cart Keys from the Golfer.
+	COMPLETIONIST_MOUNT_BASILISK_Name: Chaos Charge
+	COMPLETIONIST_MOUNT_BASILISK_Description: Obtain an Ancient Horn from a Basilisk.
+	COMPLETIONIST_MOUNT_WOLF_Name: Obsessed With Wolves
+	COMPLETIONIST_MOUNT_WOLF_Description: Obtain a Lilith's Necklace from a Wolf.
+	COMPLETIONIST_MOUNT_UNICORN_Name: Rainbow Rider
+	COMPLETIONIST_MOUNT_UNICORN_Description: Obtain a Blessed Apple from The Hallow enemies.
+	COMPLETIONIST_MOUNT_PIGRON_Name: Now You See Me...
+	COMPLETIONIST_MOUNT_PIGRON_Description: Catch a Scaly Truffle while fishing.
+	COMPLETIONIST_MOUNT_RUDOLPH_Name: The Original Mount
+	COMPLETIONIST_MOUNT_RUDOLPH_Description: Obtain some Reindeer Bells from Ice Queen.
+	COMPLETIONIST_MOUNT_DCU_Name: Terraforming
+	COMPLETIONIST_MOUNT_DCU_Description: Craft a Drill Containment Unit.
+	COMPLETIONIST_MOUNT_Name: Trusty Steeds
+	COMPLETIONIST_MOUNT_Description: Obtain all 20 Mounts.
+	COMPLETIONIST_MINECART_FISH_Name: Deal With It
+	COMPLETIONIST_MINECART_FISH_Description: Obtain a Minecarp from the Angler.
+	COMPLETIONIST_MINECART_PIGRON_Name: Powered by Bacon!
+	COMPLETIONIST_MINECART_PIGRON_Description: Obtain a Pigron Minecart from a Pigron.
+	COMPLETIONIST_MINECART_Name: Coming Through!
+	COMPLETIONIST_MINECART_Description: Obtain all 25 Minecarts.
+	COMPLETIONIST_VANITY_HERO_Name: Hero of Time
+	COMPLETIONIST_VANITY_HERO_Description: Craft a Hero's set.
+	COMPLETIONIST_VANITY_LAMIA_Name: Menacing Glare
+	COMPLETIONIST_VANITY_LAMIA_Description: Obtain a Lamia set from lamia enemies.
+	COMPLETIONIST_VANITY_MUMMY_Name: Budget Costume
+	COMPLETIONIST_VANITY_MUMMY_Description: Obtain a Mummy set from mummy enemies.
+	COMPLETIONIST_VANITY_PEDGUIN_Name: Become the Pedguin
+	COMPLETIONIST_VANITY_PEDGUIN_Description: Obtain a Pedguin's set from penguin enemies.
+	COMPLETIONIST_VANITY_PLUMBER_Name: Mr. Video Game
+	COMPLETIONIST_VANITY_PLUMBER_Description: Obtain a Plumber's Hat from a Fire Imp.
+	COMPLETIONIST_VANITY_CREEPER_Name: Aww Man
+	COMPLETIONIST_VANITY_CREEPER_Description: Obtain a Creeper set from a Goodie Bag.
+	COMPLETIONIST_VANITY_BADGER_Name: To Hell and Back
+	COMPLETIONIST_VANITY_BADGER_Description: Obtain a Badger's Hat from a boss.
+	COMPLETIONIST_VANITY_DEAD_MANS_SWEATER_Name: Redshirt Sacrifice
+	COMPLETIONIST_VANITY_DEAD_MANS_SWEATER_Description: Obtain a Dead Man's Sweater.
+	COMPLETIONIST_VANITY_JIM_Name: My Hat Now
+	COMPLETIONIST_VANITY_JIM_Description: Obtain a Jim's Hat from the Painter.
+	COMPLETIONIST_VANITY_ROBOT_Name: Quote This
+	COMPLETIONIST_VANITY_ROBOT_Description: Obtain a Robot Hat from a Jungle enemy.
+	COMPLETIONIST_VANITY_SKULL_Name: Bone Head
+	COMPLETIONIST_VANITY_SKULL_Description: Obtain a Skull from skeleton enemies.
+	COMPLETIONIST_VANITY_UMBRELLA_Name: Under my Umbrella
+	COMPLETIONIST_VANITY_UMBRELLA_Description: Obtain an Umbrella Hat from an Umbrella Slime.
+	COMPLETIONIST_VANITY_SETS_Name: Fashion Show
+	COMPLETIONIST_VANITY_SETS_Description: Obtain all 172 vanity set pieces.
+	COMPLETIONIST_VANITY_HALLOWEEN_Name: Trick or Treat
+	COMPLETIONIST_VANITY_HALLOWEEN_Description: Obtain all 61 Halloween vanity set pieces.
+	COMPLETIONIST_VANITY_CHRISTMAS_Name: On the Nice List
+	COMPLETIONIST_VANITY_CHRISTMAS_Description: Obtain all 12 Christmas vanity set pieces.
+	COMPLETIONIST_VANITY_MASK_Name: That's What the Mask Is
+	COMPLETIONIST_VANITY_MASK_Description: Obtain all 21 vanity boss masks.
+	COMPLETIONIST_VANITY_OTHER_Name: He Was #1
+	COMPLETIONIST_VANITY_OTHER_Description: Obtain all 52 miscellaneous vanity pieces.
+	COMPLETIONIST_PET_BABY_DINOSAUR_Name: De-extinction
+	COMPLETIONIST_PET_BABY_DINOSAUR_Description: Obtain an Amber Mosquito from extracted Desert Fossil.
+	COMPLETIONIST_PET_BABY_EATER_Name: It's Kinda Cute?
+	COMPLETIONIST_PET_BABY_EATER_Description: Obtain an Eater's Bone from Eater of Worlds.
+	COMPLETIONIST_PET_BABY_FACE_MONSTER_Name: Jump Scare
+	COMPLETIONIST_PET_BABY_FACE_MONSTER_Description: Obtain a Bone Rattle from Brain of Cthulhu.
+	COMPLETIONIST_PET_BABY_GRINCH_Name: Problem Child
+	COMPLETIONIST_PET_BABY_GRINCH_Description: Obtain a Baby Grinch's Mischief Whistle from Ice Queen.
+	COMPLETIONIST_PET_BABY_HORNET_Name: Irresistible Smell
+	COMPLETIONIST_PET_BABY_HORNET_Description: Obtain some Nectar from Queen Bee.
+	COMPLETIONIST_PET_BABY_SKELETRON_HEAD_Name: You SHALL Pass!
+	COMPLETIONIST_PET_BABY_SKELETRON_HEAD_Description: Obtain a Bone Key from the Dungeon Guardian.
+	COMPLETIONIST_PET_BABY_SNOWMAN_Name: Sleigh Ride Together With You
+	COMPLETIONIST_PET_BABY_SNOWMAN_Description: Obtain a Toy Sled from an Ice Mimic.
+	COMPLETIONIST_PET_BLACK_CAT_Name: Tim's Pet Cat
+	COMPLETIONIST_PET_BLACK_CAT_Description: Obtain an Unlucky Yarn from a Goodie Bag.
+	COMPLETIONIST_PET_CAVELING_GARDENER_Name: Keeper of the Core
+	COMPLETIONIST_PET_CAVELING_GARDENER_Description: Obtain a Glow Tulip in the Underground or Cavern layers.
+	COMPLETIONIST_PET_THE_DIRTIEST_BLOCK_Name: Dirt is Dirty
+	COMPLETIONIST_PET_THE_DIRTIEST_BLOCK_Description: Obtain a The Dirtiest Block while digging.
+	COMPLETIONIST_PET_JUNIMO_Name: Keeper of the Forest
+	COMPLETIONIST_PET_JUNIMO_Description: Obtain a Stardrop from a purified Joja Cola.
+	COMPLETIONIST_PET_LIZARD_Name: Chillin’ Like a Reptilian
+	COMPLETIONIST_PET_LIZARD_Description: Obtain a Lizard Egg from a Jungle Temple enemy.
+	COMPLETIONIST_PET_MINI_MINOTAUR_Name: Mini Minotaur's Weakness
+	COMPLETIONIST_PET_MINI_MINOTAUR_Description: Obtain some Tarter Sauce from an Iron/Mythril Crate.
+	COMPLETIONIST_PET_PUPPY_Name: Puppy Love
+	COMPLETIONIST_PET_PUPPY_Description: Obtain a Dog Whistle from a Present.
+	COMPLETIONIST_PET_SAPLING_Name: Budding Life
+	COMPLETIONIST_PET_SAPLING_Description: Obtain a Seedling from Plantera.
+	COMPLETIONIST_PET_SPIFFO_Name: Plushie PAWS
+	COMPLETIONIST_PET_SPIFFO_Description: Obtain a Spiffo Plush from a Zombie.
+	COMPLETIONIST_PET_SQUASHLING_Name: Plentiful Harvest
+	COMPLETIONIST_PET_SQUASHLING_Description: Obtain a Magical Pumpkin Seed from a Pumpkin during Halloween.
+	COMPLETIONIST_PET_SUGAR_GLIDER_Name: Sugar Rush
+	COMPLETIONIST_PET_SUGAR_GLIDER_Description: Obtain some Eucalyptus Sap after shaking a Tree.
+	COMPLETIONIST_PET_ZEPHYR_FISH_Name: The Gentle West Wind
+	COMPLETIONIST_PET_ZEPHYR_FISH_Description: Catch a Zephyr Fish while fishing.
+	COMPLETIONIST_PET_WISP_Name: Will-O’-The-Wisp
+	COMPLETIONIST_PET_WISP_Description: Obtain a Wisp in a Bottle from Armored Bones enemies.
+	COMPLETIONIST_PET_Name: Animal Whisperer
+	COMPLETIONIST_PET_Description: Obtain all 47 pets.
+	COMPLETIONIST_PET_LIGHT_Name: Bright Buddies
+	COMPLETIONIST_PET_LIGHT_Description: Obtain all 6 light pets.
+	COMPLETIONIST_BANNER_SLIME_Name: Slime Slayer
+	COMPLETIONIST_BANNER_SLIME_Description: Obtain all 24 Slime banners.
+	COMPLETIONIST_BANNER_CAVERN_Name: Cavern Slayer
+	COMPLETIONIST_BANNER_CAVERN_Description: Obtain all 20 Cavern enemy banners.
+	COMPLETIONIST_BANNER_CORRUPTION_Name: Corruption Slayer
+	COMPLETIONIST_BANNER_CORRUPTION_Description: Obtain all 8 Corruption enemy banners.
+	COMPLETIONIST_BANNER_CRIMSON_Name: Crimson Slayer
+	COMPLETIONIST_BANNER_CRIMSON_Description: Obtain all 11 Crimson enemy banners.
+	COMPLETIONIST_BANNER_DESERT_Name: Desert Slayer
+	COMPLETIONIST_BANNER_DESERT_Description: Obtain all 13 Desert enemy banners.
+	COMPLETIONIST_BANNER_DUNGEON_Name: Dungeon Slayer
+	COMPLETIONIST_BANNER_DUNGEON_Description: Obtain all 16 Dungeon enemy banners.
+	COMPLETIONIST_BANNER_GLOWING_MUSHROOM_Name: Glowing Mushroom Slayer
+	COMPLETIONIST_BANNER_GLOWING_MUSHROOM_Description: Obtain all 7 Glowing Mushroom enemy banners.
+	COMPLETIONIST_BANNER_GRANITE_CAVE_Name: Granite Cave Slayer
+	COMPLETIONIST_BANNER_GRANITE_CAVE_Description: Obtain both Granite Cave enemy banners.
+	COMPLETIONIST_BANNER_HALLOW_Name: The Hallow Slayer
+	COMPLETIONIST_BANNER_HALLOW_Description: Obtain all 7 The Hallow enemy banners.
+	COMPLETIONIST_BANNER_JUNGLE_Name: Jungle Slayer
+	COMPLETIONIST_BANNER_JUNGLE_Description: Obtain all 17 Jungle enemy banners.
+	COMPLETIONIST_BANNER_MARBLE_CAVE_Name: Marble Cave Slayer
+	COMPLETIONIST_BANNER_MARBLE_CAVE_Description: Obtain both Marble Cave enemy banners.
+	COMPLETIONIST_BANNER_METEORITE_Name: Meteorite Slayer
+	COMPLETIONIST_BANNER_METEORITE_Description: Obtain the Meteorite enemy banner.
+	COMPLETIONIST_BANNER_SNOW_Name: Snow Slayer
+	COMPLETIONIST_BANNER_SNOW_Description: Obtain all 12 Snow enemy banners.
+	COMPLETIONIST_BANNER_SPIDER_CAVE_Name: Spider Cave Slayer
+	COMPLETIONIST_BANNER_SPIDER_CAVE_Description: Obtain both Spider Cave enemy banners.
+	COMPLETIONIST_BANNER_SURFACE_Name: Surface Slayer
+	COMPLETIONIST_BANNER_SURFACE_Description: Obtain all 18 Surface enemy banners.
+	COMPLETIONIST_BANNER_UNDERWORLD_Name: Underworld Slayer
+	COMPLETIONIST_BANNER_UNDERWORLD_Description: Obtain all 6 Underworld enemy banners.
+	COMPLETIONIST_BANNER_BLOOD_MOON_Name: Blood Moon Slayer
+	COMPLETIONIST_BANNER_BLOOD_MOON_Description: Obtain all 17 Blood Moon enemy banners.
+	COMPLETIONIST_BANNER_FROST_LEGION_Name: Frost Legion Slayer
+	COMPLETIONIST_BANNER_FROST_LEGION_Description: Obtain all 3 Frost Legion enemy banners.
+	COMPLETIONIST_BANNER_FROST_MOON_Name: Frost Moon Slayer
+	COMPLETIONIST_BANNER_FROST_MOON_Description: Obtain all 9 Frost Moon enemy banners.
+	COMPLETIONIST_BANNER_GOBLIN_ARMY_Name: Goblin Army Slayer
+	COMPLETIONIST_BANNER_GOBLIN_ARMY_Description: Obtain all 6 Goblin Army enemy banners.
+	COMPLETIONIST_BANNER_HALLOWEEN_Name: Halloween Slayer
+	COMPLETIONIST_BANNER_HALLOWEEN_Description: Obtain all 3 Halloween enemy banners.
+	COMPLETIONIST_BANNER_LUNAR_EVENTS_Name: Lunar Events Slayer
+	COMPLETIONIST_BANNER_LUNAR_EVENTS_Description: Obtain all 23 Lunar Events enemy banners.
+	COMPLETIONIST_BANNER_MARTIAN_MADNESS_Name: Martian Madness Slayer
+	COMPLETIONIST_BANNER_MARTIAN_MADNESS_Description: Obtain all 11 Martian Madness enemy banners.
+	COMPLETIONIST_BANNER_OLD_ONES_ARMY_Name: Old One's Army Slayer
+	COMPLETIONIST_BANNER_OLD_ONES_ARMY_Description: Obtain all 10 Old One's Army enemy banners.
+	COMPLETIONIST_BANNER_PIRATE_INVASION_Name: Pirate Invasion Slayer
+	COMPLETIONIST_BANNER_PIRATE_INVASION_Description: Obtain all 6 Pirate Invasion enemy banners.
+	COMPLETIONIST_BANNER_PUMPKIN_MOON_Name: Pumpkin Moon Slayer
+	COMPLETIONIST_BANNER_PUMPKIN_MOON_Description: Obtain all 5 Pumpkin Moon enemy banners.
+	COMPLETIONIST_BANNER_RAIN_BLIZZARD_Name: Rain & Blizzard Slayer
+	COMPLETIONIST_BANNER_RAIN_BLIZZARD_Description: Obtain all 4 Rain/Blizzard enemy banners.
+	COMPLETIONIST_BANNER_SANDSTORM_Name: Sandstorm Slayer
+	COMPLETIONIST_BANNER_SANDSTORM_Description: Obtain all 6 Sandstorm enemy banners.
+	COMPLETIONIST_BANNER_SOLAR_ECLIPSE_Name: Solar Eclipse Slayer
+	COMPLETIONIST_BANNER_SOLAR_ECLIPSE_Description: Obtain all 14 Solar Eclipse enemy banners.
+	COMPLETIONIST_BANNER_WINDY_DAY_Name: Windy Day Slayer
+	COMPLETIONIST_BANNER_WINDY_DAY_Description: Obtain the Windy Day enemy banner.
+	COMPLETIONIST_CRITTER_GEM_Name: Residual Energy
+	COMPLETIONIST_CRITTER_GEM_Description: Catch all 14 gem critters.
+	COMPLETIONIST_CRITTER_GOLD_Name: The Midas Touch
+	COMPLETIONIST_CRITTER_GOLD_Description: Catch all 14 gold critters.
+	COMPLETIONIST_DYE_STRANGE_Name: Indescribable Aura
+	COMPLETIONIST_DYE_STRANGE_Description: Obtain all 33 Strange Dyes from the Dry Trader.
+	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Name: Panning for Platinum
+	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Description: Extract a Platinum Coin.
+	COMPLETIONIST_FISH_NORMAL_Name: Level 99 Fishing
+	COMPLETIONIST_FISH_NORMAL_Description: Catch all 30 normal fish.
+	COMPLETIONIST_FISH_QUEST_Name: Motley Crew
+	COMPLETIONIST_FISH_QUEST_Description: Catch all 41 quest fish.
+	COMPLETIONIST_FURNITURE_CHIPPYS_COUCH_Name: Heeellllllo Terraria Enthusiasts!
+	COMPLETIONIST_FURNITURE_CHIPPYS_COUCH_Description: Obtain a Chippy's Couch from Skeletron.
+	COMPLETIONIST_FURNITURE_DESERT_SPIRIT_LAMP_Name: Make a Wish
+	COMPLETIONIST_FURNITURE_DESERT_SPIRIT_LAMP_Description: Obtain a Desert Spirit Lamp from a Desert Spirit.
+	COMPLETIONIST_FURNITURE_ENCHANTED_SUNDIAL_Name: Time Machine
+	COMPLETIONIST_FURNITURE_ENCHANTED_SUNDIAL_Description: Obtain an Enchanted Sundial from a Crate.
+	COMPLETIONIST_NOVELTY_IVY_Name: Property of Dead Man's Sweater
+	COMPLETIONIST_NOVELTY_IVY_Description: Obtain an Ivy from the Steampunker named Whitney.
+	COMPLETIONIST_NOVELTY_WYVERN_KITE_Name: Waving in the Wind
+	COMPLETIONIST_NOVELTY_WYVERN_KITE_Description: Obtain a Wyvern Kite from a Wyvern.
+	COMPLETIONIST_NOVELTY_RAIN_SONG_Name: These Licks Are Spicy
+	COMPLETIONIST_NOVELTY_RAIN_SONG_Description: Obtain a Rain Song from a Flying Fish.
+	COMPLETIONIST_NOVELTY_UNICORN_ON_A_STICK_Name: Having a Wonderful Time!
+	COMPLETIONIST_NOVELTY_UNICORN_ON_A_STICK_Description: Obtain a Unicorn on a Stick from a Unicorn.
+	COMPLETIONIST_NOVELTY_Name: Trinkets and Knick Knacks
+	COMPLETIONIST_NOVELTY_Description: Obtain all 52 novelty items.
+	COMPLETIONIST_PAINTING_WALDO_Name: Where's Waldo?
+	COMPLETIONIST_PAINTING_WALDO_Description: Obtain the Waldo painting from an Underground Cabin.
+	COMPLETIONIST_PAINTING_CLOTHIER_Name: r/Terraria
+	COMPLETIONIST_PAINTING_CLOTHIER_Description: Buy the painting from the Clothier.
+	COMPLETIONIST_PAINTING_GOLFER_Name: The Duplicity of Reflections
+	COMPLETIONIST_PAINTING_GOLFER_Description: Buy all 4 paintings from the Golfer.
+	COMPLETIONIST_PAINTING_PAINTER_Name: Good Morning
+	COMPLETIONIST_PAINTING_PAINTER_Description: Buy all 16 paintings from the Painter.
+	COMPLETIONIST_PAINTING_PAINTER_GRAVEYARD_Name: Nevermore
+	COMPLETIONIST_PAINTING_PAINTER_GRAVEYARD_Description: Buy all 8 paintings from the Painter in a Graveyard.
+	COMPLETIONIST_PAINTING_PRINCESS_Name: Princess 64
+	COMPLETIONIST_PAINTING_PRINCESS_Description: Buy all 7 paintings from the Princess.
+	COMPLETIONIST_PAINTING_TRAVELING_MERCHANT_Name: Benny Warhol
+	COMPLETIONIST_PAINTING_TRAVELING_MERCHANT_Description: Buy all 22 paintings from the Traveling Merchant.
+	COMPLETIONIST_PAINTING_TRUFFLE_Name: My Son
+	COMPLETIONIST_PAINTING_TRUFFLE_Description: Buy the painting from the Truffle.
+	COMPLETIONIST_PAINTING_ZOOLOGIST_Name: The Werewolf
+	COMPLETIONIST_PAINTING_ZOOLOGIST_Description: Buy the painting from the Zoologist.
+	COMPLETIONIST_PAINTING_DUNGEON_Name: The Creation of the Guide
+	COMPLETIONIST_PAINTING_DUNGEON_Description: Obtain all 25 paintings from Dungeons.
+	COMPLETIONIST_PAINTING_FLOATING_ISLAND_Name: Love is in the Trash Slot
+	COMPLETIONIST_PAINTING_FLOATING_ISLAND_Description: Obtain all 6 paintings from Floating Islands.
+	COMPLETIONIST_PAINTING_JUNGLE_TEMPLE_Name: Lizard King
+	COMPLETIONIST_PAINTING_JUNGLE_TEMPLE_Description: Obtain the painting from a Jungle Temple.
+	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_Name: Happy Little Tree
+	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_Description: Obtain all 32 paintings from Underground Cabins.
+	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_DESERT_Name: Snakes... I Hate Snakes
+	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_DESERT_Description: Obtain all 14 paintings from Desert Underground Cabins.
+	COMPLETIONIST_PAINTING_UNDERWORLD_Name: Darkness
+	COMPLETIONIST_PAINTING_UNDERWORLD_Description: Obtain all 12 paintings from The Underworld.
+	COMPLETIONIST_PAINTING_FISH_Name: Lady Of The Lake
+	COMPLETIONIST_PAINTING_FISH_Description: Catch both paintings while fishing.
+	COMPLETIONIST_PAINTING_ANGLER_Name: Silent Fish
+	COMPLETIONIST_PAINTING_ANGLER_Description: Obtain all 8 paintings from the Angler's quest rewards
+	COMPLETIONIST_PAINTING_SOLAR_Name: Eyezorhead
+	COMPLETIONIST_PAINTING_SOLAR_Description: Obtain all 8 paintings from Solar Eclipse enemies.
+	COMPLETIONIST_PAINTING_GOODIE_Name: Hallow's Eve
+	COMPLETIONIST_PAINTING_GOODIE_Description: Obtain all 5 paintings from Goodie Bags.
+	COMPLETIONIST_PYLON_UNIVERSAL_Name: Beast Mode
+	COMPLETIONIST_PYLON_UNIVERSAL_Description: Buy a Universal Pylon from the Zoologist.
+	COMPLETIONIST_PYLON_Name: Teleportation Station
+	COMPLETIONIST_PYLON_Description: Buy all 9 Pylons.
+	COMPLETIONIST_STATUE_ENEMY_Name: Battle Simulator
+	COMPLETIONIST_STATUE_ENEMY_Description: Obtain all 26 enemy statues.
+	COMPLETIONIST_STATUE_CRITTER_Name: Animal Farm
+	COMPLETIONIST_STATUE_CRITTER_Description: Obtain all 22 critter statues.
+	COMPLETIONIST_STATUE_DECOR_Name: Art Appreciation
+	COMPLETIONIST_STATUE_DECOR_Description: Obtain all 24 decorative statues.
+	COMPLETIONIST_STATUE_OTHER_Name: Kings and Queens
+	COMPLETIONIST_STATUE_OTHER_Description: Obtain all 9 miscellaneous statues.
+	COMPLETIONIST_STORAGE_MONEY_TROUGH_Name: When Pigs Fly
+	COMPLETIONIST_STORAGE_MONEY_TROUGH_Description: Obtain a Money Trough from a Blood Moon enemy.
+	COMPLETIONIST_STORAGE_Name: Into the Void
+	COMPLETIONIST_STORAGE_Description: Obtain all 7 portable storage items.
+	COMPLETIONIST_TROPHY_PRE-HARDMODE_Name: Rags to Riches
+	COMPLETIONIST_TROPHY_PRE-HARDMODE_Description: Obtain all 8 Pre-Hardmode boss trophies.
+	COMPLETIONIST_TROPHY_HARDMODE_Name: Mechanical Mania
+	COMPLETIONIST_TROPHY_HARDMODE_Description: Obtain all 11 Hardmode boss trophies.
+	COMPLETIONIST_TROPHY_EVENT_Name: Star of the Show
+	COMPLETIONIST_TROPHY_EVENT_Description: Obtain all 10 event boss trophies.
+	COMPLETIONIST_TROPHY_FISH_Name: Fish Fear Me
+	COMPLETIONIST_TROPHY_FISH_Description: Obtain all 4 fish trophies from the Angler.
 }
