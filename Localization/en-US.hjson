@@ -1,8 +1,42 @@
 Achievements: {
-	COMPLETIONIST_Name_Name: Title
-	COMPLETIONIST_Name_Description: Description
-	COMPLETIONIST_STAT_ITEMS_Name: Personal Development
-	COMPLETIONIST_STAT_ITEMS_Description: Use all 14 stat-boosting items.
+	COMPLETIONIST_BUFF_ENVIRONMENT_Name: Climate Acclimation
+	COMPLETIONIST_BUFF_ENVIRONMENT_Description: Activate all 9 environment buffs.
+	COMPLETIONIST_BUFF_EQUIPMENT_Name: Matching Attire
+	COMPLETIONIST_BUFF_EQUIPMENT_Description: Activate all 33 equipment buffs.
+	COMPLETIONIST_BUFF_FURNITURE_Name: Min-Maxing
+	COMPLETIONIST_BUFF_FURNITURE_Description: Activate all 6 furniture buffs.
+	COMPLETIONIST_BUFF_LIGHT_PET_Name: Light the Way
+	COMPLETIONIST_BUFF_LIGHT_PET_Description: Activate all 8 light pet buffs.
+	COMPLETIONIST_BUFF_MINECART_Name: Coming Through!
+	COMPLETIONIST_BUFF_MINECART_Description: Activate all 26 minecart buffs.
+	COMPLETIONIST_BUFF_MOUNT_Name: Beast Tamer
+	COMPLETIONIST_BUFF_MOUNT_Description: Activate all 20 mount buffs.
+	COMPLETIONIST_BUFF_PET_Name: Animal Whisperer
+	COMPLETIONIST_BUFF_PET_Description: Activate all 47 pet buffs.
+	COMPLETIONIST_BUFF_SUMMON_Name: Minion Master
+	COMPLETIONIST_BUFF_SUMMON_Description: Activate all 21 summon buffs.
+	COMPLETIONIST_CONSUMABLE_EXPLOSIVE_Name: Fire in the Hole!
+	COMPLETIONIST_CONSUMABLE_EXPLOSIVE_Description: Use all 14 explosive items.
+	COMPLETIONIST_CONSUMABLE_FOOD_Name: Balanced Diet
+	COMPLETIONIST_CONSUMABLE_FOOD_Description: Eat all 80 types of food.
+	COMPLETIONIST_CONSUMABLE_LICENSE_Name: Man's Best Friend
+	COMPLETIONIST_CONSUMABLE_LICENSE_Description: Use all 3 animal licenses.
+	COMPLETIONIST_CONSUMABLE_POTION_BUFF_Name: Performance-Enhancing Potions
+	COMPLETIONIST_CONSUMABLE_POTION_BUFF_Description: Drink all 44 buff potions.
+	COMPLETIONIST_CONSUMABLE_POTION_FLASK_Name: Extra Edge
+	COMPLETIONIST_CONSUMABLE_POTION_FLASK_Description: Drink all 8 flasks.
+	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Name: Recovery Is Key
+	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Description: Drink all 15 recovery potions.
+	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Name: Experimental Consumer
+	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Description: Drink all 5 miscellaneous potions.
+	COMPLETIONIST_CONSUMABLE_PERMANENT_Name: Personal Development
+	COMPLETIONIST_CONSUMABLE_PERMANENT_Description: Use all 14 permanent consumable items.
+	COMPLETIONIST_CONSUMABLE_TOOL_Name: Terravania
+	COMPLETIONIST_CONSUMABLE_TOOL_Description: Use all 13 consumable tools.
+	COMPLETIONIST_CONSUMABLE_WEAPON_Name: Breach and Clear
+	COMPLETIONIST_CONSUMABLE_WEAPON_Description: Use all 20 consumable weapons.
+	COMPLETIONIST_CONSUMABLE_OTHER_Name: Recreational Activities
+	COMPLETIONIST_CONSUMABLE_OTHER_Description: Use all 13 miscellanous consumable items.
 	COMPLETIONIST_WEAPON_BAT_BAT_Name: Bat Some Bats
 	COMPLETIONIST_WEAPON_BAT_BAT_Description: Obtain a Bat Bat from a bat enemy.
 	COMPLETIONIST_WEAPON_BEAM_SWORD_Name: Fully Energized
@@ -39,6 +73,8 @@ Achievements: {
 	COMPLETIONIST_WEAPON_KRAKEN_Description: Obtain a Kraken from a Dungeon enemy.
 	COMPLETIONIST_WEAPON_YELETS_Name: One Jungle Drop
 	COMPLETIONIST_WEAPON_YELETS_Description: Obtain a Yelets from a Jungle enemy.
+	COMPLETIONIST_WEAPON_SKELETON_MERCHANT_Name: Support Your Local Businesses
+	COMPLETIONIST_WEAPON_SKELETON_MERCHANT_Description: Buy all 7 yoyo-related items from the Skeleton Merchant.
 	COMPLETIONIST_WEAPON_OBSIDIAN_SWORDFISH_Name: Yeouch!!
 	COMPLETIONIST_WEAPON_OBSIDIAN_SWORDFISH_Description: Obtain an Obsidian Swordfish while fishing in the Underworld.
 	COMPLETIONIST_WEAPON_BLOODY_MACHETE_Name: Friday the 13th
@@ -53,8 +89,8 @@ Achievements: {
 	COMPLETIONIST_WEAPON_PALADINS_HAMMER_Description: Obtain a Paladin's Hammer from a Paladin.
 	COMPLETIONIST_WEAPON_CHAIN_KNIFE_Name: Rope Dart
 	COMPLETIONIST_WEAPON_CHAIN_KNIFE_Description: Obtain a Chain Knife from a Cave Bat.
-	COMPLETIONIST_WEAPON_DRIPPER_CRIPPLER_Name: I Got My Eyes on You
-	COMPLETIONIST_WEAPON_DRIPPER_CRIPPLER_Description: Obtain a Dripper Crippler from a Blood Eel.
+	COMPLETIONIST_WEAPON_DRIPPLER_CRIPPLER_Name: I Got My Eyes on You
+	COMPLETIONIST_WEAPON_DRIPPLER_CRIPPLER_Description: Obtain a Dripper Crippler from a Blood Eel.
 	COMPLETIONIST_WEAPON_TERRAGRIM_Name: Blessed Wind
 	COMPLETIONIST_WEAPON_TERRAGRIM_Description: Obtain a Terragrim from an Enchanted Sword Shrine.
 	COMPLETIONIST_WEAPON_MELEE_SWORD_Name: Terra Blade Chronicles
@@ -93,8 +129,6 @@ Achievements: {
 	COMPLETIONIST_WEAPON_RANGED_GUN_Description: Obtain all 25 guns.
 	COMPLETIONIST_WEAPON_RANGED_LAUNCHER_Name: The Big Bang
 	COMPLETIONIST_WEAPON_RANGED_LAUNCHER_Description: Obtain all 10 launchers.
-	COMPLETIONIST_WEAPON_RANGED_CONSUMABLE_Name: Breach and Clear
-	COMPLETIONIST_WEAPON_RANGED_CONSUMABLE_Description: Obtain all 20 types of consumable ranged weapons.
 	COMPLETIONIST_WEAPON_RANGED_OTHER_Name: Hobby Project
 	COMPLETIONIST_WEAPON_RANGED_OTHER_Description: Obtain all 16 miscellaneous ranged weapons.
 	COMPLETIONIST_WEAPON_CRYSTAL_SERPENT_Name: Crystal Crowd Control
@@ -128,7 +162,7 @@ Achievements: {
 	COMPLETIONIST_WEAPON_MAGIC_OTHER_Name: Magical Artifacts
 	COMPLETIONIST_WEAPON_MAGIC_OTHER_Description: Obtain all 16 miscellaneous magic weapons.
 	COMPLETIONIST_WEAPON_ABIGAILS_FLOWER_Name: Guardian Ghost
-	COMPLETIONIST_WEAPON_ABIGAILS_FLOWER_Description: Obtain an Abigail's Flower near a Tombstone.
+	COMPLETIONIST_WEAPON_ABIGAILS_FLOWER_Description: Obtain an Abigail's Flower near a tombstone.
 	COMPLETIONIST_WEAPON_SLIME_STAFF_Name: Bouncy Buddy
 	COMPLETIONIST_WEAPON_SLIME_STAFF_Description: Obtain a Slime Staff from a slime enemy.
 	COMPLETIONIST_WEAPON_VAMPIRE_FROG_STAFF_Name: Vampyrius Vampyrus
@@ -147,12 +181,8 @@ Achievements: {
 	COMPLETIONIST_WEAPON_SUMMON_SENTRY_Description: Obtain all 17 sentry-summoning weapons.
 	COMPLETIONIST_WEAPON_SUMMON_WHIP_Name: Beastmaster
 	COMPLETIONIST_WEAPON_SUMMON_WHIP_Description: Obtain all 9 whips.
-	COMPLETIONIST_WEAPON_OTHER_PLACEABLE_Name: 3...2...1...Fire!
-	COMPLETIONIST_WEAPON_OTHER_PLACEABLE_Description: Obtain all 8 placeable weapons.
-	COMPLETIONIST_WEAPON_OTHER_EXPLOSIVES_Name: Fire in the Hole!
-	COMPLETIONIST_WEAPON_OTHER_EXPLOSIVES_Description: Obtain all 14 types of explosive weapons.
-	COMPLETIONIST_WEAPON_OTHER_THROWN_Name: Terravania
-	COMPLETIONIST_WEAPON_OTHER_THROWN_Description: Obtain all 3 types of thrown weapons.
+	COMPLETIONIST_WEAPON_PLACEABLE_Name: 3...2...1...Fire!
+	COMPLETIONIST_WEAPON_PLACEABLE_Description: Obtain all 8 placeable weapons.
 	COMPLETIONIST_AMMO_FLARE_Name: Flame On!
 	COMPLETIONIST_AMMO_FLARE_Description: Obtain all 6 types of flares.
 	COMPLETIONIST_AMMO_BULLET_Name: Spray n' Pray
@@ -163,6 +193,8 @@ Achievements: {
 	COMPLETIONIST_AMMO_ROCKET_Description: Obtain all 12 types of rockets.
 	COMPLETIONIST_AMMO_DART_Name: Silent but Deadly
 	COMPLETIONIST_AMMO_DART_Description: Obtain all 4 types of darts.
+	COMPLETIONIST_AMMO_SOLUTION_Name: Solutions to World Problems
+	COMPLETIONIST_AMMO_SOLUTION_Description: Obtain all 8 types of solution.
 	COMPLETIONIST_TOOL_BONE_PICKAXE_Name: Got a Bone to Pick
 	COMPLETIONIST_TOOL_BONE_PICKAXE_Description: Obtain a Bone Pickaxe from an Undead Miner.
 	COMPLETIONIST_TOOL_THE_AXE_Name: Flying V
@@ -224,9 +256,9 @@ Achievements: {
 	COMPLETIONIST_ARMOR_MINING_Name: Spelunker's Spirit
 	COMPLETIONIST_ARMOR_MINING_Description: Obtain a Mining Shirt & Pants from Undead Miners.
 	COMPLETIONIST_ARMOR_RAIN_Name: Rotten Rain
-	COMPLETIONIST_ARMOR_RAIN_Description: Obtain a Rain set from Raincoat Zombies.
+	COMPLETIONIST_ARMOR_RAIN_Description: Obtain both Rain set pieces from Raincoat Zombies.
 	COMPLETIONIST_ARMOR_SNOW_Name: Dead Cold
-	COMPLETIONIST_ARMOR_SNOW_Description: Obtain a Snow set from Frozen Zombies.
+	COMPLETIONIST_ARMOR_SNOW_Description: Obtain all 3 Snow set pieces from Frozen Zombies.
 	COMPLETIONIST_ARMOR_DIVING_HELMET_Name: Scuba Duba
 	COMPLETIONIST_ARMOR_DIVING_HELMET_Description: Obtain a Diving Helmet from a Shark.
 	COMPLETIONIST_ARMOR_DJINNS_CURSE_Name: Unfortunate Wish
@@ -242,7 +274,7 @@ Achievements: {
 	COMPLETIONIST_ARMOR_WIZARD_Name: I... Am an Enchanter
 	COMPLETIONIST_ARMOR_WIZARD_Description: Obtain all 10 wizard armor pieces.
 	COMPLETIONIST_ARMOR_OTHER_Name: Hard-Headed Hero
-	COMPLETIONIST_ARMOR_OTHER_Description: Obtain all 10 miscellaneous armor pieces.
+	COMPLETIONIST_ARMOR_OTHER_Description: Obtain all 9 miscellaneous armor pieces.
 	COMPLETIONIST_ACCESSORY_BALLOON_PUFFERFISH_Name: Do Not Eat
 	COMPLETIONIST_ACCESSORY_BALLOON_PUFFERFISH_Description: Catch a Balloon Pufferfish while fishing.
 	COMPLETIONIST_ACCESSORY_FROG_LEG_Name: Frogger Feet
@@ -271,6 +303,40 @@ Achievements: {
 	COMPLETIONIST_ACCESSORY_JELLYFISH_NECKLACE_Description: Obtain a Jellyfish Necklace from a Jellyfish.
 	COMPLETIONIST_ACCESSORY_JUNGLE_ROSE_Name: Oh So Pretty
 	COMPLETIONIST_ACCESSORY_JUNGLE_ROSE_Description: Obtain a Jungle Rose from the Jungle.
+	COMPLETIONIST_ACCESSORY_ARCTIC_DIVING_GEAR_Name: Polar Plunge
+	COMPLETIONIST_ACCESSORY_ARCTIC_DIVING_GEAR_Description: Craft some Arctic Diving Gear.
+	COMPLETIONIST_ACCESSORY_BUNDLE_HORSESHOE_BALLOONS_Name: Lucky Lift
+	COMPLETIONIST_ACCESSORY_BUNDLE_HORSESHOE_BALLOONS_Description: Craft a Bundle of Horseshoe Balloons.
+	COMPLETIONIST_ACCESSORY_CELESTIAL_CUFFS_Name: Getting Cuffed
+	COMPLETIONIST_ACCESSORY_CELESTIAL_CUFFS_Description: Craft some Celestial Cuffs.
+	COMPLETIONIST_ACCESSORY_CELESTIAL_EMBLEM_Name: Mana Magnet
+	COMPLETIONIST_ACCESSORY_CELESTIAL_EMBLEM_Description: Craft a Celestial Emblem.
+	COMPLETIONIST_ACCESSORY_CELESTIAL_SHELL_Name: Monster Mash
+	COMPLETIONIST_ACCESSORY_CELESTIAL_SHELL_Description: Craft a Celestial Shell.
+	COMPLETIONIST_ACCESSORY_FAIRY_BOOTS_Name: Pianta Impersonator
+	COMPLETIONIST_ACCESSORY_FAIRY_BOOTS_Description: Craft some Fairy Boots.
+	COMPLETIONIST_ACCESSORY_FIRE_GAUNTLET_Name: Flaming Fist
+	COMPLETIONIST_ACCESSORY_FIRE_GAUNTLET_Description: Craft a Fire Gauntlet.
+	COMPLETIONIST_ACCESSORY_FROG_GEAR_Name: It Ain’t Easy Being Green
+	COMPLETIONIST_ACCESSORY_FROG_GEAR_Description: Craft some Frog Gear.
+	COMPLETIONIST_ACCESSORY_GREEDY_RING_Name: Sticky Fingers
+	COMPLETIONIST_ACCESSORY_GREEDY_RING_Description: Craft a Greedy Ring.
+	COMPLETIONIST_ACCESSORY_HAND_OF_CREATION_Name: Master of All Trades
+	COMPLETIONIST_ACCESSORY_HAND_OF_CREATION_Description: Craft a Hand of Creation.
+	COMPLETIONIST_ACCESSORY_HELLFIRE_TREADS_Name: Trailblazer
+	COMPLETIONIST_ACCESSORY_HELLFIRE_TREADS_Description: Craft some Hellfire Treads.
+	COMPLETIONIST_ACCESSORY_LAVAPROOF_TACKLE_BAG_Name: Master Baiter
+	COMPLETIONIST_ACCESSORY_LAVAPROOF_TACKLE_BAG_Description: Craft a Lavaproof Tackle Box.
+	COMPLETIONIST_ACCESSORY_MASTER_NINJA_GEAR_Name: One With the Shadows
+	COMPLETIONIST_ACCESSORY_MASTER_NINJA_GEAR_Description: Craft some Master Ninja Gear.
+	COMPLETIONIST_ACCESSORY_SHELLPHONE_Name: Let's Talk About Your Cars Extended Warranty
+	COMPLETIONIST_ACCESSORY_SHELLPHONE_Description: Craft a Shellphone.
+	COMPLETIONIST_ACCESSORY_SNIPER_SCOPE_Name: Terrarian Sniper
+	COMPLETIONIST_ACCESSORY_SNIPER_SCOPE_Description: Craft a Sniper Scope.
+	COMPLETIONIST_ACCESSORY_THE_GRAND_DESIGN_Name: Wire Kite
+	COMPLETIONIST_ACCESSORY_THE_GRAND_DESIGN_Description: Craft The Grand Design.
+	COMPLETIONIST_ACCESSORY_ULTRA_ABSORBANT_SPONGE_Name: Absolute Absorption
+	COMPLETIONIST_ACCESSORY_ULTRA_ABSORBANT_SPONGE_Description: Craft an Ultra Absorbant Sponge.
 	COMPLETIONIST_ACCESSORY_MOVE_Name: Wanna See Me Do It Again
 	COMPLETIONIST_ACCESSORY_MOVE_Description: Obtain all 65 movement accessories.
 	COMPLETIONIST_ACCESSORY_WINGS_Name: Free Bird
@@ -319,32 +385,36 @@ Achievements: {
 	COMPLETIONIST_MINECART_FISH_Description: Obtain a Minecarp from the Angler.
 	COMPLETIONIST_MINECART_PIGRON_Name: Powered by Bacon!
 	COMPLETIONIST_MINECART_PIGRON_Description: Obtain a Pigron Minecart from a Pigron.
-	COMPLETIONIST_MINECART_Name: Coming Through!
+	COMPLETIONIST_MINECART_Name: Modern Mining
 	COMPLETIONIST_MINECART_Description: Obtain all 25 Minecarts.
 	COMPLETIONIST_VANITY_HERO_Name: Hero of Time
-	COMPLETIONIST_VANITY_HERO_Description: Craft a Hero's set.
+	COMPLETIONIST_VANITY_HERO_Description: Craft all 3 Hero's set pieces.
 	COMPLETIONIST_VANITY_LAMIA_Name: Menacing Glare
-	COMPLETIONIST_VANITY_LAMIA_Description: Obtain a Lamia set from lamia enemies.
+	COMPLETIONIST_VANITY_LAMIA_Description: Obtain all 3 Lamia set pieces from lamia enemies.
 	COMPLETIONIST_VANITY_MUMMY_Name: Budget Costume
-	COMPLETIONIST_VANITY_MUMMY_Description: Obtain a Mummy set from mummy enemies.
+	COMPLETIONIST_VANITY_MUMMY_Description: Obtain all 3 Mummy set pieces from mummy enemies.
 	COMPLETIONIST_VANITY_PEDGUIN_Name: Become the Pedguin
-	COMPLETIONIST_VANITY_PEDGUIN_Description: Obtain a Pedguin's set from penguin enemies.
+	COMPLETIONIST_VANITY_PEDGUIN_Description: Obtain all 3 Pedguin's set pieces from penguin enemies.
 	COMPLETIONIST_VANITY_PLUMBER_Name: Mr. Video Game
 	COMPLETIONIST_VANITY_PLUMBER_Description: Obtain a Plumber's Hat from a Fire Imp.
 	COMPLETIONIST_VANITY_CREEPER_Name: Aww Man
-	COMPLETIONIST_VANITY_CREEPER_Description: Obtain a Creeper set from a Goodie Bag.
-	COMPLETIONIST_VANITY_BADGER_Name: To Hell and Back
-	COMPLETIONIST_VANITY_BADGER_Description: Obtain a Badger's Hat from a boss.
+	COMPLETIONIST_VANITY_CREEPER_Description: Obtain all 3 Creeper set pieces from a Goodie Bag.
+	COMPLETIONIST_VANITY_ANGEL_HALO_Name: Baby, I Can Feel Your Halo
+	COMPLETIONIST_VANITY_ANGEL_HALO_Description: Buy an Angel Halo from the Traveling Merchant.
+	COMPLETIONIST_VANITY_BADGERS_HAT_Name: To Hell and Back
+	COMPLETIONIST_VANITY_BADGERS_HAT_Description: Obtain a Badger's Hat from a boss.
 	COMPLETIONIST_VANITY_DEAD_MANS_SWEATER_Name: Redshirt Sacrifice
 	COMPLETIONIST_VANITY_DEAD_MANS_SWEATER_Description: Obtain a Dead Man's Sweater.
-	COMPLETIONIST_VANITY_JIM_Name: My Hat Now
-	COMPLETIONIST_VANITY_JIM_Description: Obtain a Jim's Hat from the Painter.
-	COMPLETIONIST_VANITY_ROBOT_Name: Quote This
-	COMPLETIONIST_VANITY_ROBOT_Description: Obtain a Robot Hat from a Jungle enemy.
+	COMPLETIONIST_VANITY_GINGER_BEARD_Name: Beard of Piracy
+	COMPLETIONIST_VANITY_GINGER_BEARD_Description: Obtain a Ginger Beard from an Iron/Mythril Crate.
+	COMPLETIONIST_VANITY_JIMS_HAT_Name: My Hat Now
+	COMPLETIONIST_VANITY_JIMS_HAT_Description: Obtain a Jim's Hat from the Painter.
+	COMPLETIONIST_VANITY_ROBOT_HAT_Name: Quote This
+	COMPLETIONIST_VANITY_ROBOT_HAT_Description: Obtain a Robot Hat from a Jungle enemy.
 	COMPLETIONIST_VANITY_SKULL_Name: Bone Head
 	COMPLETIONIST_VANITY_SKULL_Description: Obtain a Skull from skeleton enemies.
-	COMPLETIONIST_VANITY_UMBRELLA_Name: Under my Umbrella
-	COMPLETIONIST_VANITY_UMBRELLA_Description: Obtain an Umbrella Hat from an Umbrella Slime.
+	COMPLETIONIST_VANITY_UMBRELLA_HAT_Name: Under my Umbrella
+	COMPLETIONIST_VANITY_UMBRELLA_HAT_Description: Obtain an Umbrella Hat from an Umbrella Slime.
 	COMPLETIONIST_VANITY_SETS_Name: Fashion Show
 	COMPLETIONIST_VANITY_SETS_Description: Obtain all 172 vanity set pieces.
 	COMPLETIONIST_VANITY_HALLOWEEN_Name: Trick or Treat
@@ -374,7 +444,7 @@ Achievements: {
 	COMPLETIONIST_PET_CAVELING_GARDENER_Name: Keeper of the Core
 	COMPLETIONIST_PET_CAVELING_GARDENER_Description: Obtain a Glow Tulip in the Underground or Cavern layers.
 	COMPLETIONIST_PET_THE_DIRTIEST_BLOCK_Name: Dirt is Dirty
-	COMPLETIONIST_PET_THE_DIRTIEST_BLOCK_Description: Obtain a The Dirtiest Block while digging.
+	COMPLETIONIST_PET_THE_DIRTIEST_BLOCK_Description: Obtain The Dirtiest Block while digging.
 	COMPLETIONIST_PET_JUNIMO_Name: Keeper of the Forest
 	COMPLETIONIST_PET_JUNIMO_Description: Obtain a Stardrop from a purified Joja Cola.
 	COMPLETIONIST_PET_LIZARD_Name: Chillin’ Like a Reptilian
@@ -395,7 +465,7 @@ Achievements: {
 	COMPLETIONIST_PET_ZEPHYR_FISH_Description: Catch a Zephyr Fish while fishing.
 	COMPLETIONIST_PET_WISP_Name: Will-O’-The-Wisp
 	COMPLETIONIST_PET_WISP_Description: Obtain a Wisp in a Bottle from Armored Bones enemies.
-	COMPLETIONIST_PET_Name: Animal Whisperer
+	COMPLETIONIST_PET_Name: Loyal Companions
 	COMPLETIONIST_PET_Description: Obtain all 47 pets.
 	COMPLETIONIST_PET_LIGHT_Name: Bright Buddies
 	COMPLETIONIST_PET_LIGHT_Description: Obtain all 6 light pets.
@@ -463,20 +533,56 @@ Achievements: {
 	COMPLETIONIST_CRITTER_GEM_Description: Catch all 14 gem critters.
 	COMPLETIONIST_CRITTER_GOLD_Name: The Midas Touch
 	COMPLETIONIST_CRITTER_GOLD_Description: Catch all 14 gold critters.
+	COMPLETIONIST_CRITTER_Name: King of the Critters
+	COMPLETIONIST_CRITTER_Description: Obtain all 91 critters.
 	COMPLETIONIST_DYE_STRANGE_Name: Indescribable Aura
 	COMPLETIONIST_DYE_STRANGE_Description: Obtain all 33 Strange Dyes from the Dry Trader.
+	COMPLETIONIST_DYE_CRAFT_Name: Lunar Liaison
+	COMPLETIONIST_DYE_CRAFT_Description: Craft all 7 craftable special effect dyes.
+	COMPLETIONIST_DYE_OTHER_Name: Feeling Like a Fairy
+	COMPLETIONIST_DYE_OTHER_Description: Obtain all 3 miscellaneous special effect dyes.
+	COMPLETIONIST_DYE_HAIR_Name: Express Yourself
+	COMPLETIONIST_DYE_HAIR_Description: Obtain all 12 hair dyes.
 	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Name: Panning for Platinum
-	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Description: Extract a Platinum Coin.
+	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Description: Extract a Platinum Coin from a block.
+	COMPLETIONIST_EXTRACT_JOURNEYMAN_BAIT_Name: ...Another Man's Treasure
+	COMPLETIONIST_EXTRACT_JOURNEYMAN_BAIT_Description: Extra Journeyman's Bait from a piece of junk.
+	COMPLETIONIST_FISH_PINK_PEARL_Name: So Shiny!
+	COMPLETIONIST_FISH_PINK_PEARL_Description: Obtain a Pink Pearl from an Oyster.
 	COMPLETIONIST_FISH_NORMAL_Name: Level 99 Fishing
 	COMPLETIONIST_FISH_NORMAL_Description: Catch all 30 normal fish.
 	COMPLETIONIST_FISH_QUEST_Name: Motley Crew
 	COMPLETIONIST_FISH_QUEST_Description: Catch all 41 quest fish.
+	COMPLETIONIST_FISH_CRATE_Name: Loot Crates
+	COMPLETIONIST_FISH_CRATE_Description: Catch all 26 crates.
+	COMPLETIONIST_FISH_JUNK_Name: One Man's Trash...
+	COMPLETIONIST_FISH_JUNK_Description: Catch all 4 pieces of junk.
+	COMPLETIONIST_FISH_REWARD_Name: Overfishing
+	COMPLETIONIST_FISH_REWARD_Description: Obtain all 52 fishing rewards from the Angler.
 	COMPLETIONIST_FURNITURE_CHIPPYS_COUCH_Name: Heeellllllo Terraria Enthusiasts!
 	COMPLETIONIST_FURNITURE_CHIPPYS_COUCH_Description: Obtain a Chippy's Couch from Skeletron.
 	COMPLETIONIST_FURNITURE_DESERT_SPIRIT_LAMP_Name: Make a Wish
 	COMPLETIONIST_FURNITURE_DESERT_SPIRIT_LAMP_Description: Obtain a Desert Spirit Lamp from a Desert Spirit.
-	COMPLETIONIST_FURNITURE_ENCHANTED_SUNDIAL_Name: Time Machine
-	COMPLETIONIST_FURNITURE_ENCHANTED_SUNDIAL_Description: Obtain an Enchanted Sundial from a Crate.
+	COMPLETIONIST_FURNITURE_ENCHANTED_SUNDIAL_Name: Early Bird
+	COMPLETIONIST_FURNITURE_ENCHANTED_SUNDIAL_Description: Obtain an Enchanted Sundial from a crate.
+	COMPLETIONIST_FURNITURE_ENCHANTED_MOONDIAL_Name: Night Owl
+	COMPLETIONIST_FURNITURE_ENCHANTED_MOONDIAL_Description: Obtain an Enchanted Moondial.
+	COMPLETIONIST_FURNITURE_HAT_RACK_Name: Not Just a Hat Rack
+	COMPLETIONIST_FURNITURE_HAT_RACK_Description: Craft a Hat Rack.
+	COMPLETIONIST_FURNITURE_PIGRONATA_Name: Party Time!
+	COMPLETIONIST_FURNITURE_PIGRONATA_Description: Buy a Pigronata from the Party Girl.
+	COMPLETIONIST_FURNITURE_PORTAL_GUN_STATION_Name: Aperture Science Innovation
+	COMPLETIONIST_FURNITURE_PORTAL_GUN_STATION_Description: Buy a Portal Gun Station from the Cyborg.
+	COMPLETIONIST_FURNITURE_TARGET_DUMMY_Name: Built Terrarian-Tough
+	COMPLETIONIST_FURNITURE_TARGET_DUMMY_Description: Craft a Target Dummy.
+	COMPLETIONIST_FURNITURE_BUFF_Name: Feng Shui
+	COMPLETIONIST_FURNITURE_BUFF_Description: Obtain all 14 buff-providing/stat-boosting furniture.
+	COMPLETIONIST_FURNITURE_DISPLAY_Name: Conversation Pieces
+	COMPLETIONIST_FURNITURE_DISPLAY_Description: Obtain all 5 item-displaying furniture.
+	COMPLETIONIST_FURNITURE_THEMED_Name: Sprucing up the Place
+	COMPLETIONIST_FURNITURE_THEMED_Description: Obtain all 11 themed furniture crafting stations.
+	COMPLETIONIST_FURNITURE_TOMBSTONE_Name: Reflecting on Past Mistakes
+	COMPLETIONIST_FURNITURE_TOMBSTONE_Description: Obtain all 11 tombstones.
 	COMPLETIONIST_NOVELTY_IVY_Name: Property of Dead Man's Sweater
 	COMPLETIONIST_NOVELTY_IVY_Description: Obtain an Ivy from the Steampunker named Whitney.
 	COMPLETIONIST_NOVELTY_WYVERN_KITE_Name: Waving in the Wind
@@ -513,7 +619,7 @@ Achievements: {
 	COMPLETIONIST_PAINTING_JUNGLE_TEMPLE_Description: Obtain the painting from a Jungle Temple.
 	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_Name: Happy Little Tree
 	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_Description: Obtain all 32 paintings from Underground Cabins.
-	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_DESERT_Name: Snakes... I Hate Snakes
+	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_DESERT_Name: Snakes, I Hate Snakes
 	COMPLETIONIST_PAINTING_UNDERGROUND_CABIN_DESERT_Description: Obtain all 14 paintings from Desert Underground Cabins.
 	COMPLETIONIST_PAINTING_UNDERWORLD_Name: Darkness
 	COMPLETIONIST_PAINTING_UNDERWORLD_Description: Obtain all 12 paintings from The Underworld.
@@ -525,6 +631,8 @@ Achievements: {
 	COMPLETIONIST_PAINTING_SOLAR_Description: Obtain all 8 paintings from Solar Eclipse enemies.
 	COMPLETIONIST_PAINTING_GOODIE_Name: Hallow's Eve
 	COMPLETIONIST_PAINTING_GOODIE_Description: Obtain all 5 paintings from Goodie Bags.
+	COMPLETIONIST_PAINTING_ANIMAL_SKINS_Name: Exotic Taste
+	COMPLETIONIST_PAINTING_ANIMAL_SKINS_Description: Buy all 3 animal skins from the Traveling Merchant.
 	COMPLETIONIST_PYLON_UNIVERSAL_Name: Beast Mode
 	COMPLETIONIST_PYLON_UNIVERSAL_Description: Buy a Universal Pylon from the Zoologist.
 	COMPLETIONIST_PYLON_Name: Teleportation Station
@@ -549,4 +657,6 @@ Achievements: {
 	COMPLETIONIST_TROPHY_EVENT_Description: Obtain all 10 event boss trophies.
 	COMPLETIONIST_TROPHY_FISH_Name: Fish Fear Me
 	COMPLETIONIST_TROPHY_FISH_Description: Obtain all 4 fish trophies from the Angler.
+	COMPLETIONIST_TROPHY_GOLF_Name: Pro Performance Proof
+	COMPLETIONIST_TROPHY_GOLF_Description: Buy all 3 golf trophies from the Golfer.
 }

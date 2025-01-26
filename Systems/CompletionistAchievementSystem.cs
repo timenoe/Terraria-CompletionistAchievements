@@ -18,7 +18,8 @@ namespace CompletionistAchievements.Systems
         {
             ConditionReqs reqs = new(PlayerDiff.Classic, WorldDiff.Classic, SpecialSeed.None);
 
-            RegisterStatAchievements(reqs);
+            RegisterBuffAchievements(reqs);
+            RegisterConsumableAchievements(reqs);
 
             RegisterWeaponAchievements(reqs);
             RegisterAmmoAchievements(reqs);
@@ -45,15 +46,67 @@ namespace CompletionistAchievements.Systems
         }
 
         /// <summary>
-        /// Register stat achievements
+        /// Register buff achievements
         /// </summary>
         /// <param name="reqs">Common achievement requirements</param>
-        private void RegisterStatAchievements(ConditionReqs reqs)
+        private void RegisterBuffAchievements(ConditionReqs reqs)
         {
-            // Verified w/ https://terraria.wiki.gg/wiki/Consumables#Permanent_boosters
-            int[] StatItems = [ItemID.LifeCrystal, ItemID.LifeFruit, ItemID.ManaCrystal, ItemID.CombatBook, ItemID.ArtisanLoaf, ItemID.TorchGodsFavor, ItemID.AegisCrystal, ItemID.AegisFruit, ItemID.ArcaneCrystal, ItemID.Ambrosia, ItemID.GummyWorm, ItemID.GalaxyPearl, ItemID.CombatBookVolumeTwo, ItemID.PeddlersSatchel];
+            // Verified w/ https://terraria.wiki.gg/wiki/Buffs
+            Dictionary<string, int[]> Buffs = new()
+            {
+                // { "BUFF_CONSUMABLE", [BuffID.AmmoReservation, BuffID.Archery, BuffID.Battle, BuffID.Builder, BuffID.BiomeSight, BuffID.Calm, BuffID.Crate, BuffID.Dangersense, BuffID.Endurance, BuffID.WellFed3, BuffID.Featherfall, BuffID.Fishing, BuffID.Flipper, BuffID.Gills, BuffID.Gravitation, BuffID.Heartreach, BuffID.Hunter, BuffID.Inferno, BuffID.Invisibility, BuffID.Ironskin, BuffID.Lifeforce, BuffID.Lucky, BuffID.MagicPower, BuffID.ManaRegeneration, BuffID.Mining, BuffID.NightOwl, BuffID.ObsidianSkin, BuffID.WellFed2, BuffID.Rage, BuffID.Regeneration, BuffID.Shine, BuffID.Sonar, BuffID.Spelunker, BuffID.Summoning, BuffID.Swiftness, BuffID.Thorns, BuffID.Titan, BuffID.Warmth, BuffID.WaterWalking, BuffID.Wrath, BuffID.WellFed, BuffID.WeaponImbueConfetti, BuffID.WeaponImbueCursedFlames, BuffID.WeaponImbueFire, BuffID.WeaponImbueGold, BuffID.WeaponImbueIchor, BuffID.WeaponImbueNanites, BuffID.WeaponImbuePoison, BuffID.WeaponImbueVenom] },
+                { "BUFF_ENVIRONMENT", [BuffID.Campfire, BuffID.DryadsWard, BuffID.Sunflower, BuffID.HeartLamp, BuffID.Honey, BuffID.PeaceCandle, BuffID.StarInBottle, BuffID.CatBast, BuffID.MonsterBanner] },
+                { "BUFF_EQUIPMENT", [BuffID.CoolWhipPlayerBuff, BuffID.BeetleEndurance1, BuffID.BeetleEndurance2, BuffID.BeetleEndurance3, BuffID.BeetleMight1, BuffID.BeetleMight2, BuffID.BeetleMight3, BuffID.NebulaUpDmg1, BuffID.NebulaUpDmg2, BuffID.NebulaUpDmg3, BuffID.SwordWhipPlayerBuff, BuffID.ScytheWhipPlayerBuff, BuffID.ShadowDodge, BuffID.IceBarrier, BuffID.ThornWhipPlayerBuff, BuffID.LeafCrystal, BuffID.SoulDrain, BuffID.NebulaUpLife1, BuffID.NebulaUpLife2, BuffID.NebulaUpLife3, BuffID.NebulaUpMana1, BuffID.NebulaUpMana2, BuffID.NebulaUpMana3, BuffID.Merfolk, BuffID.Panic, BuffID.RapidHealing, BuffID.TitaniumStorm, BuffID.SolarShield1, BuffID.SolarShield2, BuffID.SolarShield3, BuffID.StardustGuardianMinion, BuffID.ParryDamageBuff, BuffID.Werewolf] },
+                { "BUFF_FURNITURE", [BuffID.AmmoBox, BuffID.Bewitched, BuffID.Clairvoyance, BuffID.Sharpened, BuffID.WarTable, BuffID.SugarRush] },
+                { "BUFF_LIGHT_PET", [BuffID.ShadowOrb, BuffID.CrimsonHeart, BuffID.MagicLantern, BuffID.FairyBlue, BuffID.FairyGreen, BuffID.FairyRed, BuffID.DD2OgrePet, BuffID.Wisp] },
+                { "BUFF_MINECART", [BuffID.MinecartLeftWood, BuffID.MinecartRightWood, BuffID.MinecartLeft, BuffID.MinecartRight, BuffID.DesertMinecartLeft, BuffID.DesertMinecartRight, BuffID.FishMinecartLeft, BuffID.FishMinecartRight, BuffID.BeeMinecartLeft, BuffID.BeeMinecartRight, BuffID.LadybugMinecartLeft, BuffID.LadybugMinecartRight, BuffID.PigronMinecartLeft, BuffID.PigronMinecartRight, BuffID.SunflowerMinecartLeft, BuffID.SunflowerMinecartRight, BuffID.HellMinecartLeft, BuffID.HellMinecartRight, BuffID.ShroomMinecartLeft, BuffID.ShroomMinecartRight, BuffID.AmethystMinecartLeft, BuffID.AmethystMinecartRight, BuffID.TopazMinecartLeft, BuffID.TopazMinecartRight, BuffID.SapphireMinecartLeft, BuffID.SapphireMinecartRight, BuffID.EmeraldMinecartLeft, BuffID.EmeraldMinecartRight, BuffID.RubyMinecartLeft, BuffID.RubyMinecartRight, BuffID.DiamondMinecartLeft, BuffID.DiamondMinecartRight, BuffID.AmberMinecartLeft, BuffID.AmberMinecartRight, BuffID.BeetleMinecartLeft, BuffID.BeetleMinecartRight, BuffID.MeowmereMinecartLeft, BuffID.MeowmereMinecartRight, BuffID.PartyMinecartLeft, BuffID.PartyMinecartRight, BuffID.PirateMinecartLeft, BuffID.PirateMinecartRight, BuffID.SteampunkMinecartLeft, BuffID.SteampunkMinecartRight, BuffID.CoffinMinecartLeft, BuffID.CoffinMinecartRight, BuffID.DiggingMoleMinecartLeft, BuffID.DiggingMoleMinecartRight, BuffID.FartMinecartLeft, BuffID.FartMinecartRight, BuffID.TerraFartMinecartLeft, BuffID.TerraFartMinecartRight] },
+                { "BUFF_MOUNT", [BuffID.SlimeMount, BuffID.BeeMount, BuffID.TurtleMount, BuffID.BunnyMount, BuffID.PogoStickMount, BuffID.GolfCartMount, BuffID.Flamingo, BuffID.PaintedHorseMount, BuffID.MajesticHorseMount, BuffID.DarkHorseMount, BuffID.LavaSharkMount, BuffID.BasiliskMount, BuffID.WolfMount, BuffID.UnicornMount, BuffID.PigronMount, BuffID.QueenSlimeMount, BuffID.Rudolph, BuffID.ScutlixMount, BuffID.UFOMount, BuffID.DrillMount] },
+                { "BUFF_PET", [BuffID.BabyDinosaur, BuffID.BabyEater, BuffID.BabyFaceMonster, BuffID.BabyGrinch, BuffID.BabyHornet, BuffID.BabyImp, BuffID.BabyPenguin, BuffID.BabyRedPanda, BuffID.BabySkeletronHead, BuffID.BabySnowman, BuffID.BabyTruffle, BuffID.BabyWerewolf, BuffID.BerniePet, BuffID.BlackCat, BuffID.BlueChickenPet, BuffID.CavelingGardener, BuffID.ChesterPet, BuffID.CompanionCube, BuffID.CursedSapling, BuffID.DirtiestBlock, BuffID.DynamiteKitten, BuffID.UpbeatStar, BuffID.EyeballSpring, BuffID.FennecFox, BuffID.GlitteryButterfly, BuffID.GlommerPet, BuffID.PetDD2Dragon, BuffID.JunimoPet, BuffID.LilHarpy, BuffID.PetLizard, BuffID.MiniMinotaur, BuffID.PetParrot, BuffID.PigPet, BuffID.Plantero, BuffID.PetDD2Gato, BuffID.Puppy, BuffID.PlanteraPet, BuffID.PetSpider, BuffID.ShadowMimic, BuffID.SharkPup, BuffID.Spiffo, BuffID.Squashling, BuffID.SugarGlider, BuffID.TikiSpirit, BuffID.PetTurtle, BuffID.VoltBunny, BuffID.ZephyrFish] },
+                { "BUFF_SUMMON", [BuffID.AbigailMinion, BuffID.BabyBird, BuffID.BabySlime, BuffID.DeadlySphere, BuffID.StormTiger, BuffID.Smolstar, BuffID.FlinxMinion, BuffID.HornetMinion, BuffID.ImpMinion, BuffID.PirateMinion, BuffID.Pygmies, BuffID.Ravens, BuffID.BatOfLight, BuffID.SharknadoMinion, BuffID.SpiderMinion, BuffID.StardustMinion, BuffID.StardustDragonMinion, BuffID.EmpressBlade, BuffID.TwinEyesMinion, BuffID.UFOMinion, BuffID.VampireFrog] },
+            };
 
-            RegisterAchievement("STAT_ITEMS", ItemUseCondition.UseAll(reqs, StatItems), true, AchievementCategory.Collector);
+            foreach (var group in Buffs)
+            {
+                if (group.Key == "BUFF_MINECART")
+                {
+                    List<AchCondition> conds = [];
+                    for (int i = 0; i < group.Value.Length; i += 2)
+                        conds.Add(BuffAddCondition.AddAny(reqs, [group.Value[i], group.Value[i + 1]]));
+
+                    RegisterAchievement("BUFF_MINECART", conds, true, AchievementCategory.Collector);
+                }
+                else
+                    RegisterAchievement(group.Key, BuffAddCondition.AddAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+            }
+        }
+
+        /// <summary>
+        /// Register consumable achievements
+        /// </summary>
+        /// <param name="reqs">Common achievement requirements</param>
+        private void RegisterConsumableAchievements(ConditionReqs reqs)
+        {
+            // Verified w/:
+            // https://terraria.wiki.gg/wiki/Consumables
+            // https://terraria.wiki.gg/wiki/Food
+            // https://terraria.wiki.gg/wiki/Potions (added Ale/Sake to buff potions)
+            Dictionary<string, int[]> Consumables = new()
+            {
+                { "CONSUMABLE_EXPLOSIVE", [ItemID.Bomb, ItemID.BombFish, ItemID.BouncyBomb, ItemID.BouncyDynamite, ItemID.DirtBomb, ItemID.DryBomb, ItemID.Dynamite, ItemID.HoneyBomb, ItemID.LavaBomb, ItemID.ScarabBomb, ItemID.StickyBomb, ItemID.DirtStickyBomb, ItemID.StickyDynamite, ItemID.WetBomb] },
+                { "CONSUMABLE_FOOD", [ItemID.Marshmallow, ItemID.JojaCola, ItemID.Apple, ItemID.Apricot, ItemID.Banana, ItemID.BlackCurrant, ItemID.BloodOrange, ItemID.Cherry, ItemID.Coconut, ItemID.Elderberry, ItemID.Grapefruit, ItemID.Lemon, ItemID.Mango, ItemID.Peach, ItemID.Pineapple, ItemID.Plum, ItemID.Pomegranate, ItemID.Rambutan, ItemID.SpicyPepper, ItemID.Teacup, ItemID.Dragonfruit, ItemID.Starfruit, ItemID.ChristmasPudding, ItemID.CookedFish, ItemID.GingerbreadCookie, ItemID.SugarCookie, ItemID.FroggleBunwich, ItemID.AppleJuice, ItemID.BunnyStew, ItemID.CookedMarshmallow, ItemID.GrilledSquirrel, ItemID.Lemonade, ItemID.PeachSangria, ItemID.RoastedBird, ItemID.SauteedFrogLegs, ItemID.ShuckedOyster, ItemID.BowlofSoup, ItemID.MonsterLasagna, ItemID.PadThai, ItemID.PumpkinPie, ItemID.Sashimi, ItemID.BananaSplit, ItemID.CoffeeCup, ItemID.CookedShrimp, ItemID.Escargot, ItemID.Fries, ItemID.BananaDaiquiri, ItemID.FruitJuice, ItemID.LobsterTail, ItemID.Pho, ItemID.RoastedDuck, ItemID.Burger, ItemID.Pizza, ItemID.Spaghetti, ItemID.BloodyMoscato, ItemID.MilkCarton, ItemID.PinaColada, ItemID.SmoothieofDarkness, ItemID.TropicalSmoothie, ItemID.ChickenNugget, ItemID.FriedEgg, ItemID.GrubSoup, ItemID.IceCream, ItemID.SeafoodDinner, ItemID.CreamSoda, ItemID.Grapes, ItemID.Hotdog, ItemID.Nachos, ItemID.FruitSalad, ItemID.PotatoChips, ItemID.ShrimpPoBoy, ItemID.ChocolateChipCookie, ItemID.PrismaticPunch, ItemID.ApplePie, ItemID.GrapeJuice, ItemID.Milkshake, ItemID.Steak, ItemID.BBQRibs, ItemID.Bacon, ItemID.GoldenDelight] },
+                { "CONSUMABLE_LICENSE", [ItemID.LicenseCat, ItemID.LicenseDog, ItemID.LicenseBunny] },
+                { "CONSUMABLE_POTION_BUFF", [ItemID.AmmoReservationPotion, ItemID.ArcheryPotion, ItemID.BattlePotion, ItemID.BiomeSightPotion, ItemID.BuilderPotion, ItemID.CalmingPotion, ItemID.CratePotion, ItemID.TrapsightPotion, ItemID.EndurancePotion, ItemID.FeatherfallPotion, ItemID.FishingPotion, ItemID.FlipperPotion, ItemID.GillsPotion, ItemID.GravitationPotion, ItemID.LuckPotionGreater, ItemID.HeartreachPotion, ItemID.HunterPotion, ItemID.InfernoPotion, ItemID.InvisibilityPotion, ItemID.IronskinPotion, ItemID.LuckPotionLesser, ItemID.LifeforcePotion, ItemID.LovePotion, ItemID.LuckPotion, ItemID.MagicPowerPotion, ItemID.ManaRegenerationPotion, ItemID.MiningPotion, ItemID.NightOwlPotion, ItemID.ObsidianSkinPotion, ItemID.RagePotion, ItemID.RegenerationPotion, ItemID.ShinePotion, ItemID.SonarPotion, ItemID.SpelunkerPotion, ItemID.StinkPotion, ItemID.SummoningPotion, ItemID.SwiftnessPotion, ItemID.ThornsPotion, ItemID.TitanPotion, ItemID.WarmthPotion, ItemID.WaterWalkingPotion, ItemID.WrathPotion, ItemID.Ale, ItemID.Sake] },
+                { "CONSUMABLE_POTION_FLASK", [ItemID.FlaskofCursedFlames, ItemID.FlaskofFire, ItemID.FlaskofGold, ItemID.FlaskofIchor, ItemID.FlaskofNanites, ItemID.FlaskofParty, ItemID.FlaskofPoison, ItemID.FlaskofVenom] },
+                { "CONSUMABLE_POTION_RECOVERY", [ItemID.Mushroom, ItemID.BottledHoney, ItemID.GreaterHealingPotion, ItemID.HealingPotion, ItemID.LesserHealingPotion, ItemID.ManaPotion, ItemID.RestorationPotion, ItemID.SuperHealingPotion, ItemID.SuperManaPotion, ItemID.BottledWater, ItemID.GreaterManaPotion, ItemID.LesserManaPotion, ItemID.Eggnog, ItemID.Honeyfin, ItemID.StrangeBrew] },
+                { "CONSUMABLE_POTION_OTHER", [ItemID.GenderChangePotion, ItemID.PotionOfReturn, ItemID.RecallPotion, ItemID.TeleportationPotion, ItemID.WormholePotion] },
+                { "CONSUMABLE_PERMANENT", [ItemID.LifeCrystal, ItemID.LifeFruit, ItemID.ManaCrystal, ItemID.CombatBook, ItemID.ArtisanLoaf, ItemID.TorchGodsFavor, ItemID.AegisCrystal, ItemID.AegisFruit, ItemID.ArcaneCrystal, ItemID.Ambrosia, ItemID.GummyWorm, ItemID.GalaxyPearl, ItemID.CombatBookVolumeTwo, ItemID.PeddlersSatchel] },
+                { "CONSUMABLE_TOOL", [ItemID.PurificationPowder, ItemID.VilePowder, ItemID.ViciousPowder, ItemID.HolyWater, ItemID.UnholyWater, ItemID.BloodWater, ItemID.Glowstick, ItemID.StickyGlowstick, ItemID.BouncyGlowstick, ItemID.SpelunkerGlowstick, ItemID.FairyGlowstick, ItemID.ChumBucket, ItemID.Fertilizer] },
+                { "CONSUMABLE_WEAPON", [ItemID.PaperAirplaneA, ItemID.PaperAirplaneB, ItemID.Snowball, ItemID.Shuriken, ItemID.RottenEgg, ItemID.ThrowingKnife, ItemID.PoisonedKnife, ItemID.Beenade, ItemID.BoneDagger, ItemID.StarAnise, ItemID.SpikyBall, ItemID.Javelin, ItemID.FrostDaggerfish, ItemID.Bone, ItemID.MolotovCocktail, ItemID.BoneJavelin, ItemID.PartyGirlGrenade, ItemID.Grenade, ItemID.StickyGrenade, ItemID.BouncyGrenade] },
+                { "CONSUMABLE_OTHER", [ItemID.StinkPotion, ItemID.LovePotion, ItemID.SmokeBomb, ItemID.ConfettiGun, ItemID.BeachBall, ItemID.Football, ItemID.Geode, ItemID.TreeGlobe, ItemID.MoonGlobe, ItemID.WorldGlobe, ItemID.ReleaseLantern, ItemID.ReleaseDoves, ItemID.GelBalloon] },
+            };
+
+            foreach (var group in Consumables)
+                RegisterAchievement(group.Key, ItemUseCondition.UseAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -66,7 +119,7 @@ namespace CompletionistAchievements.Systems
             RegisterRangedWeaponAchievements(reqs);
             RegisterMagicWeaponAchievements(reqs);
             RegisterSummonWeaponAchievements(reqs);
-            RegisterOtherWeaponAchievements(reqs);
+            RegisterPlaceableWeaponAchievements(reqs);
         }
 
         /// <summary>
@@ -86,11 +139,14 @@ namespace CompletionistAchievements.Systems
                 { "WEAPON_MELEE_OTHER", [ItemID.Terragrim, ItemID.JoustingLance, ItemID.ShadowFlameKnife, ItemID.HallowJoustingLance, ItemID.MonkStaffT1, ItemID.ScourgeoftheCorruptor, ItemID.VampireKnives, ItemID.ShadowJoustingLance, ItemID.PiercingStarlight, ItemID.MonkStaffT3, ItemID.DayBreak, ItemID.SolarEruption, ItemID.Zenith] }
             };
 
+            // Verified w/ https://terraria.wiki.gg/wiki/Skeleton_Merchant
+            int[] SkeletonMerchantYoyos = [ItemID.BlueCounterweight, ItemID.RedCounterweight, ItemID.PurpleCounterweight, ItemID.GreenCounterweight, ItemID.Gradient, ItemID.FormatC, ItemID.YoYoGlove];
+
             // Rare Swords
             RegisterAchievement("WEAPON_BAT_BAT", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BatBat), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_BEAM_SWORD", NpcDropCondition.Drop(reqs, NPCID.ArmoredSkeleton, ItemID.BeamSword), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_BLADED_GLOVE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BladedGlove), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_BLADETOUNGUE", FishCatchCondition.Catch(reqs, ItemID.Bladetongue), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_BLADETONGUE", FishCatchCondition.Catch(reqs, ItemID.Bladetongue), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_BONE_SWORD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BoneSword), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_EXOTIC_SCIMITAR", NpcDropCondition.Drop(reqs, NPCID.DyeTrader, ItemID.DyeTradersScimitar), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_GLADIUS", NpcDropCondition.Drop(reqs, NPCID.GreekSkeleton, ItemID.Gladius), AchievementCategory.Collector);
@@ -107,6 +163,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_HELFIRE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.HelFire), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_KRAKEN", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Kraken), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_YELETS", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Yelets), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_SKELETON_MERCHANT", NpcBuyCondition.BuyAll(reqs, NPCID.SkeletonMerchant, SkeletonMerchantYoyos), true, AchievementCategory.Collector);
 
             // Rare Spears
             RegisterAchievement("WEAPON_OBSIDIAN_SWORDFISH", FishCatchCondition.Catch(reqs, ItemID.ObsidianSwordfish), AchievementCategory.Collector);
@@ -142,7 +199,6 @@ namespace CompletionistAchievements.Systems
                 { "WEAPON_RANGED_REPEATER", [ItemID.CobaltRepeater, ItemID.PalladiumRepeater, ItemID.MythrilRepeater, ItemID.OrichalcumRepeater, ItemID.AdamantiteRepeater, ItemID.TitaniumRepeater, ItemID.HallowedRepeater, ItemID.ChlorophyteShotbow, ItemID.StakeLauncher] },
                 { "WEAPON_RANGED_GUN", [ItemID.RedRyder, ItemID.FlintlockPistol, ItemID.Musket, ItemID.TheUndertaker, ItemID.Revolver, ItemID.Minishark, ItemID.Boomstick, ItemID.QuadBarrelShotgun, ItemID.Handgun, ItemID.PhoenixBlaster, ItemID.PewMaticHorn, ItemID.ClockworkAssaultRifle, ItemID.Gatligator, ItemID.Shotgun, ItemID.OnyxBlaster, ItemID.Uzi, ItemID.Megashark, ItemID.VenusMagnum, ItemID.TacticalShotgun, ItemID.SniperRifle, ItemID.CandyCornRifle, ItemID.ChainGun, ItemID.Xenopopper, ItemID.VortexBeater, ItemID.SDMG] },
                 { "WEAPON_RANGED_LAUNCHER", [ItemID.GrenadeLauncher, ItemID.ProximityMineLauncher, ItemID.RocketLauncher, ItemID.NailGun, ItemID.Stynger, ItemID.JackOLanternLauncher, ItemID.SnowballCannon, ItemID.FireworksLauncher, ItemID.ElectrosphereLauncher, ItemID.Celeb2] },
-                { "WEAPON_RANGED_CONSUMABLE", [ItemID.PaperAirplaneA, ItemID.PaperAirplaneB, ItemID.Shuriken, ItemID.ThrowingKnife, ItemID.PoisonedKnife, ItemID.Snowball, ItemID.SpikyBall, ItemID.Bone, ItemID.RottenEgg, ItemID.StarAnise, ItemID.MolotovCocktail, ItemID.FrostDaggerfish, ItemID.Javelin, ItemID.BoneJavelin, ItemID.BoneDagger, ItemID.Grenade, ItemID.StickyGrenade, ItemID.BouncyGrenade, ItemID.Beenade, ItemID.PartyGirlGrenade] },
                 { "WEAPON_RANGED_OTHER", [ItemID.Blowpipe, ItemID.Sandgun, ItemID.Blowgun, ItemID.SnowballCannon, ItemID.PainterPaintballGun, ItemID.AleThrowingGlove, ItemID.Harpoon, ItemID.StarCannon, ItemID.Toxikarp, ItemID.DartPistol, ItemID.DartRifle, ItemID.CoinGun, ItemID.Flamethrower, ItemID.PiranhaGun, ItemID.ElfMelter, ItemID.SuperStarCannon] }
             };
 
@@ -151,7 +207,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_MARROW", NpcDropCondition.Drop(reqs, NPCID.SkeletonArcher, ItemID.Marrow), AchievementCategory.Collector);
 
             // Rare Guns
-            RegisterAchievement("WEAPON_RED_RIDER", ItemOpenCondition.Open(reqs, ItemID.Present, ItemID.RedRyder), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_RED_RYDER", ItemOpenCondition.Open(reqs, ItemID.Present, ItemID.RedRyder), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_UZI", NpcDropCondition.Drop(reqs, NPCID.AngryTrapper, ItemID.Uzi), AchievementCategory.Collector);
 
             // Rare Other
@@ -233,18 +289,12 @@ namespace CompletionistAchievements.Systems
         /// Register other weapon achievements
         /// </summary>
         /// <param name="reqs">Common achievement requirements</param>
-        private void RegisterOtherWeaponAchievements(ConditionReqs reqs)
+        private void RegisterPlaceableWeaponAchievements(ConditionReqs reqs)
         {
             // Verified w/ https://terraria.wiki.gg/wiki/Weapons
-            Dictionary<string, int[]> OtherWeapons = new()
-            {
-                { "WEAPON_OTHER_PLACEABLE", [ItemID.SnowballLauncher, ItemID.RedRocket, ItemID.GreenRocket, ItemID.BlueRocket, ItemID.YellowRocket, ItemID.Cannon, ItemID.BunnyCannon, ItemID.LandMine] },
-                { "WEAPON_OTHER_EXPLOSIVE", [ItemID.Bomb, ItemID.StickyBomb, ItemID.BouncyBomb, ItemID.ScarabBomb, ItemID.DirtBomb, ItemID.DirtStickyBomb, ItemID.Dynamite, ItemID.StickyDynamite, ItemID.BouncyDynamite, ItemID.BombFish, ItemID.DryBomb, ItemID.HoneyBomb, ItemID.LavaBomb, ItemID.WetBomb] },
-                { "WEAPON_OTHER_THROWN", [ItemID.HolyWater, ItemID.UnholyWater, ItemID.BloodWater] }
-            };
+            int[] PlaceableWeapons = [ItemID.SnowballLauncher, ItemID.RedRocket, ItemID.GreenRocket, ItemID.BlueRocket, ItemID.YellowRocket, ItemID.Cannon, ItemID.BunnyCannon, ItemID.LandMine];
 
-            foreach (var group in OtherWeapons)
-                RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_PLACEABLE", ItemGrabCondition.GrabAll(reqs, PlaceableWeapons), true, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -259,7 +309,8 @@ namespace CompletionistAchievements.Systems
                 { "AMMO_BULLET", [ItemID.MusketBall, ItemID.MeteorShot, ItemID.SilverBullet, ItemID.CrystalBullet, ItemID.CursedBullet, ItemID.ChlorophyteBullet, ItemID.HighVelocityBullet, ItemID.IchorBullet, ItemID.VenomBullet, ItemID.PartyBullet, ItemID.NanoBullet, ItemID.ExplodingBullet, ItemID.GoldenBullet, ItemID.EndlessMusketPouch, ItemID.MoonlordBullet, ItemID.TungstenBullet] },
                 { "AMMO_ARROW", [ItemID.WoodenArrow, ItemID.FlamingArrow, ItemID.UnholyArrow, ItemID.JestersArrow, ItemID.HellfireArrow, ItemID.HolyArrow, ItemID.CursedArrow, ItemID.FrostburnArrow, ItemID.ChlorophyteArrow, ItemID.IchorArrow, ItemID.VenomArrow, ItemID.BoneArrow, ItemID.EndlessQuiver, ItemID.MoonlordArrow, ItemID.ShimmerArrow] },
                 { "AMMO_ROCKET", [ItemID.RocketI, ItemID.RocketII, ItemID.RocketIII, ItemID.RocketIV, ItemID.ClusterRocketI, ItemID.ClusterRocketII, ItemID.DryRocket, ItemID.WetRocket, ItemID.LavaRocket, ItemID.HoneyRocket, ItemID.MiniNukeI, ItemID.MiniNukeII] },
-                { "AMMO_DART", [ItemID.PoisonDart, ItemID.CrystalDart, ItemID.CursedDart, ItemID.IchorDart] }
+                { "AMMO_DART", [ItemID.PoisonDart, ItemID.CrystalDart, ItemID.CursedDart, ItemID.IchorDart] },
+                { "AMMO_SOLUTION", [ItemID.GreenSolution, ItemID.SandSolution, ItemID.SnowSolution, ItemID.DirtSolution, ItemID.BlueSolution, ItemID.PurpleSolution, ItemID.DarkBlueSolution, ItemID.RedSolution] }
             };
 
             foreach (var group in Ammo)
@@ -489,6 +540,24 @@ namespace CompletionistAchievements.Systems
             // Rare Vanity
             RegisterAchievement("ACCESSORY_JUNGLE_ROSE", TileDropCondition.Drop(reqs, ItemID.JungleRose), AchievementCategory.Collector);
 
+            // Rare Craft
+            RegisterAchievement("ACCESSORY_ARCTIC_DIVING_GEAR", ItemCraftCondition.Craft(reqs, ItemID.ArcticDivingGear), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_CELESTIAL_CUFFS", ItemCraftCondition.Craft(reqs, ItemID.CelestialCuffs), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_CELESTIAL_EMBLEM", ItemCraftCondition.Craft(reqs, ItemID.CelestialEmblem), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_CELESTIAL_SHELL", ItemCraftCondition.Craft(reqs, ItemID.CelestialShell), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_FAIRY_BOOTS", ItemCraftCondition.Craft(reqs, ItemID.FairyBoots), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_FIRE_GAUNTLET", ItemCraftCondition.Craft(reqs, ItemID.FireGauntlet), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_FROG_GEAR", ItemCraftCondition.Craft(reqs, ItemID.FrogGear), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_GREEDY_RING", ItemCraftCondition.Craft(reqs, ItemID.GreedyRing), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_HAND_OF_CREATION", ItemCraftCondition.Craft(reqs, ItemID.HandOfCreation), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_HELLFIRE_TREADS", ItemCraftCondition.Craft(reqs, ItemID.HellfireTreads), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_LAVAPROOF_TACKLE_BAG", ItemCraftCondition.Craft(reqs, ItemID.LavaproofTackleBag), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_MASTER_NINJA_GEAR", ItemCraftCondition.Craft(reqs, ItemID.MasterNinjaGear), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_SHELLPHONE", ItemCraftCondition.Craft(reqs, ItemID.Shellphone), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_SNIPER_SCOPE", ItemCraftCondition.Craft(reqs, ItemID.SniperScope), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_THE_GRAND_DESIGN", ItemCraftCondition.Craft(reqs, ItemID.WireKite), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_ULTRA_ABSORBANT_SPONGE", ItemCraftCondition.Craft(reqs, ItemID.UltraAbsorbantSponge), AchievementCategory.Collector);
+
             foreach (var group in Accessories)
                 RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
@@ -658,12 +727,14 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("VANITY_CREEPER", ItemOpenCondition.OpenAll(reqs, ItemID.GoodieBag, VanityHalloween["Creeper"]), true, AchievementCategory.Collector);
 
             // Rare Pieces
-            RegisterAchievement("VANITY_BADGER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BadgersHat), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_ANGEL_HALO", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BadgersHat), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_BADGERS_HAT", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BadgersHat), AchievementCategory.Collector);
             RegisterAchievement("VANITY_DEAD_MANS_SWEATER", ItemGrabCondition.Grab(reqs, ItemID.DeadMansSweater), AchievementCategory.Collector);
-            RegisterAchievement("VANITY_JIM", NpcDropCondition.Drop(reqs, NPCID.Painter, ItemID.JimsCap), AchievementCategory.Collector);
-            RegisterAchievement("VANITY_ROBOT", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.RobotHat), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_GINGER_BEARD", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.GingerBeard), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_JIMS_HAT", NpcDropCondition.Drop(reqs, NPCID.Painter, ItemID.JimsCap), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_ROBOT_HAT", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.RobotHat), AchievementCategory.Collector);
             RegisterAchievement("VANITY_SKULL", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Skull), AchievementCategory.Collector);
-            RegisterAchievement("VANITY_UMBRELLA", NpcDropCondition.Drop(reqs, NPCID.UmbrellaSlime, ItemID.UmbrellaHat), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_UMBRELLA_HAT", NpcDropCondition.Drop(reqs, NPCID.UmbrellaSlime, ItemID.UmbrellaHat), AchievementCategory.Collector);
 
             List<AchCondition> sets = [];
             foreach (var set in VanitySets)
@@ -778,14 +849,19 @@ namespace CompletionistAchievements.Systems
         private void RegisterCritterAchievements(ConditionReqs reqs)
         {
             // Verified w/ https://terraria.wiki.gg/wiki/Critters
-            Dictionary<string, int[]> Critters = new()
+            Dictionary<string, int[]> SpecialCritters = new()
             {
                 { "CRITTER_GEM", [NPCID.GemBunnyAmethyst, NPCID.GemBunnyTopaz, NPCID.GemBunnySapphire, NPCID.GemBunnyEmerald, NPCID.GemBunnyRuby, NPCID.GemBunnyDiamond, NPCID.GemBunnyAmber, NPCID.GemSquirrelAmethyst, NPCID.GemSquirrelTopaz, NPCID.GemSquirrelSapphire, NPCID.GemSquirrelEmerald, NPCID.GemSquirrelRuby, NPCID.GemSquirrelDiamond, NPCID.GemSquirrelAmber] },
                 { "CRITTER_GOLD", [NPCID.GoldBird, NPCID.GoldBunny, NPCID.GoldButterfly, NPCID.GoldDragonfly, NPCID.GoldFrog, NPCID.GoldGoldfish, NPCID.GoldGoldfishWalker, NPCID.GoldGrasshopper, NPCID.GoldLadyBug, NPCID.GoldMouse, NPCID.GoldSeahorse, NPCID.SquirrelGold, NPCID.GoldWaterStrider, NPCID.GoldWorm] }
             };
 
-            foreach (var group in Critters)
+            // Verified w/ https://terraria.wiki.gg/wiki/Critters
+            int[] Critters = [ItemID.Bird, ItemID.BlueJay, ItemID.Buggy, ItemID.Bunny, ItemID.ExplosiveBunny, ItemID.GemBunnyAmethyst, ItemID.GemBunnyTopaz, ItemID.GemBunnySapphire, ItemID.GemBunnyEmerald, ItemID.GemBunnyRuby, ItemID.GemBunnyDiamond, ItemID.GemBunnyAmber, ItemID.Cardinal, ItemID.YellowCockatiel, ItemID.GrayCockatiel, ItemID.Duck, ItemID.MallardDuck, ItemID.EnchantedNightcrawler, ItemID.Shimmerfly, ItemID.FairyCritterBlue, ItemID.FairyCritterGreen, ItemID.FairyCritterPink, ItemID.Firefly, ItemID.Lavafly, ItemID.LightningBug, ItemID.Frog, ItemID.Goldfish, ItemID.Grasshopper, ItemID.Grebe, ItemID.Grubby, ItemID.LadyBug, ItemID.ScarletMacaw, ItemID.BlueMacaw, ItemID.Maggot, ItemID.Mouse, ItemID.Owl, ItemID.Penguin, ItemID.Pupfish, ItemID.Rat, ItemID.Scorpion, ItemID.BlackScorpion, ItemID.Seagull, ItemID.Seahorse, ItemID.Sluggy, ItemID.Snail, ItemID.GlowingSnail, ItemID.MagmaSnail, ItemID.Squirrel, ItemID.SquirrelRed, ItemID.GemSquirrelAmethyst, ItemID.GemSquirrelTopaz, ItemID.GemSquirrelSapphire, ItemID.GemSquirrelEmerald, ItemID.GemSquirrelRuby, ItemID.GemSquirrelDiamond, ItemID.GemSquirrelAmber, ItemID.Stinkbug, ItemID.Toucan, ItemID.Turtle, ItemID.TurtleJungle, ItemID.WaterStrider, ItemID.Worm, ItemID.JuliaButterfly, ItemID.MonarchButterfly, ItemID.PurpleEmperorButterfly, ItemID.RedAdmiralButterfly, ItemID.SulphurButterfly, ItemID.TreeNymphButterfly, ItemID.UlyssesButterfly, ItemID.ZebraSwallowtailButterfly, ItemID.HellButterfly, ItemID.EmpressButterfly, ItemID.BlackDragonfly, ItemID.BlueDragonfly, ItemID.GreenDragonfly, ItemID.OrangeDragonfly, ItemID.RedDragonfly, ItemID.YellowDragonfly, ItemID.GoldBird, ItemID.GoldBunny, ItemID.GoldButterfly, ItemID.GoldFrog, ItemID.GoldGoldfish, ItemID.GoldGrasshopper, ItemID.GoldLadyBug, ItemID.GoldMouse, ItemID.GoldSeahorse, ItemID.SquirrelGold, ItemID.GoldWaterStrider, ItemID.GoldWorm, ItemID.TruffleWorm];
+
+            foreach (var group in SpecialCritters)
                 RegisterAchievement(group.Key, NpcCatchCondition.CatchAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+
+            RegisterAchievement("CRITTER", ItemGrabCondition.GrabAll(reqs, Critters), true, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -794,10 +870,22 @@ namespace CompletionistAchievements.Systems
         /// <param name="reqs">Common achievement requirements</param>
         private void RegisterDyeAchievements(ConditionReqs reqs)
         {
-            // Verified w/ https://terraria.wiki.gg/wiki/Dyes#Strange_Dyes
-            int[] StrangeDyes = [ItemID.AcidDye, ItemID.BlueAcidDye, ItemID.RedAcidDye, ItemID.ChlorophyteDye, ItemID.GelDye, ItemID.MushroomDye, ItemID.GrimDye, ItemID.HadesDye, ItemID.BurningHadesDye, ItemID.ShadowflameHadesDye, ItemID.LivingOceanDye, ItemID.LivingFlameDye, ItemID.LivingRainbowDye, ItemID.MartianArmorDye, ItemID.MidnightRainbowDye, ItemID.MirageDye, ItemID.NegativeDye, ItemID.PixieDye, ItemID.PhaseDye, ItemID.PurpleOozeDye, ItemID.ReflectiveDye, ItemID.ReflectiveCopperDye, ItemID.ReflectiveGoldDye, ItemID.ReflectiveObsidianDye, ItemID.ReflectiveMetalDye, ItemID.ReflectiveSilverDye, ItemID.ShadowDye, ItemID.ShiftingSandsDye, ItemID.DevDye, ItemID.TwilightDye, ItemID.WispDye, ItemID.InfernalWispDye, ItemID.UnicornWispDye];
+            // Verified w/ https://terraria.wiki.gg/wiki/Dyes
+            Dictionary<string, int[]> SpecialDyes = new()
+            {
+                { "DYE_STRANGE", [ItemID.AcidDye, ItemID.BlueAcidDye, ItemID.RedAcidDye, ItemID.ChlorophyteDye, ItemID.GelDye, ItemID.MushroomDye, ItemID.GrimDye, ItemID.HadesDye, ItemID.BurningHadesDye, ItemID.ShadowflameHadesDye, ItemID.LivingOceanDye, ItemID.LivingFlameDye, ItemID.LivingRainbowDye, ItemID.MartianArmorDye, ItemID.MidnightRainbowDye, ItemID.MirageDye, ItemID.NegativeDye, ItemID.PixieDye, ItemID.PhaseDye, ItemID.PurpleOozeDye, ItemID.ReflectiveDye, ItemID.ReflectiveCopperDye, ItemID.ReflectiveGoldDye, ItemID.ReflectiveObsidianDye, ItemID.ReflectiveMetalDye, ItemID.ReflectiveSilverDye, ItemID.ShadowDye, ItemID.ShiftingSandsDye, ItemID.DevDye, ItemID.TwilightDye, ItemID.WispDye, ItemID.InfernalWispDye, ItemID.UnicornWispDye] },
+                { "DYE_CRAFT", [ItemID.PinkGelDye, ItemID.ShiftingPearlSandsDye, ItemID.NebulaDye, ItemID.SolarDye, ItemID.StardustDye, ItemID.VortexDye, ItemID.VoidDye] },
+                { "DYE_OTHER", [ItemID.BloodbathDye, ItemID.FogboundDye, ItemID.HallowBossDye] }
+            };
 
-            RegisterAchievement("DYE_STRANGE", ItemGiftCondition.GiftAll(reqs, NPCID.DyeTrader, StrangeDyes), true, AchievementCategory.Collector);
+            // Verified w/ https://terraria.wiki.gg/wiki/Hair_Dyes
+            int[] HairDyes = [ItemID.LifeHairDye, ItemID.ManaHairDye, ItemID.DepthHairDye, ItemID.MoneyHairDye, ItemID.TimeHairDye, ItemID.TeamHairDye, ItemID.BiomeHairDye, ItemID.PartyHairDye, ItemID.RainbowHairDye, ItemID.SpeedHairDye, ItemID.MartianHairDye, ItemID.TwilightHairDye];
+
+            RegisterAchievement("DYE_STRANGE", ItemGiftCondition.GiftAll(reqs, NPCID.DyeTrader, SpecialDyes["DYE_STRANGE"]), true, AchievementCategory.Collector);
+            RegisterAchievement("DYE_CRAFT", ItemCraftCondition.CraftAll(reqs, SpecialDyes["DYE_CRAFT"]), true, AchievementCategory.Collector);
+            RegisterAchievement("DYE_OTHER", ItemGrabCondition.GrabAll(reqs, SpecialDyes["DYE_OTHER"]), true, AchievementCategory.Collector);
+            
+            RegisterAchievement("DYE_HAIR", ItemGrabCondition.GrabAll(reqs, HairDyes), true, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -807,6 +895,7 @@ namespace CompletionistAchievements.Systems
         private void RegisterExtractinatorAchievements(ConditionReqs reqs)
         {
             RegisterAchievement("EXTRACT_PLATINUM_COIN", ItemExtractCondition.Extract(reqs, ItemID.PlatinumCoin), AchievementCategory.Collector);
+            RegisterAchievement("EXTRACT_JOURNEYMAN_BAIT", ItemExtractCondition.Extract(reqs, ItemID.JourneymanBait), AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -816,14 +905,23 @@ namespace CompletionistAchievements.Systems
         private void RegisterFishAchievements(ConditionReqs reqs)
         {
             // Verified w/ https://terraria.wiki.gg/wiki/Fishing
-            Dictionary<string, int[]> Fish = new()
+            Dictionary<string, int[]> FishCatch = new()
             {
                 { "FISH_NORMAL", [ItemID.ArmoredCavefish, ItemID.AtlanticCod, ItemID.Bass, ItemID.BlueJellyfish, ItemID.ChaosFish, ItemID.CrimsonTigerfish, ItemID.Damselfish, ItemID.DoubleCod, ItemID.Ebonkoi, ItemID.FlarefinKoi, ItemID.Flounder, ItemID.FrostMinnow, ItemID.GoldenCarp, ItemID.GreenJellyfish, ItemID.Hemopiranha, ItemID.Honeyfin, ItemID.NeonTetra, ItemID.Obsidifish, ItemID.PinkJellyfish, ItemID.PrincessFish, ItemID.Prismite, ItemID.RedSnapper, ItemID.RockLobster, ItemID.Salmon, ItemID.Shrimp, ItemID.SpecularFish, ItemID.Stinkfish, ItemID.Trout, ItemID.Tuna, ItemID.VariegatedLardfish] },
-                { "FISH_QUEST", [ItemID.AmanitaFungifin, ItemID.Angelfish, ItemID.Batfish, ItemID.BloodyManowar, ItemID.Bonefish, ItemID.BumblebeeTuna, ItemID.Bunnyfish, ItemID.CapnTunabeard, ItemID.Catfish, ItemID.Cloudfish, ItemID.Clownfish, ItemID.Cursedfish, ItemID.DemonicHellfish, ItemID.Derpfish, ItemID.Dirtfish, ItemID.DynamiteFish, ItemID.EaterofPlankton, ItemID.FallenStarfish, ItemID.Fishotron, ItemID.Fishron, ItemID.GuideVoodooFish, ItemID.Harpyfish, ItemID.Hungerfish, ItemID.Ichorfish, ItemID.InfectedScabbardfish, ItemID.Jewelfish, ItemID.MirageFish, ItemID.Mudfish, ItemID.MutantFlinxfin, ItemID.Pengfish, ItemID.Pixiefish, ItemID.ScarabFish, ItemID.ScorpioFish, ItemID.Slimefish, ItemID.Spiderfish, ItemID.TheFishofCthulu, ItemID.TropicalBarracuda, ItemID.TundraTrout, ItemID.UnicornFish, ItemID.Wyverntail, ItemID.ZombieFish] }
+                { "FISH_QUEST", [ItemID.AmanitaFungifin, ItemID.Angelfish, ItemID.Batfish, ItemID.BloodyManowar, ItemID.Bonefish, ItemID.BumblebeeTuna, ItemID.Bunnyfish, ItemID.CapnTunabeard, ItemID.Catfish, ItemID.Cloudfish, ItemID.Clownfish, ItemID.Cursedfish, ItemID.DemonicHellfish, ItemID.Derpfish, ItemID.Dirtfish, ItemID.DynamiteFish, ItemID.EaterofPlankton, ItemID.FallenStarfish, ItemID.Fishotron, ItemID.Fishron, ItemID.GuideVoodooFish, ItemID.Harpyfish, ItemID.Hungerfish, ItemID.Ichorfish, ItemID.InfectedScabbardfish, ItemID.Jewelfish, ItemID.MirageFish, ItemID.Mudfish, ItemID.MutantFlinxfin, ItemID.Pengfish, ItemID.Pixiefish, ItemID.ScarabFish, ItemID.ScorpioFish, ItemID.Slimefish, ItemID.Spiderfish, ItemID.TheFishofCthulu, ItemID.TropicalBarracuda, ItemID.TundraTrout, ItemID.UnicornFish, ItemID.Wyverntail, ItemID.ZombieFish] },
+                { "FISH_CRATE", [ItemID.WoodenCrate, ItemID.WoodenCrateHard, ItemID.IronCrate, ItemID.IronCrateHard, ItemID.GoldenCrate, ItemID.GoldenCrateHard, ItemID.JungleFishingCrate, ItemID.JungleFishingCrateHard, ItemID.FloatingIslandFishingCrate, ItemID.FloatingIslandFishingCrateHard, ItemID.CorruptFishingCrate, ItemID.CorruptFishingCrateHard, ItemID.CrimsonFishingCrate, ItemID.CrimsonFishingCrateHard, ItemID.HallowedFishingCrate, ItemID.HallowedFishingCrateHard, ItemID.DungeonFishingCrate, ItemID.DungeonFishingCrateHard, ItemID.FrozenCrate, ItemID.FrozenCrateHard, ItemID.OasisCrate, ItemID.OasisCrateHard, ItemID.LavaCrate, ItemID.LavaCrateHard, ItemID.OceanCrate, ItemID.OceanCrateHard] },
+                { "FISH_JUNK", [ItemID.OldShoe, ItemID.Seaweed, ItemID.TinCan, ItemID.JojaCola] }
             };
 
-            foreach (var group in Fish)
+            // Verified w/ https://terraria.wiki.gg/wiki/Angler#Reward_lists
+            int[] FishRewards = [ItemID.FuzzyCarrot, ItemID.AnglerHat, ItemID.AnglerVest, ItemID.AnglerPants, ItemID.HoneyAbsorbantSponge, ItemID.BottomlessHoneyBucket, ItemID.GoldenFishingRod, ItemID.LavaFishingHook, ItemID.FinWings, ItemID.BottomlessBucket, ItemID.SuperAbsorbantSponge, ItemID.GoldenBugNet, ItemID.FishHook, ItemID.FishMinecart, ItemID.SeashellHairpin, ItemID.MermaidAdornment, ItemID.MermaidTail, ItemID.FishCostumeMask, ItemID.FishCostumeShirt, ItemID.FishCostumeFinskirt, ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.FishingBobber, ItemID.FishermansGuide, ItemID.WeatherRadio, ItemID.Sextant, ItemID.FishingBobber, ItemID.FishingPotion, ItemID.SonarPotion, ItemID.CratePotion, ItemID.LifePreserver, ItemID.ShipsWheel, ItemID.CompassRose, ItemID.WallAnchor, ItemID.PillaginMePixels, ItemID.TreasureMap, ItemID.GoldfishTrophy, ItemID.BunnyfishTrophy, ItemID.SwordfishTrophy, ItemID.SharkteethTrophy, ItemID.ShipInABottle, ItemID.SeaweedPlanter, ItemID.NotSoLostInParadise, ItemID.Crustography, ItemID.WhatLurksBelow, ItemID.Fangs, ItemID.CouchGag, ItemID.SilentFish, ItemID.TheDuke, ItemID.MasterBait, ItemID.JourneymanBait, ItemID.ApprenticeBait];
+
+            RegisterAchievement("FISH_PINK_PEARL", ItemOpenCondition.Open(reqs, ItemID.ShuckedOyster, ItemID.PinkPearl), AchievementCategory.Collector);
+
+            foreach (var group in FishCatch)
                 RegisterAchievement(group.Key, FishCatchCondition.CatchAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+
+            RegisterAchievement("FISH_REWARD", ItemGiftCondition.GiftAll(reqs, NPCID.Angler, FishRewards), true, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -832,9 +930,29 @@ namespace CompletionistAchievements.Systems
         /// <param name="reqs">Common achievement requirements</param>
         private void RegisterFurnitureAchievements(ConditionReqs reqs)
         {
+            // Verified w/
+            // https://terraria.wiki.gg/wiki/Furniture
+            // https://terraria.wiki.gg/wiki/Buffs#Activated_furniture
+            // https://terraria.wiki.gg/wiki/Crafting_stations#Themed_furniture
+            Dictionary<string, int[]> Furniture = new()
+            {
+                { "FURNITURE_BUFF", [ItemID.Sunflower, ItemID.Campfire, ItemID.Fireplace, ItemID.CrystalBall, ItemID.AmmoBox, ItemID.SharpeningStation, ItemID.BewitchingTable, ItemID.WarTable, ItemID.HeartLantern, ItemID.CatBast, ItemID.SliceOfCake, ItemID.StarinaBottle, ItemID.GardenGnome, ItemID.PeaceCandle] },
+                { "FURNITURE_DISPLAY", [ItemID.Mannequin, ItemID.Womannquin, ItemID.WeaponRack, ItemID.ItemFrame, ItemID.HatRack] },
+                { "FURNITURE_THEMED", [ItemID.BoneWelder, ItemID.GlassKiln, ItemID.HoneyDispenser, ItemID.IceMachine, ItemID.LivingLoom, ItemID.SkyMill, ItemID.Solidifier, ItemID.LesionStation, ItemID.FleshCloningVaat, ItemID.SteampunkBoiler, ItemID.LihzahrdFurnace] },
+                { "FURNITURE_TOMBSTONE", [ItemID.Tombstone, ItemID.GraveMarker, ItemID.CrossGraveMarker, ItemID.Headstone, ItemID.Gravestone, ItemID.Obelisk, ItemID.RichGravestone1, ItemID.RichGravestone2, ItemID.RichGravestone3, ItemID.RichGravestone4, ItemID.RichGravestone5] },
+            };
+
             RegisterAchievement("FURNITURE_CHIPPYS_COUCH", NpcDropCondition.Drop(reqs, NPCID.SkeletronHead, ItemID.ChippysCouch), AchievementCategory.Collector);
             RegisterAchievement("FURNITURE_DESERT_SPIRIT_LAMP", NpcDropCondition.Drop(reqs, NPCID.DesertDjinn, ItemID.DjinnLamp), AchievementCategory.Collector);
             RegisterAchievement("FURNITURE_ENCHANTED_SUNDIAL", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.Sundial), AchievementCategory.Collector);
+            RegisterAchievement("FURNITURE_ENCHANTED_MOONDIAL", ItemGrabCondition.Grab(reqs, ItemID.Moondial), AchievementCategory.Collector);
+            RegisterAchievement("FURNITURE_HAT_RACK", ItemCraftCondition.Craft(reqs, ItemID.HatRack), AchievementCategory.Collector);
+            RegisterAchievement("FURNITURE_PIGRONATA", NpcBuyCondition.Buy(reqs, NPCID.PartyGirl, ItemID.Pigronata), AchievementCategory.Collector);
+            RegisterAchievement("FURNITURE_PORTAL_GUN_STATION", NpcBuyCondition.Buy(reqs, NPCID.Cyborg, ItemID.PortalGunStation), AchievementCategory.Collector);
+            RegisterAchievement("FURNITURE_TARGET_DUMMY", ItemCraftCondition.Craft(reqs, ItemID.TargetDummy), AchievementCategory.Collector);
+
+            foreach (var group in Furniture)
+                RegisterAchievement(group.Key, FishCatchCondition.CatchAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -893,6 +1011,8 @@ namespace CompletionistAchievements.Systems
                 { "PAINTING_GOODIE", [ItemID.BitterHarvest, ItemID.BloodMoonCountess, ItemID.HallowsEve, ItemID.JackingSkeletron, ItemID.MorbidCuriosity] }
             };
 
+            int[] AnimalSkins = [ItemID.TigerSkin, ItemID.LeopardSkin, ItemID.ZebraSkin];
+
             RegisterAchievement("PAINTING_WALDO", TileDropCondition.Drop(reqs, ItemID.Waldo), AchievementCategory.Collector);
 
             foreach (var group in PaintingsBuy)
@@ -905,6 +1025,8 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("PAINTING_ANGLER", ItemGiftCondition.GiftAll(reqs, NPCID.Angler, PaintingsOther["PAINTING_ANGLER"]), true, AchievementCategory.Collector);
             RegisterAchievement("PAINTING_SOLAR", NpcDropCondition.DropAll(reqs, NPCID.None, PaintingsOther["PAINTING_SOLAR"]), true, AchievementCategory.Collector);
             RegisterAchievement("PAINTING_GOODIE", ItemOpenCondition.OpenAll(reqs, ItemID.GoodieBag, PaintingsOther["PAINTING_GOODIE"]), true, AchievementCategory.Collector);
+            
+            RegisterAchievement("PAINTING_ANIMAL_SKINS", NpcBuyCondition.BuyAll(reqs, NPCID.TravellingMerchant, AnimalSkins), true, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -964,7 +1086,8 @@ namespace CompletionistAchievements.Systems
                 { "TROPHY_PRE-HARDMODE", [ItemID.KingSlimeTrophy, ItemID.EyeofCthulhuTrophy, ItemID.EaterofWorldsTrophy, ItemID.BrainofCthulhuTrophy, ItemID.QueenBeeTrophy, ItemID.SkeletronTrophy, ItemID.DeerclopsTrophy, ItemID.WallofFleshTrophy] },
                 { "TROPHY_HARDMODE", [ItemID.QueenSlimeTrophy, ItemID.DestroyerTrophy, ItemID.RetinazerTrophy, ItemID.SpazmatismTrophy, ItemID.SkeletronPrimeTrophy, ItemID.PlanteraTrophy, ItemID.GolemTrophy, ItemID.FairyQueenTrophy, ItemID.DukeFishronTrophy, ItemID.AncientCultistTrophy, ItemID.MoonLordTrophy] },
                 { "TROPHY_EVENT", [ItemID.BossTrophyDarkmage, ItemID.BossTrophyOgre, ItemID.BossTrophyBetsy, ItemID.MourningWoodTrophy, ItemID.PumpkingTrophy, ItemID.EverscreamTrophy, ItemID.SantaNK1Trophy, ItemID.IceQueenTrophy, ItemID.FlyingDutchmanTrophy, ItemID.MartianSaucerTrophy] },
-                { "TROPHY_FISH", [ItemID.GoldfishTrophy, ItemID.BunnyfishTrophy, ItemID.SwordfishTrophy, ItemID.SharkteethTrophy] }
+                { "TROPHY_FISH", [ItemID.GoldfishTrophy, ItemID.BunnyfishTrophy, ItemID.SwordfishTrophy, ItemID.SharkteethTrophy] },
+                { "TROPHY_GOLF", [ItemID.GolfTrophyBronze, ItemID.GolfTrophySilver, ItemID.GolfTrophyGold] }
             };
 
             foreach (var group in Trophies)

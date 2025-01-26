@@ -4,6 +4,6 @@ Rules:
 - No Journey Mode
 - No Celebrationmk10 Seed
 
-Items that are exclusive to difficulties and special seeds are excluded, so that all achievements can be obtained in a normal playthrough. I will publish other achievement mods that focus on specific difficulties and special seeds.
+Items that are exclusive to difficulties and special seeds are excluded, so that all achievements can be obtained in standard playthroughs. I will publish other achievement mods that focus on specific difficulties and special seeds.
 
 Contribute language localization here: https://github.com/timenoe/Terraria-CompletionistAchievements
