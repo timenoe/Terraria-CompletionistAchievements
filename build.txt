@@ -1,3 +1,4 @@
 displayName = Completionist Achievements
 author = timenoe
 version = 0.1
+buildIgnore = *.pdn
