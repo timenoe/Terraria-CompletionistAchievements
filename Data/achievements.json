@@ -1685,7 +1685,7 @@
         "Ra": {
             "Title": "Master Electrician",
             "Description": "Obtain all 8 wiring tools.",
-            "Points": 10,
+            "Points": 5,
             "Type": "",
             "Category": 5,
             "Id": 0,
