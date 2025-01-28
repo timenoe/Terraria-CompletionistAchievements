@@ -1,9 +1,9 @@
 Adds completionist achievements to the in-game list.
 
 Rules:
-- No Journey Mode
 - No Celebrationmk10 Seed
+- No Journey Mode
 
-Items that are exclusive to difficulties and special seeds are excluded, so that all achievements can be obtained in standard playthroughs. I will publish other achievement mods that focus on specific difficulties and special seeds.
+Items that are exclusive to difficulties and special seeds are excluded, so that all achievements can be obtained in standard playthroughs. The World Achievements mod adds achievements for all difficulties and seed-specific items.
 
 Contribute language localization here: https://github.com/timenoe/Terraria-CompletionistAchievements
