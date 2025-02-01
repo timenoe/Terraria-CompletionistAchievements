@@ -54,7 +54,6 @@ namespace CompletionistAchievements.Systems
             // Verified w/ https://terraria.wiki.gg/wiki/Buffs
             Dictionary<string, int[]> Buffs = new()
             {
-                // { "BUFF_CONSUMABLE", [BuffID.AmmoReservation, BuffID.Archery, BuffID.Battle, BuffID.Builder, BuffID.BiomeSight, BuffID.Calm, BuffID.Crate, BuffID.Dangersense, BuffID.Endurance, BuffID.WellFed3, BuffID.Featherfall, BuffID.Fishing, BuffID.Flipper, BuffID.Gills, BuffID.Gravitation, BuffID.Heartreach, BuffID.Hunter, BuffID.Inferno, BuffID.Invisibility, BuffID.Ironskin, BuffID.Lifeforce, BuffID.Lucky, BuffID.MagicPower, BuffID.ManaRegeneration, BuffID.Mining, BuffID.NightOwl, BuffID.ObsidianSkin, BuffID.WellFed2, BuffID.Rage, BuffID.Regeneration, BuffID.Shine, BuffID.Sonar, BuffID.Spelunker, BuffID.Summoning, BuffID.Swiftness, BuffID.Thorns, BuffID.Titan, BuffID.Warmth, BuffID.WaterWalking, BuffID.Wrath, BuffID.WellFed, BuffID.WeaponImbueConfetti, BuffID.WeaponImbueCursedFlames, BuffID.WeaponImbueFire, BuffID.WeaponImbueGold, BuffID.WeaponImbueIchor, BuffID.WeaponImbueNanites, BuffID.WeaponImbuePoison, BuffID.WeaponImbueVenom] },
                 { "BUFF_ENVIRONMENT", [BuffID.Campfire, BuffID.DryadsWard, BuffID.Sunflower, BuffID.HeartLamp, BuffID.Honey, BuffID.PeaceCandle, BuffID.StarInBottle, BuffID.CatBast, BuffID.MonsterBanner] },
                 { "BUFF_EQUIPMENT", [BuffID.CoolWhipPlayerBuff, BuffID.BeetleEndurance1, BuffID.BeetleEndurance2, BuffID.BeetleEndurance3, BuffID.BeetleMight1, BuffID.BeetleMight2, BuffID.BeetleMight3, BuffID.NebulaUpDmg1, BuffID.NebulaUpDmg2, BuffID.NebulaUpDmg3, BuffID.SwordWhipPlayerBuff, BuffID.ScytheWhipPlayerBuff, BuffID.ShadowDodge, BuffID.IceBarrier, BuffID.ThornWhipPlayerBuff, BuffID.LeafCrystal, BuffID.SoulDrain, BuffID.NebulaUpLife1, BuffID.NebulaUpLife2, BuffID.NebulaUpLife3, BuffID.NebulaUpMana1, BuffID.NebulaUpMana2, BuffID.NebulaUpMana3, BuffID.Merfolk, BuffID.Panic, BuffID.RapidHealing, BuffID.TitaniumStorm, BuffID.SolarShield1, BuffID.SolarShield2, BuffID.SolarShield3, BuffID.StardustGuardianMinion, BuffID.ParryDamageBuff, BuffID.Werewolf] },
                 { "BUFF_FURNITURE", [BuffID.AmmoBox, BuffID.Bewitched, BuffID.Clairvoyance, BuffID.Sharpened, BuffID.WarTable, BuffID.SugarRush] },
@@ -140,7 +139,7 @@ namespace CompletionistAchievements.Systems
             };
 
             // Verified w/ https://terraria.wiki.gg/wiki/Skeleton_Merchant
-            int[] SkeletonMerchantYoyos = [ItemID.BlueCounterweight, ItemID.RedCounterweight, ItemID.PurpleCounterweight, ItemID.GreenCounterweight, ItemID.Gradient, ItemID.FormatC, ItemID.YoYoGlove];
+            int[] SkeletonMerchantYoyoStuff = [ItemID.BlueCounterweight, ItemID.RedCounterweight, ItemID.PurpleCounterweight, ItemID.GreenCounterweight, ItemID.Gradient, ItemID.FormatC, ItemID.YoYoGlove];
 
             // Rare Swords
             RegisterAchievement("WEAPON_BAT_BAT", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BatBat), AchievementCategory.Collector);
@@ -163,7 +162,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_HELFIRE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.HelFire), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_KRAKEN", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Kraken), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_YELETS", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Yelets), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_SKELETON_MERCHANT", NpcBuyCondition.BuyAll(reqs, NPCID.SkeletonMerchant, SkeletonMerchantYoyos), true, AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_SKELETON_MERCHANT", NpcBuyCondition.BuyAll(reqs, NPCID.SkeletonMerchant, SkeletonMerchantYoyoStuff), true, AchievementCategory.Collector);
 
             // Rare Spears
             RegisterAchievement("WEAPON_OBSIDIAN_SWORDFISH", ItemCatchCondition.Catch(reqs, ItemID.ObsidianSwordfish), AchievementCategory.Collector);
@@ -952,7 +951,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("FURNITURE_TARGET_DUMMY", ItemCraftCondition.Craft(reqs, ItemID.TargetDummy), AchievementCategory.Collector);
 
             foreach (var group in Furniture)
-                RegisterAchievement(group.Key, ItemCatchCondition.CatchAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+                RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -1058,7 +1057,7 @@ namespace CompletionistAchievements.Systems
             };
 
             foreach (var group in Statues)
-                RegisterAchievement(group.Key, NpcCatchCondition.CatchAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+                RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -1091,7 +1090,7 @@ namespace CompletionistAchievements.Systems
             };
 
             foreach (var group in Trophies)
-                RegisterAchievement(group.Key, NpcCatchCondition.CatchAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+                RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
     }
 }
