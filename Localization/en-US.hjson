@@ -1,42 +1,4 @@
 Achievements: {
-	COMPLETIONIST_BUFF_ENVIRONMENT_Name: Climate Acclimation
-	COMPLETIONIST_BUFF_ENVIRONMENT_Description: Activate all 9 environment buffs.
-	COMPLETIONIST_BUFF_EQUIPMENT_Name: Matching Attire
-	COMPLETIONIST_BUFF_EQUIPMENT_Description: Activate all 33 equipment buffs.
-	COMPLETIONIST_BUFF_FURNITURE_Name: Min-Maxing
-	COMPLETIONIST_BUFF_FURNITURE_Description: Activate all 6 furniture buffs.
-	COMPLETIONIST_BUFF_LIGHT_PET_Name: Light the Way
-	COMPLETIONIST_BUFF_LIGHT_PET_Description: Activate all 8 light pet buffs.
-	COMPLETIONIST_BUFF_MINECART_Name: Coming Through!
-	COMPLETIONIST_BUFF_MINECART_Description: Activate all 26 minecart buffs.
-	COMPLETIONIST_BUFF_MOUNT_Name: Beast Tamer
-	COMPLETIONIST_BUFF_MOUNT_Description: Activate all 20 mount buffs.
-	COMPLETIONIST_BUFF_PET_Name: Animal Whisperer
-	COMPLETIONIST_BUFF_PET_Description: Activate all 47 pet buffs.
-	COMPLETIONIST_BUFF_SUMMON_Name: Minion Master
-	COMPLETIONIST_BUFF_SUMMON_Description: Activate all 21 summon buffs.
-	COMPLETIONIST_CONSUMABLE_EXPLOSIVE_Name: Fire in the Hole!
-	COMPLETIONIST_CONSUMABLE_EXPLOSIVE_Description: Use all 14 explosive items.
-	COMPLETIONIST_CONSUMABLE_FOOD_Name: Balanced Diet
-	COMPLETIONIST_CONSUMABLE_FOOD_Description: Eat all 80 types of food.
-	COMPLETIONIST_CONSUMABLE_LICENSE_Name: Man's Best Friend
-	COMPLETIONIST_CONSUMABLE_LICENSE_Description: Use all 3 animal licenses.
-	COMPLETIONIST_CONSUMABLE_POTION_BUFF_Name: Performance-Enhancing Potions
-	COMPLETIONIST_CONSUMABLE_POTION_BUFF_Description: Drink all 44 buff potions.
-	COMPLETIONIST_CONSUMABLE_POTION_FLASK_Name: Extra Edge
-	COMPLETIONIST_CONSUMABLE_POTION_FLASK_Description: Drink all 8 flasks.
-	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Name: Recovery Is Key
-	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Description: Drink all 15 recovery potions.
-	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Name: Experimental Consumer
-	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Description: Drink all 5 miscellaneous potions.
-	COMPLETIONIST_CONSUMABLE_PERMANENT_Name: Personal Development
-	COMPLETIONIST_CONSUMABLE_PERMANENT_Description: Use all 14 permanent consumable items.
-	COMPLETIONIST_CONSUMABLE_TOOL_Name: Terravania
-	COMPLETIONIST_CONSUMABLE_TOOL_Description: Use all 13 consumable tools.
-	COMPLETIONIST_CONSUMABLE_WEAPON_Name: Breach and Clear
-	COMPLETIONIST_CONSUMABLE_WEAPON_Description: Use all 20 consumable weapons.
-	COMPLETIONIST_CONSUMABLE_OTHER_Name: Recreational Activities
-	COMPLETIONIST_CONSUMABLE_OTHER_Description: Use all 13 miscellanous consumable items.
 	COMPLETIONIST_WEAPON_BAT_BAT_Name: Bat Some Bats
 	COMPLETIONIST_WEAPON_BAT_BAT_Description: Obtain a Bat Bat from a bat enemy.
 	COMPLETIONIST_WEAPON_BEAM_SWORD_Name: Fully Energized
@@ -278,7 +240,7 @@ Achievements: {
 	COMPLETIONIST_ACCESSORY_BALLOON_PUFFERFISH_Name: Do Not Eat
 	COMPLETIONIST_ACCESSORY_BALLOON_PUFFERFISH_Description: Catch a Balloon Pufferfish while fishing.
 	COMPLETIONIST_ACCESSORY_FROG_LEG_Name: Frogger Feet
-	COMPLETIONIST_ACCESSORY_FROG_LEG_Description: Catch a Frog Leg while Fishing.
+	COMPLETIONIST_ACCESSORY_FROG_LEG_Description: Catch a Frog Leg while fishing.
 	COMPLETIONIST_ACCESSORY_MOON_CHARM_Name: Always a Full Moon
 	COMPLETIONIST_ACCESSORY_MOON_CHARM_Description: Obtain a Moon Charm from a Werewolf.
 	COMPLETIONIST_ACCESSORY_FIN_WINGS_Name: Fly Fishing
@@ -659,4 +621,42 @@ Achievements: {
 	COMPLETIONIST_TROPHY_FISH_Description: Obtain all 4 fish trophies from the Angler.
 	COMPLETIONIST_TROPHY_GOLF_Name: Pro Performance Proof
 	COMPLETIONIST_TROPHY_GOLF_Description: Buy all 3 golf trophies from the Golfer.
+	COMPLETIONIST_BUFF_ENVIRONMENT_Name: Climate Acclimation
+	COMPLETIONIST_BUFF_ENVIRONMENT_Description: Activate all 9 environment buffs.
+	COMPLETIONIST_BUFF_EQUIPMENT_Name: Matching Attire
+	COMPLETIONIST_BUFF_EQUIPMENT_Description: Activate all 33 equipment buffs.
+	COMPLETIONIST_BUFF_FURNITURE_Name: Min-Maxing
+	COMPLETIONIST_BUFF_FURNITURE_Description: Activate all 6 furniture buffs.
+	COMPLETIONIST_BUFF_LIGHT_PET_Name: Light the Way
+	COMPLETIONIST_BUFF_LIGHT_PET_Description: Activate all 8 light pet buffs.
+	COMPLETIONIST_BUFF_MINECART_Name: Coming Through!
+	COMPLETIONIST_BUFF_MINECART_Description: Activate all 26 minecart buffs.
+	COMPLETIONIST_BUFF_MOUNT_Name: Beast Tamer
+	COMPLETIONIST_BUFF_MOUNT_Description: Activate all 20 mount buffs.
+	COMPLETIONIST_BUFF_PET_Name: Animal Whisperer
+	COMPLETIONIST_BUFF_PET_Description: Activate all 47 pet buffs.
+	COMPLETIONIST_BUFF_SUMMON_Name: Minion Master
+	COMPLETIONIST_BUFF_SUMMON_Description: Activate all 21 summon buffs.
+	COMPLETIONIST_CONSUMABLE_EXPLOSIVE_Name: Fire in the Hole!
+	COMPLETIONIST_CONSUMABLE_EXPLOSIVE_Description: Use all 14 explosive items.
+	COMPLETIONIST_CONSUMABLE_FOOD_Name: Balanced Diet
+	COMPLETIONIST_CONSUMABLE_FOOD_Description: Eat all 80 types of food.
+	COMPLETIONIST_CONSUMABLE_LICENSE_Name: Man's Best Friend
+	COMPLETIONIST_CONSUMABLE_LICENSE_Description: Use all 3 animal licenses.
+	COMPLETIONIST_CONSUMABLE_POTION_BUFF_Name: Performance-Enhancing Potions
+	COMPLETIONIST_CONSUMABLE_POTION_BUFF_Description: Drink all 44 buff potions.
+	COMPLETIONIST_CONSUMABLE_POTION_FLASK_Name: Extra Edge
+	COMPLETIONIST_CONSUMABLE_POTION_FLASK_Description: Drink all 8 flasks.
+	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Name: Recovery Is Key
+	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Description: Drink all 15 recovery potions.
+	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Name: Experimental Consumer
+	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Description: Drink all 5 miscellaneous potions.
+	COMPLETIONIST_CONSUMABLE_PERMANENT_Name: Personal Development
+	COMPLETIONIST_CONSUMABLE_PERMANENT_Description: Use all 14 permanent consumable items.
+	COMPLETIONIST_CONSUMABLE_TOOL_Name: Terravania
+	COMPLETIONIST_CONSUMABLE_TOOL_Description: Use all 13 consumable tools.
+	COMPLETIONIST_CONSUMABLE_WEAPON_Name: Breach and Clear
+	COMPLETIONIST_CONSUMABLE_WEAPON_Description: Use all 20 consumable weapons.
+	COMPLETIONIST_CONSUMABLE_OTHER_Name: Recreational Activities
+	COMPLETIONIST_CONSUMABLE_OTHER_Description: Use all 13 miscellanous consumable items.
 }

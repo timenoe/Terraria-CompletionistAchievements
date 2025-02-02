@@ -2,8 +2,10 @@ using Terraria.ModLoader;
 
 namespace CompletionistAchievements
 {
-    public class CompletionistAchievementsMod : Mod
+    /// <summary>
+    ///  Mod that adds achievements for completion to the in-game list
+    /// </summary>
+    public class CompletionistAchievements : Mod
     {
-
     }
 }

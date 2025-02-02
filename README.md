@@ -1,3 +1,3 @@
 # Terraria Completionist Achievements Mod
 
-Terraria tModLoader mod that adds completionist achievements to the in-game list.
+Terraria tModLoader mod that adds achievements for completion to the in-game list.

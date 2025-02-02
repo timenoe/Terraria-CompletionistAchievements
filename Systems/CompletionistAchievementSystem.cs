@@ -11,7 +11,7 @@ namespace CompletionistAchievements.Systems
     {
         protected override string Identifier { get => "COMPLETIONIST"; }
 
-        protected override List<string> TexturePaths { get => ["CompletionistAchievements/Assets/Achievements", "CompletionistAchievements/Assets/Achievements", "CompletionistAchievements/Assets/Achievements"]; }
+        protected override List<string> TexturePaths { get => ["CompletionistAchievements/Assets/Achievements-1", "CompletionistAchievements/Assets/Achievements-2", "CompletionistAchievements/Assets/Achievements-3"]; }
 
 
         protected override void RegisterAchievements()

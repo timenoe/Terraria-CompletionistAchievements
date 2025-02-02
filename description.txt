@@ -1,4 +1,4 @@
-Adds completionist achievements to the in-game list.
+Adds achievements for completion to the in-game list.
 
 Rules:
 - No Celebrationmk10 Seed
