@@ -7,6 +7,9 @@ using TerrariaAchievementLib.Achievements.Conditions;
 
 namespace CompletionistAchievements.Systems
 {
+    /// <summary>
+    /// Adds achievements for completion to the in-game list
+    /// </summary>
     public class CompletionistAchievementSystem : AchievementSystem
     {
         protected override string Identifier { get => "COMPLETIONIST"; }
@@ -17,9 +20,6 @@ namespace CompletionistAchievements.Systems
         protected override void RegisterAchievements()
         {
             ConditionReqs reqs = new(PlayerDiff.Classic, WorldDiff.Classic, SpecialSeed.None);
-
-            RegisterBuffAchievements(reqs);
-            RegisterConsumableAchievements(reqs);
 
             RegisterWeaponAchievements(reqs);
             RegisterAmmoAchievements(reqs);
@@ -43,6 +43,9 @@ namespace CompletionistAchievements.Systems
             RegisterStatueAchievements(reqs);
             RegisterStorageAchievements(reqs);
             RegisterTrophyAchievements(reqs);
+
+            RegisterBuffAchievements(reqs);
+            RegisterConsumableAchievements(reqs);
         }
 
         /// <summary>
