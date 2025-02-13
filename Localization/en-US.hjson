@@ -15,7 +15,7 @@ Achievements: {
 	COMPLETIONIST_WEAPON_GLADIUS_Description: Obtain a Gladius from a Hoplite.
 	COMPLETIONIST_WEAPON_MANDIBLE_BLADE_Name: Big Meaty Jaws
 	COMPLETIONIST_WEAPON_MANDIBLE_BLADE_Description: Obtain a Mandible Blade from an antlion enemy.
-	COMPLETIONIST_WEAPON_STYLISH_SCISSORS_Name: Scissor Blades
+	COMPLETIONIST_WEAPON_STYLISH_SCISSORS_Name: Killed la Kill
 	COMPLETIONIST_WEAPON_STYLISH_SCISSORS_Description: Obtain some Stylish Scissors from the Stylist.
 	COMPLETIONIST_WEAPON_ZOMBIE_ARM_Name: Need a Hand?
 	COMPLETIONIST_WEAPON_ZOMBIE_ARM_Description: Obtain a Zombie Arm from a zombie enemy.
@@ -370,7 +370,7 @@ Achievements: {
 	COMPLETIONIST_VANITY_GINGER_BEARD_Name: Beard of Piracy
 	COMPLETIONIST_VANITY_GINGER_BEARD_Description: Obtain a Ginger Beard from an Iron/Mythril Crate.
 	COMPLETIONIST_VANITY_JIMS_HAT_Name: My Hat Now
-	COMPLETIONIST_VANITY_JIMS_HAT_Description: Obtain a Jim's Hat from the Painter.
+	COMPLETIONIST_VANITY_JIMS_HAT_Description: Obtain a Jim's Cap from the Painter.
 	COMPLETIONIST_VANITY_ROBOT_HAT_Name: Quote This
 	COMPLETIONIST_VANITY_ROBOT_HAT_Description: Obtain a Robot Hat from a Jungle enemy.
 	COMPLETIONIST_VANITY_SKULL_Name: Bone Head
@@ -447,7 +447,7 @@ Achievements: {
 	COMPLETIONIST_BANNER_GLOWING_MUSHROOM_Description: Obtain all 7 Glowing Mushroom enemy banners.
 	COMPLETIONIST_BANNER_GRANITE_CAVE_Name: Granite Cave Slayer
 	COMPLETIONIST_BANNER_GRANITE_CAVE_Description: Obtain both Granite Cave enemy banners.
-	COMPLETIONIST_BANNER_HALLOW_Name: The Hallow Slayer
+	COMPLETIONIST_BANNER_HALLOW_Name: Hallow Slayer
 	COMPLETIONIST_BANNER_HALLOW_Description: Obtain all 7 The Hallow enemy banners.
 	COMPLETIONIST_BANNER_JUNGLE_Name: Jungle Slayer
 	COMPLETIONIST_BANNER_JUNGLE_Description: Obtain all 17 Jungle enemy banners.
@@ -508,7 +508,7 @@ Achievements: {
 	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Name: Panning for Platinum
 	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Description: Extract a Platinum Coin from a block.
 	COMPLETIONIST_EXTRACT_JOURNEYMAN_BAIT_Name: ...Another Man's Treasure
-	COMPLETIONIST_EXTRACT_JOURNEYMAN_BAIT_Description: Extra Journeyman's Bait from a piece of junk.
+	COMPLETIONIST_EXTRACT_JOURNEYMAN_BAIT_Description: Extract Journeyman's Bait from a piece of junk.
 	COMPLETIONIST_FISH_PINK_PEARL_Name: So Shiny!
 	COMPLETIONIST_FISH_PINK_PEARL_Description: Obtain a Pink Pearl from an Oyster.
 	COMPLETIONIST_FISH_NORMAL_Name: Level 99 Fishing
@@ -623,7 +623,7 @@ Achievements: {
 	COMPLETIONIST_TROPHY_GOLF_Description: Buy all 3 golf trophies from the Golfer.
 	COMPLETIONIST_BUFF_ENVIRONMENT_Name: Climate Acclimation
 	COMPLETIONIST_BUFF_ENVIRONMENT_Description: Activate all 9 environment buffs.
-	COMPLETIONIST_BUFF_EQUIPMENT_Name: Matching Attire
+	COMPLETIONIST_BUFF_EQUIPMENT_Name: Confidence Boost
 	COMPLETIONIST_BUFF_EQUIPMENT_Description: Activate all 33 equipment buffs.
 	COMPLETIONIST_BUFF_FURNITURE_Name: Min-Maxing
 	COMPLETIONIST_BUFF_FURNITURE_Description: Activate all 6 furniture buffs.

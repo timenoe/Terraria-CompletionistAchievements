@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using TerrariaAchievementLib.Systems;
-using TerrariaAchievementLib.Achievements;
-using Terraria.ID;
 using Terraria.Achievements;
+using Terraria.ID;
+using TerrariaAchievementLib.Achievements;
 using TerrariaAchievementLib.Achievements.Conditions;
+using TerrariaAchievementLib.Systems;
 
 namespace CompletionistAchievements.Systems
 {
@@ -71,7 +71,7 @@ namespace CompletionistAchievements.Systems
             {
                 if (group.Key == "BUFF_MINECART")
                 {
-                    List<AchCondition> conds = [];
+                    List<CustomAchievementCondition> conds = [];
                     for (int i = 0; i < group.Value.Length; i += 2)
                         conds.Add(BuffAddCondition.AddAny(reqs, [group.Value[i], group.Value[i + 1]]));
 
@@ -476,7 +476,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("ARMOR_GREEN_CAP", NpcDropCondition.Drop(reqs, NPCID.Guide, ItemID.GreenCap), AchievementCategory.Collector);
             RegisterAchievement("ARMOR_VIKING_HELMET", NpcDropCondition.Drop(reqs, NPCID.UndeadViking, ItemID.VikingHelmet), AchievementCategory.Collector);
 
-            List<AchCondition> sets = [];
+            List<CustomAchievementCondition> sets = [];
             foreach (var set in ArmorPreHardmode)
                 sets.AddRange(ItemGrabCondition.GrabAll(reqs, set.Value));
             RegisterAchievement("ARMOR_PRE-HARDMODE", sets, true, AchievementCategory.Collector);
@@ -738,7 +738,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("VANITY_SKULL", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Skull), AchievementCategory.Collector);
             RegisterAchievement("VANITY_UMBRELLA_HAT", NpcDropCondition.Drop(reqs, NPCID.UmbrellaSlime, ItemID.UmbrellaHat), AchievementCategory.Collector);
 
-            List<AchCondition> sets = [];
+            List<CustomAchievementCondition> sets = [];
             foreach (var set in VanitySets)
                 sets.AddRange(ItemGrabCondition.GrabAll(reqs, set.Value));
             RegisterAchievement("VANITY_SETS", sets, true, AchievementCategory.Collector);
