@@ -1,5 +1,7 @@
 displayName = Completionist Achievements
 author = timenoe
-version = 1.0
+version = 1.0.0
+homepage = https://github.com/timenoe/Terraria-CompletionistAchievements
 buildIgnore = *.pdn
 side = Client
+sortBefore = PlayerAchievements,WorldAchievements

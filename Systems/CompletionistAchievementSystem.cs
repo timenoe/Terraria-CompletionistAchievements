@@ -71,6 +71,7 @@ namespace CompletionistAchievements.Systems
             {
                 if (group.Key == "BUFF_MINECART")
                 {
+                    // There is are left-facing and right-facing buffs for minecarts; count either
                     List<CustomAchievementCondition> conds = [];
                     for (int i = 0; i < group.Value.Length; i += 2)
                         conds.Add(BuffAddCondition.AddAny(reqs, [group.Value[i], group.Value[i + 1]]));
@@ -544,6 +545,7 @@ namespace CompletionistAchievements.Systems
 
             // Rare Craft
             RegisterAchievement("ACCESSORY_ARCTIC_DIVING_GEAR", ItemCraftCondition.Craft(reqs, ItemID.ArcticDivingGear), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_BUNDLE_HORSESHOE_BALLOONS", ItemCraftCondition.Craft(reqs, ItemID.HorseshoeBundle), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_CELESTIAL_CUFFS", ItemCraftCondition.Craft(reqs, ItemID.CelestialCuffs), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_CELESTIAL_EMBLEM", ItemCraftCondition.Craft(reqs, ItemID.CelestialEmblem), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_CELESTIAL_SHELL", ItemCraftCondition.Craft(reqs, ItemID.CelestialShell), AchievementCategory.Collector);
