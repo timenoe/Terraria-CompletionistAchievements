@@ -1,3 +1,6 @@
+v1.0.3
+- Fix NPC gift achievements (Angler and Dye Trader)
+
 v1.0.2
 - Actually fixed ammo bug (updated TerrariaAchievementLib submodule)
 
