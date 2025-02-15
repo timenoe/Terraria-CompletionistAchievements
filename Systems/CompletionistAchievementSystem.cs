@@ -49,70 +49,6 @@ namespace CompletionistAchievements.Systems
         }
 
         /// <summary>
-        /// Register buff achievements
-        /// </summary>
-        /// <param name="reqs">Common achievement requirements</param>
-        private void RegisterBuffAchievements(ConditionReqs reqs)
-        {
-            // Verified w/ https://terraria.wiki.gg/wiki/Buffs
-            Dictionary<string, int[]> Buffs = new()
-            {
-                { "BUFF_ENVIRONMENT", [BuffID.Campfire, BuffID.DryadsWard, BuffID.Sunflower, BuffID.HeartLamp, BuffID.Honey, BuffID.PeaceCandle, BuffID.StarInBottle, BuffID.CatBast, BuffID.MonsterBanner] },
-                { "BUFF_EQUIPMENT", [BuffID.CoolWhipPlayerBuff, BuffID.BeetleEndurance1, BuffID.BeetleEndurance2, BuffID.BeetleEndurance3, BuffID.BeetleMight1, BuffID.BeetleMight2, BuffID.BeetleMight3, BuffID.NebulaUpDmg1, BuffID.NebulaUpDmg2, BuffID.NebulaUpDmg3, BuffID.SwordWhipPlayerBuff, BuffID.ScytheWhipPlayerBuff, BuffID.ShadowDodge, BuffID.IceBarrier, BuffID.ThornWhipPlayerBuff, BuffID.LeafCrystal, BuffID.SoulDrain, BuffID.NebulaUpLife1, BuffID.NebulaUpLife2, BuffID.NebulaUpLife3, BuffID.NebulaUpMana1, BuffID.NebulaUpMana2, BuffID.NebulaUpMana3, BuffID.Merfolk, BuffID.Panic, BuffID.RapidHealing, BuffID.TitaniumStorm, BuffID.SolarShield1, BuffID.SolarShield2, BuffID.SolarShield3, BuffID.StardustGuardianMinion, BuffID.ParryDamageBuff, BuffID.Werewolf] },
-                { "BUFF_FURNITURE", [BuffID.AmmoBox, BuffID.Bewitched, BuffID.Clairvoyance, BuffID.Sharpened, BuffID.WarTable, BuffID.SugarRush] },
-                { "BUFF_LIGHT_PET", [BuffID.ShadowOrb, BuffID.CrimsonHeart, BuffID.MagicLantern, BuffID.FairyBlue, BuffID.FairyGreen, BuffID.FairyRed, BuffID.DD2OgrePet, BuffID.Wisp] },
-                { "BUFF_MINECART", [BuffID.MinecartLeftWood, BuffID.MinecartRightWood, BuffID.MinecartLeft, BuffID.MinecartRight, BuffID.DesertMinecartLeft, BuffID.DesertMinecartRight, BuffID.FishMinecartLeft, BuffID.FishMinecartRight, BuffID.BeeMinecartLeft, BuffID.BeeMinecartRight, BuffID.LadybugMinecartLeft, BuffID.LadybugMinecartRight, BuffID.PigronMinecartLeft, BuffID.PigronMinecartRight, BuffID.SunflowerMinecartLeft, BuffID.SunflowerMinecartRight, BuffID.HellMinecartLeft, BuffID.HellMinecartRight, BuffID.ShroomMinecartLeft, BuffID.ShroomMinecartRight, BuffID.AmethystMinecartLeft, BuffID.AmethystMinecartRight, BuffID.TopazMinecartLeft, BuffID.TopazMinecartRight, BuffID.SapphireMinecartLeft, BuffID.SapphireMinecartRight, BuffID.EmeraldMinecartLeft, BuffID.EmeraldMinecartRight, BuffID.RubyMinecartLeft, BuffID.RubyMinecartRight, BuffID.DiamondMinecartLeft, BuffID.DiamondMinecartRight, BuffID.AmberMinecartLeft, BuffID.AmberMinecartRight, BuffID.BeetleMinecartLeft, BuffID.BeetleMinecartRight, BuffID.MeowmereMinecartLeft, BuffID.MeowmereMinecartRight, BuffID.PartyMinecartLeft, BuffID.PartyMinecartRight, BuffID.PirateMinecartLeft, BuffID.PirateMinecartRight, BuffID.SteampunkMinecartLeft, BuffID.SteampunkMinecartRight, BuffID.CoffinMinecartLeft, BuffID.CoffinMinecartRight, BuffID.DiggingMoleMinecartLeft, BuffID.DiggingMoleMinecartRight, BuffID.FartMinecartLeft, BuffID.FartMinecartRight, BuffID.TerraFartMinecartLeft, BuffID.TerraFartMinecartRight] },
-                { "BUFF_MOUNT", [BuffID.SlimeMount, BuffID.BeeMount, BuffID.TurtleMount, BuffID.BunnyMount, BuffID.PogoStickMount, BuffID.GolfCartMount, BuffID.Flamingo, BuffID.PaintedHorseMount, BuffID.MajesticHorseMount, BuffID.DarkHorseMount, BuffID.LavaSharkMount, BuffID.BasiliskMount, BuffID.WolfMount, BuffID.UnicornMount, BuffID.PigronMount, BuffID.QueenSlimeMount, BuffID.Rudolph, BuffID.ScutlixMount, BuffID.UFOMount, BuffID.DrillMount] },
-                { "BUFF_PET", [BuffID.BabyDinosaur, BuffID.BabyEater, BuffID.BabyFaceMonster, BuffID.BabyGrinch, BuffID.BabyHornet, BuffID.BabyImp, BuffID.BabyPenguin, BuffID.BabyRedPanda, BuffID.BabySkeletronHead, BuffID.BabySnowman, BuffID.BabyTruffle, BuffID.BabyWerewolf, BuffID.BerniePet, BuffID.BlackCat, BuffID.BlueChickenPet, BuffID.CavelingGardener, BuffID.ChesterPet, BuffID.CompanionCube, BuffID.CursedSapling, BuffID.DirtiestBlock, BuffID.DynamiteKitten, BuffID.UpbeatStar, BuffID.EyeballSpring, BuffID.FennecFox, BuffID.GlitteryButterfly, BuffID.GlommerPet, BuffID.PetDD2Dragon, BuffID.JunimoPet, BuffID.LilHarpy, BuffID.PetLizard, BuffID.MiniMinotaur, BuffID.PetParrot, BuffID.PigPet, BuffID.Plantero, BuffID.PetDD2Gato, BuffID.Puppy, BuffID.PlanteraPet, BuffID.PetSpider, BuffID.ShadowMimic, BuffID.SharkPup, BuffID.Spiffo, BuffID.Squashling, BuffID.SugarGlider, BuffID.TikiSpirit, BuffID.PetTurtle, BuffID.VoltBunny, BuffID.ZephyrFish] },
-                { "BUFF_SUMMON", [BuffID.AbigailMinion, BuffID.BabyBird, BuffID.BabySlime, BuffID.DeadlySphere, BuffID.StormTiger, BuffID.Smolstar, BuffID.FlinxMinion, BuffID.HornetMinion, BuffID.ImpMinion, BuffID.PirateMinion, BuffID.Pygmies, BuffID.Ravens, BuffID.BatOfLight, BuffID.SharknadoMinion, BuffID.SpiderMinion, BuffID.StardustMinion, BuffID.StardustDragonMinion, BuffID.EmpressBlade, BuffID.TwinEyesMinion, BuffID.UFOMinion, BuffID.VampireFrog] },
-            };
-
-            foreach (var group in Buffs)
-            {
-                if (group.Key == "BUFF_MINECART")
-                {
-                    // There is are left-facing and right-facing buffs for minecarts; count either
-                    List<CustomAchievementCondition> conds = [];
-                    for (int i = 0; i < group.Value.Length; i += 2)
-                        conds.Add(BuffAddCondition.AddAny(reqs, [group.Value[i], group.Value[i + 1]]));
-
-                    RegisterAchievement("BUFF_MINECART", conds, true, AchievementCategory.Collector);
-                }
-                else
-                    RegisterAchievement(group.Key, BuffAddCondition.AddAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
-            }
-        }
-
-        /// <summary>
-        /// Register consumable achievements
-        /// </summary>
-        /// <param name="reqs">Common achievement requirements</param>
-        private void RegisterConsumableAchievements(ConditionReqs reqs)
-        {
-            // Verified w/:
-            // https://terraria.wiki.gg/wiki/Consumables
-            // https://terraria.wiki.gg/wiki/Food
-            // https://terraria.wiki.gg/wiki/Potions (added Ale/Sake to buff potions)
-            Dictionary<string, int[]> Consumables = new()
-            {
-                { "CONSUMABLE_EXPLOSIVE", [ItemID.Bomb, ItemID.BombFish, ItemID.BouncyBomb, ItemID.BouncyDynamite, ItemID.DirtBomb, ItemID.DryBomb, ItemID.Dynamite, ItemID.HoneyBomb, ItemID.LavaBomb, ItemID.ScarabBomb, ItemID.StickyBomb, ItemID.DirtStickyBomb, ItemID.StickyDynamite, ItemID.WetBomb] },
-                { "CONSUMABLE_FOOD", [ItemID.Marshmallow, ItemID.JojaCola, ItemID.Apple, ItemID.Apricot, ItemID.Banana, ItemID.BlackCurrant, ItemID.BloodOrange, ItemID.Cherry, ItemID.Coconut, ItemID.Elderberry, ItemID.Grapefruit, ItemID.Lemon, ItemID.Mango, ItemID.Peach, ItemID.Pineapple, ItemID.Plum, ItemID.Pomegranate, ItemID.Rambutan, ItemID.SpicyPepper, ItemID.Teacup, ItemID.Dragonfruit, ItemID.Starfruit, ItemID.ChristmasPudding, ItemID.CookedFish, ItemID.GingerbreadCookie, ItemID.SugarCookie, ItemID.FroggleBunwich, ItemID.AppleJuice, ItemID.BunnyStew, ItemID.CookedMarshmallow, ItemID.GrilledSquirrel, ItemID.Lemonade, ItemID.PeachSangria, ItemID.RoastedBird, ItemID.SauteedFrogLegs, ItemID.ShuckedOyster, ItemID.BowlofSoup, ItemID.MonsterLasagna, ItemID.PadThai, ItemID.PumpkinPie, ItemID.Sashimi, ItemID.BananaSplit, ItemID.CoffeeCup, ItemID.CookedShrimp, ItemID.Escargot, ItemID.Fries, ItemID.BananaDaiquiri, ItemID.FruitJuice, ItemID.LobsterTail, ItemID.Pho, ItemID.RoastedDuck, ItemID.Burger, ItemID.Pizza, ItemID.Spaghetti, ItemID.BloodyMoscato, ItemID.MilkCarton, ItemID.PinaColada, ItemID.SmoothieofDarkness, ItemID.TropicalSmoothie, ItemID.ChickenNugget, ItemID.FriedEgg, ItemID.GrubSoup, ItemID.IceCream, ItemID.SeafoodDinner, ItemID.CreamSoda, ItemID.Grapes, ItemID.Hotdog, ItemID.Nachos, ItemID.FruitSalad, ItemID.PotatoChips, ItemID.ShrimpPoBoy, ItemID.ChocolateChipCookie, ItemID.PrismaticPunch, ItemID.ApplePie, ItemID.GrapeJuice, ItemID.Milkshake, ItemID.Steak, ItemID.BBQRibs, ItemID.Bacon, ItemID.GoldenDelight] },
-                { "CONSUMABLE_LICENSE", [ItemID.LicenseCat, ItemID.LicenseDog, ItemID.LicenseBunny] },
-                { "CONSUMABLE_POTION_BUFF", [ItemID.AmmoReservationPotion, ItemID.ArcheryPotion, ItemID.BattlePotion, ItemID.BiomeSightPotion, ItemID.BuilderPotion, ItemID.CalmingPotion, ItemID.CratePotion, ItemID.TrapsightPotion, ItemID.EndurancePotion, ItemID.FeatherfallPotion, ItemID.FishingPotion, ItemID.FlipperPotion, ItemID.GillsPotion, ItemID.GravitationPotion, ItemID.LuckPotionGreater, ItemID.HeartreachPotion, ItemID.HunterPotion, ItemID.InfernoPotion, ItemID.InvisibilityPotion, ItemID.IronskinPotion, ItemID.LuckPotionLesser, ItemID.LifeforcePotion, ItemID.LovePotion, ItemID.LuckPotion, ItemID.MagicPowerPotion, ItemID.ManaRegenerationPotion, ItemID.MiningPotion, ItemID.NightOwlPotion, ItemID.ObsidianSkinPotion, ItemID.RagePotion, ItemID.RegenerationPotion, ItemID.ShinePotion, ItemID.SonarPotion, ItemID.SpelunkerPotion, ItemID.StinkPotion, ItemID.SummoningPotion, ItemID.SwiftnessPotion, ItemID.ThornsPotion, ItemID.TitanPotion, ItemID.WarmthPotion, ItemID.WaterWalkingPotion, ItemID.WrathPotion, ItemID.Ale, ItemID.Sake] },
-                { "CONSUMABLE_POTION_FLASK", [ItemID.FlaskofCursedFlames, ItemID.FlaskofFire, ItemID.FlaskofGold, ItemID.FlaskofIchor, ItemID.FlaskofNanites, ItemID.FlaskofParty, ItemID.FlaskofPoison, ItemID.FlaskofVenom] },
-                { "CONSUMABLE_POTION_RECOVERY", [ItemID.Mushroom, ItemID.BottledHoney, ItemID.GreaterHealingPotion, ItemID.HealingPotion, ItemID.LesserHealingPotion, ItemID.ManaPotion, ItemID.RestorationPotion, ItemID.SuperHealingPotion, ItemID.SuperManaPotion, ItemID.BottledWater, ItemID.GreaterManaPotion, ItemID.LesserManaPotion, ItemID.Eggnog, ItemID.Honeyfin, ItemID.StrangeBrew] },
-                { "CONSUMABLE_POTION_OTHER", [ItemID.GenderChangePotion, ItemID.PotionOfReturn, ItemID.RecallPotion, ItemID.TeleportationPotion, ItemID.WormholePotion] },
-                { "CONSUMABLE_PERMANENT", [ItemID.LifeCrystal, ItemID.LifeFruit, ItemID.ManaCrystal, ItemID.CombatBook, ItemID.ArtisanLoaf, ItemID.TorchGodsFavor, ItemID.AegisCrystal, ItemID.AegisFruit, ItemID.ArcaneCrystal, ItemID.Ambrosia, ItemID.GummyWorm, ItemID.GalaxyPearl, ItemID.CombatBookVolumeTwo, ItemID.PeddlersSatchel] },
-                { "CONSUMABLE_TOOL", [ItemID.PurificationPowder, ItemID.VilePowder, ItemID.ViciousPowder, ItemID.HolyWater, ItemID.UnholyWater, ItemID.BloodWater, ItemID.Glowstick, ItemID.StickyGlowstick, ItemID.BouncyGlowstick, ItemID.SpelunkerGlowstick, ItemID.FairyGlowstick, ItemID.ChumBucket, ItemID.Fertilizer] },
-                { "CONSUMABLE_WEAPON", [ItemID.PaperAirplaneA, ItemID.PaperAirplaneB, ItemID.Snowball, ItemID.Shuriken, ItemID.RottenEgg, ItemID.ThrowingKnife, ItemID.PoisonedKnife, ItemID.Beenade, ItemID.BoneDagger, ItemID.StarAnise, ItemID.SpikyBall, ItemID.Javelin, ItemID.FrostDaggerfish, ItemID.Bone, ItemID.MolotovCocktail, ItemID.BoneJavelin, ItemID.PartyGirlGrenade, ItemID.Grenade, ItemID.StickyGrenade, ItemID.BouncyGrenade] },
-                { "CONSUMABLE_OTHER", [ItemID.StinkPotion, ItemID.LovePotion, ItemID.SmokeBomb, ItemID.ConfettiGun, ItemID.BeachBall, ItemID.Football, ItemID.Geode, ItemID.TreeGlobe, ItemID.MoonGlobe, ItemID.WorldGlobe, ItemID.ReleaseLantern, ItemID.ReleaseDoves, ItemID.GelBalloon] },
-            };
-
-            foreach (var group in Consumables)
-                RegisterAchievement(group.Key, ItemUseCondition.UseAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
-        }
-
-        /// <summary>
         /// Register weapon achievements
         /// </summary>
         /// <param name="reqs">Common achievement requirements</param>
@@ -731,7 +667,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("VANITY_CREEPER", ItemOpenCondition.OpenAll(reqs, ItemID.GoodieBag, VanityHalloween["Creeper"]), true, AchievementCategory.Collector);
 
             // Rare Pieces
-            RegisterAchievement("VANITY_ANGEL_HALO", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BadgersHat), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_ANGEL_HALO", NpcBuyCondition.Buy(reqs, NPCID.TravellingMerchant, ItemID.AngelHalo), AchievementCategory.Collector);
             RegisterAchievement("VANITY_BADGERS_HAT", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BadgersHat), AchievementCategory.Collector);
             RegisterAchievement("VANITY_DEAD_MANS_SWEATER", ItemGrabCondition.Grab(reqs, ItemID.DeadMansSweater), AchievementCategory.Collector);
             RegisterAchievement("VANITY_GINGER_BEARD", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.GingerBeard), AchievementCategory.Collector);
@@ -914,7 +850,7 @@ namespace CompletionistAchievements.Systems
                 { "FISH_NORMAL", [ItemID.ArmoredCavefish, ItemID.AtlanticCod, ItemID.Bass, ItemID.BlueJellyfish, ItemID.ChaosFish, ItemID.CrimsonTigerfish, ItemID.Damselfish, ItemID.DoubleCod, ItemID.Ebonkoi, ItemID.FlarefinKoi, ItemID.Flounder, ItemID.FrostMinnow, ItemID.GoldenCarp, ItemID.GreenJellyfish, ItemID.Hemopiranha, ItemID.Honeyfin, ItemID.NeonTetra, ItemID.Obsidifish, ItemID.PinkJellyfish, ItemID.PrincessFish, ItemID.Prismite, ItemID.RedSnapper, ItemID.RockLobster, ItemID.Salmon, ItemID.Shrimp, ItemID.SpecularFish, ItemID.Stinkfish, ItemID.Trout, ItemID.Tuna, ItemID.VariegatedLardfish] },
                 { "FISH_QUEST", [ItemID.AmanitaFungifin, ItemID.Angelfish, ItemID.Batfish, ItemID.BloodyManowar, ItemID.Bonefish, ItemID.BumblebeeTuna, ItemID.Bunnyfish, ItemID.CapnTunabeard, ItemID.Catfish, ItemID.Cloudfish, ItemID.Clownfish, ItemID.Cursedfish, ItemID.DemonicHellfish, ItemID.Derpfish, ItemID.Dirtfish, ItemID.DynamiteFish, ItemID.EaterofPlankton, ItemID.FallenStarfish, ItemID.Fishotron, ItemID.Fishron, ItemID.GuideVoodooFish, ItemID.Harpyfish, ItemID.Hungerfish, ItemID.Ichorfish, ItemID.InfectedScabbardfish, ItemID.Jewelfish, ItemID.MirageFish, ItemID.Mudfish, ItemID.MutantFlinxfin, ItemID.Pengfish, ItemID.Pixiefish, ItemID.ScarabFish, ItemID.ScorpioFish, ItemID.Slimefish, ItemID.Spiderfish, ItemID.TheFishofCthulu, ItemID.TropicalBarracuda, ItemID.TundraTrout, ItemID.UnicornFish, ItemID.Wyverntail, ItemID.ZombieFish] },
                 { "FISH_CRATE", [ItemID.WoodenCrate, ItemID.WoodenCrateHard, ItemID.IronCrate, ItemID.IronCrateHard, ItemID.GoldenCrate, ItemID.GoldenCrateHard, ItemID.JungleFishingCrate, ItemID.JungleFishingCrateHard, ItemID.FloatingIslandFishingCrate, ItemID.FloatingIslandFishingCrateHard, ItemID.CorruptFishingCrate, ItemID.CorruptFishingCrateHard, ItemID.CrimsonFishingCrate, ItemID.CrimsonFishingCrateHard, ItemID.HallowedFishingCrate, ItemID.HallowedFishingCrateHard, ItemID.DungeonFishingCrate, ItemID.DungeonFishingCrateHard, ItemID.FrozenCrate, ItemID.FrozenCrateHard, ItemID.OasisCrate, ItemID.OasisCrateHard, ItemID.LavaCrate, ItemID.LavaCrateHard, ItemID.OceanCrate, ItemID.OceanCrateHard] },
-                { "FISH_JUNK", [ItemID.OldShoe, ItemID.Seaweed, ItemID.TinCan, ItemID.JojaCola] }
+                { "FISH_JUNK", [ItemID.OldShoe, ItemID.FishingSeaweed, ItemID.TinCan, ItemID.JojaCola] }
             };
 
             // Verified w/ https://terraria.wiki.gg/wiki/Angler#Reward_lists
@@ -1096,6 +1032,70 @@ namespace CompletionistAchievements.Systems
 
             foreach (var group in Trophies)
                 RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+        }
+
+        /// <summary>
+        /// Register buff achievements
+        /// </summary>
+        /// <param name="reqs">Common achievement requirements</param>
+        private void RegisterBuffAchievements(ConditionReqs reqs)
+        {
+            // Verified w/ https://terraria.wiki.gg/wiki/Buffs
+            Dictionary<string, int[]> Buffs = new()
+            {
+                { "BUFF_ENVIRONMENT", [BuffID.Campfire, BuffID.DryadsWard, BuffID.Sunflower, BuffID.HeartLamp, BuffID.Honey, BuffID.PeaceCandle, BuffID.StarInBottle, BuffID.CatBast, BuffID.MonsterBanner] },
+                { "BUFF_EQUIPMENT", [BuffID.CoolWhipPlayerBuff, BuffID.BeetleEndurance1, BuffID.BeetleEndurance2, BuffID.BeetleEndurance3, BuffID.BeetleMight1, BuffID.BeetleMight2, BuffID.BeetleMight3, BuffID.NebulaUpDmg1, BuffID.NebulaUpDmg2, BuffID.NebulaUpDmg3, BuffID.SwordWhipPlayerBuff, BuffID.ScytheWhipPlayerBuff, BuffID.ShadowDodge, BuffID.IceBarrier, BuffID.ThornWhipPlayerBuff, BuffID.LeafCrystal, BuffID.SoulDrain, BuffID.NebulaUpLife1, BuffID.NebulaUpLife2, BuffID.NebulaUpLife3, BuffID.NebulaUpMana1, BuffID.NebulaUpMana2, BuffID.NebulaUpMana3, BuffID.Merfolk, BuffID.Panic, BuffID.RapidHealing, BuffID.TitaniumStorm, BuffID.SolarShield1, BuffID.SolarShield2, BuffID.SolarShield3, BuffID.StardustGuardianMinion, BuffID.ParryDamageBuff, BuffID.Werewolf] },
+                { "BUFF_FURNITURE", [BuffID.AmmoBox, BuffID.Bewitched, BuffID.Clairvoyance, BuffID.Sharpened, BuffID.WarTable, BuffID.SugarRush] },
+                { "BUFF_LIGHT_PET", [BuffID.ShadowOrb, BuffID.CrimsonHeart, BuffID.MagicLantern, BuffID.FairyBlue, BuffID.FairyGreen, BuffID.FairyRed, BuffID.DD2OgrePet, BuffID.Wisp] },
+                { "BUFF_MINECART", [BuffID.MinecartLeftWood, BuffID.MinecartRightWood, BuffID.MinecartLeft, BuffID.MinecartRight, BuffID.DesertMinecartLeft, BuffID.DesertMinecartRight, BuffID.FishMinecartLeft, BuffID.FishMinecartRight, BuffID.BeeMinecartLeft, BuffID.BeeMinecartRight, BuffID.LadybugMinecartLeft, BuffID.LadybugMinecartRight, BuffID.PigronMinecartLeft, BuffID.PigronMinecartRight, BuffID.SunflowerMinecartLeft, BuffID.SunflowerMinecartRight, BuffID.HellMinecartLeft, BuffID.HellMinecartRight, BuffID.ShroomMinecartLeft, BuffID.ShroomMinecartRight, BuffID.AmethystMinecartLeft, BuffID.AmethystMinecartRight, BuffID.TopazMinecartLeft, BuffID.TopazMinecartRight, BuffID.SapphireMinecartLeft, BuffID.SapphireMinecartRight, BuffID.EmeraldMinecartLeft, BuffID.EmeraldMinecartRight, BuffID.RubyMinecartLeft, BuffID.RubyMinecartRight, BuffID.DiamondMinecartLeft, BuffID.DiamondMinecartRight, BuffID.AmberMinecartLeft, BuffID.AmberMinecartRight, BuffID.BeetleMinecartLeft, BuffID.BeetleMinecartRight, BuffID.MeowmereMinecartLeft, BuffID.MeowmereMinecartRight, BuffID.PartyMinecartLeft, BuffID.PartyMinecartRight, BuffID.PirateMinecartLeft, BuffID.PirateMinecartRight, BuffID.SteampunkMinecartLeft, BuffID.SteampunkMinecartRight, BuffID.CoffinMinecartLeft, BuffID.CoffinMinecartRight, BuffID.DiggingMoleMinecartLeft, BuffID.DiggingMoleMinecartRight, BuffID.FartMinecartLeft, BuffID.FartMinecartRight, BuffID.TerraFartMinecartLeft, BuffID.TerraFartMinecartRight] },
+                { "BUFF_MOUNT", [BuffID.SlimeMount, BuffID.BeeMount, BuffID.TurtleMount, BuffID.BunnyMount, BuffID.PogoStickMount, BuffID.GolfCartMount, BuffID.Flamingo, BuffID.PaintedHorseMount, BuffID.MajesticHorseMount, BuffID.DarkHorseMount, BuffID.LavaSharkMount, BuffID.BasiliskMount, BuffID.WolfMount, BuffID.UnicornMount, BuffID.PigronMount, BuffID.QueenSlimeMount, BuffID.Rudolph, BuffID.ScutlixMount, BuffID.UFOMount, BuffID.DrillMount] },
+                { "BUFF_PET", [BuffID.BabyDinosaur, BuffID.BabyEater, BuffID.BabyFaceMonster, BuffID.BabyGrinch, BuffID.BabyHornet, BuffID.BabyImp, BuffID.BabyPenguin, BuffID.BabyRedPanda, BuffID.BabySkeletronHead, BuffID.BabySnowman, BuffID.BabyTruffle, BuffID.BabyWerewolf, BuffID.BerniePet, BuffID.BlackCat, BuffID.BlueChickenPet, BuffID.CavelingGardener, BuffID.ChesterPet, BuffID.CompanionCube, BuffID.CursedSapling, BuffID.DirtiestBlock, BuffID.DynamiteKitten, BuffID.UpbeatStar, BuffID.EyeballSpring, BuffID.FennecFox, BuffID.GlitteryButterfly, BuffID.GlommerPet, BuffID.PetDD2Dragon, BuffID.JunimoPet, BuffID.LilHarpy, BuffID.PetLizard, BuffID.MiniMinotaur, BuffID.PetParrot, BuffID.PigPet, BuffID.Plantero, BuffID.PetDD2Gato, BuffID.Puppy, BuffID.PlanteraPet, BuffID.PetSpider, BuffID.ShadowMimic, BuffID.SharkPup, BuffID.Spiffo, BuffID.Squashling, BuffID.SugarGlider, BuffID.TikiSpirit, BuffID.PetTurtle, BuffID.VoltBunny, BuffID.ZephyrFish] },
+                { "BUFF_SUMMON", [BuffID.AbigailMinion, BuffID.BabyBird, BuffID.BabySlime, BuffID.DeadlySphere, BuffID.StormTiger, BuffID.Smolstar, BuffID.FlinxMinion, BuffID.HornetMinion, BuffID.ImpMinion, BuffID.PirateMinion, BuffID.Pygmies, BuffID.Ravens, BuffID.BatOfLight, BuffID.SharknadoMinion, BuffID.SpiderMinion, BuffID.StardustMinion, BuffID.StardustDragonMinion, BuffID.EmpressBlade, BuffID.TwinEyesMinion, BuffID.UFOMinion, BuffID.VampireFrog] },
+            };
+
+            foreach (var group in Buffs)
+            {
+                if (group.Key == "BUFF_MINECART")
+                {
+                    // There is are left-facing and right-facing buffs for minecarts; count either
+                    List<CustomAchievementCondition> conds = [];
+                    for (int i = 0; i < group.Value.Length; i += 2)
+                        conds.Add(BuffAddCondition.AddAny(reqs, [group.Value[i], group.Value[i + 1]]));
+
+                    RegisterAchievement("BUFF_MINECART", conds, true, AchievementCategory.Collector);
+                }
+                else
+                    RegisterAchievement(group.Key, BuffAddCondition.AddAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+            }
+        }
+
+        /// <summary>
+        /// Register consumable achievements
+        /// </summary>
+        /// <param name="reqs">Common achievement requirements</param>
+        private void RegisterConsumableAchievements(ConditionReqs reqs)
+        {
+            // Verified w/:
+            // https://terraria.wiki.gg/wiki/Consumables
+            // https://terraria.wiki.gg/wiki/Food
+            // https://terraria.wiki.gg/wiki/Potions (added Ale/Sake to buff potions)
+            Dictionary<string, int[]> Consumables = new()
+            {
+                { "CONSUMABLE_EXPLOSIVE", [ItemID.Bomb, ItemID.BombFish, ItemID.BouncyBomb, ItemID.BouncyDynamite, ItemID.DirtBomb, ItemID.DryBomb, ItemID.Dynamite, ItemID.HoneyBomb, ItemID.LavaBomb, ItemID.ScarabBomb, ItemID.StickyBomb, ItemID.DirtStickyBomb, ItemID.StickyDynamite, ItemID.WetBomb] },
+                { "CONSUMABLE_FOOD", [ItemID.Marshmallow, ItemID.JojaCola, ItemID.Apple, ItemID.Apricot, ItemID.Banana, ItemID.BlackCurrant, ItemID.BloodOrange, ItemID.Cherry, ItemID.Coconut, ItemID.Elderberry, ItemID.Grapefruit, ItemID.Lemon, ItemID.Mango, ItemID.Peach, ItemID.Pineapple, ItemID.Plum, ItemID.Pomegranate, ItemID.Rambutan, ItemID.SpicyPepper, ItemID.Teacup, ItemID.Dragonfruit, ItemID.Starfruit, ItemID.ChristmasPudding, ItemID.CookedFish, ItemID.GingerbreadCookie, ItemID.SugarCookie, ItemID.FroggleBunwich, ItemID.AppleJuice, ItemID.BunnyStew, ItemID.CookedMarshmallow, ItemID.GrilledSquirrel, ItemID.Lemonade, ItemID.PeachSangria, ItemID.RoastedBird, ItemID.SauteedFrogLegs, ItemID.ShuckedOyster, ItemID.BowlofSoup, ItemID.MonsterLasagna, ItemID.PadThai, ItemID.PumpkinPie, ItemID.Sashimi, ItemID.BananaSplit, ItemID.CoffeeCup, ItemID.CookedShrimp, ItemID.Escargot, ItemID.Fries, ItemID.BananaDaiquiri, ItemID.FruitJuice, ItemID.LobsterTail, ItemID.Pho, ItemID.RoastedDuck, ItemID.Burger, ItemID.Pizza, ItemID.Spaghetti, ItemID.BloodyMoscato, ItemID.MilkCarton, ItemID.PinaColada, ItemID.SmoothieofDarkness, ItemID.TropicalSmoothie, ItemID.ChickenNugget, ItemID.FriedEgg, ItemID.GrubSoup, ItemID.IceCream, ItemID.SeafoodDinner, ItemID.CreamSoda, ItemID.Grapes, ItemID.Hotdog, ItemID.Nachos, ItemID.FruitSalad, ItemID.PotatoChips, ItemID.ShrimpPoBoy, ItemID.ChocolateChipCookie, ItemID.PrismaticPunch, ItemID.ApplePie, ItemID.GrapeJuice, ItemID.Milkshake, ItemID.Steak, ItemID.BBQRibs, ItemID.Bacon, ItemID.GoldenDelight] },
+                { "CONSUMABLE_LICENSE", [ItemID.LicenseCat, ItemID.LicenseDog, ItemID.LicenseBunny] },
+                { "CONSUMABLE_POTION_BUFF", [ItemID.AmmoReservationPotion, ItemID.ArcheryPotion, ItemID.BattlePotion, ItemID.BiomeSightPotion, ItemID.BuilderPotion, ItemID.CalmingPotion, ItemID.CratePotion, ItemID.TrapsightPotion, ItemID.EndurancePotion, ItemID.FeatherfallPotion, ItemID.FishingPotion, ItemID.FlipperPotion, ItemID.GillsPotion, ItemID.GravitationPotion, ItemID.LuckPotionGreater, ItemID.HeartreachPotion, ItemID.HunterPotion, ItemID.InfernoPotion, ItemID.InvisibilityPotion, ItemID.IronskinPotion, ItemID.LuckPotionLesser, ItemID.LifeforcePotion, ItemID.LovePotion, ItemID.LuckPotion, ItemID.MagicPowerPotion, ItemID.ManaRegenerationPotion, ItemID.MiningPotion, ItemID.NightOwlPotion, ItemID.ObsidianSkinPotion, ItemID.RagePotion, ItemID.RegenerationPotion, ItemID.ShinePotion, ItemID.SonarPotion, ItemID.SpelunkerPotion, ItemID.StinkPotion, ItemID.SummoningPotion, ItemID.SwiftnessPotion, ItemID.ThornsPotion, ItemID.TitanPotion, ItemID.WarmthPotion, ItemID.WaterWalkingPotion, ItemID.WrathPotion, ItemID.Ale, ItemID.Sake] },
+                { "CONSUMABLE_POTION_FLASK", [ItemID.FlaskofCursedFlames, ItemID.FlaskofFire, ItemID.FlaskofGold, ItemID.FlaskofIchor, ItemID.FlaskofNanites, ItemID.FlaskofParty, ItemID.FlaskofPoison, ItemID.FlaskofVenom] },
+                { "CONSUMABLE_POTION_RECOVERY", [ItemID.Mushroom, ItemID.BottledHoney, ItemID.GreaterHealingPotion, ItemID.HealingPotion, ItemID.LesserHealingPotion, ItemID.ManaPotion, ItemID.RestorationPotion, ItemID.SuperHealingPotion, ItemID.SuperManaPotion, ItemID.BottledWater, ItemID.GreaterManaPotion, ItemID.LesserManaPotion, ItemID.Eggnog, ItemID.Honeyfin, ItemID.StrangeBrew] },
+                { "CONSUMABLE_POTION_OTHER", [ItemID.GenderChangePotion, ItemID.PotionOfReturn, ItemID.RecallPotion, ItemID.TeleportationPotion, ItemID.WormholePotion] },
+                { "CONSUMABLE_PERMANENT", [ItemID.LifeCrystal, ItemID.LifeFruit, ItemID.ManaCrystal, ItemID.CombatBook, ItemID.ArtisanLoaf, ItemID.TorchGodsFavor, ItemID.AegisCrystal, ItemID.AegisFruit, ItemID.ArcaneCrystal, ItemID.Ambrosia, ItemID.GummyWorm, ItemID.GalaxyPearl, ItemID.CombatBookVolumeTwo, ItemID.PeddlersSatchel] },
+                { "CONSUMABLE_TOOL", [ItemID.PurificationPowder, ItemID.VilePowder, ItemID.ViciousPowder, ItemID.HolyWater, ItemID.UnholyWater, ItemID.BloodWater, ItemID.Glowstick, ItemID.StickyGlowstick, ItemID.BouncyGlowstick, ItemID.SpelunkerGlowstick, ItemID.FairyGlowstick, ItemID.ChumBucket, ItemID.Fertilizer] },
+                { "CONSUMABLE_WEAPON", [ItemID.PaperAirplaneA, ItemID.PaperAirplaneB, ItemID.Snowball, ItemID.Shuriken, ItemID.RottenEgg, ItemID.ThrowingKnife, ItemID.PoisonedKnife, ItemID.Beenade, ItemID.BoneDagger, ItemID.StarAnise, ItemID.SpikyBall, ItemID.Javelin, ItemID.FrostDaggerfish, ItemID.Bone, ItemID.MolotovCocktail, ItemID.BoneJavelin, ItemID.PartyGirlGrenade, ItemID.Grenade, ItemID.StickyGrenade, ItemID.BouncyGrenade] },
+                { "CONSUMABLE_OTHER", [ItemID.StinkPotion, ItemID.LovePotion, ItemID.SmokeBomb, ItemID.ConfettiGun, ItemID.BeachBall, ItemID.Football, ItemID.Geode, ItemID.TreeGlobe, ItemID.MoonGlobe, ItemID.WorldGlobe, ItemID.ReleaseLantern, ItemID.ReleaseDoves, ItemID.GelBalloon] },
+            };
+
+            foreach (var group in Consumables)
+                RegisterAchievement(group.Key, ItemUseCondition.UseAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
         }
     }
 }

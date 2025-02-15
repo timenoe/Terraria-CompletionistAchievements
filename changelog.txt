@@ -1,3 +1,8 @@
+v1.0.4
+- Fix Angel Halo achievement
+- Fix junk fishing achievement
+- Fix Jungle Rose and Nature's Gift achievements
+
 v1.0.3
 - Fix NPC gift achievements (Angler and Dye Trader)
 
