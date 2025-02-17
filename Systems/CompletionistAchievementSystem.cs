@@ -49,6 +49,21 @@ namespace CompletionistAchievements.Systems
         }
 
         /// <summary>
+        /// Returns conditions to break a tile and grab the item<br/>
+        /// Requires the player to actually find rare items from tiles
+        /// </summary>
+        /// <param name="reqs">Common condition requirements</param>
+        /// <param name="itemId">Item ID to grab</param>
+        /// <returns>Conditions to break a tile and grab the item</returns>
+        private static List<CustomAchievementCondition> BreakAndGrabItem(ConditionReqs reqs, int itemId)
+        {
+            List<CustomAchievementCondition> conds = [];
+            conds.Add(TileDropCondition.Drop(reqs, itemId));
+            conds.Add(ItemGrabCondition.Grab(reqs, itemId));
+            return conds;
+        }
+
+        /// <summary>
         /// Register weapon achievements
         /// </summary>
         /// <param name="reqs">Common achievement requirements</param>
@@ -119,7 +134,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_DRIPPLER_CRIPPLER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.DripplerFlail), AchievementCategory.Collector);
 
             // Rare Other
-            RegisterAchievement("WEAPON_TERRAGRIM", TileDropCondition.Drop(reqs, ItemID.Terragrim), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_TERRAGRIM", BreakAndGrabItem(reqs, ItemID.Terragrim), false, AchievementCategory.Collector);
 
             foreach (var group in MeleeWeapons)
                 RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
@@ -183,7 +198,7 @@ namespace CompletionistAchievements.Systems
 
             // Rare Books
             RegisterAchievement("WEAPON_DEMON_SCYTHE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.DemonScythe), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_WATER_BOLT", TileDropCondition.Drop(reqs, ItemID.WaterBolt), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_WATER_BOLT", BreakAndGrabItem(reqs, ItemID.WaterBolt), false, AchievementCategory.Collector);
 
             // Rare Other
             RegisterAchievement("WEAPON_BLOOD_THORN", NpcDropCondition.Drop(reqs, NPCID.GoblinShark, ItemID.SharpTears), AchievementCategory.Collector);
@@ -210,7 +225,7 @@ namespace CompletionistAchievements.Systems
             };
 
             // Rare Minions
-            RegisterAchievement("WEAPON_ABIGAILS_FLOWER", TileDropCondition.Drop(reqs, ItemID.AbigailsFlower), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_ABIGAILS_FLOWER", BreakAndGrabItem(reqs, ItemID.AbigailsFlower), false, AchievementCategory.Collector);
             RegisterAchievement("WEAPON_SLIME_STAFF", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.SlimeStaff), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_VAMPIRE_FROG_STAFF", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.VampireFrogStaff), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_PIRATE_STAFF", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.PirateStaff), AchievementCategory.Collector);
@@ -465,7 +480,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("ACCESSORY_TALLY_COUNTER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.TallyCounter), AchievementCategory.Collector);
             
             // Rare Health/Mana
-            RegisterAchievement("ACCESSORY_NATURES_GIFT", TileDropCondition.Drop(reqs, ItemID.NaturesGift), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_NATURES_GIFT", BreakAndGrabItem(reqs, ItemID.NaturesGift), false, AchievementCategory.Collector);
             
             // Rare Combat
             RegisterAchievement("ACCESSORY_FROZEN_TURTLE_SHELL", NpcDropCondition.Drop(reqs, NPCID.IceTortoise, ItemID.FrozenTurtleShell), AchievementCategory.Collector);
@@ -477,7 +492,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("ACCESSORY_JELLYFISH_NECKLACE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.JellyfishNecklace), AchievementCategory.Collector);
             
             // Rare Vanity
-            RegisterAchievement("ACCESSORY_JUNGLE_ROSE", TileDropCondition.Drop(reqs, ItemID.JungleRose), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_JUNGLE_ROSE", BreakAndGrabItem(reqs, ItemID.JungleRose), false, AchievementCategory.Collector);
 
             // Rare Craft
             RegisterAchievement("ACCESSORY_ARCTIC_DIVING_GEAR", ItemCraftCondition.Craft(reqs, ItemID.ArcticDivingGear), AchievementCategory.Collector);
@@ -716,15 +731,15 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("PET_BABY_SKELETRON_HEAD", NpcDropCondition.Drop(reqs, NPCID.DungeonGuardian, ItemID.BoneKey), AchievementCategory.Collector);
             RegisterAchievement("PET_BABY_SNOWMAN", NpcDropCondition.Drop(reqs, NPCID.IceMimic, ItemID.ToySled), AchievementCategory.Collector);
             RegisterAchievement("PET_BLACK_CAT", ItemOpenCondition.Open(reqs, ItemID.GoodieBag, ItemID.UnluckyYarn), AchievementCategory.Collector);
-            RegisterAchievement("PET_CAVELING_GARDENER", TileDropCondition.Drop(reqs, ItemID.GlowTulip), AchievementCategory.Collector);
-            RegisterAchievement("PET_THE_DIRTIEST_BLOCK", TileDropCondition.Drop(reqs, ItemID.DirtiestBlock), AchievementCategory.Collector);
+            RegisterAchievement("PET_CAVELING_GARDENER", BreakAndGrabItem(reqs, ItemID.GlowTulip), false, AchievementCategory.Collector);
+            RegisterAchievement("PET_THE_DIRTIEST_BLOCK", BreakAndGrabItem(reqs, ItemID.DirtiestBlock), false, AchievementCategory.Collector);
             RegisterAchievement("PET_JUNIMO", NpcGiftCondition.Gift(reqs, NPCID.None, ItemID.JunimoPetItem), AchievementCategory.Collector);
             RegisterAchievement("PET_LIZARD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.LizardEgg), AchievementCategory.Collector);
             RegisterAchievement("PET_MINI_MINOTAUR", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.TartarSauce), AchievementCategory.Collector);
             RegisterAchievement("PET_PUPPY", ItemOpenCondition.Open(reqs, ItemID.Present, ItemID.DogWhistle), AchievementCategory.Collector);
             RegisterAchievement("PET_SAPLING", NpcDropCondition.Drop(reqs, NPCID.Plantera, ItemID.Seedling), AchievementCategory.Collector);
             RegisterAchievement("PET_SPIFFO", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.SpiffoPlush), AchievementCategory.Collector);
-            RegisterAchievement("PET_SQUASHLING", TileDropCondition.Drop(reqs, ItemID.MagicalPumpkinSeed), AchievementCategory.Collector);
+            RegisterAchievement("PET_SQUASHLING", BreakAndGrabItem(reqs, ItemID.MagicalPumpkinSeed), false, AchievementCategory.Collector);
             RegisterAchievement("PET_SUGAR_GLIDER", ItemShakeCondition.Shake(reqs, ItemID.EucaluptusSap), AchievementCategory.Collector);
             RegisterAchievement("PET_ZEPHYR_FISH", ItemCatchCondition.Catch(reqs, ItemID.ZephyrFish), AchievementCategory.Collector);
             RegisterAchievement("PET_WISP", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.WispinaBottle), AchievementCategory.Collector);
@@ -854,14 +869,20 @@ namespace CompletionistAchievements.Systems
             };
 
             // Verified w/ https://terraria.wiki.gg/wiki/Angler#Reward_lists
-            int[] FishRewards = [ItemID.FuzzyCarrot, ItemID.AnglerHat, ItemID.AnglerVest, ItemID.AnglerPants, ItemID.HoneyAbsorbantSponge, ItemID.BottomlessHoneyBucket, ItemID.GoldenFishingRod, ItemID.LavaFishingHook, ItemID.FinWings, ItemID.BottomlessBucket, ItemID.SuperAbsorbantSponge, ItemID.GoldenBugNet, ItemID.FishHook, ItemID.FishMinecart, ItemID.SeashellHairpin, ItemID.MermaidAdornment, ItemID.MermaidTail, ItemID.FishCostumeMask, ItemID.FishCostumeShirt, ItemID.FishCostumeFinskirt, ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.FishingBobber, ItemID.FishermansGuide, ItemID.WeatherRadio, ItemID.Sextant, ItemID.FishingBobber, ItemID.FishingPotion, ItemID.SonarPotion, ItemID.CratePotion, ItemID.LifePreserver, ItemID.ShipsWheel, ItemID.CompassRose, ItemID.WallAnchor, ItemID.PillaginMePixels, ItemID.TreasureMap, ItemID.GoldfishTrophy, ItemID.BunnyfishTrophy, ItemID.SwordfishTrophy, ItemID.SharkteethTrophy, ItemID.ShipInABottle, ItemID.SeaweedPlanter, ItemID.NotSoLostInParadise, ItemID.Crustography, ItemID.WhatLurksBelow, ItemID.Fangs, ItemID.CouchGag, ItemID.SilentFish, ItemID.TheDuke, ItemID.MasterBait, ItemID.JourneymanBait, ItemID.ApprenticeBait];
+            int[] OneTimeFishRewards = [ItemID.FuzzyCarrot, ItemID.AnglerHat, ItemID.AnglerVest, ItemID.AnglerPants];
+            int[] AllOtherFishRewards = [ItemID.HoneyAbsorbantSponge, ItemID.BottomlessHoneyBucket, ItemID.GoldenFishingRod, ItemID.LavaFishingHook, ItemID.FinWings, ItemID.BottomlessBucket, ItemID.SuperAbsorbantSponge, ItemID.GoldenBugNet, ItemID.FishHook, ItemID.FishMinecart, ItemID.SeashellHairpin, ItemID.MermaidAdornment, ItemID.MermaidTail, ItemID.FishCostumeMask, ItemID.FishCostumeShirt, ItemID.FishCostumeFinskirt, ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.FishingBobber, ItemID.FishermansGuide, ItemID.WeatherRadio, ItemID.Sextant, ItemID.FishingBobber, ItemID.FishingPotion, ItemID.SonarPotion, ItemID.CratePotion, ItemID.LifePreserver, ItemID.ShipsWheel, ItemID.CompassRose, ItemID.WallAnchor, ItemID.PillaginMePixels, ItemID.TreasureMap, ItemID.GoldfishTrophy, ItemID.BunnyfishTrophy, ItemID.SwordfishTrophy, ItemID.SharkteethTrophy, ItemID.ShipInABottle, ItemID.SeaweedPlanter, ItemID.NotSoLostInParadise, ItemID.Crustography, ItemID.WhatLurksBelow, ItemID.Fangs, ItemID.CouchGag, ItemID.SilentFish, ItemID.TheDuke, ItemID.MasterBait, ItemID.JourneymanBait, ItemID.ApprenticeBait];
 
             RegisterAchievement("FISH_PINK_PEARL", ItemOpenCondition.Open(reqs, ItemID.Oyster, ItemID.PinkPearl), AchievementCategory.Collector);
 
             foreach (var group in FishCatch)
                 RegisterAchievement(group.Key, ItemCatchCondition.CatchAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
 
-            RegisterAchievement("FISH_REWARD", NpcGiftCondition.GiftAll(reqs, NPCID.Angler, FishRewards), true, AchievementCategory.Collector);
+            // Patch since it was borked on release
+            // First 4 items never appear again
+            List<CustomAchievementCondition> conds = [];
+            conds.AddRange(ItemGrabCondition.GrabAll(reqs, OneTimeFishRewards));
+            conds.AddRange(NpcGiftCondition.GiftAll(reqs, NPCID.Angler, AllOtherFishRewards));
+            RegisterAchievement("FISH_REWARD", conds, true, AchievementCategory.Collector);
         }
 
         /// <summary>
@@ -953,7 +974,7 @@ namespace CompletionistAchievements.Systems
 
             int[] AnimalSkins = [ItemID.TigerSkin, ItemID.LeopardSkin, ItemID.ZebraSkin];
 
-            RegisterAchievement("PAINTING_WALDO", TileDropCondition.Drop(reqs, ItemID.Waldo), AchievementCategory.Collector);
+            RegisterAchievement("PAINTING_WALDO", BreakAndGrabItem(reqs, ItemID.Waldo), false, AchievementCategory.Collector);
 
             foreach (var group in PaintingsBuy)
                 RegisterAchievement(group.Key, NpcBuyCondition.BuyAll(reqs, NPCID.None, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
