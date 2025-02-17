@@ -1,6 +1,6 @@
 displayName = Completionist Achievements
 author = timenoe
-version = 1.0.6
+version = 1.0.7
 homepage = https://github.com/timenoe/Terraria-CompletionistAchievements
 buildIgnore = *.pdn
 side = Client

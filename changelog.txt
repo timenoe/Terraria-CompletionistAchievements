@@ -1,3 +1,7 @@
+v1.0.7
+- Fixed incorrectly ordered biome key achievement icons
+- Updated the achievements for getting item drops from friendly NPCs
+
 v1.0.6
 - Fixed Shellphone achievement
 - Fixed Halloween vanity collection achievement
