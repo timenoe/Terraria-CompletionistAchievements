@@ -1,5 +1,7 @@
 v1.0.5
-- Fix Pink Pearl achievement
+- Fixed the Pink Pearl achievement
+- Updated "Overfishing" to allow users of earlier versions to unlock it
+- Updated tile-related item achievements to be more stabile
 
 v1.0.4
 - Fix Angel Halo achievement
