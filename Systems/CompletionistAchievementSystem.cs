@@ -204,7 +204,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_BLOOD_THORN", NpcDropCondition.Drop(reqs, NPCID.GoblinShark, ItemID.SharpTears), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_MEDUSA_HEAD", NpcDropCondition.Drop(reqs, NPCID.Medusa, ItemID.MedusaHead), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_NIMBUS_ROD", NpcDropCondition.Drop(reqs, NPCID.AngryNimbus, ItemID.NimbusRod), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_STELLAR_TUNE", NpcDropCondition.Drop(reqs, NPCID.HallowBoss, ItemID.SparkleGuitar), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_STELLAR_TUNE", ItemGrabCondition.Grab(reqs, ItemID.SparkleGuitar), AchievementCategory.Collector);
 
             foreach (var group in MagicWeapons)
                 RegisterAchievement(group.Key, ItemGrabCondition.GrabAll(reqs, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
@@ -294,7 +294,7 @@ namespace CompletionistAchievements.Systems
 
             // Rare Pickaxes
             RegisterAchievement("TOOL_BONE_PICKAXE", NpcDropCondition.Drop(reqs, NPCID.UndeadMiner, ItemID.BonePickaxe), AchievementCategory.Collector);
-            RegisterAchievement("TOOL_THE_AXE", NpcDropCondition.Drop(reqs, NPCID.Plantera, ItemID.TheAxe), AchievementCategory.Collector);
+            RegisterAchievement("TOOL_THE_AXE", ItemGrabCondition.Grab(reqs, ItemID.TheAxe), AchievementCategory.Collector);
 
             // Rare Hooks
             RegisterAchievement("TOOL_BAT_HOOK", ItemOpenCondition.Open(reqs, ItemID.GoodieBag, ItemID.BatHook), AchievementCategory.Collector);
@@ -315,7 +315,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("TOOL_SUPER_ABSORBANT_SPONGE", NpcGiftCondition.Gift(reqs, NPCID.Angler, ItemID.SuperAbsorbantSponge), AchievementCategory.Collector);
             RegisterAchievement("TOOL_LAVA_ABSORBANT_SPONGE", ItemCatchCondition.Catch(reqs, ItemID.LavaAbsorbantSponge), AchievementCategory.Collector);
             RegisterAchievement("TOOL_GOLDEN_BUG_NET", NpcGiftCondition.Gift(reqs, NPCID.Angler, ItemID.GoldenBugNet), AchievementCategory.Collector);
-            RegisterAchievement("TOOL_BINOCULARS", NpcDropCondition.Drop(reqs, NPCID.EyeofCthulhu, ItemID.Binoculars), AchievementCategory.Collector);
+            RegisterAchievement("TOOL_BINOCULARS", ItemGrabCondition.Grab(reqs, ItemID.Binoculars), AchievementCategory.Collector);
             RegisterAchievement("TOOL_JUNGLE_KEY", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.JungleKey), AchievementCategory.Collector);
             RegisterAchievement("TOOL_FROZEN_KEY", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.FrozenKey), AchievementCategory.Collector);
             RegisterAchievement("TOOL_HALLOWED_KEY", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.HallowedKey), AchievementCategory.Collector);
@@ -508,7 +508,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("ACCESSORY_HELLFIRE_TREADS", ItemCraftCondition.Craft(reqs, ItemID.HellfireTreads), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_LAVAPROOF_TACKLE_BAG", ItemCraftCondition.Craft(reqs, ItemID.LavaproofTackleBag), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_MASTER_NINJA_GEAR", ItemCraftCondition.Craft(reqs, ItemID.MasterNinjaGear), AchievementCategory.Collector);
-            RegisterAchievement("ACCESSORY_SHELLPHONE", ItemCraftCondition.Craft(reqs, ItemID.Shellphone), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_SHELLPHONE", ItemCraftCondition.Craft(reqs, ItemID.ShellphoneDummy), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_SNIPER_SCOPE", ItemCraftCondition.Craft(reqs, ItemID.SniperScope), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_THE_GRAND_DESIGN", ItemCraftCondition.Craft(reqs, ItemID.WireKite), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_ULTRA_ABSORBANT_SPONGE", ItemCraftCondition.Craft(reqs, ItemID.UltraAbsorbantSponge), AchievementCategory.Collector);
@@ -526,7 +526,7 @@ namespace CompletionistAchievements.Systems
             // Verified w/ https://terraria.wiki.gg/wiki/Mounts
             int[] Mounts = [ItemID.SlimySaddle, ItemID.HoneyedGoggles, ItemID.HardySaddle, ItemID.FuzzyCarrot, ItemID.PogoStick, ItemID.GolfCart, ItemID.MolluskWhistle, ItemID.PaintedHorseSaddle, ItemID.MajesticHorseSaddle, ItemID.DarkHorseSaddle, ItemID.SuperheatedBlood, ItemID.AncientHorn, ItemID.WolfMountItem, ItemID.BlessedApple, ItemID.ScalyTruffle, ItemID.QueenSlimeMountSaddle, ItemID.ReindeerBells, ItemID.BrainScrambler, ItemID.CosmicCarKey, ItemID.DrillContainmentUnit];
 
-            RegisterAchievement("MOUNT_BEE", NpcDropCondition.Drop(reqs, NPCID.QueenBee, ItemID.HoneyedGoggles), AchievementCategory.Collector);
+            RegisterAchievement("MOUNT_BEE", ItemGrabCondition.Grab(reqs, ItemID.HoneyedGoggles), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_TURTLE", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.HardySaddle), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_GOLF_CART", NpcBuyCondition.Buy(reqs, NPCID.Golfer, ItemID.GolfCart), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_BASILISK", NpcDropCondition.Drop(reqs, NPCID.DesertBeast, ItemID.AncientHorn), AchievementCategory.Collector);
@@ -644,7 +644,7 @@ namespace CompletionistAchievements.Systems
                 { "Nurse", [ItemID.NurseHat, ItemID.NurseShirt, ItemID.NursePants] },
                 { "Pixie", [ItemID.PixieShirt, ItemID.PixiePants] },
                 { "Princess", [ItemID.PrincessHat, ItemID.PrincessDressNew] },
-                { "Pumpkin", [ItemID.PumpkinHelmet, ItemID.PumpkinShirt, ItemID.PumpkinPants] },
+                { "Pumpkin", [ItemID.PumpkinMask, ItemID.PumpkinShirt, ItemID.PumpkinPants] },
                 { "Reaper", [ItemID.ReaperHood, ItemID.ReaperRobe] },
                 { "Robot", [ItemID.RobotMask, ItemID.RobotShirt, ItemID.RobotPants] },
                 { "Space Creature", [ItemID.SpaceCreatureMask, ItemID.SpaceCreatureShirt, ItemID.SpaceCreaturePants] },
@@ -724,10 +724,10 @@ namespace CompletionistAchievements.Systems
             };
 
             RegisterAchievement("PET_BABY_DINOSAUR", ItemExtractCondition.Extract(reqs, ItemID.AmberMosquito), AchievementCategory.Collector);
-            RegisterAchievement("PET_BABY_EATER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.EatersBone), AchievementCategory.Collector);
-            RegisterAchievement("PET_BABY_FACE_MONSTER", NpcDropCondition.Drop(reqs, NPCID.BrainofCthulhu, ItemID.BoneRattle), AchievementCategory.Collector);
+            RegisterAchievement("PET_BABY_EATER", ItemGrabCondition.Grab(reqs, ItemID.EatersBone), AchievementCategory.Collector);
+            RegisterAchievement("PET_BABY_FACE_MONSTER", ItemGrabCondition.Grab(reqs, ItemID.BoneRattle), AchievementCategory.Collector);
             RegisterAchievement("PET_BABY_GRINCH", NpcDropCondition.Drop(reqs, NPCID.IceQueen, ItemID.BabyGrinchMischiefWhistle), AchievementCategory.Collector);
-            RegisterAchievement("PET_BABY_HORNET", NpcDropCondition.Drop(reqs, NPCID.QueenBee, ItemID.Nectar), AchievementCategory.Collector);
+            RegisterAchievement("PET_BABY_HORNET", ItemGrabCondition.Grab(reqs, ItemID.Nectar), AchievementCategory.Collector);
             RegisterAchievement("PET_BABY_SKELETRON_HEAD", NpcDropCondition.Drop(reqs, NPCID.DungeonGuardian, ItemID.BoneKey), AchievementCategory.Collector);
             RegisterAchievement("PET_BABY_SNOWMAN", NpcDropCondition.Drop(reqs, NPCID.IceMimic, ItemID.ToySled), AchievementCategory.Collector);
             RegisterAchievement("PET_BLACK_CAT", ItemOpenCondition.Open(reqs, ItemID.GoodieBag, ItemID.UnluckyYarn), AchievementCategory.Collector);
@@ -737,7 +737,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("PET_LIZARD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.LizardEgg), AchievementCategory.Collector);
             RegisterAchievement("PET_MINI_MINOTAUR", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.TartarSauce), AchievementCategory.Collector);
             RegisterAchievement("PET_PUPPY", ItemOpenCondition.Open(reqs, ItemID.Present, ItemID.DogWhistle), AchievementCategory.Collector);
-            RegisterAchievement("PET_SAPLING", NpcDropCondition.Drop(reqs, NPCID.Plantera, ItemID.Seedling), AchievementCategory.Collector);
+            RegisterAchievement("PET_SAPLING", ItemGrabCondition.Grab(reqs, ItemID.Seedling), AchievementCategory.Collector);
             RegisterAchievement("PET_SPIFFO", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.SpiffoPlush), AchievementCategory.Collector);
             RegisterAchievement("PET_SQUASHLING", BreakAndGrabItem(reqs, ItemID.MagicalPumpkinSeed), false, AchievementCategory.Collector);
             RegisterAchievement("PET_SUGAR_GLIDER", ItemShakeCondition.Shake(reqs, ItemID.EucaluptusSap), AchievementCategory.Collector);

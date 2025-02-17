@@ -1,3 +1,9 @@
+v1.0.6
+- Fixed Shellphone achievement
+- Fixed Halloween vanity collection achievement
+- Fixed potential wiping of progress when earning achievements without this mod enabled
+- Allowed boss drops to be obtained from their treasure bags
+
 v1.0.5
 - Fixed the Pink Pearl achievement
 - Updated "Overfishing" to allow users of earlier versions to unlock it
