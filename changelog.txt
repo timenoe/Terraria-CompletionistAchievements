@@ -1,3 +1,6 @@
+v1.0.8
+- Removed multiplayer hair dye from achievement
+
 v1.0.7
 - Fixed incorrectly ordered biome key achievement icons
 - Updated the achievements for getting item drops from friendly NPCs

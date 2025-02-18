@@ -834,7 +834,7 @@ namespace CompletionistAchievements.Systems
             };
 
             // Verified w/ https://terraria.wiki.gg/wiki/Hair_Dyes
-            int[] HairDyes = [ItemID.LifeHairDye, ItemID.ManaHairDye, ItemID.DepthHairDye, ItemID.MoneyHairDye, ItemID.TimeHairDye, ItemID.TeamHairDye, ItemID.BiomeHairDye, ItemID.PartyHairDye, ItemID.RainbowHairDye, ItemID.SpeedHairDye, ItemID.MartianHairDye, ItemID.TwilightHairDye];
+            int[] HairDyes = [ItemID.LifeHairDye, ItemID.ManaHairDye, ItemID.DepthHairDye, ItemID.MoneyHairDye, ItemID.TimeHairDye, ItemID.BiomeHairDye, ItemID.PartyHairDye, ItemID.RainbowHairDye, ItemID.SpeedHairDye, ItemID.MartianHairDye, ItemID.TwilightHairDye];
 
             RegisterAchievement("DYE_STRANGE", NpcGiftCondition.GiftAll(reqs, NPCID.DyeTrader, SpecialDyes["DYE_STRANGE"]), true, AchievementCategory.Collector);
             RegisterAchievement("DYE_CRAFT", ItemCraftCondition.CraftAll(reqs, SpecialDyes["DYE_CRAFT"]), true, AchievementCategory.Collector);
