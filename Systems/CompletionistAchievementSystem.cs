@@ -360,7 +360,7 @@ namespace CompletionistAchievements.Systems
                 { "Gold", [ItemID.GoldHelmet, ItemID.AncientGoldHelmet, ItemID.GoldChainmail, ItemID.GoldGreaves] },
                 { "Platinum", [ItemID.PlatinumHelmet, ItemID.PlatinumChainmail, ItemID.PlatinumGreaves] },
                 { "Fossil", [ItemID.FossilHelm, ItemID.FossilShirt, ItemID.FossilPants] },
-                { "Bee", [ItemID.BeeHeadgear, ItemID.BeeBreastplate, ItemID.BeePants] },
+                { "Bee", [ItemID.BeeHeadgear, ItemID.BeeBreastplate, ItemID.BeeGreaves] },
                 { "Obsidian", [ItemID.ObsidianHelm, ItemID.ObsidianShirt, ItemID.ObsidianPants] },
                 { "Gladiator", [ItemID.GladiatorHelmet, ItemID.GladiatorBreastplate, ItemID.GladiatorLeggings] },
                 { "Meteor", [ItemID.MeteorHelmet, ItemID.MeteorSuit, ItemID.MeteorLeggings] },

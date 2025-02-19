@@ -1,3 +1,6 @@
+v1.0.13
+- Updated Bee Greaves not being included
+
 v1.0.12
 - Updated descriptions for enemy item drop achievements
 
