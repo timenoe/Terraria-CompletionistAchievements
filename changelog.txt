@@ -1,3 +1,7 @@
+v1.0.9
+- Fixed Ancient Hallowed Headgear not being included
+- Removed multiplayer potion from achievement
+
 v1.0.8
 - Removed multiplayer hair dye from achievement
 

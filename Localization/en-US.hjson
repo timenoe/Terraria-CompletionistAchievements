@@ -504,7 +504,7 @@ Achievements: {
 	COMPLETIONIST_DYE_OTHER_Name: Feeling Like a Fairy
 	COMPLETIONIST_DYE_OTHER_Description: Obtain all 3 miscellaneous special effect dyes.
 	COMPLETIONIST_DYE_HAIR_Name: Express Yourself
-	COMPLETIONIST_DYE_HAIR_Description: Obtain all 12 hair dyes.
+	COMPLETIONIST_DYE_HAIR_Description: Obtain all 11 hair dyes.
 	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Name: Panning for Platinum
 	COMPLETIONIST_EXTRACT_PLATINUM_COIN_Description: Extract a Platinum Coin from a block.
 	COMPLETIONIST_EXTRACT_JOURNEYMAN_BAIT_Name: ...Another Man's Treasure
@@ -650,7 +650,7 @@ Achievements: {
 	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Name: Recovery Is Key
 	COMPLETIONIST_CONSUMABLE_POTION_RECOVERY_Description: Drink all 15 recovery potions.
 	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Name: Experimental Consumer
-	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Description: Drink all 5 miscellaneous potions.
+	COMPLETIONIST_CONSUMABLE_POTION_OTHER_Description: Drink all 4 miscellaneous potions.
 	COMPLETIONIST_CONSUMABLE_PERMANENT_Name: Personal Development
 	COMPLETIONIST_CONSUMABLE_PERMANENT_Description: Use all 14 permanent consumable items.
 	COMPLETIONIST_CONSUMABLE_TOOL_Name: Terravania
