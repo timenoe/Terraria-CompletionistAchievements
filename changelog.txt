@@ -1,3 +1,6 @@
+v1.0.10
+- Fixed boss mask achievement
+
 v1.0.9
 - Fixed Ancient Hallowed Headgear not being included
 - Removed multiplayer potion from achievement
