@@ -107,7 +107,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_MANDIBLE_BLADE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.AntlionClaw), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_STYLISH_SCISSORS", ItemGrabCondition.Grab(reqs, ItemID.StylistKilLaKillScissorsIWish), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_ZOMBIE_ARM", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.ZombieArm), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_CLASSY_CANE", NpcDropCondition.Drop(reqs, NPCID.TaxCollector, ItemID.TaxCollectorsStickOfDoom), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_CLASSY_CANE", ItemGrabCondition.Grab(reqs, ItemID.TaxCollectorsStickOfDoom), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_ICE_SICKLE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.IceSickle), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_KEYBRAND", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Keybrand), AchievementCategory.Collector);
 
@@ -124,7 +124,7 @@ namespace CompletionistAchievements.Systems
 
             // Rare Boomerangs
             RegisterAchievement("WEAPON_BLOODY_MACHETE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BloodyMachete), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_COMBAT_WRENCH", NpcDropCondition.Drop(reqs, NPCID.Mechanic, ItemID.CombatWrench), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_COMBAT_WRENCH", ItemGrabCondition.Grab(reqs, ItemID.CombatWrench), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_SHROOMERANG", NpcDropCondition.Drop(reqs, NPCID.SporeBat, ItemID.Shroomerang), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_BANANARANG", NpcDropCondition.Drop(reqs, NPCID.Clown, ItemID.Bananarang), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_PALADINS_HAMMER", NpcDropCondition.Drop(reqs, NPCID.Paladin, ItemID.PaladinsHammer), AchievementCategory.Collector);
@@ -165,7 +165,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_UZI", NpcDropCondition.Drop(reqs, NPCID.AngryTrapper, ItemID.Uzi), AchievementCategory.Collector);
 
             // Rare Other
-            RegisterAchievement("WEAPON_ALE_TOSSER", NpcDropCondition.Drop(reqs, NPCID.DD2Bartender, ItemID.AleThrowingGlove), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_ALE_TOSSER", ItemGrabCondition.Grab(reqs, ItemID.AleThrowingGlove), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_PAINTBALL_GUN", ItemGrabCondition.Grab(reqs, ItemID.PainterPaintballGun), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_COIN_GUN", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.CoinGun), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_TOXIKARP", ItemCatchCondition.Catch(reqs, ItemID.Toxikarp), AchievementCategory.Collector);
