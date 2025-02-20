@@ -1,3 +1,7 @@
+v1.0.14
+- Fixed Cavern Slayer description typo
+- Unlock achievements when using Magic Storage
+
 v1.0.13
 - Updated Bee Greaves not being included
 
