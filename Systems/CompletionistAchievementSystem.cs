@@ -706,7 +706,7 @@ namespace CompletionistAchievements.Systems
                 sets.AddRange(ItemGrabCondition.GrabAll(reqs, set.Value));
             RegisterAchievement("VANITY_CHRISTMAS", sets, true, AchievementCategory.Collector);
 
-            RegisterAchievement("VANITY_MASK", NpcDropCondition.DropAll(reqs, NPCID.None, VanityPieces["VANITY_MASK"]), true, AchievementCategory.Collector);
+            RegisterAchievement("VANITY_MASK", ItemGrabCondition.GrabAll(reqs, VanityPieces["VANITY_MASK"]), true, AchievementCategory.Collector);
             RegisterAchievement("VANITY_OTHER", ItemGrabCondition.GrabAll(reqs, VanityPieces["VANITY_OTHER"]), true, AchievementCategory.Collector);
         }
 
