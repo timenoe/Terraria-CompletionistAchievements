@@ -1,3 +1,6 @@
+v1.0.18
+- Added progress notifications for tracked achievements
+
 v1.0.17
 - Allowed boss masks to be obtained from treasure bags
 

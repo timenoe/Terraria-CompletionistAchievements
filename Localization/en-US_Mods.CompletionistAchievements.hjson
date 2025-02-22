@@ -1,0 +1,10 @@
+Configs: {
+	SettingsConfig: {
+		DisplayName: Settings
+
+		ProgressNotifications: {
+			Label: Progress Notifications
+			Tooltip: Enable to display progress notifications for tracked achievements.
+		}
+	}
+}

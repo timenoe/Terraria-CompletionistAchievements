@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using Terraria.Achievements;
 using Terraria.ID;
+using Terraria.ModLoader;
 using TerrariaAchievementLib.Achievements;
 using TerrariaAchievementLib.Achievements.Conditions;
 using TerrariaAchievementLib.Systems;
+using CompletionistAchievements.Configs;
 
 namespace CompletionistAchievements.Systems
 {
@@ -19,6 +21,9 @@ namespace CompletionistAchievements.Systems
 
         protected override void RegisterAchievements()
         {
+            if (ModContent.GetInstance<SettingsConfig>().ProgressNotifications)
+                EnableProgressNotifications();
+            
             ConditionReqs reqs = new(PlayerDiff.Classic, WorldDiff.Classic, SpecialSeed.None);
 
             RegisterWeaponAchievements(reqs);
