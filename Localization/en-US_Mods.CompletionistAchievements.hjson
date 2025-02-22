@@ -1,3 +1,10 @@
+Buffs: {
+	HardestcoreBuff: {
+		DisplayName: Hardestcore
+		Description: Hardestcore difficulty is enabled!
+	}
+}
+
 Configs: {
 	SettingsConfig: {
 		DisplayName: Settings
@@ -6,12 +13,5 @@ Configs: {
 			Label: Progress Notifications
 			Tooltip: Enable to display progress notifications for tracked achievements.
 		}
-	}
-}
-
-Buffs: {
-	HardestcoreBuff: {
-		DisplayName: Hardestcore
-		Description: Hardestcore difficulty is enabled!
 	}
 }
