@@ -22,7 +22,7 @@ namespace CompletionistAchievements.Systems
         protected override void RegisterAchievements()
         {
             if (ModContent.GetInstance<SettingsConfig>().ProgressNotifications)
-                EnableProgressNotifications();
+                ProgressSystem.Enable();
             
             ConditionReqs reqs = new(PlayerDiff.Classic, WorldDiff.Classic, SpecialSeed.None);
 
@@ -875,7 +875,7 @@ namespace CompletionistAchievements.Systems
 
             // Verified w/ https://terraria.wiki.gg/wiki/Angler#Reward_lists
             int[] OneTimeFishRewards = [ItemID.FuzzyCarrot, ItemID.AnglerHat, ItemID.AnglerVest, ItemID.AnglerPants];
-            int[] AllOtherFishRewards = [ItemID.HoneyAbsorbantSponge, ItemID.BottomlessHoneyBucket, ItemID.GoldenFishingRod, ItemID.LavaFishingHook, ItemID.FinWings, ItemID.BottomlessBucket, ItemID.SuperAbsorbantSponge, ItemID.GoldenBugNet, ItemID.FishHook, ItemID.FishMinecart, ItemID.SeashellHairpin, ItemID.MermaidAdornment, ItemID.MermaidTail, ItemID.FishCostumeMask, ItemID.FishCostumeShirt, ItemID.FishCostumeFinskirt, ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.FishingBobber, ItemID.FishermansGuide, ItemID.WeatherRadio, ItemID.Sextant, ItemID.FishingBobber, ItemID.FishingPotion, ItemID.SonarPotion, ItemID.CratePotion, ItemID.LifePreserver, ItemID.ShipsWheel, ItemID.CompassRose, ItemID.WallAnchor, ItemID.PillaginMePixels, ItemID.TreasureMap, ItemID.GoldfishTrophy, ItemID.BunnyfishTrophy, ItemID.SwordfishTrophy, ItemID.SharkteethTrophy, ItemID.ShipInABottle, ItemID.SeaweedPlanter, ItemID.NotSoLostInParadise, ItemID.Crustography, ItemID.WhatLurksBelow, ItemID.Fangs, ItemID.CouchGag, ItemID.SilentFish, ItemID.TheDuke, ItemID.MasterBait, ItemID.JourneymanBait, ItemID.ApprenticeBait];
+            int[] AllOtherFishRewards = [ItemID.HoneyAbsorbantSponge, ItemID.BottomlessHoneyBucket, ItemID.GoldenFishingRod, ItemID.HotlineFishingHook, ItemID.FinWings, ItemID.BottomlessBucket, ItemID.SuperAbsorbantSponge, ItemID.GoldenBugNet, ItemID.FishHook, ItemID.FishMinecart, ItemID.SeashellHairpin, ItemID.MermaidAdornment, ItemID.MermaidTail, ItemID.FishCostumeMask, ItemID.FishCostumeShirt, ItemID.FishCostumeFinskirt, ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.FishermansGuide, ItemID.WeatherRadio, ItemID.Sextant, ItemID.FishingBobber, ItemID.FishingPotion, ItemID.SonarPotion, ItemID.CratePotion, ItemID.LifePreserver, ItemID.ShipsWheel, ItemID.CompassRose, ItemID.WallAnchor, ItemID.PillaginMePixels, ItemID.TreasureMap, ItemID.GoldfishTrophy, ItemID.BunnyfishTrophy, ItemID.SwordfishTrophy, ItemID.SharkteethTrophy, ItemID.ShipInABottle, ItemID.SeaweedPlanter, ItemID.NotSoLostInParadise, ItemID.Crustography, ItemID.WhatLurksBelow, ItemID.Fangs, ItemID.CouchGag, ItemID.SilentFish, ItemID.TheDuke, ItemID.MasterBait, ItemID.JourneymanBait, ItemID.ApprenticeBait];
 
             RegisterAchievement("FISH_PINK_PEARL", ItemOpenCondition.Open(reqs, ItemID.Oyster, ItemID.PinkPearl), AchievementCategory.Collector);
 

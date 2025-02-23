@@ -1,3 +1,8 @@
+v1.0.19
+- Fixed an incorrect reward check in "Overfishing"
+- Added additional item checks when right-clicking to transform certain items
+- Added an additional item check when Wilson's beard grows
+
 v1.0.18
 - Added progress notifications for tracked achievements
 
