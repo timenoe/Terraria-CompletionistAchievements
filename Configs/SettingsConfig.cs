@@ -17,5 +17,13 @@ namespace CompletionistAchievements.Configs
         [DefaultValue(true)]
         [ReloadRequired]
         public bool ProgressNotifications;
+
+        /// <summary>
+        /// True if rare creature notifications are enabled
+        /// </summary>
+        [BackgroundColor(255, 255, 0)]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool RareCreatureNotifications;
     }
 }

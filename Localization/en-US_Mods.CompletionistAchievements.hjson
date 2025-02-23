@@ -13,5 +13,10 @@ Configs: {
 			Label: Progress Notifications
 			Tooltip: Enable to display progress notifications for tracked achievements.
 		}
+
+		RareCreatureNotifications: {
+			Label: Rare Creature Notifications
+			Tooltip: Enable to display rare creature notifications when the Lifeform Analyzer is equipped.
+		}
 	}
 }

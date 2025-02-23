@@ -23,7 +23,10 @@ namespace CompletionistAchievements.Systems
         {
             if (ModContent.GetInstance<SettingsConfig>().ProgressNotifications)
                 ProgressSystem.Enable();
-            
+
+            if (ModContent.GetInstance<SettingsConfig>().RareCreatureNotifications)
+                RareCreatureSystem.Enable();
+
             ConditionReqs reqs = new(PlayerDiff.Classic, WorldDiff.Classic, SpecialSeed.None);
 
             RegisterWeaponAchievements(reqs);
@@ -425,7 +428,7 @@ namespace CompletionistAchievements.Systems
             // Rare Sets
             RegisterAchievement("ARMOR_MINING", NpcDropCondition.DropAll(reqs, NPCID.UndeadMiner, [ItemID.MiningShirt, ItemID.MiningPants]), true, AchievementCategory.Collector);
             RegisterAchievement("ARMOR_RAIN", NpcDropCondition.DropAll(reqs, NPCID.ZombieRaincoat, ArmorPreHardmode["Rain"]), true, AchievementCategory.Collector);
-            RegisterAchievement("ARMOR_SNOW", NpcDropCondition.DropAll(reqs, NPCID.ZombieEskimo, ArmorPreHardmode["Snow"]), true, AchievementCategory.Collector);
+            RegisterAchievement("ARMOR_SNOW", NpcDropCondition.DropAll(reqs, NPCID.None, ArmorPreHardmode["Snow"]), true, AchievementCategory.Collector);
             
             // Rare Pieces
             RegisterAchievement("ARMOR_DIVING_HELMET", NpcDropCondition.Drop(reqs, NPCID.Shark, ItemID.DivingHelmet), AchievementCategory.Collector);
