@@ -1,5 +1,11 @@
 # Terraria Completionist Achievements Mod
 
+[![Release](https://img.shields.io/github/v/release/timenoe/Terraria-CompletionistAchievements?style=flat-square)](https://github.com/timenoe/Terraria-CompletionistAchievements/releases/latest)
+[![Downloads](https://img.shields.io/steam/downloads/3427400175?style=flat-square)](https://steamcommunity.com/sharedfiles/filedetails/?id=3427400175)
+[![File Size](https://img.shields.io/steam/size/3427400175?style=flat-square)](https://steamcommunity.com/sharedfiles/filedetails/?id=3427400175)
+[![Issues](https://img.shields.io/github/issues/timenoe/Terraria-CompletionistAchievements?style=flat-square)](https://github.com/timenoe/Terraria-CompletionistAchievements/issues)
+[![License](https://img.shields.io/github/license/timenoe/Terraria-CompletionistAchievements?style=flat-square)](https://github.com/timenoe/Terraria-CompletionistAchievements/blob/master/LICENSE.md)
+
 Terraria tModLoader mod that adds completionist achievements to the in-game list.
 
 ## Restrictions
