@@ -62,15 +62,15 @@ v1.0.5
 - Updated tile-related item achievements to be more stabile
 
 v1.0.4
-- Fix Angel Halo achievement
-- Fix junk fishing achievement
-- Fix Jungle Rose and Nature's Gift achievements
+- Fixed Angel Halo achievement
+- Fixed junk fishing achievement
+- Fixed Jungle Rose and Nature's Gift achievements
 
 v1.0.3
-- Fix NPC gift achievements (Angler and Dye Trader)
+- Fixed NPC gift achievements (Angler and Dye Trader)
 
 v1.0.2
-- Actually fixed ammo bug (updated TerrariaAchievementLib submodule)
+- Actually fixed ammo bug
 
 v1.0.1
-- Fixed ammo bug (updated TerrariaAchievementLib submodule)
+- Fixed ammo bug

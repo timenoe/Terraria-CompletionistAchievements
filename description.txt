@@ -1,13 +1,13 @@
 Adds completionist achievements to the in-game list.
 
-## Restrictions
+Restrictions
 - No Journey Mode
 - No Celebrationmk10 Seed
 
-## Notes
+Notes
 Items that are exclusive to difficulties and special seeds are excluded, so that all achievements can be obtained in standard playthroughs. The World Achievements mod adds achievements for all difficulties and seed-specific items.
 
-## Credits
+Credits
 - timenoe - Developer, Achievement Icon Artist
 - BahamutVoid - Design Feedback, Testing
 - Cruzelion - Mod Icon Artist
