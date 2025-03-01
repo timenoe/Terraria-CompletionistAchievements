@@ -1,7 +1,7 @@
 v1.0.21
 - Added netcode to unlock item achievements in multiplayer
 - Added Raynebro's set to "Fashion Show"
-- Addew Music Box (Alt Title) to "Capture the Moment"
+- Added Music Box (Alt Title) to "Capture the Moment"
 
 v1.0.20
 - Added rare creature notifications when the Lifeform Analyzer is equipped
