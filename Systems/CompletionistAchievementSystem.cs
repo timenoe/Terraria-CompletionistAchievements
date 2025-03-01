@@ -106,12 +106,12 @@ namespace CompletionistAchievements.Systems
 
             // Rare Swords
             RegisterAchievement("WEAPON_BAT_BAT", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BatBat), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_BEAM_SWORD", NpcDropCondition.Drop(reqs, NPCID.ArmoredSkeleton, ItemID.BeamSword), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_BEAM_SWORD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BeamSword), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_BLADED_GLOVE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BladedGlove), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_BLADETONGUE", ItemCatchCondition.Catch(reqs, ItemID.Bladetongue), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_BONE_SWORD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BoneSword), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_EXOTIC_SCIMITAR", ItemGrabCondition.Grab(reqs, ItemID.DyeTradersScimitar), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_GLADIUS", NpcDropCondition.Drop(reqs, NPCID.GreekSkeleton, ItemID.Gladius), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_GLADIUS", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Gladius), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_MANDIBLE_BLADE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.AntlionClaw), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_STYLISH_SCISSORS", ItemGrabCondition.Grab(reqs, ItemID.StylistKilLaKillScissorsIWish), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_ZOMBIE_ARM", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.ZombieArm), AchievementCategory.Collector);
@@ -133,9 +133,9 @@ namespace CompletionistAchievements.Systems
             // Rare Boomerangs
             RegisterAchievement("WEAPON_BLOODY_MACHETE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BloodyMachete), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_COMBAT_WRENCH", ItemGrabCondition.Grab(reqs, ItemID.CombatWrench), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_SHROOMERANG", NpcDropCondition.Drop(reqs, NPCID.SporeBat, ItemID.Shroomerang), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_BANANARANG", NpcDropCondition.Drop(reqs, NPCID.Clown, ItemID.Bananarang), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_PALADINS_HAMMER", NpcDropCondition.Drop(reqs, NPCID.Paladin, ItemID.PaladinsHammer), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_SHROOMERANG", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Shroomerang), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_BANANARANG", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Bananarang), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_PALADINS_HAMMER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.PaladinsHammer), AchievementCategory.Collector);
 
             // Rare Flails
             RegisterAchievement("WEAPON_CHAIN_KNIFE", NpcDropCondition.Drop(reqs, NPCID.CaveBat, ItemID.ChainKnife), AchievementCategory.Collector);
@@ -166,11 +166,11 @@ namespace CompletionistAchievements.Systems
 
             // Rare Bows
             RegisterAchievement("WEAPON_BLOOD_RAIN_BOW", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BloodRainBow), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_MARROW", NpcDropCondition.Drop(reqs, NPCID.SkeletonArcher, ItemID.Marrow), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_MARROW", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Marrow), AchievementCategory.Collector);
 
             // Rare Guns
             RegisterAchievement("WEAPON_RED_RYDER", ItemOpenCondition.Open(reqs, ItemID.Present, ItemID.RedRyder), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_UZI", NpcDropCondition.Drop(reqs, NPCID.AngryTrapper, ItemID.Uzi), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_UZI", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.Uzi), AchievementCategory.Collector);
 
             // Rare Other
             RegisterAchievement("WEAPON_ALE_TOSSER", ItemGrabCondition.Grab(reqs, ItemID.AleThrowingGlove), AchievementCategory.Collector);
@@ -200,7 +200,7 @@ namespace CompletionistAchievements.Systems
             // Rare Wands
             RegisterAchievement("WEAPON_CRYSTAL_SERPENT", ItemCatchCondition.Catch(reqs, ItemID.CrystalSerpent), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_FROST_STAFF", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.FrostStaff), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_POISON_STAFF", NpcDropCondition.Drop(reqs, NPCID.BlackRecluse, ItemID.PoisonStaff), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_POISON_STAFF", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.PoisonStaff), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_RESONANCE_SCEPTER", ItemGrabCondition.Grab(reqs, ItemID.PrincessWeapon), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_UNHOLY_TRIDENT", NpcDropCondition.Drop(reqs, NPCID.RedDevil, ItemID.UnholyTrident), AchievementCategory.Collector);
 
@@ -209,9 +209,9 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("WEAPON_WATER_BOLT", BreakAndGrabItem(reqs, ItemID.WaterBolt), false, AchievementCategory.Collector);
 
             // Rare Other
-            RegisterAchievement("WEAPON_BLOOD_THORN", NpcDropCondition.Drop(reqs, NPCID.GoblinShark, ItemID.SharpTears), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_MEDUSA_HEAD", NpcDropCondition.Drop(reqs, NPCID.Medusa, ItemID.MedusaHead), AchievementCategory.Collector);
-            RegisterAchievement("WEAPON_NIMBUS_ROD", NpcDropCondition.Drop(reqs, NPCID.AngryNimbus, ItemID.NimbusRod), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_BLOOD_THORN", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.SharpTears), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_MEDUSA_HEAD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.MedusaHead), AchievementCategory.Collector);
+            RegisterAchievement("WEAPON_NIMBUS_ROD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.NimbusRod), AchievementCategory.Collector);
             RegisterAchievement("WEAPON_STELLAR_TUNE", ItemGrabCondition.Grab(reqs, ItemID.SparkleGuitar), AchievementCategory.Collector);
 
             foreach (var group in MagicWeapons)
@@ -301,7 +301,7 @@ namespace CompletionistAchievements.Systems
             };
 
             // Rare Pickaxes
-            RegisterAchievement("TOOL_BONE_PICKAXE", NpcDropCondition.Drop(reqs, NPCID.UndeadMiner, ItemID.BonePickaxe), AchievementCategory.Collector);
+            RegisterAchievement("TOOL_BONE_PICKAXE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BonePickaxe), AchievementCategory.Collector);
             RegisterAchievement("TOOL_THE_AXE", ItemGrabCondition.Grab(reqs, ItemID.TheAxe), AchievementCategory.Collector);
 
             // Rare Hooks
@@ -313,7 +313,7 @@ namespace CompletionistAchievements.Systems
 
             // Rare Movement Tools
             RegisterAchievement("TOOL_DEMON_CONCH", ItemCatchCondition.Catch(reqs, ItemID.DemonConch), AchievementCategory.Collector);
-            RegisterAchievement("TOOL_ROD_OF_DISCORD", NpcDropCondition.Drop(reqs, NPCID.ChaosElemental, ItemID.RodofDiscord), AchievementCategory.Collector);
+            RegisterAchievement("TOOL_ROD_OF_DISCORD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.RodofDiscord), AchievementCategory.Collector);
 
             // Rare Wands
             RegisterAchievement("TOOL_BONE_WAND", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BoneWand), AchievementCategory.Collector);
@@ -426,15 +426,15 @@ namespace CompletionistAchievements.Systems
             };
 
             // Rare Sets
-            RegisterAchievement("ARMOR_MINING", NpcDropCondition.DropAll(reqs, NPCID.UndeadMiner, [ItemID.MiningShirt, ItemID.MiningPants]), true, AchievementCategory.Collector);
-            RegisterAchievement("ARMOR_RAIN", NpcDropCondition.DropAll(reqs, NPCID.ZombieRaincoat, ArmorPreHardmode["Rain"]), true, AchievementCategory.Collector);
+            RegisterAchievement("ARMOR_MINING", NpcDropCondition.DropAll(reqs, NPCID.None, [ItemID.MiningShirt, ItemID.MiningPants]), true, AchievementCategory.Collector);
+            RegisterAchievement("ARMOR_RAIN", NpcDropCondition.DropAll(reqs, NPCID.None, ArmorPreHardmode["Rain"]), true, AchievementCategory.Collector);
             RegisterAchievement("ARMOR_SNOW", NpcDropCondition.DropAll(reqs, NPCID.None, ArmorPreHardmode["Snow"]), true, AchievementCategory.Collector);
             
             // Rare Pieces
-            RegisterAchievement("ARMOR_DIVING_HELMET", NpcDropCondition.Drop(reqs, NPCID.Shark, ItemID.DivingHelmet), AchievementCategory.Collector);
-            RegisterAchievement("ARMOR_DJINNS_CURSE", NpcDropCondition.Drop(reqs, NPCID.DesertDjinn, ItemID.DjinnsCurse), AchievementCategory.Collector);
+            RegisterAchievement("ARMOR_DIVING_HELMET", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.DivingHelmet), AchievementCategory.Collector);
+            RegisterAchievement("ARMOR_DJINNS_CURSE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.DjinnsCurse), AchievementCategory.Collector);
             RegisterAchievement("ARMOR_GREEN_CAP", ItemGrabCondition.Grab(reqs, ItemID.GreenCap), AchievementCategory.Collector);
-            RegisterAchievement("ARMOR_VIKING_HELMET", NpcDropCondition.Drop(reqs, NPCID.UndeadViking, ItemID.VikingHelmet), AchievementCategory.Collector);
+            RegisterAchievement("ARMOR_VIKING_HELMET", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.VikingHelmet), AchievementCategory.Collector);
 
             List<CustomAchievementCondition> sets = [];
             foreach (var set in ArmorPreHardmode)
@@ -469,7 +469,7 @@ namespace CompletionistAchievements.Systems
                 { "ACCESSORY_FISH", [ItemID.HighTestFishingLine, ItemID.AnglerEarring, ItemID.TackleBox, ItemID.AnglerTackleBag, ItemID.LavaFishingHook, ItemID.LavaproofTackleBag, ItemID.FishingBobber, ItemID.FishingBobberGlowingStar, ItemID.FishingBobberGlowingArgon, ItemID.FishingBobberGlowingKrypton, ItemID.FishingBobberGlowingLava, ItemID.FishingBobberGlowingViolet, ItemID.FishingBobberGlowingXenon, ItemID.FishingBobberGlowingRainbow] },
                 { "ACCESSORY_YOYO", [ItemID.WhiteString, ItemID.RedString, ItemID.OrangeString, ItemID.YellowString, ItemID.LimeString, ItemID.GreenString, ItemID.TealString, ItemID.CyanString, ItemID.SkyBlueString, ItemID.BlueString, ItemID.PurpleString, ItemID.VioletString, ItemID.PinkString, ItemID.BlackString, ItemID.BrownString, ItemID.RainbowString, ItemID.BlackCounterweight, ItemID.YellowCounterweight, ItemID.BlueCounterweight, ItemID.RedCounterweight, ItemID.PurpleCounterweight, ItemID.GreenCounterweight, ItemID.YoYoGlove, ItemID.YoyoBag] },
                 { "ACCESSORY_VANITY", [ItemID.JungleRose, ItemID.WinterCape, ItemID.MysteriousCape, ItemID.RedCape, ItemID.PrinceCape, ItemID.CrimsonCloak, ItemID.DiamondRing, ItemID.AngelHalo, ItemID.GingerBeard, ItemID.PartyBalloonAnimal, ItemID.BundleofBalloons, ItemID.FlameWakerBoots, ItemID.CritterShampoo, ItemID.BunnyTail, ItemID.FoxTail, ItemID.DogTail, ItemID.LizardTail, ItemID.UnicornHornHat, ItemID.HunterCloak, ItemID.RoyalScepter, ItemID.GlassSlipper, ItemID.RainbowCursor, ItemID.ShimmerMonolith, ItemID.BloodMoonMonolith, ItemID.VortexMonolith, ItemID.NebulaMonolith, ItemID.StardustMonolith, ItemID.SolarMonolith, ItemID.VoidMonolith] },
-                { "ACCESSORY_MUSIC_BOX", [ItemID.MusicBox, ItemID.MusicBoxOverworldDay, ItemID.MusicBoxAltOverworldDay, ItemID.MusicBoxNight, ItemID.MusicBoxRain, ItemID.MusicBoxSnow, ItemID.MusicBoxIce, ItemID.MusicBoxDesert, ItemID.MusicBoxOcean, ItemID.MusicBoxOceanAlt, ItemID.MusicBoxSpace, ItemID.MusicBoxSpaceAlt, ItemID.MusicBoxUnderground, ItemID.MusicBoxAltUnderground, ItemID.MusicBoxMushrooms, ItemID.MusicBoxJungle, ItemID.MusicBoxCorruption, ItemID.MusicBoxUndergroundCorruption, ItemID.MusicBoxCrimson, ItemID.MusicBoxOWUndergroundCrimson, ItemID.MusicBoxTheHallow, ItemID.MusicBoxUndergroundHallow, ItemID.MusicBoxHell, ItemID.MusicBoxDungeon, ItemID.MusicBoxTemple, ItemID.MusicBoxBoss1, ItemID.MusicBoxBoss2, ItemID.MusicBoxBoss3, ItemID.MusicBoxBoss4, ItemID.MusicBoxBoss5, ItemID.MusicBoxDeerclops, ItemID.MusicBoxQueenSlime, ItemID.MusicBoxPlantera, ItemID.MusicBoxEmpressOfLight, ItemID.MusicBoxDukeFishron, ItemID.MusicBoxEerie, ItemID.MusicBoxEclipse, ItemID.MusicBoxGoblins, ItemID.MusicBoxPirates, ItemID.MusicBoxMartians, ItemID.MusicBoxPumpkinMoon, ItemID.MusicBoxFrostMoon, ItemID.MusicBoxTowers, ItemID.MusicBoxLunarBoss, ItemID.MusicBoxSandstorm, ItemID.MusicBoxDD2, ItemID.MusicBoxSlimeRain, ItemID.MusicBoxTownDay, ItemID.MusicBoxTownNight, ItemID.MusicBoxWindyDay, ItemID.MusicBoxStorm, ItemID.MusicBoxGraveyard, ItemID.MusicBoxUndergroundJungle, ItemID.MusicBoxJungleNight, ItemID.MusicBoxMorningRain, ItemID.MusicBoxUndergroundDesert, ItemID.MusicBoxShimmer, ItemID.MusicBoxOWRain, ItemID.MusicBoxOWDay, ItemID.MusicBoxOWNight, ItemID.MusicBoxOWUnderground, ItemID.MusicBoxOWDesert, ItemID.MusicBoxOWOcean, ItemID.MusicBoxOWMushroom, ItemID.MusicBoxOWDungeon, ItemID.MusicBoxOWSpace, ItemID.MusicBoxOWUnderworld, ItemID.MusicBoxOWSnow, ItemID.MusicBoxOWCorruption, ItemID.MusicBoxOWUndergroundCorruption, ItemID.MusicBoxOWCrimson, ItemID.MusicBoxOWUndergroundCrimson, ItemID.MusicBoxOWUndergroundSnow, ItemID.MusicBoxOWUndergroundHallow, ItemID.MusicBoxOWBloodMoon, ItemID.MusicBoxOWBoss2, ItemID.MusicBoxOWBoss1, ItemID.MusicBoxOWInvasion, ItemID.MusicBoxOWTowers, ItemID.MusicBoxOWMoonLord, ItemID.MusicBoxOWPlantera, ItemID.MusicBoxOWJungle, ItemID.MusicBoxOWWallOfFlesh, ItemID.MusicBoxOWHallow, ItemID.MusicBoxDayRemix, ItemID.MusicBoxCredits, ItemID.MusicBoxTitle, ItemID.MusicBoxTitleAlt] },
+                { "ACCESSORY_MUSIC_BOX", [ItemID.MusicBoxOverworldDay, ItemID.MusicBoxAltOverworldDay, ItemID.MusicBoxNight, ItemID.MusicBoxRain, ItemID.MusicBoxSnow, ItemID.MusicBoxIce, ItemID.MusicBoxDesert, ItemID.MusicBoxOcean, ItemID.MusicBoxOceanAlt, ItemID.MusicBoxSpace, ItemID.MusicBoxSpaceAlt, ItemID.MusicBoxUnderground, ItemID.MusicBoxAltUnderground, ItemID.MusicBoxMushrooms, ItemID.MusicBoxJungle, ItemID.MusicBoxCorruption, ItemID.MusicBoxUndergroundCorruption, ItemID.MusicBoxCrimson, ItemID.MusicBoxUndergroundCrimson, ItemID.MusicBoxTheHallow, ItemID.MusicBoxUndergroundHallow, ItemID.MusicBoxHell, ItemID.MusicBoxDungeon, ItemID.MusicBoxTemple, ItemID.MusicBoxBoss1, ItemID.MusicBoxBoss2, ItemID.MusicBoxBoss3, ItemID.MusicBoxBoss4, ItemID.MusicBoxBoss5, ItemID.MusicBoxDeerclops, ItemID.MusicBoxQueenSlime, ItemID.MusicBoxPlantera, ItemID.MusicBoxEmpressOfLight, ItemID.MusicBoxDukeFishron, ItemID.MusicBoxEerie, ItemID.MusicBoxEclipse, ItemID.MusicBoxGoblins, ItemID.MusicBoxPirates, ItemID.MusicBoxMartians, ItemID.MusicBoxPumpkinMoon, ItemID.MusicBoxFrostMoon, ItemID.MusicBoxTowers, ItemID.MusicBoxLunarBoss, ItemID.MusicBoxSandstorm, ItemID.MusicBoxDD2, ItemID.MusicBoxSlimeRain, ItemID.MusicBoxTownDay, ItemID.MusicBoxTownNight, ItemID.MusicBoxWindyDay, ItemID.MusicBoxDayRemix, ItemID.MusicBoxTitleAlt, ItemID.MusicBoxStorm, ItemID.MusicBoxGraveyard, ItemID.MusicBoxUndergroundJungle, ItemID.MusicBoxJungleNight, ItemID.MusicBoxMorningRain, ItemID.MusicBoxConsoleTitle, ItemID.MusicBoxUndergroundDesert, ItemID.MusicBoxOWRain, ItemID.MusicBoxOWDay, ItemID.MusicBoxOWNight, ItemID.MusicBoxOWUnderground, ItemID.MusicBoxOWDesert, ItemID.MusicBoxOWOcean, ItemID.MusicBoxOWMushroom, ItemID.MusicBoxOWDungeon, ItemID.MusicBoxOWSpace, ItemID.MusicBoxOWUnderworld, ItemID.MusicBoxOWSnow, ItemID.MusicBoxOWCorruption, ItemID.MusicBoxOWUndergroundCorruption, ItemID.MusicBoxOWCrimson, ItemID.MusicBoxOWUndergroundCrimson, ItemID.MusicBoxOWUndergroundSnow, ItemID.MusicBoxOWUndergroundHallow, ItemID.MusicBoxOWBloodMoon, ItemID.MusicBoxOWBoss2, ItemID.MusicBoxOWBoss1, ItemID.MusicBoxOWInvasion, ItemID.MusicBoxOWTowers, ItemID.MusicBoxOWMoonLord, ItemID.MusicBoxOWPlantera, ItemID.MusicBoxOWJungle, ItemID.MusicBoxOWWallOfFlesh, ItemID.MusicBoxOWHallow, ItemID.MusicBoxCredits, ItemID.MusicBoxShimmer, ItemID.MusicBoxTitle, ItemID.MusicBox] },
                 { "ACCESSORY_GOLF_BALL", [ItemID.GolfBallDyedBlack, ItemID.GolfBallDyedBlue, ItemID.GolfBallDyedBrown, ItemID.GolfBallDyedCyan, ItemID.GolfBallDyedGreen, ItemID.GolfBallDyedLimeGreen, ItemID.GolfBallDyedOrange, ItemID.GolfBallDyedPink, ItemID.GolfBallDyedPurple, ItemID.GolfBallDyedRed, ItemID.GolfBallDyedSkyBlue, ItemID.GolfBallDyedTeal, ItemID.GolfBallDyedViolet, ItemID.GolfBallDyedYellow] },
                 { "ACCESSORY_OTHER", [ItemID.ClothierVoodooDoll, ItemID.CoinRing, ItemID.DiscountCard, ItemID.FlowerBoots, ItemID.GoldRing, ItemID.GreedyRing, ItemID.CordageGuide, ItemID.GuideVoodooDoll, ItemID.JellyfishNecklace, ItemID.LuckyCoin, ItemID.DontStarveShaderItem, ItemID.SpectreGoggles, ItemID.TreasureMagnet, ItemID.ShimmerCloak, ItemID.JimsDroneVisor] }
             };
@@ -477,7 +477,7 @@ namespace CompletionistAchievements.Systems
             // Rare Movement
             RegisterAchievement("ACCESSORY_BALLOON_PUFFERFISH", ItemCatchCondition.Catch(reqs, ItemID.BalloonPufferfish), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_FROG_LEG", ItemCatchCondition.Catch(reqs, ItemID.FrogLeg), AchievementCategory.Collector);
-            RegisterAchievement("ACCESSORY_MOON_CHARM", NpcDropCondition.Drop(reqs, NPCID.Werewolf, ItemID.MoonCharm), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_MOON_CHARM", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.MoonCharm), AchievementCategory.Collector);
             
             // Rare Wings
             RegisterAchievement("ACCESSORY_FIN_WINGS", NpcGiftCondition.Gift(reqs, NPCID.Angler, ItemID.FinWings), AchievementCategory.Collector);
@@ -491,8 +491,8 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("ACCESSORY_NATURES_GIFT", BreakAndGrabItem(reqs, ItemID.NaturesGift), false, AchievementCategory.Collector);
             
             // Rare Combat
-            RegisterAchievement("ACCESSORY_FROZEN_TURTLE_SHELL", NpcDropCondition.Drop(reqs, NPCID.IceTortoise, ItemID.FrozenTurtleShell), AchievementCategory.Collector);
-            RegisterAchievement("ACCESSORY_MAGIC_QUIVER", NpcDropCondition.Drop(reqs, NPCID.SkeletonArcher, ItemID.MagicQuiver), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_FROZEN_TURTLE_SHELL", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.FrozenTurtleShell), AchievementCategory.Collector);
+            RegisterAchievement("ACCESSORY_MAGIC_QUIVER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.MagicQuiver), AchievementCategory.Collector);
             RegisterAchievement("ACCESSORY_SHARK_TOOTH_NECKLACE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.SharkToothNecklace), AchievementCategory.Collector);
             
             // Rare Other
@@ -537,11 +537,11 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("MOUNT_BEE", ItemGrabCondition.Grab(reqs, ItemID.HoneyedGoggles), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_TURTLE", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.HardySaddle), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_GOLF_CART", NpcBuyCondition.Buy(reqs, NPCID.Golfer, ItemID.GolfCart), AchievementCategory.Collector);
-            RegisterAchievement("MOUNT_BASILISK", NpcDropCondition.Drop(reqs, NPCID.DesertBeast, ItemID.AncientHorn), AchievementCategory.Collector);
-            RegisterAchievement("MOUNT_WOLF", NpcDropCondition.Drop(reqs, NPCID.Wolf, ItemID.WolfMountItem), AchievementCategory.Collector);
+            RegisterAchievement("MOUNT_BASILISK", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.AncientHorn), AchievementCategory.Collector);
+            RegisterAchievement("MOUNT_WOLF", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.WolfMountItem), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_UNICORN", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BlessedApple), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_PIGRON", ItemCatchCondition.Catch(reqs, ItemID.ScalyTruffle), AchievementCategory.Collector);
-            RegisterAchievement("MOUNT_RUDOLPH", NpcDropCondition.Drop(reqs, NPCID.IceQueen, ItemID.ReindeerBells), AchievementCategory.Collector);
+            RegisterAchievement("MOUNT_RUDOLPH", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.ReindeerBells), AchievementCategory.Collector);
             RegisterAchievement("MOUNT_DCU", ItemCraftCondition.Craft(reqs, ItemID.DrillContainmentUnit), AchievementCategory.Collector);
             RegisterAchievement("MOUNT", ItemGrabCondition.GrabAll(reqs, Mounts), true, AchievementCategory.Collector);
         }
@@ -615,6 +615,7 @@ namespace CompletionistAchievements.Systems
                 { "Pretty Pink", [ItemID.PrettyPinkRibbon, ItemID.PrettyPinkDressSkirt, ItemID.PrettyPinkDressPants] },
                 { "Prince", [ItemID.PrinceUniform, ItemID.PrincePants, ItemID.PrinceCape] },
                 { "Princess", [ItemID.Tiara, ItemID.PrincessDress] },
+                { "Raynebro's", [ItemID.LincolnsHood, ItemID.LincolnsHoodie, ItemID.LincolnsPants] },
                 { "Royal", [ItemID.RoyalTiara, ItemID.RoyalDressTop, ItemID.RoyalDressBottom] },
                 { "Rune", [ItemID.RuneHat, ItemID.RuneRobe] },
                 { "Sailor", [ItemID.SailorHat, ItemID.SailorShirt, ItemID.SailorPants] },
@@ -684,7 +685,7 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("VANITY_LAMIA", NpcDropCondition.DropAll(reqs, NPCID.None, VanitySets["Lamia"]), true, AchievementCategory.Collector);
             RegisterAchievement("VANITY_MUMMY", NpcDropCondition.DropAll(reqs, NPCID.None, VanitySets["Mummy"]), true, AchievementCategory.Collector);
             RegisterAchievement("VANITY_PEDGUIN", NpcDropCondition.DropAll(reqs, NPCID.None, VanitySets["Pedguin's"]), true, AchievementCategory.Collector);
-            RegisterAchievement("VANITY_PLUMBER", NpcDropCondition.Drop(reqs, NPCID.FireImp, ItemID.PlumbersHat), AchievementCategory.Collector);
+            RegisterAchievement("VANITY_PLUMBER", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.PlumbersHat), AchievementCategory.Collector);
 
             // Unique Halloween Sets
             RegisterAchievement("VANITY_CREEPER", ItemOpenCondition.OpenAll(reqs, ItemID.GoodieBag, VanityHalloween["Creeper"]), true, AchievementCategory.Collector);
@@ -734,10 +735,10 @@ namespace CompletionistAchievements.Systems
             RegisterAchievement("PET_BABY_DINOSAUR", ItemExtractCondition.Extract(reqs, ItemID.AmberMosquito), AchievementCategory.Collector);
             RegisterAchievement("PET_BABY_EATER", ItemGrabCondition.Grab(reqs, ItemID.EatersBone), AchievementCategory.Collector);
             RegisterAchievement("PET_BABY_FACE_MONSTER", ItemGrabCondition.Grab(reqs, ItemID.BoneRattle), AchievementCategory.Collector);
-            RegisterAchievement("PET_BABY_GRINCH", NpcDropCondition.Drop(reqs, NPCID.IceQueen, ItemID.BabyGrinchMischiefWhistle), AchievementCategory.Collector);
+            RegisterAchievement("PET_BABY_GRINCH", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BabyGrinchMischiefWhistle), AchievementCategory.Collector);
             RegisterAchievement("PET_BABY_HORNET", ItemGrabCondition.Grab(reqs, ItemID.Nectar), AchievementCategory.Collector);
-            RegisterAchievement("PET_BABY_SKELETRON_HEAD", NpcDropCondition.Drop(reqs, NPCID.DungeonGuardian, ItemID.BoneKey), AchievementCategory.Collector);
-            RegisterAchievement("PET_BABY_SNOWMAN", NpcDropCondition.Drop(reqs, NPCID.IceMimic, ItemID.ToySled), AchievementCategory.Collector);
+            RegisterAchievement("PET_BABY_SKELETRON_HEAD", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.BoneKey), AchievementCategory.Collector);
+            RegisterAchievement("PET_BABY_SNOWMAN", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.ToySled), AchievementCategory.Collector);
             RegisterAchievement("PET_BLACK_CAT", ItemOpenCondition.Open(reqs, ItemID.GoodieBag, ItemID.UnluckyYarn), AchievementCategory.Collector);
             RegisterAchievement("PET_CAVELING_GARDENER", BreakAndGrabItem(reqs, ItemID.GlowTulip), false, AchievementCategory.Collector);
             RegisterAchievement("PET_THE_DIRTIEST_BLOCK", BreakAndGrabItem(reqs, ItemID.DirtiestBlock), false, AchievementCategory.Collector);
@@ -911,8 +912,8 @@ namespace CompletionistAchievements.Systems
                 { "FURNITURE_TOMBSTONE", [ItemID.Tombstone, ItemID.GraveMarker, ItemID.CrossGraveMarker, ItemID.Headstone, ItemID.Gravestone, ItemID.Obelisk, ItemID.RichGravestone1, ItemID.RichGravestone2, ItemID.RichGravestone3, ItemID.RichGravestone4, ItemID.RichGravestone5] },
             };
 
-            RegisterAchievement("FURNITURE_CHIPPYS_COUCH", NpcDropCondition.Drop(reqs, NPCID.SkeletronHead, ItemID.ChippysCouch), AchievementCategory.Collector);
-            RegisterAchievement("FURNITURE_DESERT_SPIRIT_LAMP", NpcDropCondition.Drop(reqs, NPCID.DesertDjinn, ItemID.DjinnLamp), AchievementCategory.Collector);
+            RegisterAchievement("FURNITURE_CHIPPYS_COUCH", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.ChippysCouch), AchievementCategory.Collector);
+            RegisterAchievement("FURNITURE_DESERT_SPIRIT_LAMP", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.DjinnLamp), AchievementCategory.Collector);
             RegisterAchievement("FURNITURE_ENCHANTED_SUNDIAL", ItemOpenCondition.Open(reqs, ItemID.None, ItemID.Sundial), AchievementCategory.Collector);
             RegisterAchievement("FURNITURE_ENCHANTED_MOONDIAL", ItemGrabCondition.Grab(reqs, ItemID.Moondial), AchievementCategory.Collector);
             RegisterAchievement("FURNITURE_HAT_RACK", ItemCraftCondition.Craft(reqs, ItemID.HatRack), AchievementCategory.Collector);
@@ -935,8 +936,8 @@ namespace CompletionistAchievements.Systems
 
             RegisterAchievement("NOVELTY_IVY", ItemGrabCondition.Grab(reqs, ItemID.IvyGuitar), AchievementCategory.Collector);
             RegisterAchievement("NOVELTY_WYVERN_KITE", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.KiteWyvern), AchievementCategory.Collector);
-            RegisterAchievement("NOVELTY_RAIN_SONG", NpcDropCondition.Drop(reqs, NPCID.FlyingFish, ItemID.CarbonGuitar), AchievementCategory.Collector);
-            RegisterAchievement("NOVELTY_UNICORN_ON_A_STICK", NpcDropCondition.Drop(reqs, NPCID.Unicorn, ItemID.UnicornonaStick), AchievementCategory.Collector);
+            RegisterAchievement("NOVELTY_RAIN_SONG", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.CarbonGuitar), AchievementCategory.Collector);
+            RegisterAchievement("NOVELTY_UNICORN_ON_A_STICK", NpcDropCondition.Drop(reqs, NPCID.None, ItemID.UnicornonaStick), AchievementCategory.Collector);
 
             RegisterAchievement("NOVELTY", ItemGrabCondition.GrabAll(reqs, Novelties), true, AchievementCategory.Collector);
         }
