@@ -4,30 +4,27 @@ Terraria tModLoader mod that adds completionist achievements to the in-game list
 
 
 [b][u]Restrictions[/u][/b]
-
-[quote]
-• No Journey Mode
-• No Celebrationmk10 Seed
-[/quote]
+[list]
+[*] No Journey Mode
+[*] No Celebrationmk10 Seed
+[/list]
 
 
 [b][u]Notes[/u][/b]
-
 [quote]
 Items that are exclusive to difficulties and special seeds are excluded, so that all achievements can be obtained in standard playthroughs. The World Achievements mod adds achievements for all difficulties and seed-specific items.
 [/quote]
 
 
 [b][u]Credits[/u][/b]
-
-[quote]
-• timenoe - Developer, Achievement Icon Artist
-• BahamutVoid - Design Feedback, Testing
-• Cruzelion - Mod Icon Artist
-• EvZone - Achievement Icon Artist
-• JustLilith - Achievement Icon Artist
-• Layton - Achievement Icon Artist
-• Searo - Design Feedback, Testing
-• SubliminalSiren - Testing
-• ZeeRA - Achievement Icon Artist
-[/quote]
+[list]
+[*] timenoe - Developer, Achievement Icon Artist
+[*] BahamutVoid - Design Feedback, Testing
+[*] Cruzelion - Mod Icon Artist
+[*] EvZone - Achievement Icon Artist
+[*] JustLilith - Achievement Icon Artist
+[*] Layton - Achievement Icon Artist
+[*] Searo - Design Feedback, Testing
+[*] SubliminalSiren - Testing
+[*] ZeeRA - Achievement Icon Artist
+[/list]
