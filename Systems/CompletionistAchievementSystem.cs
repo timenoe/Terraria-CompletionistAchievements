@@ -609,7 +609,7 @@ namespace CompletionistAchievements.Systems
                 { "Pink Maid", [ItemID.MaidHead2, ItemID.MaidShirt2, ItemID.MaidPants2] },
                 { "Pirate", [ItemID.PirateHat, ItemID.PirateShirt, ItemID.PiratePants] },
                 { "Plaguebringer's", [ItemID.PlaguebringerHelmet, ItemID.PlaguebringerChestplate, ItemID.PlaguebringerGreaves] },
-                { "Plumber's", [ItemID.PlumbersHat, ItemID.PlumbersPants, ItemID.PlumbersPants] },
+                { "Plumber's", [ItemID.PlumbersHat, ItemID.PlumbersShirt, ItemID.PlumbersPants] },
                 { "Pretty Pink", [ItemID.PrettyPinkRibbon, ItemID.PrettyPinkDressSkirt, ItemID.PrettyPinkDressPants] },
                 { "Prince", [ItemID.PrinceUniform, ItemID.PrincePants, ItemID.PrinceCape] },
                 { "Princess", [ItemID.Tiara, ItemID.PrincessDress] },

@@ -1,3 +1,7 @@
+v1.0.23
+- Fixed issue with long Wilson beards in "Fashion Show"
+- Fixed issue with the Plumber's set in "Fashion Show"
+
 v1.0.22
 - Added toggles for different rare creature notifications
 
