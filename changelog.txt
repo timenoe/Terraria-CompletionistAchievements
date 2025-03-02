@@ -1,3 +1,6 @@
+v1.0.22
+- Added toggles for different rare creature notifications
+
 v1.0.21
 - Added netcode to unlock item achievements in multiplayer
 - Added Raynebro's set to "Fashion Show"

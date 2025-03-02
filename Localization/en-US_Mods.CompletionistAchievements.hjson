@@ -14,9 +14,19 @@ Configs: {
 			Tooltip: Enable to display progress notifications for tracked achievements.
 		}
 
-		RareCreatureNotifications: {
-			Label: Rare Creature Notifications
+		RareEnemyNotifications: {
+			Label: Rare Enemy Notifications
 			Tooltip: Enable to display rare creature notifications when the Lifeform Analyzer is equipped.
+		}
+
+		RareCritterNotifications: {
+			Label: Rare Critter Notifications
+			Tooltip: Enable to display rare critter notifications when the Lifeform Analyzer is equipped.
+		}
+
+		RareNpcNotifications: {
+			Label: Rare NPC Notifications
+			Tooltip: Enable to display rare NPC notifications when the Lifeform Analyzer is equipped.
 		}
 	}
 }
