@@ -1,3 +1,6 @@
+v1.0.25
+- Included Gold Dragonfly in "King of the Critters"
+
 v1.0.24
 - Update localization
 
