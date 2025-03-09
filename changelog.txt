@@ -1,11 +1,11 @@
 v1.0.26
-- Update localization
+- Updated localization
 
 v1.0.25
 - Included Gold Dragonfly in "King of the Critters"
 
 v1.0.24
-- Update localization
+- Updated localization
 
 v1.0.23
 - Fixed issue with long Wilson beards in "Fashion Show"
