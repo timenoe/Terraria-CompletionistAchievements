@@ -1,6 +1,6 @@
 displayName = Completionist Achievements
 author = timenoe
-version = 1.0.26
+version = 1.0.27
 homepage = https://retroachievements.org/game/32910
 buildIgnore = *.pdn
 side = Both

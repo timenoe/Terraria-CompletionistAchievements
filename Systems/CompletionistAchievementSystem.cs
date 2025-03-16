@@ -801,7 +801,26 @@ namespace CompletionistAchievements.Systems
             };
 
             foreach (var group in Banners)
-                RegisterAchievement(group.Key, NpcDropCondition.DropAll(reqs, NPCID.None, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+            {
+                if (group.Key == "BANNER_CAVERN")
+                {
+                    List<int> craftableBanners = [ItemID.CrawdadBanner, ItemID.GiantShellyBanner, ItemID.SalamanderBanner];
+
+                    List<CustomAchievementCondition> conds = [];
+                    foreach (int banner in group.Value)
+                    {
+                        if (craftableBanners.Contains(banner))
+                            conds.Add(ItemGrabCondition.Grab(reqs, banner));
+                        else
+                            conds.Add(NpcDropCondition.Drop(reqs, NPCID.None, banner));
+                    }
+
+                    RegisterAchievement(group.Key, conds, group.Value.Length > 1, AchievementCategory.Collector);
+                }
+
+                else
+                    RegisterAchievement(group.Key, NpcDropCondition.DropAll(reqs, NPCID.None, group.Value), group.Value.Length > 1, AchievementCategory.Collector);
+            }
         }
 
         /// <summary>
