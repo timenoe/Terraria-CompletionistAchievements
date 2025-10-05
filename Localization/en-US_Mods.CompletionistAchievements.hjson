@@ -1,3 +1,1655 @@
+Achievements: {
+	WeaponBatBatAchievement: {
+		FriendlyName: Bat Some Bats
+		Description: Obtain a Bat Bat from a bat enemy that you damaged.
+	}
+
+	WeaponBeamSwordAchievement: {
+		FriendlyName: Fully Energized
+		Description: Obtain a Beam Sword from an Armored Skeleton that you damaged.
+	}
+
+	WeaponBladedGloveAchievement: {
+		FriendlyName: Get Shredded
+		Description: Obtain a Bladed Glove from an enemy that you damaged during Halloween.
+	}
+
+	WeaponBladetongueAchievement: {
+		FriendlyName: Oculus Reaver
+		Description: Obtain a Bladetongue while fishing in the Crimson.
+	}
+
+	WeaponBoneSwordAchievement: {
+		FriendlyName: Calcium Carver
+		Description: Obtain a Bone Sword from a Skeleton enemy that you damaged.
+	}
+
+	WeaponExoticScimitarAchievement: {
+		FriendlyName: Persian Parry
+		Description: Obtain an Exotic Scimitar from the Dye Trader.
+	}
+
+	WeaponGladiusAchievement: {
+		FriendlyName: Are You Not Entertained?
+		Description: Obtain a Gladius from a Hoplite that you damaged.
+	}
+
+	WeaponMandibleBladeAchievement: {
+		FriendlyName: Big Meaty Jaws
+		Description: Obtain a Mandible Blade from an antlion enemy that you damaged.
+	}
+
+	WeaponStylishScissorsAchievement: {
+		FriendlyName: Killed la Kill
+		Description: Obtain some Stylish Scissors from the Stylist.
+	}
+
+	WeaponZombieArmAchievement: {
+		FriendlyName: Need a Hand?
+		Description: Obtain a Zombie Arm from a zombie enemy that you damaged.
+	}
+
+	WeaponClassyCaneAchievement: {
+		FriendlyName: Tax Enforcer
+		Description: Obtain a Classy Cane from the Tax Collector.
+	}
+
+	WeaponIceSickleAchievement: {
+		FriendlyName: Icy Kiss of Death
+		Description: Obtain an Ice Sickle from a Snow/Ice enemy that you damaged.
+	}
+
+	WeaponKeybrandAchievement: {
+		FriendlyName: My Friends Are My Power!
+		Description: Obtain a Keybrand from a Dungeon enemy that you damaged.
+	}
+
+	WeaponCascadeAchievement: {
+		FriendlyName: One Lava Drop
+		Description: Obtain a Cascade from an Underworld enemy that you damaged.
+	}
+
+	WeaponAmarokAchievement: {
+		FriendlyName: One Snow Drop
+		Description: Obtain an Amarok from a Snow enemy that you damaged.
+	}
+
+	WeaponHelfireAchievement: {
+		FriendlyName: One Fire Drop
+		Description: Obtain a Hel-Fire from a Cavern/Underworld enemy that you damaged.
+	}
+
+	WeaponKrakenAchievement: {
+		FriendlyName: One Dungeon Drop
+		Description: Obtain a Kraken from a Dungeon enemy that you damaged.
+	}
+
+	WeaponYeletsAchievement: {
+		FriendlyName: One Jungle Drop
+		Description: Obtain a Yelets from a Jungle enemy that you damaged.
+	}
+
+	WeaponSkeletonMerchantAchievement: {
+		FriendlyName: Support Your Local Businesses
+		Description: Buy all 7 yoyo-related items from the Skeleton Merchant.
+	}
+
+	WeaponObsidianSwordfishAchievement: {
+		FriendlyName: Yeouch!!
+		Description: Obtain an Obsidian Swordfish while fishing in the Underworld.
+	}
+
+	WeaponBloodyMacheteAchievement: {
+		FriendlyName: Friday the 13th
+		Description: Obtain a Bloody Machete from an enemy that you damaged during Halloween.
+	}
+
+	WeaponCombatWrenchAchievement: {
+		FriendlyName: Blue-Collar Buster
+		Description: Obtain a Combat Wrench from the Mechanic.
+	}
+
+	WeaponShroomerangAchievement: {
+		FriendlyName: Spore Distribution
+		Description: Obtain a Shroomerang from a Spore Bat that you damaged.
+	}
+
+	WeaponBananarangAchievement: {
+		FriendlyName: Ring Ring
+		Description: Obtain a Bananarang from a Clown that you damaged.
+	}
+
+	WeaponPaladinsHammerAchievement: {
+		FriendlyName: Paladin Pounder
+		Description: Obtain a Paladin's Hammer from a Paladin that you damaged.
+	}
+
+	WeaponChainKnifeAchievement: {
+		FriendlyName: Rope Dart
+		Description: Obtain a Chain Knife from a Cave Bat that you damaged.
+	}
+
+	WeaponDripplerCripplerAchievement: {
+		FriendlyName: I Got My Eyes on You
+		Description: Obtain a Dripper Crippler from a Blood Eel that you damaged.
+	}
+
+	WeaponTerragrimAchievement: {
+		FriendlyName: Blessed Wind
+		Description: Obtain a Terragrim from an Enchanted Sword Shrine.
+	}
+
+	WeaponMeleeSwordAchievement: {
+		FriendlyName: Terra Blade Chronicles
+		Description: Obtain all 100 swords.
+	}
+
+	WeaponMeleeYoyoAchievement: {
+		FriendlyName: Just One Drop
+		Description: Obtain all 19 yoyos.
+	}
+
+	WeaponMeleeSpearAchievement: {
+		FriendlyName: Power of Odin
+		Description: Obtain all 18 spears.
+	}
+
+	WeaponMeleeBoomerangAchievement: {
+		FriendlyName: Round Trip
+		Description: Obtain all 16 boomerangs.
+	}
+
+	WeaponMeleeFlailAchievement: {
+		FriendlyName: Berserker
+		Description: Obtain all 15 flails.
+	}
+
+	WeaponMeleeOtherAchievement: {
+		FriendlyName: Ultimate Weapon
+		Description: Obtain all 13 miscellaneous melee weapons.
+	}
+
+	WeaponBloodRainBowAchievement: {
+		FriendlyName: Reign in Blood
+		Description: Obtain a Blood Rain Bow from a Blood Moon enemy that you damaged.
+	}
+
+	WeaponMarrowAchievement: {
+		FriendlyName: Bone Marrow
+		Description: Obtain a Marrow from a Skeleton Archer that you damaged.
+	}
+
+	WeaponRedRyderAchievement: {
+		FriendlyName: You'll Shoot Your Eye Out Kid
+		Description: Obtain a Red Ryder from a Present.
+	}
+
+	WeaponUziAchievement: {
+		FriendlyName: Angrier Trapper
+		Description: Obtain an Uzi from an Angry Trapper that you damaged.
+	}
+
+	WeaponAleTosserAchievement: {
+		FriendlyName: Bar Fight
+		Description: Obtain an Ale Tosser from the Tavernkeep.
+	}
+
+	WeaponPaintballGunAchievement: {
+		FriendlyName: Weaponized Art
+		Description: Obtain a Paintball Gun from the Painter.
+	}
+
+	WeaponCoinGunAchievement: {
+		FriendlyName: Wasting Tax Dollars
+		Description: Obtain a Coin Gun from a Pirate Invasion enemy that you damaged.
+	}
+
+	WeaponToxikarpAchievement: {
+		FriendlyName: Dirty Bubble
+		Description: Catch a Toxikarp while fishing in the Corruption.
+	}
+
+	WeaponRangedBowAchievement: {
+		FriendlyName: Sharpshooter
+		Description: Obtain all 32 bows.
+	}
+
+	WeaponRangedRepeaterAchievement: {
+		FriendlyName: Pew Pew
+		Description: Obtain all 9 repeaters.
+	}
+
+	WeaponRangedGunAchievement: {
+		FriendlyName: Say Hello to My Little Friend
+		Description: Obtain all 25 guns.
+	}
+
+	WeaponRangedLauncherAchievement: {
+		FriendlyName: The Big Bang
+		Description: Obtain all 10 launchers.
+	}
+
+	WeaponRangedOtherAchievement: {
+		FriendlyName: Hobby Project
+		Description: Obtain all 16 miscellaneous ranged weapons.
+	}
+
+	WeaponCrystalSerpentAchievement: {
+		FriendlyName: Crystal Crowd Control
+		Description: Catch a Crystal Serpent while fishing in the Hallow.
+	}
+
+	WeaponFrostStaffAchievement: {
+		FriendlyName: Frostbite Flurry
+		Description: Obtain a Frost Staff from a Snow/Ice enemy that you damaged.
+	}
+
+	WeaponPoisonStaffAchievement: {
+		FriendlyName: Recluse Retribution
+		Description: Obtain a Poison Staff from a Black Recluse that you damaged.
+	}
+
+	WeaponResonanceScepterAchievement: {
+		FriendlyName: Claim the Throne
+		Description: Obtain a Resonance Scepter from the Princess.
+	}
+
+	WeaponUnholyTridentAchievement: {
+		FriendlyName: Fallen Angel Artifact
+		Description: Obtain an Unholy Trident from a Red Devil that you damaged.
+	}
+
+	WeaponDemonScytheAchievement: {
+		FriendlyName: Trade Offer
+		Description: Obtain a Demon Scythe from a Demon that you damaged.
+	}
+
+	WeaponWaterBoltAchievement: {
+		FriendlyName: Book Worm
+		Description: Obtain a Water Bolt from a Dungeon bookshelf.
+	}
+
+	WeaponBloodThornAchievement: {
+		FriendlyName: Forbidden Magic
+		Description: Obtain a Blood Thorn from a Hemogoblin Shark that you damaged.
+	}
+
+	WeaponMedusaHeadAchievement: {
+		FriendlyName: Stony Gaze
+		Description: Obtain a Medusa Head from a Medusa that you damaged.
+	}
+
+	WeaponNimbusRodAchievement: {
+		FriendlyName: Storm Chaser
+		Description: Obtain a Nimbus Rod from an Angry Nimbus that you damaged.
+	}
+
+	WeaponStellarTuneAchievement: {
+		FriendlyName: Pop Star
+		Description: Obtain a Stellar Tune from the Empress of Light.
+	}
+
+	WeaponMagicWandAchievement: {
+		FriendlyName: Terry Potter
+		Description: Obtain all 38 wands.
+	}
+
+	WeaponMagicGunAchievement: {
+		FriendlyName: Laser Tag
+		Description: Obtain all 12 magic guns
+	}
+
+	WeaponMagicBookAchievement: {
+		FriendlyName: Ancient Grimoires
+		Description: Obtain all 9 spell books.
+	}
+
+	WeaponMagicOtherAchievement: {
+		FriendlyName: Magical Artifacts
+		Description: Obtain all 16 miscellaneous magic weapons.
+	}
+
+	WeaponAbigailsFlowerAchievement: {
+		FriendlyName: Guardian Ghost
+		Description: Obtain an Abigail's Flower near a tombstone.
+	}
+
+	WeaponSlimeStaffAchievement: {
+		FriendlyName: Bouncy Buddy
+		Description: Obtain a Slime Staff from a slime enemy that you damaged.
+	}
+
+	WeaponVampireFrogStaffAchievement: {
+		FriendlyName: Vampyrius Vampyrus
+		Description: Obtain a Vampire Frog Staff from a Blood Moon enemy that you damaged.
+	}
+
+	WeaponPirateStaffAchievement: {
+		FriendlyName: Pixel Piracy
+		Description: Obtain a Pirate Staff from a Pirate Invasion enemy that you damaged.
+	}
+
+	WeaponSanguineStaffAchievement: {
+		FriendlyName: Blood Red Bats
+		Description: Obtain a Sanguine Staff from a Dreadnautilus that you damaged.
+	}
+
+	WeaponTerraprismaAchievement: {
+		FriendlyName: Warrior of Light
+		Description: Obtain a Terraprisma from the Empress of Light during the day.
+	}
+
+	WeaponMorningStarAchievement: {
+		FriendlyName: Vampire Killer
+		Description: Obtain a Morning Star from an Armored Bones enemy that you damaged.
+	}
+
+	WeaponSummonMinionAchievement: {
+		FriendlyName: Offensive Line
+		Description: Obtain all 21 minion-summoning weapons.
+	}
+
+	WeaponSummonSentryAchievement: {
+		FriendlyName: Defensive Line
+		Description: Obtain all 17 sentry-summoning weapons.
+	}
+
+	WeaponSummonWhipAchievement: {
+		FriendlyName: Beastmaster
+		Description: Obtain all 9 whips.
+	}
+
+	WeaponPlaceableAchievement: {
+		FriendlyName: 3...2...1...Fire!
+		Description: Obtain all 8 placeable weapons.
+	}
+
+	AmmoFlareAchievement: {
+		FriendlyName: Flame On!
+		Description: Obtain all 6 types of flares.
+	}
+
+	AmmoBulletAchievement: {
+		FriendlyName: Spray n' Pray
+		Description: Obtain all 16 types of bullets.
+	}
+
+	AmmoArrowAchievement: {
+		FriendlyName: Rain of Arrows
+		Description: Obtain all 15 types of arrows.
+	}
+
+	AmmoRocketAchievement: {
+		FriendlyName: Rocket Man
+		Description: Obtain all 12 types of rockets.
+	}
+
+	AmmoDartAchievement: {
+		FriendlyName: Silent but Deadly
+		Description: Obtain all 4 types of darts.
+	}
+
+	AmmoSolutionAchievement: {
+		FriendlyName: Solutions to World Problems
+		Description: Obtain all 8 types of solution.
+	}
+
+	ToolBonePickaxeAchievement: {
+		FriendlyName: Got a Bone to Pick
+		Description: Obtain a Bone Pickaxe from an Undead Miner that you damaged.
+	}
+
+	ToolTheAxeAchievement: {
+		FriendlyName: Flying V
+		Description: Obtain The Axe from Plantera.
+	}
+
+	ToolBatHookAchievement: {
+		FriendlyName: Echolocation
+		Description: Obtain a Bat Hook from a Goodie Bag.
+	}
+
+	ToolFishHookAchievement: {
+		FriendlyName: Fish On!
+		Description: Obtain a Fish Hook from the Angler.
+	}
+
+	ToolHotlineFishingHookAchievement: {
+		FriendlyName: Fiery Fishin'
+		Description: Obtain a Hotline Fishing Hook from the Angler.
+	}
+
+	ToolDemonConchAchievement: {
+		FriendlyName: Listen for Screams
+		Description: Catch a Demon Conch while fishing in lava.
+	}
+
+	ToolRodOfDiscordAchievement: {
+		FriendlyName: Discord Moderator
+		Description: Obtain a Rod of Discord from a Chaos Elemental that you damaged.
+	}
+
+	ToolBoneWandAchievement: {
+		FriendlyName: Calcium Caster
+		Description: Obtain a Bone Wand from a Dungeon enemy that you damaged.
+	}
+
+	ToolBottomlessLavaBucketAchievement: {
+		FriendlyName: Contained Eruption
+		Description: Catch a Bottomless Lava Bucket while fishing in lava.
+	}
+
+	ToolSuperAbsorbantSpongeAchievement: {
+		FriendlyName: Water Void
+		Description: Obtain a Super Absorbant Sponge from the Angler.
+	}
+
+	ToolLavaAbsorbantSpongeAchievement: {
+		FriendlyName: Lava Void
+		Description: Catch a Lava Absorbant Sponge while fishing in lava.
+	}
+
+	ToolGoldenBugNetAchievement: {
+		FriendlyName: Cool Critter Catcher
+		Description: Obtain a Golden Bug Net from the Angler.
+	}
+
+	ToolBinocularsAchievement: {
+		FriendlyName: Eye See You
+		Description: Obtain some Binoculars from Eye of Cthulhu.
+	}
+
+	ToolJungleKeyAchievement: {
+		FriendlyName: Piranha Treasure
+		Description: Obtain a Jungle Key from a Jungle enemy that you damaged.
+	}
+
+	ToolFrozenKeyAchievement: {
+		FriendlyName: Hydra Treasure
+		Description: Obtain a Frozen Key from a Ice enemy that you damaged.
+	}
+
+	ToolHallowedKeyAchievement: {
+		FriendlyName: Rainbow Treasure
+		Description: Obtain a Hallowed Key from a Hallowed enemy that you damaged.
+	}
+
+	ToolCorruptionKeyAchievement: {
+		FriendlyName: Scourge Treasure
+		Description: Obtain a Corruption Key from a Corruption enemy that you damaged.
+	}
+
+	ToolCrimsonKeyAchievement: {
+		FriendlyName: Vampire Treasure
+		Description: Obtain a Crimson Key from a Crimson enemy that you damaged.
+	}
+
+	ToolDesertKeyAchievement: {
+		FriendlyName: Tiger Treasure
+		Description: Obtain a Desert Key from a Desert enemy that you damaged.
+	}
+
+	ToolMineAchievement: {
+		FriendlyName: Also Try Minecraft!
+		Description: Obtain all 44 pickaxes and drills.
+	}
+
+	ToolChopAchievement: {
+		FriendlyName: Chop Chop
+		Description: Obtain all 41 axes and chainsaws.
+	}
+
+	ToolHammerAchievement: {
+		FriendlyName: Talkin' 'Bout the Hammers
+		Description: Obtain all 32 hammers.
+	}
+
+	ToolWireAchievement: {
+		FriendlyName: Master Electrician
+		Description: Obtain all 8 wiring tools.
+	}
+
+	ToolPaintAchievement: {
+		FriendlyName: Home Renovation
+		Description: Obtain all 6 painting tools.
+	}
+
+	ToolHookAchievement: {
+		FriendlyName: Get Over Here!
+		Description: Obtain all 27 hooks.
+	}
+
+	ToolFishAchievement: {
+		FriendlyName: I Just Wanna Fish
+		Description: Obtain all 11 fishing poles.
+	}
+
+	ToolMovementAchievement: {
+		FriendlyName: Instant Transmission
+		Description: Obtain all 13 movement tools.
+	}
+
+	ToolWandAchievement: {
+		FriendlyName: Tree Hugger
+		Description: Obtain all 6 block-placing wands.
+	}
+
+	ToolOtherAchievement: {
+		FriendlyName: Tools of the Trade
+		Description: Obtain all 60 miscellaneous tools.
+	}
+
+	ArmorMiningAchievement: {
+		FriendlyName: Spelunker's Spirit
+		Description: Obtain a Mining Shirt & Pants from Undead Miners that you damaged.
+	}
+
+	ArmorRainAchievement: {
+		FriendlyName: Rotten Rain
+		Description: Obtain both Rain set pieces from Raincoat Zombies that you damaged.
+	}
+
+	ArmorSnowAchievement: {
+		FriendlyName: Dead Cold
+		Description: Obtain all 3 Snow set pieces from Frozen Zombies that you damaged.
+	}
+
+	ArmorDivingHelmetAchievement: {
+		FriendlyName: Scuba Duba
+		Description: Obtain a Diving Helmet from a Shark that you damaged.
+	}
+
+	ArmorDjinnsCurseAchievement: {
+		FriendlyName: Unfortunate Wish
+		Description: Obtain a Djinn's Curse from a Desert Spirit that you damaged.
+	}
+
+	ArmorGreenCapAchievement: {
+		FriendlyName: L Is Real
+		Description: Obtain a Green Cap from the Guide named Andrew.
+	}
+
+	ArmorVikingHelmetAchievement: {
+		FriendlyName: For Valhalla
+		Description: Obtain a Viking Helmet from an Undead Viking that you damaged.
+	}
+
+	ArmorPreHardmodeAchievement: {
+		FriendlyName: Descend to the Abyss
+		Description: Obtain all 108 Pre-Hardmode armor set pieces.
+	}
+
+	ArmorHardmodeAchievement: {
+		FriendlyName: Ascend to the Heavens
+		Description: Obtain all 120 Hardmode armor set pieces.
+	}
+
+	ArmorWizardAchievement: {
+		FriendlyName: I... Am an Enchanter
+		Description: Obtain all 10 wizard armor pieces.
+	}
+
+	ArmorOtherAchievement: {
+		FriendlyName: Hard-Headed Hero
+		Description: Obtain all 9 miscellaneous armor pieces.
+	}
+
+	AccessoryBalloonPufferfishAchievement: {
+		FriendlyName: Do Not Eat
+		Description: Catch a Balloon Pufferfish while fishing.
+	}
+
+	AccessoryFrogLegAchievement: {
+		FriendlyName: Frogger Feet
+		Description: Catch a Frog Leg while fishing.
+	}
+
+	AccessoryMoonCharmAchievement: {
+		FriendlyName: Always a Full Moon
+		Description: Obtain a Moon Charm from a Werewolf.
+	}
+
+	AccessoryFinWingsAchievement: {
+		FriendlyName: Fly Fishing
+		Description: Obtain some Fin Wings from the Angler.
+	}
+
+	AccessoryDepthMeterAchievement: {
+		FriendlyName: Layer by Layer
+		Description: Obtain a Depth Meter from a Surface/Underground enemy that you damaged.
+	}
+
+	AccessoryCompassAchievement: {
+		FriendlyName: Coast to Coast
+		Description: Obtain a Compass from an enemy that you damaged.
+	}
+
+	AccessoryTallyCounterAchievement: {
+		FriendlyName: Keeping Track
+		Description: Obtain a Tally Counter from a Dungeon enemy that you damaged.
+	}
+
+	AccessoryNaturesGiftAchievement: {
+		FriendlyName: Magical Affinity
+		Description: Obtain a Nature's Gift in the Underground Jungle.
+	}
+
+	AccessoryFrozenTurtleShellAchievement: {
+		FriendlyName: Absolute Zero
+		Description: Obtain a Frozen Turtle Shell from an Ice Tortoise that you damaged.
+	}
+
+	AccessoryMagicQuiverAchievement: {
+		FriendlyName: Target Practice
+		Description: Obtain a Magic Quiver from a Skeleton Archer that you damaged.
+	}
+
+	AccessorySharkToothNecklaceAchievement: {
+		FriendlyName: Piercing Penetration
+		Description: Obtain a Shark Tooth Necklace from a Blood Moon enemy that you damaged.
+	}
+
+	AccessoryClothierVoodooDollAchievement: {
+		FriendlyName: Target Acquired
+		Description: Obtain a Clothier Voodoo Doll from a Dungeon enemy that you damaged.
+	}
+
+	AccessoryJellyfishNecklaceAchievement: {
+		FriendlyName: Underwater Rave
+		Description: Obtain a Jellyfish Necklace from a Jellyfish that you damaged.
+	}
+
+	AccessoryJungleRoseAchievement: {
+		FriendlyName: Oh So Pretty
+		Description: Obtain a Jungle Rose from the Jungle.
+	}
+
+	AccessoryArcticDivingGearAchievement: {
+		FriendlyName: Polar Plunge
+		Description: Craft some Arctic Diving Gear.
+	}
+
+	AccessoryBundleHorseshoeBalloonsAchievement: {
+		FriendlyName: Lucky Lift
+		Description: Craft a Bundle of Horseshoe Balloons.
+	}
+
+	AccessoryCelestialCuffsAchievement: {
+		FriendlyName: Getting Cuffed
+		Description: Craft some Celestial Cuffs.
+	}
+
+	AccessoryCelestialEmblemAchievement: {
+		FriendlyName: Mana Magnet
+		Description: Craft a Celestial Emblem.
+	}
+
+	AccessoryCelestialShellAchievement: {
+		FriendlyName: Monster Mash
+		Description: Craft a Celestial Shell.
+	}
+
+	AccessoryFairyBootsAchievement: {
+		FriendlyName: Pianta Impersonator
+		Description: Craft some Fairy Boots.
+	}
+
+	AccessoryFireGauntletAchievement: {
+		FriendlyName: Flaming Fist
+		Description: Craft a Fire Gauntlet.
+	}
+
+	AccessoryFrogGearAchievement: {
+		FriendlyName: It Ain�t Easy Being Green
+		Description: Craft some Frog Gear.
+	}
+
+	AccessoryGreedyRingAchievement: {
+		FriendlyName: Sticky Fingers
+		Description: Craft a Greedy Ring.
+	}
+
+	AccessoryHandOfCreationAchievement: {
+		FriendlyName: Master of All Trades
+		Description: Craft a Hand of Creation.
+	}
+
+	AccessoryHellfireTreadsAchievement: {
+		FriendlyName: Trailblazer
+		Description: Craft some Hellfire Treads.
+	}
+
+	AccessoryLavaproofTackleBagAchievement: {
+		FriendlyName: Master Baiter
+		Description: Craft a Lavaproof Tackle Box.
+	}
+
+	AccessoryMasterNinjaGearAchievement: {
+		FriendlyName: One With the Shadows
+		Description: Craft some Master Ninja Gear.
+	}
+
+	AccessoryShellphoneAchievement: {
+		FriendlyName: Let's Talk About Your Car's Extended Warranty
+		Description: Craft a Shellphone.
+	}
+
+	AccessorySniperScopeAchievement: {
+		FriendlyName: Terrarian Sniper
+		Description: Craft a Sniper Scope.
+	}
+
+	AccessoryTheGrandDesignAchievement: {
+		FriendlyName: Wire Kite
+		Description: Craft The Grand Design.
+	}
+
+	AccessoryUltraAbsorbantSpongeAchievement: {
+		FriendlyName: Absolute Absorption
+		Description: Craft an Ultra Absorbant Sponge.
+	}
+
+	AccessoryMoveAchievement: {
+		FriendlyName: Wanna See Me Do It Again
+		Description: Obtain all 65 movement accessories.
+	}
+
+	AccessoryWingsAchievement: {
+		FriendlyName: Free Bird
+		Description: Obtain all 29 wings.
+	}
+
+	AccessoryInfoAchievement: {
+		FriendlyName: Modern Technology
+		Description: Obtain all 25 informational accessories.
+	}
+
+	AccessoryHealthManaAchievement: {
+		FriendlyName: Divine Blessing
+		Description: Obtain all 14 health/mana accessories.
+	}
+
+	AccessoryCombatAchievement: {
+		FriendlyName: Battle Ready
+		Description: Obtain all 75 combat accessories.
+	}
+
+	AccessoryConstructionAchievement: {
+		FriendlyName: 85 Hours a Day
+		Description: Obtain all 10 construction accessories.
+	}
+
+	AccessoryFishAchievement: {
+		FriendlyName: Fish Love Me
+		Description: Obtain all 14 fishing accessories.
+	}
+
+	AccessoryYoyoAchievement: {
+		FriendlyName: Super Strands
+		Description: Obtain all 24 yoyo accessories.
+	}
+
+	AccessoryVanityAchievement: {
+		FriendlyName: Luxury Goods
+		Description: Obtain all 29 vanity accessories.
+	}
+
+	AccessoryMusicBoxAchievement: {
+		FriendlyName: Capture the Moment
+		Description: Obtain all 88 music boxes.
+	}
+
+	AccessoryGolfBallAchievement: {
+		FriendlyName: Hot Shots
+		Description: Obtain all 14 golf balls.
+	}
+
+	AccessoryOtherAchievement: {
+		FriendlyName: Voodoo Magic
+		Description: Obtain all 15 miscellaneous accessories.
+	}
+
+	MountBeeAchievement: {
+		FriendlyName: Rapid Pollination
+		Description: Obtain some Honeyed Goggles from Queen Bee.
+	}
+
+	MountTurtleAchievement: {
+		FriendlyName: Slow and Steady
+		Description: Obtain a Hardy Saddle from a Golden/Titanium Crate.
+	}
+
+	MountGolfCartAchievement: {
+		FriendlyName: Retirement Ready
+		Description: Buy some Golf Cart Keys from the Golfer.
+	}
+
+	MountBasiliskAchievement: {
+		FriendlyName: Chaos Charge
+		Description: Obtain an Ancient Horn from a Basilisk that you damaged.
+	}
+
+	MountWolfAchievement: {
+		FriendlyName: Obsessed With Wolves
+		Description: Obtain a Lilith's Necklace from a Wolf that you damaged.
+	}
+
+	MountUnicornAchievement: {
+		FriendlyName: Rainbow Rider
+		Description: Obtain a Blessed Apple from Hallow enemies that you damaged.
+	}
+
+	MountPigronAchievement: {
+		FriendlyName: Now You See Me...
+		Description: Catch a Scaly Truffle while fishing.
+	}
+
+	MountRudolphAchievement: {
+		FriendlyName: The Original Mount
+		Description: Obtain some Reindeer Bells from Ice Queen.
+	}
+
+	MountDcuAchievement: {
+		FriendlyName: Terraforming
+		Description: Craft a Drill Containment Unit.
+	}
+
+	MountAchievement: {
+		FriendlyName: Trusty Steeds
+		Description: Obtain all 20 Mounts.
+	}
+
+	MinecartFishAchievement: {
+		FriendlyName: Deal With It
+		Description: Obtain a Minecarp from the Angler.
+	}
+
+	MinecartPigronAchievement: {
+		FriendlyName: Powered by Bacon!
+		Description: Obtain a Pigron Minecart from a Pigron.
+	}
+
+	MinecartAchievement: {
+		FriendlyName: Modern Mining
+		Description: Obtain all 25 Minecarts.
+	}
+
+	VanityHeroAchievement: {
+		FriendlyName: Hero of Time
+		Description: Craft all 3 Hero's set pieces.
+	}
+
+	VanityLamiaAchievement: {
+		FriendlyName: Menacing Glare
+		Description: Obtain all 3 Lamia set pieces from lamia enemies that you damaged.
+	}
+
+	VanityMummyAchievement: {
+		FriendlyName: Budget Costume
+		Description: Obtain all 3 Mummy set pieces from mummy enemies that you damaged.
+	}
+
+	VanityPedguinAchievement: {
+		FriendlyName: Become the Pedguin
+		Description: Obtain all 3 Pedguin's set pieces from penguin enemies that you damaged.
+	}
+
+	VanityPlumberAchievement: {
+		FriendlyName: Mr. Video Game
+		Description: Obtain a Plumber's Hat from a Fire Imp that you damaged.
+	}
+
+	VanityCreeperAchievement: {
+		FriendlyName: Aww Man
+		Description: Obtain all 3 Creeper set pieces from a Goodie Bag.
+	}
+
+	VanityAngelHaloAchievement: {
+		FriendlyName: Baby, I Can Feel Your Halo
+		Description: Buy an Angel Halo from the Traveling Merchant.
+	}
+
+	VanityBadgersHatAchievement: {
+		FriendlyName: To Hell and Back
+		Description: Obtain a Badger's Hat from a boss.
+	}
+
+	VanityDeadMansSweaterAchievement: {
+		FriendlyName: Redshirt Sacrifice
+		Description: Obtain a Dead Man's Sweater.
+	}
+
+	VanityGingerBeardAchievement: {
+		FriendlyName: Beard of Piracy
+		Description: Obtain a Ginger Beard from an Iron/Mythril Crate.
+	}
+
+	VanityJimsHatAchievement: {
+		FriendlyName: My Hat Now
+		Description: Obtain a Jim's Cap from the Painter.
+	}
+
+	VanityRobotHatAchievement: {
+		FriendlyName: Quote This
+		Description: Obtain a Robot Hat from a Jungle enemy that you damaged.
+	}
+
+	VanitySkullAchievement: {
+		FriendlyName: Bone Head
+		Description: Obtain a Skull from skeleton enemies that you damaged.
+	}
+
+	VanityUmbrellaHatAchievement: {
+		FriendlyName: Under my Umbrella
+		Description: Obtain an Umbrella Hat from an Umbrella Slime that you damaged.
+	}
+
+	VanitySetsAchievement: {
+		FriendlyName: Fashion Show
+		Description: Obtain all 176 vanity set pieces.
+	}
+
+	VanityHalloweenAchievement: {
+		FriendlyName: Trick or Treat
+		Description: Obtain all 61 Halloween vanity set pieces.
+	}
+
+	VanityChristmasAchievement: {
+		FriendlyName: On the Nice List
+		Description: Obtain all 12 Christmas vanity set pieces.
+	}
+
+	VanityMaskAchievement: {
+		FriendlyName: That's What the Mask Is
+		Description: Obtain all 21 vanity boss masks.
+	}
+
+	VanityOtherAchievement: {
+		FriendlyName: He Was #1
+		Description: Obtain all 52 miscellaneous vanity pieces.
+	}
+
+	PetBabyDinosaurAchievement: {
+		FriendlyName: De-extinction
+		Description: Obtain an Amber Mosquito from extracted Desert Fossil.
+	}
+
+	PetBabyEaterAchievement: {
+		FriendlyName: It's Kinda Cute?
+		Description: Obtain an Eater's Bone from Eater of Worlds.
+	}
+
+	PetBabyFaceMonsterAchievement: {
+		FriendlyName: Jump Scare
+		Description: Obtain a Bone Rattle from Brain of Cthulhu.
+	}
+
+	PetBabyGrinchAchievement: {
+		FriendlyName: Problem Child
+		Description: Obtain a Baby Grinch's Mischief Whistle from Ice Queen.
+	}
+
+	PetBabyHornetAchievement: {
+		FriendlyName: Irresistible Smell
+		Description: Obtain some Nectar from Queen Bee.
+	}
+
+	PetBabySkeletronHeadAchievement: {
+		FriendlyName: You SHALL Pass!
+		Description: Obtain a Bone Key from the Dungeon Guardian that you damaged.
+	}
+
+	PetBabySnowmanAchievement: {
+		FriendlyName: Sleigh Ride Together With You
+		Description: Obtain a Toy Sled from an Ice Mimic that you damaged.
+	}
+
+	PetBlackCatAchievement: {
+		FriendlyName: Tim's Pet Cat
+		Description: Obtain an Unlucky Yarn from a Goodie Bag.
+	}
+
+	PetCavelingGardenerAchievement: {
+		FriendlyName: Keeper of the Core
+		Description: Obtain a Glow Tulip in the Underground or Cavern layers.
+	}
+
+	PetTheDirtiestBlockAchievement: {
+		FriendlyName: Dirt is Dirty
+		Description: Obtain The Dirtiest Block while digging.
+	}
+
+	PetJunimoAchievement: {
+		FriendlyName: Keeper of the Forest
+		Description: Obtain a Stardrop from a purified Joja Cola.
+	}
+
+	PetLizardAchievement: {
+		FriendlyName: Chillin� Like a Reptilian
+		Description: Obtain a Lizard Egg from a Jungle Temple enemy that you damaged.
+	}
+
+	PetMiniMinotaurAchievement: {
+		FriendlyName: Mini Minotaur's Weakness
+		Description: Obtain some Tarter Sauce from an Iron/Mythril Crate.
+	}
+
+	PetPuppyAchievement: {
+		FriendlyName: Puppy Love
+		Description: Obtain a Dog Whistle from a Present.
+	}
+
+	PetSaplingAchievement: {
+		FriendlyName: Budding Life
+		Description: Obtain a Seedling from Plantera.
+	}
+
+	PetSpiffoAchievement: {
+		FriendlyName: Plushie PAWS
+		Description: Obtain a Spiffo Plush from a Zombie that you damaged.
+	}
+
+	PetSquashlingAchievement: {
+		FriendlyName: Plentiful Harvest
+		Description: Obtain a Magical Pumpkin Seed from a Pumpkin during Halloween.
+	}
+
+	PetSugarGliderAchievement: {
+		FriendlyName: Sugar Rush
+		Description: Obtain some Eucalyptus Sap after shaking a Tree.
+	}
+
+	PetZephyrFishAchievement: {
+		FriendlyName: The Gentle West Wind
+		Description: Catch a Zephyr Fish while fishing.
+	}
+
+	PetWispAchievement: {
+		FriendlyName: Will-O�-The-Wisp
+		Description: Obtain a Wisp in a Bottle from Armored Bones enemies that you damaged.
+	}
+
+	PetAchievement: {
+		FriendlyName: Loyal Companions
+		Description: Obtain all 47 pets.
+	}
+
+	PetLightAchievement: {
+		FriendlyName: Bright Buddies
+		Description: Obtain all 6 light pets.
+	}
+
+	BannerSlimeAchievement: {
+		FriendlyName: Slime Slayer
+		Description: Obtain all 24 Slime banners.
+	}
+
+	BannerCavernAchievement: {
+		FriendlyName: Cavern Slayer
+		Description: Obtain all 19 Cavern enemy banners.
+	}
+
+	BannerCorruptionAchievement: {
+		FriendlyName: Corruption Slayer
+		Description: Obtain all 8 Corruption enemy banners.
+	}
+
+	BannerCrimsonAchievement: {
+		FriendlyName: Crimson Slayer
+		Description: Obtain all 11 Crimson enemy banners.
+	}
+
+	BannerDesertAchievement: {
+		FriendlyName: Desert Slayer
+		Description: Obtain all 13 Desert enemy banners.
+	}
+
+	BannerDungeonAchievement: {
+		FriendlyName: Dungeon Slayer
+		Description: Obtain all 16 Dungeon enemy banners.
+	}
+
+	BannerGlowingMushroomAchievement: {
+		FriendlyName: Glowing Mushroom Slayer
+		Description: Obtain all 7 Glowing Mushroom enemy banners.
+	}
+
+	BannerGraniteCaveAchievement: {
+		FriendlyName: Granite Cave Slayer
+		Description: Obtain both Granite Cave enemy banners.
+	}
+
+	BannerHallowAchievement: {
+		FriendlyName: Hallow Slayer
+		Description: Obtain all 7 The Hallow enemy banners.
+	}
+
+	BannerJungleAchievement: {
+		FriendlyName: Jungle Slayer
+		Description: Obtain all 17 Jungle enemy banners.
+	}
+
+	BannerMarbleCaveAchievement: {
+		FriendlyName: Marble Cave Slayer
+		Description: Obtain both Marble Cave enemy banners.
+	}
+
+	BannerMeteoriteAchievement: {
+		FriendlyName: Meteorite Slayer
+		Description: Obtain the Meteorite enemy banner.
+	}
+
+	BannerSnowAchievement: {
+		FriendlyName: Snow Slayer
+		Description: Obtain all 12 Snow enemy banners.
+	}
+
+	BannerSpiderCaveAchievement: {
+		FriendlyName: Spider Cave Slayer
+		Description: Obtain both Spider Cave enemy banners.
+	}
+
+	BannerSurfaceAchievement: {
+		FriendlyName: Surface Slayer
+		Description: Obtain all 18 Surface enemy banners.
+	}
+
+	BannerUnderworldAchievement: {
+		FriendlyName: Underworld Slayer
+		Description: Obtain all 6 Underworld enemy banners.
+	}
+
+	BannerBloodMoonAchievement: {
+		FriendlyName: Blood Moon Slayer
+		Description: Obtain all 17 Blood Moon enemy banners.
+	}
+
+	BannerFrostLegionAchievement: {
+		FriendlyName: Frost Legion Slayer
+		Description: Obtain all 3 Frost Legion enemy banners.
+	}
+
+	BannerFrostMoonAchievement: {
+		FriendlyName: Frost Moon Slayer
+		Description: Obtain all 9 Frost Moon enemy banners.
+	}
+
+	BannerGoblinArmyAchievement: {
+		FriendlyName: Goblin Army Slayer
+		Description: Obtain all 6 Goblin Army enemy banners.
+	}
+
+	BannerHalloweenAchievement: {
+		FriendlyName: Halloween Slayer
+		Description: Obtain all 3 Halloween enemy banners.
+	}
+
+	BannerLunarEventsAchievement: {
+		FriendlyName: Lunar Events Slayer
+		Description: Obtain all 23 Lunar Events enemy banners.
+	}
+
+	BannerMartianMadnessAchievement: {
+		FriendlyName: Martian Madness Slayer
+		Description: Obtain all 11 Martian Madness enemy banners.
+	}
+
+	BannerOldOnesArmyAchievement: {
+		FriendlyName: Old One's Army Slayer
+		Description: Obtain all 10 Old One's Army enemy banners.
+	}
+
+	BannerPirateInvasionAchievement: {
+		FriendlyName: Pirate Invasion Slayer
+		Description: Obtain all 6 Pirate Invasion enemy banners.
+	}
+
+	BannerPumpkinMoonAchievement: {
+		FriendlyName: Pumpkin Moon Slayer
+		Description: Obtain all 5 Pumpkin Moon enemy banners.
+	}
+
+	BannerRainBlizzardAchievement: {
+		FriendlyName: Rain & Blizzard Slayer
+		Description: Obtain all 4 Rain/Blizzard enemy banners.
+	}
+
+	BannerSandstormAchievement: {
+		FriendlyName: Sandstorm Slayer
+		Description: Obtain all 6 Sandstorm enemy banners.
+	}
+
+	BannerSolarEclipseAchievement: {
+		FriendlyName: Solar Eclipse Slayer
+		Description: Obtain all 14 Solar Eclipse enemy banners.
+	}
+
+	BannerWindyDayAchievement: {
+		FriendlyName: Windy Day Slayer
+		Description: Obtain the Windy Day enemy banner.
+	}
+
+	CritterGemAchievement: {
+		FriendlyName: Residual Energy
+		Description: Catch all 14 wild gem critters.
+	}
+
+	CritterGoldAchievement: {
+		FriendlyName: The Midas Touch
+		Description: Catch all 14 wild gold critters.
+	}
+
+	CritterAchievement: {
+		FriendlyName: King of the Critters
+		Description: Obtain all 91 critters.
+	}
+
+	DyeStrangeAchievement: {
+		FriendlyName: Indescribable Aura
+		Description: Obtain all 33 Strange Dyes from the Dye Trader.
+	}
+
+	DyeCraftAchievement: {
+		FriendlyName: Lunar Liaison
+		Description: Craft all 7 craftable special effect dyes.
+	}
+
+	DyeOtherAchievement: {
+		FriendlyName: Feeling Like a Fairy
+		Description: Obtain all 3 miscellaneous special effect dyes.
+	}
+
+	DyeHairAchievement: {
+		FriendlyName: Express Yourself
+		Description: Obtain all 11 hair dyes.
+	}
+
+	ExtractPlatinumCoinAchievement: {
+		FriendlyName: Panning for Platinum
+		Description: Extract a Platinum Coin from a block.
+	}
+
+	ExtractJourneymanBaitAchievement: {
+		FriendlyName: ...Another Man's Treasure
+		Description: Extract Journeyman's Bait from a piece of junk.
+	}
+
+	FishPinkPearlAchievement: {
+		FriendlyName: So Shiny!
+		Description: Obtain a Pink Pearl from an Oyster.
+	}
+
+	FishNormalAchievement: {
+		FriendlyName: Level 99 Fishing
+		Description: Catch all 30 normal fish.
+	}
+
+	FishQuestAchievement: {
+		FriendlyName: Motley Crew
+		Description: Catch all 41 quest fish.
+	}
+
+	FishCrateAchievement: {
+		FriendlyName: Loot Crates
+		Description: Catch all 26 crates.
+	}
+
+	FishJunkAchievement: {
+		FriendlyName: One Man's Trash...
+		Description: Catch all 4 pieces of junk.
+	}
+
+	FishRewardAchievement: {
+		FriendlyName: Overfishing
+		Description: Obtain all 52 fishing rewards from the Angler.
+	}
+
+	FurnitureChippysCouchAchievement: {
+		FriendlyName: Heeellllllo Terraria Enthusiasts!
+		Description: Obtain a Chippy's Couch from Skeletron.
+	}
+
+	FurnitureDesertSpiritLampAchievement: {
+		FriendlyName: Make a Wish
+		Description: Obtain a Desert Spirit Lamp from a Desert Spirit that you damaged.
+	}
+
+	FurnitureEnchantedSundialAchievement: {
+		FriendlyName: Early Bird
+		Description: Obtain an Enchanted Sundial from a crate.
+	}
+
+	FurnitureEnchantedMoondialAchievement: {
+		FriendlyName: Night Owl
+		Description: Obtain an Enchanted Moondial.
+	}
+
+	FurnitureHatRackAchievement: {
+		FriendlyName: Not Just a Hat Rack
+		Description: Craft a Hat Rack.
+	}
+
+	FurniturePigronataAchievement: {
+		FriendlyName: Party Time!
+		Description: Buy a Pigronata from the Party Girl.
+	}
+
+	FurniturePortalGunStationAchievement: {
+		FriendlyName: Aperture Science Innovation
+		Description: Buy a Portal Gun Station from the Cyborg.
+	}
+
+	FurnitureTargetDummyAchievement: {
+		FriendlyName: Built Terrarian-Tough
+		Description: Craft a Target Dummy.
+	}
+
+	FurnitureBuffAchievement: {
+		FriendlyName: Feng Shui
+		Description: Obtain all 14 buff-providing/stat-boosting furniture.
+	}
+
+	FurnitureDisplayAchievement: {
+		FriendlyName: Conversation Pieces
+		Description: Obtain all 5 item-displaying furniture.
+	}
+
+	FurnitureThemedAchievement: {
+		FriendlyName: Sprucing up the Place
+		Description: Obtain all 11 themed furniture crafting stations.
+	}
+
+	FurnitureTombstoneAchievement: {
+		FriendlyName: Reflecting on Past Mistakes
+		Description: Obtain all 11 tombstones.
+	}
+
+	NoveltyIvyAchievement: {
+		FriendlyName: Property of Dead Man's Sweater
+		Description: Obtain an Ivy from the Steampunker named Whitney.
+	}
+
+	NoveltyWyvernKiteAchievement: {
+		FriendlyName: Waving in the Wind
+		Description: Obtain a Wyvern Kite from a Wyvern that you damaged.
+	}
+
+	NoveltyRainSongAchievement: {
+		FriendlyName: These Licks Are Spicy
+		Description: Obtain a Rain Song from a Flying Fish that you damaged.
+	}
+
+	NoveltyUnicornOnAStickAchievement: {
+		FriendlyName: Having a Wonderful Time!
+		Description: Obtain a Unicorn on a Stick from a Unicorn that you damaged.
+	}
+
+	NoveltyAchievement: {
+		FriendlyName: Trinkets and Knick Knacks
+		Description: Obtain all 52 novelty items.
+	}
+
+	PaintingWaldoAchievement: {
+		FriendlyName: Where's Waldo?
+		Description: Obtain the Waldo painting from an Underground Cabin.
+	}
+
+	PaintingClothierAchievement: {
+		FriendlyName: r/Terraria
+		Description: Buy the painting from the Clothier.
+	}
+
+	PaintingGolferAchievement: {
+		FriendlyName: The Duplicity of Reflections
+		Description: Buy all 4 paintings from the Golfer.
+	}
+
+	PaintingPainterAchievement: {
+		FriendlyName: Good Morning
+		Description: Buy all 16 paintings from the Painter.
+	}
+
+	PaintingPainterGraveyardAchievement: {
+		FriendlyName: Nevermore
+		Description: Buy all 8 paintings from the Painter in a Graveyard.
+	}
+
+	PaintingPrincessAchievement: {
+		FriendlyName: Princess 64
+		Description: Buy all 7 paintings from the Princess.
+	}
+
+	PaintingTravelingMerchantAchievement: {
+		FriendlyName: Benny Warhol
+		Description: Buy all 22 paintings from the Traveling Merchant.
+	}
+
+	PaintingTruffleAchievement: {
+		FriendlyName: My Son
+		Description: Buy the painting from the Truffle.
+	}
+
+	PaintingZoologistAchievement: {
+		FriendlyName: The Werewolf
+		Description: Buy the painting from the Zoologist.
+	}
+
+	PaintingDungeonAchievement: {
+		FriendlyName: The Creation of the Guide
+		Description: Obtain all 25 paintings from Dungeons.
+	}
+
+	PaintingFloatingIslandAchievement: {
+		FriendlyName: Love is in the Trash Slot
+		Description: Obtain all 6 paintings from Floating Islands.
+	}
+
+	PaintingJungleTempleAchievement: {
+		FriendlyName: Lizard King
+		Description: Obtain the painting from a Jungle Temple.
+	}
+
+	PaintingUndergroundCabinAchievement: {
+		FriendlyName: Happy Little Tree
+		Description: Obtain all 32 paintings from Underground Cabins.
+	}
+
+	PaintingUndergroundCabinDesertAchievement: {
+		FriendlyName: Snakes, I Hate Snakes
+		Description: Obtain all 14 paintings from Desert Underground Cabins.
+	}
+
+	PaintingUnderworldAchievement: {
+		FriendlyName: Darkness
+		Description: Obtain all 12 paintings from The Underworld.
+	}
+
+	PaintingFishAchievement: {
+		FriendlyName: Lady Of The Lake
+		Description: Catch both paintings while fishing.
+	}
+
+	PaintingAnglerAchievement: {
+		FriendlyName: Silent Fish
+		Description: Obtain all 8 paintings from the Angler's quest rewards
+	}
+
+	PaintingSolarAchievement: {
+		FriendlyName: Eyezorhead
+		Description: Obtain all 8 paintings from Solar Eclipse enemies that you damaged.
+	}
+
+	PaintingGoodieAchievement: {
+		FriendlyName: Hallow's Eve
+		Description: Obtain all 5 paintings from Goodie Bags.
+	}
+
+	PaintingAnimalSkinsAchievement: {
+		FriendlyName: Exotic Taste
+		Description: Buy all 3 animal skins from the Traveling Merchant.
+	}
+
+	PylonUniversalAchievement: {
+		FriendlyName: Beast Mode
+		Description: Buy a Universal Pylon from the Zoologist.
+	}
+
+	PylonAchievement: {
+		FriendlyName: Teleportation Station
+		Description: Buy all 9 Pylons.
+	}
+
+	StatueEnemyAchievement: {
+		FriendlyName: Battle Simulator
+		Description: Obtain all 26 enemy statues.
+	}
+
+	StatueCritterAchievement: {
+		FriendlyName: Animal Farm
+		Description: Obtain all 22 critter statues.
+	}
+
+	StatueDecorAchievement: {
+		FriendlyName: Art Appreciation
+		Description: Obtain all 24 decorative statues.
+	}
+
+	StatueOtherAchievement: {
+		FriendlyName: Kings and Queens
+		Description: Obtain all 9 miscellaneous statues.
+	}
+
+	StorageMoneyTroughAchievement: {
+		FriendlyName: When Pigs Fly
+		Description: Obtain a Money Trough from a Blood Moon enemy that you damaged.
+	}
+
+	StorageAchievement: {
+		FriendlyName: Into the Void
+		Description: Obtain all 7 portable storage items.
+	}
+
+	TrophyPreHardmodeAchievement: {
+		FriendlyName: Rags to Riches
+		Description: Obtain all 8 Pre-Hardmode boss trophies.
+	}
+
+	TrophyHardmodeAchievement: {
+		FriendlyName: Mechanical Mania
+		Description: Obtain all 11 Hardmode boss trophies.
+	}
+
+	TrophyEventAchievement: {
+		FriendlyName: Star of the Show
+		Description: Obtain all 10 event boss trophies.
+	}
+
+	TrophyFishAchievement: {
+		FriendlyName: Fish Fear Me
+		Description: Obtain all 4 fish trophies from the Angler.
+	}
+
+	TrophyGolfAchievement: {
+		FriendlyName: Pro Performance Proof
+		Description: Buy all 3 golf trophies from the Golfer.
+	}
+
+	BuffEnvironmentAchievement: {
+		FriendlyName: Climate Acclimation
+		Description: Activate all 9 environment buffs.
+	}
+
+	BuffEquipmentAchievement: {
+		FriendlyName: Confidence Boost
+		Description: Activate all 33 equipment buffs.
+	}
+
+	BuffFurnitureAchievement: {
+		FriendlyName: Min-Maxing
+		Description: Activate all 6 furniture buffs.
+	}
+
+	BuffLightPetAchievement: {
+		FriendlyName: Light the Way
+		Description: Activate all 8 light pet buffs.
+	}
+
+	BuffMinecartAchievement: {
+		FriendlyName: Coming Through!
+		Description: Activate all 26 minecart buffs.
+	}
+
+	BuffMountAchievement: {
+		FriendlyName: Beast Tamer
+		Description: Activate all 20 mount buffs.
+	}
+
+	BuffPetAchievement: {
+		FriendlyName: Animal Whisperer
+		Description: Activate all 47 pet buffs.
+	}
+
+	BuffSummonAchievement: {
+		FriendlyName: Minion Master
+		Description: Activate all 21 summon buffs.
+	}
+
+	ConsumableExplosiveAchievement: {
+		FriendlyName: Fire in the Hole!
+		Description: Use all 14 explosive items.
+	}
+
+	ConsumableFoodAchievement: {
+		FriendlyName: Balanced Diet
+		Description: Eat all 80 types of food.
+	}
+
+	ConsumableLicenseAchievement: {
+		FriendlyName: Man's Best Friend
+		Description: Use all 3 animal licenses.
+	}
+
+	ConsumablePotionBuffAchievement: {
+		FriendlyName: Performance-Enhancing Potions
+		Description: Drink all 44 buff potions.
+	}
+
+	ConsumablePotionFlaskAchievement: {
+		FriendlyName: Extra Edge
+		Description: Drink all 8 flasks.
+	}
+
+	ConsumablePotionRecoveryAchievement: {
+		FriendlyName: Recovery Is Key
+		Description: Drink all 15 recovery potions.
+	}
+
+	ConsumablePotionOtherAchievement: {
+		FriendlyName: Experimental Consumer
+		Description: Drink all 4 miscellaneous potions.
+	}
+
+	ConsumablePermanentAchievement: {
+		FriendlyName: Personal Development
+		Description: Use all 14 permanent consumable items.
+	}
+
+	ConsumableToolAchievement: {
+		FriendlyName: Terravania
+		Description: Use all 13 consumable tools.
+	}
+
+	ConsumableWeaponAchievement: {
+		FriendlyName: Breach and Clear
+		Description: Use all 20 consumable weapons.
+	}
+
+	ConsumableOtherAchievement: {
+		FriendlyName: Recreational Activities
+		Description: Use all 13 miscellanous consumable items.
+	}
+}
+
 Buffs: {
 	HardestcoreBuff: {
 		DisplayName: Hardestcore

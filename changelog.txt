@@ -1,3 +1,6 @@
+v1.1.0
+- Refactored to use ModAchievement
+
 v1.0.27
 - Allowed crafting of 3 cavern banners
 

@@ -1,7 +1,7 @@
 displayName = Completionist Achievements
 author = timenoe
-version = 1.0.27
+version = 1.1.0
 homepage = https://retroachievements.org/game/32910
-buildIgnore = *.pdn
+buildIgnore = *.ase,*.pdn
 side = Both
 sortBefore = PlayerAchievements,WorldAchievements
