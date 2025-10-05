@@ -8,6 +8,9 @@
 
 Terraria tModLoader mod that adds completionist achievements to the in-game list.
 
+## Notice
+The upgrade from v1.0.27 to v1.1.0 resulted in a save file imcompatability for custom achievements. Download [this GUI](https://github.com/timenoe/Terraria-RetroAchievements-Save-Converter/releases/download/v1/save_converter.zip) to convert your save file to the new format to keep progress.
+
 ## Restrictions
 - No Journey Mode
 - No Celebrationmk10 Seed
